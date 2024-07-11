@@ -1,0 +1,445 @@
+/* STYLES FOR ABOVE THE FOLD */
+
+/*-- -------------------------- -->
+<---           Hero             -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #hero-1203 {
+        /* 150px - 350px */
+        padding: clamp(9rem, 25.95vw, 21.875rem) calc(16 / 16 * 1rem);
+        padding-bottom: 0;
+        position: relative;
+        z-index: 1;
+        /* prevents overflow from the arrow graphic */
+        overflow: hidden;
+
+        &:before {
+            /* black bar */
+            content: "";
+            width: 100%;
+            /* 100px - 200px */
+            height: clamp(6.25rem, 29vw, 12.5rem);
+            background: #1a1a1a;
+            opacity: 1;
+            position: absolute;
+            display: block;
+            bottom: 0;
+            left: 0;
+        }
+
+        .cs-container {
+            width: 100%;
+            max-width: calc(1280 / 16 * 1rem);
+            margin: auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 7vw, 4rem);
+        }
+
+        .cs-content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            max-width: calc(630 / 16 * 1rem);
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
+
+        .cs-topper {
+            font-size: var(--topperFontSize);
+            line-height: 1.2em;
+            text-transform: uppercase;
+            text-align: center;
+            letter-spacing: 0.1em;
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: calc(4 / 16 * 1rem);
+            display: block;
+        }
+
+        .cs-title {
+            /* 39px - 61px */
+            font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+            font-weight: 900;
+            line-height: 1.2em;
+            width: 100%;
+            max-width: 17ch;
+            margin: 0 0 calc(16 / 16 * 1rem);
+            color: var(--headerColor);
+            position: relative;
+        }
+
+        .cs-text {
+            font-size: calc(20 / 16 * 1rem);
+            line-height: 1.5em;
+            width: 100%;
+            max-width: calc(700 / 16 * 1rem);
+            /* 28px - 40px */
+            margin: 0 0 clamp(1.75rem, 4vw, 2.5rem);
+            color: var(--bodyTextColor);
+        }
+
+        .cs-button-solid {
+            font-size: calc(16 / 16 * 1rem);
+            text-align: center;
+            /* 46px - 56px */
+            line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+            width: calc(180 / 16 * 1rem);
+            text-decoration: none;
+            font-weight: 700;
+            /* clips corners of the before element */
+            overflow: hidden;
+            margin: 0;
+            color: #1a1a1a;
+            padding: 0;
+            background-color: var(--primary);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s;
+
+            &:before {
+                content: "";
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 0%;
+                background: #000;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                transition: width 0.3s;
+            }
+
+            &:hover {
+                color: #fff;
+                &:before {
+                    width: 100%;
+                }
+            }
+        }
+
+        .cs-picture {
+            width: 100%;
+            /* changes to 866px at desktop */
+            max-width: calc(545 / 16 * 1rem);
+            height: auto;
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .cs-floater {
+            /* changes to 1465px at desktop */
+            width: calc(955 / 16 * 1rem);
+            height: auto;
+            opacity: 0.08;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 40%;
+            z-index: -1;
+        }
+    }
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    #hero-1203 {
+        &:before {
+            height: calc(258 / 16 * 1rem);
+        }
+        .cs-picture {
+            width: 70%;
+            max-width: calc(866 / 16 * 1rem);
+        }
+
+        .cs-floater {
+            width: calc(1465 / 16 * 1rem);
+            top: 30%;
+        }
+    }
+}
+
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+    #hero-1203 {
+        padding-bottom: calc(200 / 16 * 1rem);
+
+        &:before {
+            height: 100%;
+            width: 40vw;
+            margin-left: calc(333 / 16 * 1rem);
+            left: 50%;
+        }
+
+        .cs-container {
+            flex-direction: row;
+            justify-content: flex-start;
+            /* remove the positioning so the cs-picture is now absolutely positioned to the next parent with a declared position - the #hero section container. Now we can position it off the bottom edge of the parent container */
+            position: initial;
+        }
+
+        .cs-content {
+            text-align: left;
+            align-items: flex-start;
+        }
+
+        .cs-picture {
+            width: calc(866 / 16 * 1rem);
+            height: calc(842 / 16 * 1rem);
+            margin-left: calc(10 / 16 * 1rem);
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+
+            img {
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                object-fit: contain;
+            }
+        }
+
+        .cs-floater {
+            margin-right: calc(-333 / 16 * 1rem);
+            top: calc(140 / 16 * 1rem);
+            right: 50%;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #hero-1203 {
+            &:before {
+                background-color: rgba(0, 0, 0, 0.6);
+            }
+            .cs-topper {
+                color: var(--primaryLight);
+            }
+            .cs-title {
+                color: var(--bodyTextColorWhite);
+            }
+            .cs-text {
+                color: var(--bodyTextColorWhite);
+                opacity: 0.9;
+            }
+        }
+    }
+}                              
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #hero-1618 {
+        padding-bottom: 0;
+        .cs-container {
+            align-items: flex-start;
+        }
+
+        .cs-content {
+            text-align: left;
+            margin-left: 0;
+            align-items: flex-start;
+        }
+
+        .cs-item {
+            grid-column: span 4;
+        }
+
+        .cs-background {
+            height: 87%;
+            &:before {
+                background: linear-gradient(
+                    90deg,
+                    #111926 21.41%,
+                    rgba(17, 25, 38, 0.72) 34.98%,
+                    rgba(17, 25, 38, 0) 62.53%
+                );
+                opacity: 1;
+            }
+        }
+    }
+}
+
+                                
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #hero {
+        /* 32px - 40px */
+        padding: 0 clamp(2em, 5vw, 2.5em);
+
+        .cs-container {
+            padding: clamp(7em, 27.95vw, 17.5em) 0 clamp(9em, 30.95vw, 23.5em) 0;
+            &:after {
+                position: absolute;
+                top: 0;
+                right: 0;
+                /* Right Line */
+                content: "";
+                opacity: 1;
+                display: block;
+                background: -moz-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%); /* FF3.6-15 */
+                background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%); /* Chrome10-25,Safari5.1-6 */
+                height: 100%;
+                width: 1px;
+            }
+        }
+
+        .cs-button-solid {
+            margin-right: calc(20 / 16 * 1rem);
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* Desktop Parallax Effect - 1300px */
+@media only screen and (min-width: 81.25em) {
+    #hero {
+        background: url("/assets/images/landing.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* creates parallax effect on background image */
+        background-attachment: fixed;
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #hero {
+            .cs-background {
+                &:before {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+
+/* Mobile */
+@media only screen and (min-width: 0rem) {
+    .services {
+        z-index: 100;
+        position: relative;
+        border-top: calc(6 / 16 * 1em) solid var(--primary);
+        border-radius: calc(5 / 16 * 1em);
+        margin: auto;
+        margin-top: calc(-167 / 16 * 1em);
+        margin-bottom: calc(50 / 16 * 1em);
+        background: #fff;
+        max-width: calc(1320 / 16 * 1em);
+        width: 90%;
+        padding: calc(50 / 16 * 1em) calc(20 / 16 * 1em);
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+        .card {
+            display: block;
+            margin: auto;
+            margin-bottom: calc(50 / 16 * 1em);
+            max-width: calc(357 / 16 * 1em);
+            width: 100%;
+
+            picture {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                margin: auto;
+                margin-bottom: calc(23 / 16 * 1em);
+                background: var(--primary);
+                height: calc(88 / 16 * 1em);
+                width: calc(88 / 16 * 1em);
+
+                img {
+                    height: calc(48 / 16 * 1em);
+                    width: calc(48 / 16 * 1em);
+                }
+            }
+            h2 {
+                margin-bottom: calc(13 / 20 * 1em);
+                font-size: calc(32 / 16 * 1em);
+                line-height: calc(27 / 20 * 1em);
+                font-weight: 700;
+                color: #1a1a1a;
+                text-align: center;
+            }
+            p {
+                opacity: 0.7;
+                width: 100%;
+                line-height: calc(24 / 18 * 1em);
+                text-align: center;
+            }
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* Inbetween */
+@media only screen and (min-width: 768px) {
+    .services {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 98%;
+        font-size: min(1.8vw, 1em);
+
+        .card {
+            margin: 0;
+            max-width: calc(325 / 16 * 1em);
+        }
+    }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+    .services {
+        padding: calc(50 / 16 * 1em) calc(80 / 16 * 1em);
+
+        .card {
+            max-width: calc(357 / 16 * 1em);
+        }
+    }
+}
+
+/* Dark mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #services {
+            background: var(--medium);
+
+            picture {
+                background: var(--primaryDark);
+            }
+
+            h2 {
+                font-weight: bold;
+                color: #fff;
+            }
+        }
+    }
+}
