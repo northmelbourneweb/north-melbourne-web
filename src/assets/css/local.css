@@ -474,7 +474,7 @@
   }
   body.dark-mode #services-596 .cs-icon {
     /* turns it white */
-    filter: grayscale(1) brightness(1000%);
+    filter: invert(90%);
   }
 }
 /*-- -------------------------- -->
@@ -486,7 +486,7 @@
     padding: var(--sectionPadding);
     /* clips the cs-floater and prevents it from causing overflow issues */
     overflow: hidden;
-    background-color: #f7f7f7;
+    background-color: #fafbfc;
     position: relative;
     z-index: 1;
   }
