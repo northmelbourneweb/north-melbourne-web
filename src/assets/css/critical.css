@@ -13,19 +13,6 @@
     /* prevents overflow from the arrow graphic */
     overflow: hidden;
   }
-  #hero-1203:before {
-    /* black bar */
-    content: "";
-    width: 100%;
-    /* 100px - 200px */
-    height: clamp(6.25rem, 29vw, 12.5rem);
-    background: #1a1a1a;
-    opacity: 1;
-    position: absolute;
-    display: block;
-    bottom: 0;
-    left: 0;
-  }
   #hero-1203 .cs-container {
     width: 100%;
     max-width: 80rem;
@@ -89,8 +76,9 @@
     font-weight: 700;
     /* clips corners of the before element */
     overflow: hidden;
+    border-radius: 0.625rem;
     margin: 0;
-    color: #1a1a1a;
+    color: #fff;
     padding: 0;
     background-color: var(--primary);
     display: inline-block;

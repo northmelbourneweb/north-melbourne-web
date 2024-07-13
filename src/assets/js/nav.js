@@ -36,6 +36,20 @@ document.querySelector('body').classList.add('scroll')
     }
 });
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    const currentPage = window.location.pathname;
+    const navLinks = document.querySelectorAll('.cs-li-link');
+    
+    navLinks.forEach(link => {
+        if (link.getAttribute('href') === currentPage) {
+            link.classList.add('cs-active');
+        } else {
+            link.classList.remove('cs-active');
+        }
+    });
+});
+
+
 
 // mobile nav toggle code
 const dropDowns = Array.from(document.querySelectorAll('#cs-navigation .cs-dropdown'));

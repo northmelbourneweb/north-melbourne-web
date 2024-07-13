@@ -15,19 +15,19 @@
         /* prevents overflow from the arrow graphic */
         overflow: hidden;
 
-        &:before {
-            /* black bar */
-            content: "";
-            width: 100%;
-            /* 100px - 200px */
-            height: clamp(6.25rem, 29vw, 12.5rem);
-            background: #1a1a1a;
-            opacity: 1;
-            position: absolute;
-            display: block;
-            bottom: 0;
-            left: 0;
-        }
+        // &:before {
+        //     /* black bar */
+        //     content: "";
+        //     width: 100%;
+        //     /* 100px - 200px */
+        //     height: clamp(6.25rem, 29vw, 12.5rem);
+        //     background: #1a1a1a;
+        //     opacity: 1;
+        //     position: absolute;
+        //     display: block;
+        //     bottom: 0;
+        //     left: 0;
+        // }
 
         .cs-container {
             width: 100%;
@@ -97,8 +97,9 @@
             font-weight: 700;
             /* clips corners of the before element */
             overflow: hidden;
+            border-radius: calc(10 / 16 * 1rem);
             margin: 0;
-            color: #1a1a1a;
+            color: #fff;
             padding: 0;
             background-color: var(--primary);
             display: inline-block;
