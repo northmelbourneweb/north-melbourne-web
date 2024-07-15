@@ -23,6 +23,7 @@
     max-width: 34.375rem;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     /* 48px - 64px */
@@ -43,8 +44,7 @@
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: stretch;
     /* 12px - 20px */
     gap: clamp(0.75rem, 1.5vw, 1.25rem);
   }
@@ -840,7 +840,7 @@
     display: block;
   }
   #pricing-1387 .cs-li.cs-disabled {
-    opacity: 0.5;
+    opacity: 0.8;
   }
   #pricing-1387 .cs-button-transparent {
     font-size: 1rem;
@@ -950,10 +950,6 @@
   body.dark-mode #pricing-1387 .cs-duration,
   body.dark-mode #pricing-1387 .cs-li {
     color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #pricing-1387 .cs-duration,
-  body.dark-mode #pricing-1387 .cs-li {
-    opacity: 0.8;
   }
   body.dark-mode #pricing-1387 .cs-button-transparent {
     background-color: var(--primary);

@@ -1,6 +1,6 @@
 module.exports = {
-    title: "Flexible Pricing Plans for Your Tailored Needs",
-    description: "In the new era of technology we look in the future with certainty and for any post types, or just they are so much great of all to a program.",
+    title: "Flexible Pricing Plans for Your Needs",
+    description: "Our pricing plans are flexible and customizable to suit your needs. Choose the plan that best meets your needs and start building your online presence today.",
     options: [
         {
             id: "cs-option1-1387",
@@ -17,34 +17,34 @@ module.exports = {
             price: "A$99",
             duration: "/Month",
             isPopular: true,
-            tag: "Hot Deal",
+            tag: "Popular",
             features: [
-                "Mobile-Optimized",
-                "Free Custom Domain",
-                "Best Hosting",
-                "Outstanding Support",
-                "Happy Customers"
+                "Custom Website Design",
+                "Hosting Included",
+                "SEO Optimization",
+                "Regular Updates",
+                "Unlimited Edit Requests"
             ],
             disabledFeatures: [
-                "Outstanding Support",
-                "Happy Customers"
             ],
-            buttonText: "Get Now",
-            buttonLink: ""
+            buttonText: "Contact Us",
+            buttonLink: "/contact"
         },
         {
-            package: "Corporate Pack",
+            package: "Lump-Sum Pack",
             price: "A$2999",
             duration: "",
             isPopular: false,
             tag: "Hot Deal",
             features: [
-                "Mobile-Optimized",
-                "Free Custom Domain",
-                "Best Hosting"
+                "Custom Website Design",
+                "Complete Website Ownership",
+                "Initial Design and Setup",
+                "SEO Optimization",
+                "Optional hosting for $25/mo",
             ],
-            buttonText: "Read More",
-            buttonLink: ""
+            buttonText: "Contact Us",
+            buttonLink: "/contact"
         }
     ],
     annualPlans: [
