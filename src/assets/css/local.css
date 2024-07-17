@@ -6,6 +6,7 @@
   #about {
     padding: var(--sectionPadding);
     z-index: 100;
+    background-color: var(--backgroundLight);
   }
   #about .text-container {
     display: flex;
@@ -52,47 +53,50 @@
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #sbs .container {
+  #about .container {
     flex-flow: row;
     justify-content: space-between;
     gap: 3.25rem;
   }
-  #sbs .left {
+  #about .left {
     font-size: min(1.2vw, 1em);
     flex: none;
   }
-  #sbs .right {
+  #about .right {
     margin: 0;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #sbs .left:before, body.dark-mode #sbs .left:after {
+  body.dark-mode #about {
+    background-color: var(--dark);
+  }
+  body.dark-mode #about .left:before, body.dark-mode #about .left:after {
     background: var(--accent);
   }
-  body.dark-mode #sbs .picture2 {
+  body.dark-mode #about .picture2 {
     /* 6px - 12px */
     border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
     background-color: var(--dark);
   }
-  body.dark-mode #sbs .topper {
+  body.dark-mode #about .topper {
     color: var(--primaryLight);
   }
-  body.dark-mode #sbs .title,
-  body.dark-mode #sbs .text,
-  body.dark-mode #sbs .h3,
-  body.dark-mode #sbs .flex-p,
-  body.dark-mode #sbs .name {
+  body.dark-mode #about .title,
+  body.dark-mode #about .text,
+  body.dark-mode #about .h3,
+  body.dark-mode #about .flex-p,
+  body.dark-mode #about .name {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #sbs .flex-group {
+  body.dark-mode #about .flex-group {
     background-color: var(--accent);
   }
-  body.dark-mode #sbs .job {
+  body.dark-mode #about .job {
     opacity: 0.8;
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #sbs .quote-icon {
+  body.dark-mode #about .quote-icon {
     opacity: 0.2;
   }
 }
@@ -105,6 +109,7 @@
     /* centers the button */
     text-align: center;
     padding: var(--sectionPadding);
+    background-color: var(--backgroundLight);
   }
   #services-285 .cs-container {
     width: 100%;
@@ -271,6 +276,9 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #services-285 {
+    background-color: var(--dark);
+  }
   body.dark-mode #services-285 .cs-title,
   body.dark-mode #services-285 .cs-text,
   body.dark-mode #services-285 .cs-h3,
@@ -327,6 +335,7 @@
 @media only screen and (min-width: 0rem) {
   #services-1188 {
     padding: var(--sectionPadding);
+    background-color: var(--backgroundLight);
   }
   #services-1188 .cs-container {
     max-width: 80rem;
@@ -463,6 +472,9 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #services-1188 {
+    background-color: var(--dark);
+  }
   body.dark-mode #services-1188 .cs-topper {
     color: var(--primaryLight);
   }

@@ -6,6 +6,7 @@
     #about {
         padding: var(--sectionPadding);
         z-index: 100;
+        background-color: var(--backgroundLight);
 
         .text-container {
             display: flex;
@@ -62,7 +63,7 @@
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #sbs {
+    #about {
         .container {
             flex-flow: row;
             justify-content: space-between;
@@ -83,7 +84,9 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #sbs {
+        #about {
+            background-color: var(--dark);
+
             .left {
                 &:before,
                 &:after {
@@ -135,6 +138,8 @@
         /* centers the button */
         text-align: center;
         padding: var(--sectionPadding);
+        background-color: var(--backgroundLight);
+
 
         .cs-container {
             width: 100%;
@@ -332,6 +337,8 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #services-285 {
+            background-color: var(--dark);
+
             .cs-title,
             .cs-text,
             .cs-h3,
@@ -402,6 +409,8 @@
 @media only screen and (min-width: 0rem) {
     #services-1188 {
         padding: var(--sectionPadding);
+        background-color: var(--backgroundLight);
+
 
         .cs-container {
             max-width: calc(1280 / 16 * 1rem);
@@ -562,6 +571,8 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #services-1188 {
+            background-color: var(--dark);
+
             .cs-topper {
                 color: var(--primaryLight);
             }

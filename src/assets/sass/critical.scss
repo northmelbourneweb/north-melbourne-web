@@ -53,7 +53,7 @@
             /* set text align to left if content needs to be left aligned */
             text-align: left;
             width: 80%;
-            max-width: calc(500 / 16 * 1rem);
+            // max-width: calc(500 / 16 * 1rem);
             display: flex;
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
