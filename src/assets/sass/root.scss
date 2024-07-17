@@ -1222,7 +1222,7 @@
 /* Mobile */
 @media only screen and (min-width: 0rem) {
     #footer {
-        background: #1c1c1c;
+        background: var(--backgroundLight);
         padding: calc(84 / 16 * 1rem) 0 calc(20 / 16 * 1rem);
         font-size: min(4vw, 1.2em);
         z-index: 100;
@@ -1252,7 +1252,7 @@
                 width: 100%;
                 font-size: calc(14 / 16 * 1rem);
                 line-height: calc(27 / 14 * 1rem);
-                color: #fff;
+                color: var(--headerColor);
                 text-align: center;
             }
         }
@@ -1278,12 +1278,12 @@
                         margin-bottom: calc(12 / 16 * 1rem);
                         list-style: none;
                         font-size: calc(18 / 16 * 1rem);
-                        color: #fff;
+                        color: var(--headerColor);
 
                         a {
                             text-decoration: none;
                             line-height: calc(21 / 18 * 1em);
-                            color: #fff;
+                            color: var(--headerColor);
                             transition: color 0.3s;
                             &:hover {
                                 color: var(--primary);
@@ -1297,7 +1297,7 @@
                         font-size: calc(18 / 16 * 1rem);
                         line-height: calc(21 / 18 * 1em);
                         font-weight: bold;
-                        color: #fff;
+                        color: var(--headerColor);
 
                         &:before {
                             position: absolute;
@@ -1347,7 +1347,7 @@
             width: 96%;
             font-size: calc(16 / 16 * 1rem);
             line-height: calc(36 / 16 * 1rem);
-            color: #fff;
+            color: var(--headerColor);
             text-align: center;
 
             a {
@@ -1462,7 +1462,19 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #footer {
-            background: #061623;
+            background: var(--dark);
+        }
+        #footer .right-section .lists ul h2 {
+            color: var(--bodyTextColorWhite);
+        }
+        #footer .right-section .lists ul li a {
+            color: var(--bodyTextColorWhite);
+        }
+        #footer .right-section .lists ul li {
+            color: var(--bodyTextColorWhite);
+        }
+        #footer .credit {
+            color: var(--bodyTextColorWhite);
         }
     }
 }

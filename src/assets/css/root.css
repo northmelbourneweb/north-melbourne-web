@@ -1026,7 +1026,7 @@
 /* Mobile */
 @media only screen and (min-width: 0rem) {
   #footer {
-    background: #1c1c1c;
+    background: var(--backgroundLight);
     padding: 5.25rem 0 1.25rem;
     font-size: min(4vw, 1.2em);
     z-index: 100;
@@ -1055,7 +1055,7 @@
     width: 100%;
     font-size: 0.875rem;
     line-height: 1.9285714286rem;
-    color: #fff;
+    color: var(--headerColor);
     text-align: center;
   }
   #footer .right-section {
@@ -1081,12 +1081,12 @@
     margin-bottom: 0.75rem;
     list-style: none;
     font-size: 1.125rem;
-    color: #fff;
+    color: var(--headerColor);
   }
   #footer .right-section .lists ul li a {
     text-decoration: none;
     line-height: 1.1666666667em;
-    color: #fff;
+    color: var(--headerColor);
     transition: color 0.3s;
   }
   #footer .right-section .lists ul li a:hover {
@@ -1099,7 +1099,7 @@
     font-size: 1.125rem;
     line-height: 1.1666666667em;
     font-weight: bold;
-    color: #fff;
+    color: var(--headerColor);
   }
   #footer .right-section .lists ul h2:before {
     position: absolute;
@@ -1140,7 +1140,7 @@
     width: 96%;
     font-size: 1rem;
     line-height: 2.25rem;
-    color: #fff;
+    color: var(--headerColor);
     text-align: center;
   }
   #footer .credit a {
@@ -1229,7 +1229,19 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #footer {
-    background: #061623;
+    background: var(--dark);
+  }
+  body.dark-mode #footer .right-section .lists ul h2 {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #footer .right-section .lists ul li a {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #footer .right-section .lists ul li {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #footer .credit {
+    color: var(--bodyTextColorWhite);
   }
 }
 
