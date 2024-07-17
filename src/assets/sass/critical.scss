@@ -1,33 +1,40 @@
-/* STYLES FOR ABOVE THE FOLD */
-
 /*-- -------------------------- -->
 <---           Hero             -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #hero-1203 {
+    #hero {
         /* 150px - 350px */
         padding: clamp(9rem, 25.95vw, 21.875rem) calc(16 / 16 * 1rem);
         padding-bottom: 0;
+        text-align: left;
         position: relative;
         z-index: 1;
-        /* prevents overflow from the arrow graphic */
         overflow: hidden;
+        background-color: var(--backgroundLight);
 
-        // &:before {
-        //     /* black bar */
-        //     content: "";
-        //     width: 100%;
-        //     /* 100px - 200px */
-        //     height: clamp(6.25rem, 29vw, 12.5rem);
-        //     background: #1a1a1a;
-        //     opacity: 1;
-        //     position: absolute;
-        //     display: block;
-        //     bottom: 0;
-        //     left: 0;
-        // }
+        @keyframes slow-rotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .blur-dot-1 {
+            position: absolute;
+            top: calc(50 / 16 * 1rem);
+            right: calc(50 / 16 * 1rem);
+            z-index: -1;
+            transform: translateY(-50%);
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(closest-side, rgba(119, 0, 255, 0.21), var(--backgroundLight));
+            transform-origin: 60% 50%;
+            animation: slow-rotate 30s linear infinite;
+        }
 
         .cs-container {
             width: 100%;
@@ -44,20 +51,20 @@
 
         .cs-content {
             /* set text align to left if content needs to be left aligned */
-            text-align: center;
-            width: 100%;
-            max-width: calc(630 / 16 * 1rem);
+            text-align: left;
+            width: 80%;
+            max-width: calc(500 / 16 * 1rem);
             display: flex;
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
-            align-items: center;
+            align-items: left;
         }
 
         .cs-topper {
             font-size: var(--topperFontSize);
             line-height: 1.2em;
             text-transform: uppercase;
-            text-align: center;
+            text-align: left;
             letter-spacing: 0.1em;
             font-weight: 700;
             color: var(--primary);
@@ -97,9 +104,8 @@
             font-weight: 700;
             /* clips corners of the before element */
             overflow: hidden;
-            border-radius: calc(10 / 16 * 1rem);
             margin: 0;
-            color: #fff;
+            color: #1a1a1a;
             padding: 0;
             background-color: var(--primary);
             display: inline-block;
@@ -160,7 +166,7 @@
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #hero-1203 {
+    #hero {
         &:before {
             height: calc(258 / 16 * 1rem);
         }
@@ -178,7 +184,7 @@
 
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
-    #hero-1203 {
+    #hero {
         padding-bottom: calc(200 / 16 * 1rem);
 
         &:before {
@@ -229,9 +235,11 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #hero-1203 {
-            &:before {
-                background-color: rgba(0, 0, 0, 0.6);
+        #hero {
+            background-color: var(--dark);
+
+            .blur-dot-1 {
+                background-image: radial-gradient(closest-side, rgba(119, 0, 255, 0.21), var(--dark))
             }
             .cs-topper {
                 color: var(--primaryLight);
@@ -245,202 +253,6 @@
             }
         }
     }
-}                              
-
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-    #hero-1618 {
-        padding-bottom: 0;
-        .cs-container {
-            align-items: flex-start;
-        }
-
-        .cs-content {
-            text-align: left;
-            margin-left: 0;
-            align-items: flex-start;
-        }
-
-        .cs-item {
-            grid-column: span 4;
-        }
-
-        .cs-background {
-            height: 87%;
-            &:before {
-                background: linear-gradient(
-                    90deg,
-                    #111926 21.41%,
-                    rgba(17, 25, 38, 0.72) 34.98%,
-                    rgba(17, 25, 38, 0) 62.53%
-                );
-                opacity: 1;
-            }
-        }
-    }
 }
 
                                 
-
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-    #hero {
-        /* 32px - 40px */
-        padding: 0 clamp(2em, 5vw, 2.5em);
-
-        .cs-container {
-            padding: clamp(7em, 27.95vw, 17.5em) 0 clamp(9em, 30.95vw, 23.5em) 0;
-            &:after {
-                position: absolute;
-                top: 0;
-                right: 0;
-                /* Right Line */
-                content: "";
-                opacity: 1;
-                display: block;
-                background: -moz-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%); /* FF3.6-15 */
-                background: -webkit-linear-gradient(top, rgba(250, 251, 252, 0) 0%, rgba(250, 251, 252, 0.5) 100%); /* Chrome10-25,Safari5.1-6 */
-                height: 100%;
-                width: 1px;
-            }
-        }
-
-        .cs-button-solid {
-            margin-right: calc(20 / 16 * 1rem);
-            margin-bottom: 0;
-        }
-    }
-}
-
-/* Desktop Parallax Effect - 1300px */
-@media only screen and (min-width: 81.25em) {
-    #hero {
-        background: url("/assets/images/landing.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        /* creates parallax effect on background image */
-        background-attachment: fixed;
-    }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #hero {
-            .cs-background {
-                &:before {
-                    opacity: 0.8;
-                }
-            }
-        }
-    }
-}
-
-/*-- -------------------------- -->
-<---          Services          -->
-<--- -------------------------- -*/
-
-/* Mobile */
-@media only screen and (min-width: 0rem) {
-    .services {
-        z-index: 100;
-        position: relative;
-        border-top: calc(6 / 16 * 1em) solid var(--primary);
-        border-radius: calc(5 / 16 * 1em);
-        margin: auto;
-        margin-top: calc(-167 / 16 * 1em);
-        margin-bottom: calc(50 / 16 * 1em);
-        background: #fff;
-        max-width: calc(1320 / 16 * 1em);
-        width: 90%;
-        padding: calc(50 / 16 * 1em) calc(20 / 16 * 1em);
-        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
-        .card {
-            display: block;
-            margin: auto;
-            margin-bottom: calc(50 / 16 * 1em);
-            max-width: calc(357 / 16 * 1em);
-            width: 100%;
-
-            picture {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 50%;
-                margin: auto;
-                margin-bottom: calc(23 / 16 * 1em);
-                background: var(--primary);
-                height: calc(88 / 16 * 1em);
-                width: calc(88 / 16 * 1em);
-
-                img {
-                    height: calc(48 / 16 * 1em);
-                    width: calc(48 / 16 * 1em);
-                }
-            }
-            h2 {
-                margin-bottom: calc(13 / 20 * 1em);
-                font-size: calc(32 / 16 * 1em);
-                line-height: calc(27 / 20 * 1em);
-                font-weight: 700;
-                color: #1a1a1a;
-                text-align: center;
-            }
-            p {
-                opacity: 0.7;
-                width: 100%;
-                line-height: calc(24 / 18 * 1em);
-                text-align: center;
-            }
-            &:last-of-type {
-                margin-bottom: 0;
-            }
-        }
-    }
-}
-
-/* Inbetween */
-@media only screen and (min-width: 768px) {
-    .services {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        width: 98%;
-        font-size: min(1.8vw, 1em);
-
-        .card {
-            margin: 0;
-            max-width: calc(325 / 16 * 1em);
-        }
-    }
-}
-
-/* Large Desktop */
-@media only screen and (min-width: 1300px) {
-    .services {
-        padding: calc(50 / 16 * 1em) calc(80 / 16 * 1em);
-
-        .card {
-            max-width: calc(357 / 16 * 1em);
-        }
-    }
-}
-
-/* Dark mode */
-@media only screen and (min-width: 0rem) {
-    body.dark-mode {
-        #services {
-            background: var(--medium);
-
-            picture {
-                background: var(--primaryDark);
-            }
-
-            h2 {
-                font-weight: bold;
-                color: #fff;
-            }
-        }
-    }
-}

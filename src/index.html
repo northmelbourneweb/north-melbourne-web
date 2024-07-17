@@ -1,49 +1,44 @@
 ---
-title: "Small Businesses Websites | North Melbourne Web Designs | Lalor, VIC"
-description: ""
-preloadImg: "/assets/images/landing.jpg"
-permalink: "/"
-tags: "sitemap" # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
+title: 'Pixel Perfect Websites | Code Stitch Web Designs | Denver, CO'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/landing.jpg'
+permalink: '/'
+tags: 'sitemap' # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
 eleventyNavigation:
   key: Home
   order: 100
 ---
 
 {% extends "layouts/base.html" %}
+
 {% block head %}
-  <link rel="stylesheet" href="/assets/css/local.css"/>
-  <link rel="stylesheet" href="/assets/css/critical.css"/>
+    <link rel="stylesheet" href="/assets/css/local.css"/>
+    <link rel="stylesheet" href="/assets/css/critical.css"/>
 
-  <!-- Script for Netlify Identity -->
-  <script
-  defer
-  src="https://identity.netlify.com/v1/netlify-identity-widget.js"
-></script>
-  <script defer>
-    if (window.netlifyIdentity) {
-      window
-        .netlifyIdentity
-        .on("init", (user) => {
-          if (!user) {
+    <!-- Script for Netlify Identity -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script defer>
+        if (window.netlifyIdentity) {
             window
-              .netlifyIdentity
-              .on("login", () => {
-                document.location.href = "/admin/";
-              });
-          }
-        });
-    }
-  </script>
+                .netlifyIdentity
+                .on('init', (user) => {
+                    if (!user) {
+                        window
+                            .netlifyIdentity
+                            .on('login', () => {
+                                document.location.href = '/admin/';
+                            });
+                    }
+                });
+        }
+    </script>
 {% endblock %}
-{% block body %}
-  <!-- ============================================ -->
-  <!--                    Hero                      -->
-  <!-- ============================================ -->
 
-  {% include 'components/hero.html' %}
-  {% include 'components/why-us.html' %}
-  {# {% include 'components/portfolio.html' %} #}
-  {% include 'components/services.html' %}
-  {% include 'components/pricing.html' %}
-  {# {% include 'components/cta.html' %} #}
+{% block body %}
+
+    {% include 'components/hero.html' %}
+    {% include 'components/front-what-we-do.html' %}
+    {% include 'components/front-services.html' %}
+    {% include 'components/faq.html' %}
+
 {% endblock %}

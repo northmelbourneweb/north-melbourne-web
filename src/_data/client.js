@@ -1,15 +1,14 @@
 module.exports = {
-    "name": "North Melbourne Web Designs",
-    "email": "design@northmelbourneweb.com",
-    "phoneForTel": "0486-010-43",
-    "phoneFormatted": "0486 010 043",
+    "name": "Code Stitch Web Designs",
+    "email": "help@codestitch.app",
+    "phoneForTel": "555-779-4407",
+    "phoneFormatted": "(555) 779-4407",
     "address": {
-        "lineOne": "Kingsway Dr.",
-        "lineTwo": "",
-        "city": "Lalor",
-        "state": "VIC",
-        "zip": "3075",
-        // TODO: Map link
+        "lineOne": "First Address Line",
+        "lineTwo": "Second Address Line",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80206",
         "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
     },
     "socials": {
@@ -17,5 +16,5 @@ module.exports = {
         "instagram": "https://www.instagram.com/",
     },
     //! Make sure you include the file protocol (e.g. https://) and that NO TRAILING SLASH is included
-    "domain": "https://www.northmelbourneweb.com"
+    "domain": "https://www.example.com"
 };
