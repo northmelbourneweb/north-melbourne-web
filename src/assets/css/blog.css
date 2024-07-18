@@ -603,7 +603,7 @@
   .blog-article #blog-content a {
     text-decoration: underline;
     font-size: inherit;
-    color: var(--secondary);
+    color: var(--primary);
   }
   .blog-article #blog-content ul,
   .blog-article #blog-content ol {
