@@ -34,13 +34,13 @@ eleventyNavigation:
     <!--                Contact Form                  -->
     <!-- ============================================ -->
 
-    <section id="contact">
-        <div class="container">
-            <form id="form" name="Contact Form" method="post">
-                <div class="content">
-                    <span class="topper">Contact</span>
-                    <h2 class="title">Get in Touch</h2>
-                    <p class="text">
+    <section id="cs-contact">
+        <div class="cs-container">
+            <form id="cs-form" name="Contact Form" method="post">
+                <div class="cs-content">
+                    <span class="cs-topper">Contact</span>
+                    <h2 class="cs-title">Get in Touch</h2>
+                    <p class="cs-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
                     </p>
                 </div>
@@ -60,27 +60,27 @@ eleventyNavigation:
                     How Did You Find Us
                     <input type="text" id="find" name="find-us" placeholder="How did you find us?">
                 </label>
-                <label class="label-message">
+                <label class="cs-label-message">
                     Message
                     <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
                 </label>
-                <button class="button-solid" type="submit">Submit Message</button>
+                <button class="cs-button-solid" type="submit">Submit Message</button>
             </form>
-            <div class="right-section">
+            <div class="cs-right-section">
                 <!--Email-->
-                <span class="header">Email</span>
-                <a class="link" href="mailto:{{client.email}}">{{client.email}}</a>
+                <span class="cs-header">Email</span>
+                <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
                 <!--Phone-->
-                <span class="header">Phone</span>
-                <a class="link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
+                <span class="cs-header">Phone</span>
+                <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
                 <!--Address-->
-                <span class="header">Address</span>
-                <a class="link" href="{{client.address.mapLink}}">
+                <span class="cs-header">Address</span>
+                <a class="cs-link" href="{{client.address.mapLink}}">
                     {{client.address.lineOne}},
                     <br/>
                     {{client.address.lineTwo}},
                     <br/>
-                    <span class="block">
+                    <span class="cs-block">
                         {{client.address.city}}
                         {{client.address.state}}
                         {{client.address.zip}}
@@ -88,7 +88,7 @@ eleventyNavigation:
                 </a>
 
                 <!-- Background Image-->
-                <picture class="bg-picture">
+                <picture class="cs-bg-picture">
                     <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
                     <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building" loading="lazy" width="2500" height="1667">
                 </picture>
