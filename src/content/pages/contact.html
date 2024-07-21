@@ -16,84 +16,88 @@ eleventyNavigation:
 {% endblock %}
 
 {% block body %}
-
     <!-- ============================================ -->
-    <!--                    LANDING                   -->
+    <!--                   Banner                     -->
     <!-- ============================================ -->
 
-    <section id="int-hero">
-        <h1 id="home-h">Contact Us</h1>
-        <picture>
-            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
-            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
-            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+    <div id="banner-712">
+        <div class="cs-container">
+            <span class="cs-int-title">Interior Page</span>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg">
+            <!--Tablet and above Image-->
+            <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg">
+            <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images%2FMISC%2Fpills.jpg" alt="pills" width="1280" height="568" aria-hidden="true">
         </picture>
-    </section>
+    </div>
 
     <!-- ============================================ -->
     <!--                Contact Form                  -->
     <!-- ============================================ -->
 
-    <section id="cs-contact">
+    <section id="cs-contact-490">
         <div class="cs-container">
-            <form id="cs-form" name="Contact Form" method="post">
-                <div class="cs-content">
-                    <span class="cs-topper">Contact</span>
-                    <h2 class="cs-title">Get in Touch</h2>
-                    <p class="cs-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ridiculus elementum ullamcorper ipsum porttitor aliquam. Id magna urna ultrices odio pulvinar. Sed ut.
-                    </p>
-                </div>
-                <label>
-                    Name
-                    <input required type="text" id="name" name="name" placeholder="Name">
-                </label>
-                <label>
-                    Email
-                    <input required type="text" id="email" name="email" placeholder="Email">
-                </label>
-                <label>
-                    Phone
-                    <input required type="text" id="phone" name="phone" placeholder="Phone">
-                </label>
-                <label>
-                    How Did You Find Us
-                    <input type="text" id="find" name="find-us" placeholder="How did you find us?">
-                </label>
-                <label class="cs-label-message">
-                    Message
-                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
-                </label>
-                <button class="cs-button-solid" type="submit">Submit Message</button>
-            </form>
-            <div class="cs-right-section">
-                <!--Email-->
-                <span class="cs-header">Email</span>
-                <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
-                <!--Phone-->
-                <span class="cs-header">Phone</span>
-                <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
+            <!-- Contact Info -->
+            <div class="cs-content">
+                <span class="cs-topper">Contact Us</span>
+                <h2 class="cs-title">Contact Information</h2>
+                <p class="cs-text">
+                Justo eget magna fermentum iaculis eu non diam phasellus vestibulum. Eu volutpat odio facilisis mauris sit amet massa. Sit amet est placerat in egestas
+            </p>
+
                 <!--Address-->
                 <span class="cs-header">Address</span>
-                <a class="cs-link" href="{{client.address.mapLink}}">
-                    {{client.address.lineOne}},
-                    <br/>
-                    {{client.address.lineTwo}},
-                    <br/>
-                    <span class="cs-block">
-                        {{client.address.city}}
-                        {{client.address.state}}
-                        {{client.address.zip}}
-                    </span>
-                </a>
+                <a href="" class="cs-link">
+                PO Box 15252 Mill Creek, <br>Washington, USA 98082
+            </a>
+                <!--Email-->
+                <span class="cs-header">Email</span>
+                <a href="mailtp:info@iabuyer.com" class="cs-link">info@iabuyer.com</a>
+                <!--Phone-->
+                <span class="cs-header">Phone</span>
+                <a href="tel:425-686-9566" class="cs-link">(425) 686-9566</a>
 
-                <!-- Background Image-->
-                <picture class="cs-bg-picture">
-                    <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
-                    <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building" loading="lazy" width="2500" height="1667">
-                </picture>
-
+                <!--Social Buttons-->
+                <div class="cs-social">
+                    <a class="cs-social-link" aria-label="visit google profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/google.svg" alt="google" width="11" height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit facebook profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/Facebook.svg" alt="facebook" width="6" height="11">
+                    </a>
+                    <a class="cs-social-link" aria-label="visit instagram profile" href="">
+                        <img class="cs-social-img" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/Social/instagram.svg" alt="instagram" width="11" height="11">
+                    </a>
+                </div>
             </div>
+            <!-- Form -->
+            <form id="cs-form-490" name="Contact Form" method="post">
+                <label class="cs-label">
+                Name
+                <input class="cs-input" required type="text" id="name-490" name="name" placeholder="John/Jane Doe">
+                </label>
+                <label class="cs-label">
+                Email
+                <input class="cs-input" required type="text" id="email-490" name="email" placeholder="name@company.com">
+                </label>
+                <label class="cs-label">
+                Phone
+                <input class="cs-input" required type="text" id="phone-490" name="phone" placeholder="+1 (206) 987-6543">
+                </label>
+                <label class="cs-label">
+                How Did You Find Us
+                <input class="cs-input" type="text" id="find-490" name="find-us" placeholder="Social Media, Family, Friend...">
+                </label>
+                <label class="cs-label -label-message">
+                Message
+                <textarea class="cs-input" required name="Message" id="message-490" placeholder="Hello, I’m interested in..."></textarea>
+                </label>
+                <button class="cs-button-solid" type="submit">Submit Message Now</button>
+            </form>
         </div>
     </section>
+
 {% endblock %}
