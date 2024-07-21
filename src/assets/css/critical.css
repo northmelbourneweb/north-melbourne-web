@@ -3,7 +3,7 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #hero-1059 {
+  #hero {
     /* Centers button */
     text-align: left;
     /* 200px - 300px - leaving extra space for the navigation */
@@ -13,7 +13,7 @@
     position: relative;
     z-index: 1;
   }
-  #hero-1059 .cs-background {
+  #hero .background {
     width: 100%;
     height: 100%;
     display: block;
@@ -22,7 +22,7 @@
     left: 0;
     z-index: -2;
   }
-  #hero-1059 .cs-background:before {
+  #hero .background:before {
     /* Overlay */
     content: "";
     width: 100%;
@@ -37,7 +37,7 @@
     /* prevents the cursor from interacting with it */
     pointer-events: none;
   }
-  #hero-1059 .cs-background img {
+  #hero .background img {
     position: absolute;
     top: 0;
     left: 0;
@@ -47,12 +47,12 @@
     /* makes the top of the image start at the top of the parent */
     object-position: top;
   }
-  #hero-1059 .cs-container {
+  #hero .container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
   }
-  #hero-1059 .cs-content {
+  #hero .content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -62,7 +62,7 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #hero-1059 .cs-title {
+  #hero .title {
     /* 39px - 61px */
     font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
     font-weight: 700;
@@ -73,7 +73,7 @@
     color: #fff;
     position: relative;
   }
-  #hero-1059 .cs-text {
+  #hero .text {
     /* 16px - 20px */
     font-size: clamp(1rem, 1.95vw, 1.25rem);
     line-height: 1.5em;
@@ -84,7 +84,7 @@
     margin: 0 0 2.5rem 0;
     color: #fff;
   }
-  #hero-1059 .cs-button-solid {
+  #hero .button-solid {
     font-size: 1rem;
     /* 46px - 56px */
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -98,7 +98,7 @@
     position: relative;
     z-index: 1;
   }
-  #hero-1059 .cs-button-solid:before {
+  #hero .button-solid:before {
     content: "";
     position: absolute;
     display: block;
@@ -111,18 +111,18 @@
     z-index: -1;
     transition: width 0.3s;
   }
-  #hero-1059 .cs-button-solid:hover:before {
+  #hero .button-solid:hover:before {
     width: 100%;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #hero-1059 .cs-content {
+  #hero .content {
     text-align: left;
     align-items: flex-start;
   }
-  #hero-1059 .cs-background:before {
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.94) 2%, rgba(0, 0, 0, 0) 100%);
+  #hero .background:before {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.94) 2%, rgba(0, 0, 0, 0) 100%);
     opacity: 1;
   }
 }

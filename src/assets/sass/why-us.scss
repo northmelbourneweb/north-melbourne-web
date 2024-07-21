@@ -34,7 +34,7 @@
         overflow: hidden;
         z-index: 1;
 
-        .cs-container {
+        .container {
             width: 100%;
             /* changes to 1280px at desktop */
             max-width: calc(584 / 16 * 1rem);
@@ -46,7 +46,7 @@
             gap: clamp(3rem, 6vw, 4rem);
         }
 
-        .cs-content {
+        .content {
             /* set text align to left if content needs to be left aligned */
             text-align: left;
             width: 100%;
@@ -57,23 +57,23 @@
             align-items: flex-start;
         }
 
-        .cs-topper {
+        .topper {
             color: #767676;
         }
 
-        .cs-title {
+        .title {
             /* 23 characters wide including spaces */
             max-width: 26ch;
         }
 
-        .cs-text {
+        .text {
             margin-bottom: calc(16 / 16 * 1rem);
             &:last-of-type {
                 margin-bottom: calc(24 / 16 * 1rem);
             }
         }
 
-        .cs-card-group {
+        .card-group {
             width: 100%;
             max-width: calc(630 / 16 * 1rem);
             margin: 0 0 calc(24 / 16 * 1rem) 0;
@@ -84,7 +84,7 @@
             gap: clamp(1rem, 2vw, 1.25rem);
         }
 
-        .cs-item {
+        .item {
             list-style: none;
             /* 16px - 24px */
             padding: clamp(1rem, 3vw, 1.5rem);
@@ -99,7 +99,7 @@
             gap: calc(12 / 16 * 1rem);
         }
 
-        .cs-h3 {
+        .h3 {
             font-size: calc(20 / 16 * 1rem);
             line-height: 1.2em;
             font-weight: 700;
@@ -111,20 +111,20 @@
             gap: calc(8 / 16 * 1rem);
         }
 
-        .cs-h3-icon {
+        .h3-icon {
             width: calc(32 / 16 * 1rem);
             height: auto;
             display: block;
         }
 
-        .cs-item-text {
+        .item-text {
             font-size: calc(14 / 16 * 1rem);
             line-height: 1.5em;
             margin: 0;
             color: var(--bodyTextColor);
         }
 
-        .cs-ul {
+        .ul {
             width: 100%;
             margin: 0 0 calc(24 / 16 * 1rem) 0;
             padding: 0;
@@ -134,7 +134,7 @@
             gap: calc(12 / 16 * 1rem);
         }
 
-        .cs-li {
+        .li {
             font-size: var(--bodyFontSize);
             list-style: none;
             line-height: 1.5em;
@@ -147,7 +147,7 @@
             gap: calc(8 / 16 * 1rem);
         }
 
-        .cs-icon {
+        .icon {
             width: calc(24 / 16 * 1rem);
             height: auto;
             /* adds extra space between the icon and top of parent so it's more centered */
@@ -155,7 +155,7 @@
             display: block;
         }
 
-        .cs-button-solid {
+        .button-solid {
             font-size: calc(16 / 16 * 1rem);
             line-height: calc(56 / 16 * 1rem);
             text-decoration: none;
@@ -193,7 +193,7 @@
             }
         }
 
-        .cs-image-group {
+        .image-group {
             width: 100%;
             max-width: calc(586 / 16 * 1rem);
             /* Changes to auto at desktop */
@@ -205,7 +205,7 @@
             position: relative;
         }
 
-        .cs-background {
+        .background {
             width: 100%;
             height: 100%;
             /* makes it cover the parent dimensions */
@@ -221,7 +221,7 @@
             }
         }
 
-        .cs-box {
+        .box {
             text-align: left;
             width: 100%;
             max-width: calc(304 / 16 * 1rem);
@@ -242,13 +242,13 @@
             bottom: clamp(0.75rem, 1.9vw, 1.5rem);
         }
 
-        .cs-box-icon {
+        .box-icon {
             width: calc(60 / 16 * 1rem);
             height: auto;
             display: block;
         }
 
-        .cs-desc {
+        .desc {
             font-size: calc(20 / 16 * 1rem);
             line-height: 1.2em;
             text-align: inherit;
@@ -258,7 +258,7 @@
             color: var(--bodyTextColorWhite);
         }
 
-        .cs-bubbles {
+        .bubbles {
             font-size: min(2.5vw, 0.7em);
             width: calc(419 / 16 * 1em);
             height: calc(427 / 16 * 1em);
@@ -315,20 +315,20 @@
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #sbsr-1363 {
-        .cs-container {
+        .container {
             max-width: calc(1280 / 16 * 1rem);
             flex-direction: row;
             justify-content: space-between;
             align-items: stretch;
         }
 
-        .cs-image-group {
+        .image-group {
             height: auto;
             /* sends it to the right in the 2nd position */
             order: 2;
         }
 
-        .cs-bubbles {
+        .bubbles {
             font-size: min(2.5vw, 1em);
             bottom: calc(0 / 16 * 1rem);
             right: calc(-100 / 16 * 1rem);
@@ -339,7 +339,7 @@
 /* Large Desktop 1600px */
 @media only screen and (min-width: 100rem) {
     #sbsr-1363 {
-        .cs-bubbles {
+        .bubbles {
             margin-right: calc(750 / 16 * 1rem);
             left: auto;
             right: 50%;
@@ -351,37 +351,37 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #sbsr-1363 {
-            .cs-topper {
+            .topper {
                 color: var(--primary);
             }
 
-            .cs-title,
-            .cs-text,
-            .cs-li,
-            .cs-item-text {
+            .title,
+            .text,
+            .li,
+            .item-text {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-text,
-            .cs-li,
-            .cs-item-text {
+            .text,
+            .li,
+            .item-text {
                 opacity: 0.8;
             }
 
-            .cs-item {
+            .item {
                 background-color: rgba(0, 0, 0, 0.2);
                 border-color: rgba(255, 255, 255, 0.2);
             }
 
-            .cs-h3 {
+            .h3 {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-icon {
+            .icon {
                 filter: grayscale(1) brightness(1000%);
             }
 
-            .cs-bubbles {
+            .bubbles {
                 &:before {
                     border-color: rgba(255, 255, 255, 0.2);
                 }
@@ -425,14 +425,14 @@
             display: none;
         }
 
-        .cs-container {
+        .container {
             width: 100%;
             /* changes to 1280px at tablet */
             max-width: calc(700 / 16 * 1rem);
             margin: auto;
         }
 
-        .cs-card-group {
+        .card-group {
             margin: 0;
             padding: 0;
             display: flex;
@@ -441,7 +441,7 @@
             row-gap: calc(60 / 16 * 1rem);
         }
 
-        .cs-item {
+        .item {
             list-style: none;
             width: 47%;
             max-width: calc(240 / 16 * 1rem);
@@ -454,7 +454,7 @@
             align-items: center;
         }
 
-        .cs-icon {
+        .icon {
             /* 50px - 76px */
             width: clamp(3.125rem, 6vw, 4.75rem);
             height: auto;
@@ -462,7 +462,7 @@
             display: block;
         }
 
-        .cs-number {
+        .number {
             /* 31px - 61px */
             font-size: clamp(1.9375rem, 4.3vw, 3.8125rem);
             line-height: 1.2em;
@@ -472,7 +472,7 @@
             color: var(--bodyTextColorWhite);
         }
 
-        .cs-desc {
+        .desc {
             /* 16px - 20px */
             font-size: clamp(1rem, 2vw, 1.15rem);
             line-height: 1.5em;
@@ -493,11 +493,11 @@
             right: calc(-281 / 16 * 1rem);
         }
 
-        .cs-container {
+        .container {
             max-width: calc(1280 / 16 * 1rem);
         }
 
-        .cs-card-group {
+        .card-group {
             justify-content: space-between;
             flex-wrap: nowrap;
             gap: calc(16 / 16 * 1rem);
@@ -515,7 +515,7 @@
     #RPsbsr-576 {
         background-color: var(--primary);
 
-        .cs-container {
+        .container {
             width: 100%;
             max-width: calc(1280 / 16 * 1rem);
             margin: auto;
@@ -526,12 +526,12 @@
             gap: clamp(3rem, 7vw, 4rem);
         }
 
-        .cs-content {
+        .content {
             /* set text align to left if content needs to be left aligned */
             text-align: left;
             width: 100%;
             max-width: calc(522 / 16 * 1rem);
-            /* moved section padding to the .cs-content so we can have the cs-picture be full width on mobile without the padding preventing it from doing so */
+            /* moved section padding to the .content so we can have the picture be full width on mobile without the padding preventing it from doing so */
             padding: var(--sectionPadding);
             padding-top: 0;
             /* prevents padding from affecting width and height */
@@ -542,12 +542,12 @@
             align-items: flex-start;
         }
 
-        .cs-topper,
-        .cs-title {
+        .topper,
+        .title {
             color: var(--bodyTextColorWhite);
         }
 
-        .cs-text {
+        .text {
             margin-bottom: calc(16 / 16 * 1rem);
             color: var(--bodyTextColorWhite);
             opacity: 0.8;
@@ -556,7 +556,7 @@
             }
         }
 
-        .cs-button-solid {
+        .button-solid {
             font-size: calc(16 / 16 * 1rem);
             /* 46px - 56px */
             line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -598,7 +598,7 @@
             }
         }
 
-        .cs-picture {
+        .picture {
             display: block;
             position: relative;
             width: 100%;
@@ -629,7 +629,7 @@
         /* clips the red box from overflowing the section */
         overflow: hidden;
 
-        .cs-container {
+        .container {
             flex-direction: row;
             position: relative;
             z-index: 1;
@@ -649,17 +649,17 @@
             }
         }
 
-        .cs-content {
+        .content {
             width: 51%;
             /* reset the padding, add the section padding back to the section container */
             padding: 0;
         }
 
-        .cs-picture {
+        .picture {
             width: 47vw;
             max-width: calc(618 / 16 * 1rem);
             height: calc(536 / 16 * 1rem);
-            /* 24px - 32px, added margin top and bottom to cs-picture so it pushes away by the same amount the yellow box element overlaps it top and bottom. This maintains consistent spacing top and bottom */
+            /* 24px - 32px, added margin top and bottom to picture so it pushes away by the same amount the yellow box element overlaps it top and bottom. This maintains consistent spacing top and bottom */
             margin: clamp(1.5rem, 3vw, 2rem) 0 clamp(1.5rem, 3vw, 2rem)
                 clamp(1.5rem, 3vw, 2rem);
             position: relative;
@@ -686,7 +686,7 @@
     body.dark-mode {
         #RPsbs-576,
         #RPsbsr-576 {
-            .cs-container {
+            .container {
                 &:before {
                     opacity: 0.5;
                 }
@@ -694,14 +694,16 @@
         }
     }
 }
+
 /*-- -------------------------- -->
-<---         Services           -->
+<---          Services          -->
 <--- -------------------------- -*/
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #services-342 {
+    #services-596 {
         padding: var(--sectionPadding);
+        overflow: hidden;
 
         .cs-container {
             width: 100%;
@@ -710,8 +712,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            /* 48px - 64px */
-            gap: clamp(3rem, 6vw, 4rem);
+            gap: calc(48 / 16 * 1rem);
         }
 
         .cs-content {
@@ -726,91 +727,29 @@
 
         .cs-card-group {
             width: 100%;
-            padding: 0;
             margin: 0;
+            /* 36px - 80px top & bottom */
+            /* 24px - 88px right & left */
+            padding: clamp(2.25rem, 6vw, 5rem) clamp(1.5rem, 6.4vw, 5.5rem);
+            background-color: #fff;
+            box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+            /* prevents padding and border from affecting height and width */
+            box-sizing: border-box;
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
-            /* 16px - 20px */
-            gap: clamp(1rem, 1.6vw, 1.25rem);
+            gap: calc(20 / 16 * 1rem);
+            /* 32px - 64px */
+            row-gap: clamp(2rem, 7vw, 4rem);
         }
 
         .cs-item {
+            text-align: left;
             list-style: none;
             width: 100%;
-            max-width: calc(500 / 16 * 1rem);
-            border-radius: calc(8 / 16 * 1rem);
-            position: relative;
-            z-index: 1;
-            transition:
-                box-shadow 0.3s,
-                transform 0.3s;
-
-            &:hover {
-                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-                transform: translateY(calc(-7 / 16 * 1rem));
-                .cs-picture {
-                    img {
-                        opacity: 0.3;
-                        transform: scale(1.1);
-                    }
-                }
-                .cs-h3 {
-                    color: var(--primaryLight);
-                }
-            }
-
-            &:before {
-                /* border, done in pseudo so it can sit under the picture */
-                content: "";
-                width: 100%;
-                height: 100%;
-                border-radius: calc(8 / 16 * 1rem);
-                border: 1px solid #e8e8e8;
-                /* prevents border from affecting height and width */
-                box-sizing: border-box;
-                background: transparent;
-                opacity: 1;
-                position: absolute;
-                display: block;
-                top: 0;
-                left: 0;
-                z-index: -1;
-            }
-        }
-
-        .cs-link {
-            text-decoration: none;
-            /* 16px - 24px */
-            padding-bottom: clamp(1rem, 2.2vw, 1.5rem);
-            display: block;
-        }
-
-        .cs-picture {
-            width: 100%;
-            height: calc(240 / 16 * 1rem);
-            /* 16px - 24px */
-            margin-bottom: clamp(1rem, 2.2vw, 1.5rem);
-            border-radius: calc(8 / 16 * 1rem) calc(8 / 16 * 1rem) 0 0;
-            background-color: var(--primaryLight);
-            /* clips the img tag corners */
-            overflow: hidden;
-            display: block;
-            position: relative;
-            z-index: 10;
-
-            img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                height: 100%;
-                width: 100%;
-                object-fit: cover;
-                transition:
-                    transform 0.6s,
-                    opacity 0.3s;
-            }
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: calc(16 / 16 * 1rem);
         }
 
         .cs-h3 {
@@ -818,36 +757,43 @@
             font-size: clamp(1.25rem, 3vw, 1.5625rem);
             line-height: 1.2em;
             font-weight: 700;
+            margin: 0;
             color: var(--headerColor);
-            margin: 0 0 calc(12 / 16 * 1rem) 0;
-            /* 16px - 24px */
-            padding: 0 clamp(1rem, 2vw, 1.5rem);
-            transition: color 0.3s;
         }
 
         .cs-item-text {
-            /* 14px - 16px  */
-            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 3vw, 1rem);
             line-height: 1.5em;
-            color: var(--bodyTextColor);
+            font-weight: 400;
             margin: 0;
-            /* 16px - 24px */
-            padding: 0 clamp(1rem, 2.2vw, 1.5rem);
+            color: var(--bodyTextColor);
         }
     }
 }
 
-/* Tablet - 768px */
-@media only screen and (min-width: 48rem) {
-    #services-342 {
+/* In-between - 550px */
+@media only screen and (min-width: 34.375rem) {
+    #services-596 {
         .cs-card-group {
             flex-direction: row;
             flex-wrap: wrap;
+            justify-content: space-between;
+            /* 48px - 64px */
+            row-gap: clamp(3rem, 6vw, 4rem);
         }
 
         .cs-item {
-            /* we do this so it's stackable. You can add any number of reviews you want and they will stack and center in the middle. We don't use grid because if you have an odd number of cards, they don't stay centered, they align with their grid lines. This way its more FLEX-ible*/
-            width: clamp(31.85%, 30.5vw, 32.28%);
+            width: 47%;
+        }
+    }
+}
+
+/* Desktop 1024px */
+@media only screen and (min-width: 64rem) {
+    #services-596 {
+        .cs-item {
+            width: 31%;
         }
     }
 }
@@ -855,11 +801,18 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #services-342 {
-            .cs-topper {
-                color: var(--primaryLight);
+        #services-596 {
+            .cs-content {
+                &:before {
+                    /* makes it 40% darker */
+                    filter: brightness(60%);
+                }
+            }
+            .cs-card-group {
+                background-color: var(--medium);
             }
 
+            .cs-topper,
             .cs-title,
             .cs-text,
             .cs-h3,
@@ -867,14 +820,19 @@
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-item {
-                &:before {
-                    opacity: 0.3;
-                }
+            .cs-item-text,
+            .cs-text {
+                opacity: 0.8;
+            }
+
+            .cs-icon {
+                /* turns it white */
+                filter: grayscale(1) brightness(1000%);
             }
         }
     }
 }
+
 
 /*-- -------------------------- -->
 <---       Side By Side         -->
@@ -885,7 +843,7 @@
     #sbs-598 {
         position: relative;
 
-        .cs-container {
+        .container {
             width: 100%;
             max-width: calc(1280 / 16 * 1rem);
             margin: auto;
@@ -896,12 +854,12 @@
             gap: clamp(3rem, 6vw, 4rem);
         }
 
-        .cs-content {
+        .content {
             /* set text align to left if content needs to be left aligned */
             text-align: left;
             width: 100%;
             max-width: calc(522 / 16 * 1rem);
-            /* moved section padding to cs-content so the cs-background can be full width */
+            /* moved section padding to content so the background can be full width */
             padding: var(--sectionPadding);
             /* prevents padding and border from affecting height and width */
             box-sizing: border-box;
@@ -911,14 +869,14 @@
             align-items: flex-start;
         }
 
-        .cs-text {
+        .text {
             margin-bottom: calc(16 / 16 * 1rem);
             &:last-of-type {
                 margin-bottom: calc(32 / 16 * 1rem);
             }
         }
 
-        .cs-button-solid {
+        .button-solid {
             font-size: calc(16 / 16 * 1rem);
             /* 46px - 56px */
             line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -958,7 +916,7 @@
             }
         }
 
-        .cs-background {
+        .background {
             display: block;
             position: relative;
             width: 100%;
@@ -983,12 +941,12 @@
         /* 90px - 150px */
         /* returned section padding to the section container, this Stitch has 1.5X padding top and bottom than the normal Stitch */
         padding: clamp(5.625rem, 9vw, 9.375rem) calc(16 / 16 * 1rem);
-        .cs-container {
+        .container {
             flex-direction: row;
             justify-content: flex-end;
         }
 
-        .cs-background {
+        .background {
             width: 50%;
             height: auto;
             position: absolute;
@@ -997,7 +955,7 @@
             right: 50%;
         }
 
-        .cs-content {
+        .content {
             width: 45%;
             padding: 0;
         }
@@ -1008,15 +966,15 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #sbs-598 {
-            .cs-topper {
+            .topper {
                 color: var(--bodyTextColorWhite);
             }
-            .cs-title,
-            .cs-text {
+            .title,
+            .text {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-text {
+            .text {
                 opacity: 0.8;
             }
         }
@@ -1035,14 +993,14 @@
         position: relative;
         z-index: 1;
 
-        .cs-container {
+        .container {
             max-width: calc(1280 / 16 * 1rem);
             margin: auto;
             display: flex;
             flex-direction: column;
         }
 
-        .cs-wrapper {
+        .wrapper {
             /* changes to 630px on tablet */
             max-width: calc(500 / 16 * 1rem);
             margin: auto;
@@ -1053,7 +1011,7 @@
             gap: clamp(3rem, 6vw, 4rem);
         }
 
-        .cs-content {
+        .content {
             /* set text align to center if content needs to be centrally aligned */
             text-align: left;
             width: 100%;
@@ -1063,11 +1021,11 @@
             align-items: flex-start;
         }
 
-        .cs-title {
+        .title {
             margin: 0;
         }
 
-        .cs-card-group {
+        .card-group {
             margin: 0;
             padding: 0;
             display: grid;
@@ -1078,14 +1036,14 @@
             grid-auto-flow: row;
         }
 
-        .cs-item {
+        .item {
             list-style: none;
             display: flex;
             align-items: flex-start;
             position: relative;
         }
 
-        .cs-number {
+        .number {
             /* 80px - 100px */
             font-size: clamp(5rem, 9vw, 6.25rem);
             font-weight: 900;
@@ -1097,7 +1055,7 @@
             display: block;
         }
 
-        .cs-h3 {
+        .h3 {
             font-size: calc(25 / 16 * 1rem);
             font-weight: 700;
             line-height: 1.2em;
@@ -1105,7 +1063,7 @@
             color: var(--headerColor);
         }
 
-        .cs-item-text {
+        .item-text {
             /* 14px - 16px */
             font-size: clamp(0.875rem, 2vw, 1rem);
             line-height: 1.5em;
@@ -1114,7 +1072,7 @@
             color: var(--bodyTextColor);
         }
 
-        .cs-background {
+        .background {
             width: 100%;
             height: calc(360 / 16 * 1rem);
             display: block;
@@ -1133,37 +1091,37 @@
     #steps-1712 {
         padding: var(--sectionPadding);
 
-        .cs-container {
+        .container {
             padding: 0;
             justify-content: flex-start;
         }
 
-        .cs-title {
+        .title {
             margin: 0;
         }
 
-        .cs-wrapper {
+        .wrapper {
             width: 65vw;
             max-width: calc(630 / 16 * 1rem);
             margin: 0;
             padding: 0;
         }
 
-        .cs-card-group {
+        .card-group {
             /* 16px - 32px */
             gap: clamp(1rem, 3vw, 2rem);
         }
 
-        .cs-item {
+        .item {
             flex-direction: row;
         }
 
-        .cs-picture {
+        .picture {
             width: calc(180 / 16 * 1rem);
             height: calc(180 / 16 * 1rem);
         }
 
-        .cs-background {
+        .background {
             width: 30%;
             height: auto;
             position: absolute;
@@ -1177,15 +1135,15 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #steps-1712 {
-        .cs-wrapper {
+        .wrapper {
             width: 50vw;
         }
 
-        .cs-background {
+        .background {
             width: 50vw;
             left: 50%;
             right: auto;
-            margin-left: calc(1280 / 16 * 1rem);
+            margin-left: calc(1280 / 8 / 16 * 1rem);
         }
     }
 }
@@ -1194,13 +1152,13 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #steps-1712 {
-            .cs-title,
-            .cs-h3,
-            .cs-item-text {
+            .title,
+            .h3,
+            .item-text {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-item-text {
+            .item-text {
                 opacity: 0.8;
             }
         }

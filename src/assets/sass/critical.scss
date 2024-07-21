@@ -4,7 +4,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #hero-1059 {
+    #hero {
         /* Centers button */
         text-align: left;
         /* 200px - 300px - leaving extra space for the navigation */
@@ -14,7 +14,7 @@
         position: relative;
         z-index: 1;
 
-        .cs-background {
+        .background {
             width: 100%;
             height: 100%;
             display: block;
@@ -51,13 +51,13 @@
             }
         }
 
-        .cs-container {
+        .container {
             width: 100%;
             max-width: calc(1280 / 16 * 1rem);
             margin: auto;
         }
 
-        .cs-content {
+        .content {
             /* set text align to left if content needs to be left aligned */
             text-align: center;
             width: 100%;
@@ -68,7 +68,7 @@
             align-items: center;
         }
 
-        .cs-title {
+        .title {
             /* 39px - 61px */
             font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
             font-weight: 700;
@@ -80,7 +80,7 @@
             position: relative;
         }
 
-        .cs-text {
+        .text {
             /* 16px - 20px */
             font-size: clamp(1rem, 1.95vw, 1.25rem);
             line-height: 1.5em;
@@ -92,7 +92,7 @@
             color: #fff;
         }
 
-        .cs-button-solid {
+        .button-solid {
             font-size: calc(16 / 16 * 1rem);
             /* 46px - 56px */
             line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -131,16 +131,16 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #hero-1059 {
-        .cs-content {
+    #hero {
+        .content {
             text-align: left;
             align-items: flex-start;
         }
 
-        .cs-background {
+        .background {
             &:before {
                 background: linear-gradient(
-                    to right,
+                    to top,
                     rgba(0, 0, 0, 0.94) 0%,
                     rgba(0, 0, 0, 0.94) 2%,
                     rgba(0, 0, 0, 0) 100%

@@ -12,7 +12,7 @@
         position: relative;
         z-index: 1;
 
-        .cs-container {
+        .container {
             width: 100%;
             max-width: calc(1280 / 16 * 1rem);
             margin: auto;
@@ -24,7 +24,7 @@
             position: relative;
         }
 
-        .cs-content {
+        .content {
             /* set text align to left if content needs to be left aligned */
             text-align: left;
             width: 100%;
@@ -68,11 +68,11 @@
             font-size: calc(20 / 16 * 1rem);
         }
 
-        .cs-button-solid {
+        .button-solid {
             margin-bottom: calc(32 / 16 * 1rem);
         }
 
-        .cs-color {
+        .color {
             color: var(--primary);
         }
 
@@ -127,7 +127,7 @@
             }
         }
 
-        .cs-image-group {
+        .image-group {
             /* scales the whole section down and ties the font size to the vw and stops at 70% of the vale of 1em, changes at desktop */
             font-size: min(1vw, 1em);
             /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
@@ -141,7 +141,7 @@
             transform: scaleX(-1);
         }
 
-        .cs-picture {
+        .picture {
             width: calc(542 / 16 * 1rem);
             height: calc(647 / 16 * 1rem);
             border-radius: calc(32 / 16 * 1rem);
@@ -169,7 +169,7 @@
             }
         }
 
-        .cs-flower {
+        .flower {
             width: calc(362 / 16 * 1rem);
             height: auto;
             display: block;
@@ -180,7 +180,7 @@
             transform: rotate(142deg);
         }
 
-        .cs-sense {
+        .sense {
             width: calc(80 / 16 * 1rem);
             height: auto;
             position: absolute;
@@ -189,7 +189,7 @@
             transform: rotate(90deg);
         }
 
-        .cs-background {
+        .background {
             display: none;
         }
     }
@@ -198,16 +198,16 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #content-page-713 {
-        .cs-container {
+        .container {
             flex-direction: row;
             align-items: flex-start;
         }
 
-        .cs-image-group {
+        .image-group {
             display: block;
         }
 
-        .cs-background {
+        .background {
             width: 20%;
             height: 100%;
             background-color: #f7f7f7;
@@ -234,7 +234,7 @@
 /* Large Desktop 1300px */
 @media only screen and (min-width: 81.25rem) {
     #content-page-713 {
-        .cs-image-group {
+        .image-group {
             /* position absolute so we can have it overflow the container as seen in the design. */
             font-size: inherit;
             position: absolute;
@@ -242,7 +242,7 @@
             right: calc(-100 / 16 * 1rem);
         }
 
-        .cs-background {
+        .background {
             width: 50%;
             /* with the left edge always positioned at the center line, we push left of the center line by 335px.  This ensures that this element will stay exactly in this position no matter how wide the screen gets */
             margin-left: calc(335 / 16 * 1rem);
@@ -259,8 +259,8 @@
         #content-page-713 {
             background-color: var(--dark);
 
-            .cs-title,
-            .cs-text,
+            .title,
+            .text,
             h2,
             h3,
             h4,
@@ -270,7 +270,7 @@
             p {
                 color: var(--bodyTextColorWhite);
             }
-            .cs-color,
+            .color,
             a {
                 color: var(--primaryLight);
             }
@@ -280,20 +280,20 @@
                 color: #ebebeb;
             }
 
-            .cs-picture {
+            .picture {
                 border-color: var(--dark);
                 background-color: var(--dark);
             }
 
-            .cs-flower {
+            .flower {
                 filter: brightness(50%);
             }
 
-            .cs-sense {
+            .sense {
                 filter: brightness(150%);
             }
 
-            .cs-background {
+            .background {
                 background-color: var(--medium);
                 filter: brightness(70%);
                 img {

@@ -6,7 +6,7 @@
   #pricing-603 {
     padding: var(--sectionPadding);
   }
-  #pricing-603 .cs-container {
+  #pricing-603 .container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -16,7 +16,7 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #pricing-603 .cs-content {
+  #pricing-603 .content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -25,24 +25,24 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #pricing-603 .cs-toggle-group {
+  #pricing-603 .toggle-group {
     width: auto;
     margin: 2rem auto 0;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  #pricing-603 .cs-plan {
+  #pricing-603 .plan {
     font-size: 1rem;
     line-height: 1.5em;
     margin: 0;
     padding: 0;
     color: var(--headerColor);
   }
-  #pricing-603 .cs-plan:hover {
+  #pricing-603 .plan:hover {
     cursor: pointer;
   }
-  #pricing-603 .cs-toggle {
+  #pricing-603 .toggle {
     width: 3.875rem;
     height: 2.25rem;
     border-radius: 2.5rem;
@@ -52,16 +52,16 @@
     /* prevent flexbox from squishing it */
     flex: none;
   }
-  #pricing-603 .cs-toggle:hover {
+  #pricing-603 .toggle:hover {
     cursor: pointer;
   }
-  #pricing-603 .cs-toggle.active:before {
+  #pricing-603 .toggle.active:before {
     opacity: 1;
   }
-  #pricing-603 .cs-toggle.active .cs-toggle-switch {
+  #pricing-603 .toggle.active .toggle-switch {
     left: 2rem;
   }
-  #pricing-603 .cs-toggle:before {
+  #pricing-603 .toggle:before {
     /* top right box */
     content: "";
     width: 100%;
@@ -75,7 +75,7 @@
     border-radius: 2.5rem;
     transition: opacity 0.3s;
   }
-  #pricing-603 .cs-toggle-switch {
+  #pricing-603 .toggle-switch {
     width: 1.5rem;
     height: 1.5rem;
     display: block;
@@ -87,7 +87,7 @@
     transition: left 0.3s;
     background: #fff;
   }
-  #pricing-603 .cs-card-group {
+  #pricing-603 .card-group {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -100,8 +100,8 @@
     perspective: 700px;
     transform-style: preserve-3d;
   }
-  #pricing-603 .cs-card-group.active.cs-option1 {
-    /* when the active class is on the cs-card-group, run these styles */
+  #pricing-603 .card-group.active.option1 {
+    /* when the active class is on the card-group, run these styles */
     transform: scale(0);
     position: absolute;
     left: 0;
@@ -109,14 +109,14 @@
     opacity: 0;
     visibility: hidden;
   }
-  #pricing-603 .cs-card-group.active.cs-option1 .cs-item {
-    /* when the active class is on the cs-card-group, run these styles */
+  #pricing-603 .card-group.active.option1 .item {
+    /* when the active class is on the card-group, run these styles */
     opacity: 0;
     transform: translateY(1.25rem) rotateY(90deg);
     transition: opacity 0.3s, transform 0.6s;
   }
-  #pricing-603 .cs-card-group.active.cs-option2 {
-    /* when the active class is on the cs-card-group, run these styles */
+  #pricing-603 .card-group.active.option2 {
+    /* when the active class is on the card-group, run these styles */
     visibility: visible;
     pointer-events: all;
     opacity: 1;
@@ -125,13 +125,13 @@
     top: auto;
     transform: scale(1);
   }
-  #pricing-603 .cs-card-group.active.cs-option2 .cs-item {
-    /* when the active class is on the cs-card-group, run these styles */
+  #pricing-603 .card-group.active.option2 .item {
+    /* when the active class is on the card-group, run these styles */
     opacity: 1;
     transform: translateY(0rem) rotateY(0deg);
   }
-  #pricing-603 .cs-option1 {
-    /* default styles when there is no active class on the cs-card-group */
+  #pricing-603 .option1 {
+    /* default styles when there is no active class on the card-group */
     opacity: 1;
     visibility: visible;
     left: left;
@@ -140,20 +140,20 @@
     transform-origin: left top;
     transition: transform 0.6s, opacity 0.3s, visibility 0.3s;
   }
-  #pricing-603 .cs-option1 .cs-item {
-    /* default styles when there is no active class on the cs-card-group */
+  #pricing-603 .option1 .item {
+    /* default styles when there is no active class on the card-group */
     opacity: 1;
     transform: translateY(0rem) rotateY(0deg);
     transition: opacity 0.3s, transform 0.6s;
   }
-  #pricing-603 .cs-option1 .cs-item:nth-of-type(2) {
+  #pricing-603 .option1 .item:nth-of-type(2) {
     transition-delay: 0.2s;
   }
-  #pricing-603 .cs-option1 .cs-item:nth-of-type(3) {
+  #pricing-603 .option1 .item:nth-of-type(3) {
     transition-delay: 0.4s;
   }
-  #pricing-603 .cs-option2 {
-    /* default styles when there is no active class on the cs-card-group */
+  #pricing-603 .option2 {
+    /* default styles when there is no active class on the card-group */
     visibility: hidden;
     pointer-events: none;
     opacity: 0;
@@ -165,22 +165,22 @@
     transform-origin: left top;
     transition: transform 0.6s, opacity 0.3s, visibility 0.3s, bottom 0.6s;
   }
-  #pricing-603 .cs-option2 .cs-item {
-    /* default styles when there is no active class on the cs-card-group */
+  #pricing-603 .option2 .item {
+    /* default styles when there is no active class on the card-group */
     opacity: 0;
     transform: translateY(1.25rem) rotateY(90deg);
     transition: opacity 0.3s, transform 0.6s;
   }
-  #pricing-603 .cs-option2 .cs-item:nth-of-type(2) {
+  #pricing-603 .option2 .item:nth-of-type(2) {
     transition-delay: 0.2s;
   }
-  #pricing-603 .cs-option2 .cs-item:nth-of-type(3) {
+  #pricing-603 .option2 .item:nth-of-type(3) {
     transition-delay: 0.4s;
   }
-  #pricing-603 .cs-item {
+  #pricing-603 .item {
     list-style: none;
     width: 100%;
-    /* matches the -88px the cs-price-box's margin top to offset it */
+    /* matches the -88px the price-box's margin top to offset it */
     margin: 5.5rem 0 0 0;
     /* 80px - 100px top *
     /* 16px - 56px left & right */
@@ -195,7 +195,7 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  #pricing-603 .cs-price-box {
+  #pricing-603 .price-box {
     width: 100%;
     /* 32px - 48px margin-bottom */
     margin: -10.5rem 0 clamp(2rem, 5vw, 3rem) 0;
@@ -211,7 +211,7 @@
     align-items: center;
     gap: 0.75rem;
   }
-  #pricing-603 .cs-package {
+  #pricing-603 .package {
     /* 16px - 20px */
     font-size: clamp(1rem, 2vw, 1.25rem);
     line-height: 1.2em;
@@ -220,7 +220,7 @@
     margin: 0;
     color: var(--bodyTextColorWhite);
   }
-  #pricing-603 .cs-price {
+  #pricing-603 .price {
     /* 24px - 32px */
     font-size: clamp(1.5rem, 2.5vw, 2rem);
     line-height: 1.2em;
@@ -229,7 +229,7 @@
     margin: 0;
     color: var(--bodyTextColorWhite);
   }
-  #pricing-603 .cs-desc {
+  #pricing-603 .desc {
     font-size: 0.75rem;
     line-height: 1.2em;
     text-align: center;
@@ -237,7 +237,7 @@
     color: var(--bodyTextColorWhite);
     opacity: 0.8;
   }
-  #pricing-603 .cs-item-text {
+  #pricing-603 .item-text {
     font-size: 0.875rem;
     line-height: 1.5em;
     text-align: left;
@@ -246,7 +246,7 @@
     margin: 0 0 clamp(1rem, 2vw, 1.5rem);
     color: var(--bodyTextColor);
   }
-  #pricing-603 .cs-included {
+  #pricing-603 .included {
     /* 16px - 20px */
     font-size: clamp(1rem, 2vw, 1.25rem);
     line-height: 1.2em;
@@ -256,7 +256,7 @@
     margin: 0 0 clamp(1rem, 2vw, 1.5rem);
     color: var(--headerColor);
   }
-  #pricing-603 .cs-ul {
+  #pricing-603 .ul {
     /* 32px - 48px */
     margin: 0 0 clamp(2rem, 5vw, 3rem);
     padding: 0;
@@ -265,7 +265,7 @@
     align-items: flex-end;
     gap: 1rem;
   }
-  #pricing-603 .cs-li {
+  #pricing-603 .li {
     font-size: 0.875rem;
     list-style: none;
     line-height: 1.5em;
@@ -279,14 +279,14 @@
     align-items: flex-start;
     gap: 1rem;
   }
-  #pricing-603 .cs-icon {
+  #pricing-603 .icon {
     width: 0.9375rem;
     height: auto;
     /* push icon a little from the top so it looks centered */
     margin-top: 0.1875rem;
     display: block;
   }
-  #pricing-603 .cs-button-solid {
+  #pricing-603 .button-solid {
     font-size: 1rem;
     /* 46px - 56px */
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -305,7 +305,7 @@
     /* prevents padding from adding to the width */
     box-sizing: border-box;
   }
-  #pricing-603 .cs-button-solid:before {
+  #pricing-603 .button-solid:before {
     content: "";
     position: absolute;
     height: 100%;
@@ -318,10 +318,10 @@
     border-radius: 0.25rem;
     transition: width 0.3s;
   }
-  #pricing-603 .cs-button-solid:hover:before {
+  #pricing-603 .button-solid:hover:before {
     width: 100%;
   }
-  #pricing-603 .cs-price-button {
+  #pricing-603 .price-button {
     /* 14px - 18px */
     font-size: clamp(0.875rem, 1.5vw, 1.125rem);
     /* 36px - 50px */
@@ -330,53 +330,53 @@
     text-transform: uppercase;
     width: 100%;
     height: clamp(2.25rem, 4.5vw, 3.125rem);
-    /* pushes button to the bottom of the cs-item */
+    /* pushes button to the bottom of the item */
     margin-top: auto;
     border-radius: 0.25rem;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #pricing-603 .cs-card-group {
+  #pricing-603 .card-group {
     flex-direction: row;
     justify-content: space-between;
   }
-  #pricing-603 .cs-card-group.cs-active {
+  #pricing-603 .card-group.active {
     bottom: 0;
     top: auto;
   }
-  #pricing-603 .cs-option2 {
+  #pricing-603 .option2 {
     top: auto;
     bottom: 0;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #pricing-603 .cs-topper {
+  body.dark-mode #pricing-603 .topper {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #pricing-603 .cs-title,
-  body.dark-mode #pricing-603 .cs-text, body.dark-mode #pricing-603 .cs-item-text {
+  body.dark-mode #pricing-603 .title,
+  body.dark-mode #pricing-603 .text, body.dark-mode #pricing-603 .item-text {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #pricing-603 .cs-text, body.dark-mode #pricing-603 .cs-item-text {
+  body.dark-mode #pricing-603 .text, body.dark-mode #pricing-603 .item-text {
     opacity: 0.8;
   }
-  body.dark-mode #pricing-603 .cs-plan {
+  body.dark-mode #pricing-603 .plan {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #pricing-603 .cs-item {
+  body.dark-mode #pricing-603 .item {
     background-color: var(--medium);
   }
-  body.dark-mode #pricing-603 .cs-price-box {
+  body.dark-mode #pricing-603 .price-box {
     background-color: var(--accent);
   }
-  body.dark-mode #pricing-603 .cs-item-p,
-  body.dark-mode #pricing-603 .cs-included,
-  body.dark-mode #pricing-603 .cs-li {
+  body.dark-mode #pricing-603 .item-p,
+  body.dark-mode #pricing-603 .included,
+  body.dark-mode #pricing-603 .li {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #pricing-603 .cs-icon {
+  body.dark-mode #pricing-603 .icon {
     /* makes icon white (if it wasnt black to start) */
     filter: grayscale(1) brightness(1000%);
   }

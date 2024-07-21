@@ -7,7 +7,7 @@
     #pricing-603 {
         padding: var(--sectionPadding);
 
-        .cs-container {
+        .container {
             width: 100%;
             max-width: calc(1280 / 16 * 1rem);
             margin: auto;
@@ -18,7 +18,7 @@
             gap: clamp(3rem, 6vw, 4rem);
         }
 
-        .cs-content {
+        .content {
             /* set text align to left if content needs to be left aligned */
             text-align: center;
             width: 100%;
@@ -28,7 +28,7 @@
             align-items: center;
         }
 
-        .cs-toggle-group {
+        .toggle-group {
             width: auto;
             margin: calc(32 / 16 * 1rem) auto 0;
             display: flex;
@@ -36,7 +36,7 @@
             align-items: center;
         }
 
-        .cs-plan {
+        .plan {
             font-size: calc(16 / 16 * 1rem);
             line-height: 1.5em;
             margin: 0;
@@ -47,7 +47,7 @@
             }
         }
 
-        .cs-toggle {
+        .toggle {
             width: calc(62 / 16 * 1rem);
             height: calc(36 / 16 * 1rem);
             border-radius: calc(40 / 16 * 1rem);
@@ -65,7 +65,7 @@
                 &:before {
                     opacity: 1;
                 }
-                .cs-toggle-switch {
+                .toggle-switch {
                     left: calc(32 / 16 * 1rem);
                 }
             }
@@ -90,7 +90,7 @@
             }
         }
 
-        .cs-toggle-switch {
+        .toggle-switch {
             width: calc(24 / 16 * 1rem);
             height: calc(24 / 16 * 1rem);
             display: block;
@@ -103,7 +103,7 @@
             background: #fff;
         }
 
-        .cs-card-group {
+        .card-group {
             width: 100%;
             margin: 0;
             padding: 0;
@@ -117,8 +117,8 @@
             transform-style: preserve-3d;
 
             &.active {
-                &.cs-option1 {
-                    /* when the active class is on the cs-card-group, run these styles */
+                &.option1 {
+                    /* when the active class is on the card-group, run these styles */
                     transform: scale(0);
                     position: absolute;
                     left: 0;
@@ -126,8 +126,8 @@
                     opacity: 0;
                     visibility: hidden;
 
-                    .cs-item {
-                        /* when the active class is on the cs-card-group, run these styles */
+                    .item {
+                        /* when the active class is on the card-group, run these styles */
                         opacity: 0;
                         transform: translateY(1.25rem) rotateY(90deg);
                         transition:
@@ -136,8 +136,8 @@
                     }
                 }
 
-                &.cs-option2 {
-                    /* when the active class is on the cs-card-group, run these styles */
+                &.option2 {
+                    /* when the active class is on the card-group, run these styles */
                     visibility: visible;
                     pointer-events: all;
                     opacity: 1;
@@ -146,8 +146,8 @@
                     top: auto;
                     transform: scale(1);
 
-                    .cs-item {
-                        /* when the active class is on the cs-card-group, run these styles */
+                    .item {
+                        /* when the active class is on the card-group, run these styles */
                         opacity: 1;
                         transform: translateY(0rem) rotateY(0deg);
                     }
@@ -155,8 +155,8 @@
             }
         }
 
-        .cs-option1 {
-            /* default styles when there is no active class on the cs-card-group */
+        .option1 {
+            /* default styles when there is no active class on the card-group */
             opacity: 1;
             visibility: visible;
             left: left;
@@ -168,8 +168,8 @@
                 opacity 0.3s,
                 visibility 0.3s;
 
-            .cs-item {
-                /* default styles when there is no active class on the cs-card-group */
+            .item {
+                /* default styles when there is no active class on the card-group */
                 opacity: 1;
                 transform: translateY(0rem) rotateY(0deg);
                 transition:
@@ -184,8 +184,8 @@
             }
         }
 
-        .cs-option2 {
-            /* default styles when there is no active class on the cs-card-group */
+        .option2 {
+            /* default styles when there is no active class on the card-group */
             visibility: hidden;
             pointer-events: none;
             opacity: 0;
@@ -201,8 +201,8 @@
                 visibility 0.3s,
                 bottom 0.6s;
 
-            .cs-item {
-                /* default styles when there is no active class on the cs-card-group */
+            .item {
+                /* default styles when there is no active class on the card-group */
                 opacity: 0;
                 transform: translateY(1.25rem) rotateY(90deg);
                 transition:
@@ -217,10 +217,10 @@
             }
         }
 
-        .cs-item {
+        .item {
             list-style: none;
             width: 100%;
-            /* matches the -88px the cs-price-box's margin top to offset it */
+            /* matches the -88px the price-box's margin top to offset it */
             margin: calc(88 / 16 * 1rem) 0 0 0;
             /* 80px - 100px top *
             /* 16px - 56px left & right */
@@ -237,7 +237,7 @@
             align-items: flex-start;
         }
 
-        .cs-price-box {
+        .price-box {
             width: 100%;
             /* 32px - 48px margin-bottom */
             margin: calc(-168 / 16 * 1rem) 0 clamp(2rem, 5vw, 3rem) 0;
@@ -254,7 +254,7 @@
             gap: calc(12 / 16 * 1rem);
         }
 
-        .cs-package {
+        .package {
             /* 16px - 20px */
             font-size: clamp(1rem, 2vw, 1.25rem);
             line-height: 1.2em;
@@ -264,7 +264,7 @@
             color: var(--bodyTextColorWhite);
         }
 
-        .cs-price {
+        .price {
             /* 24px - 32px */
             font-size: clamp(1.5rem, 2.5vw, 2rem);
             line-height: 1.2em;
@@ -274,7 +274,7 @@
             color: var(--bodyTextColorWhite);
         }
 
-        .cs-desc {
+        .desc {
             font-size: calc(12 / 16 * 1rem);
             line-height: 1.2em;
             text-align: center;
@@ -283,7 +283,7 @@
             opacity: 0.8;
         }
 
-        .cs-item-text {
+        .item-text {
             font-size: calc(14 / 16 * 1rem);
             line-height: 1.5em;
             text-align: left;
@@ -293,7 +293,7 @@
             color: var(--bodyTextColor);
         }
 
-        .cs-included {
+        .included {
             /* 16px - 20px */
             font-size: clamp(1rem, 2vw, 1.25rem);
             line-height: 1.2em;
@@ -304,7 +304,7 @@
             color: var(--headerColor);
         }
 
-        .cs-ul {
+        .ul {
             /* 32px - 48px */
             margin: 0 0 clamp(2rem, 5vw, 3rem);
             padding: 0;
@@ -314,7 +314,7 @@
             gap: calc(16 / 16 * 1rem);
         }
 
-        .cs-li {
+        .li {
             font-size: calc(14 / 16 * 1rem);
             list-style: none;
             line-height: 1.5em;
@@ -329,7 +329,7 @@
             gap: calc(16 / 16 * 1rem);
         }
 
-        .cs-icon {
+        .icon {
             width: calc(15 / 16 * 1rem);
             height: auto;
             /* push icon a little from the top so it looks centered */
@@ -337,7 +337,7 @@
             display: block;
         }
 
-        .cs-button-solid {
+        .button-solid {
             font-size: calc(16 / 16 * 1rem);
             /* 46px - 56px */
             line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -377,7 +377,7 @@
             }
         }
 
-        .cs-price-button {
+        .price-button {
             /* 14px - 18px */
             font-size: clamp(0.875rem, 1.5vw, 1.125rem);
             /* 36px - 50px */
@@ -386,7 +386,7 @@
             text-transform: uppercase;
             width: 100%;
             height: clamp(2.25rem, 4.5vw, 3.125rem);
-            /* pushes button to the bottom of the cs-item */
+            /* pushes button to the bottom of the item */
             margin-top: auto;
             border-radius: calc(4 / 16 * 1rem);
         }
@@ -396,17 +396,17 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #pricing-603 {
-        .cs-card-group {
+        .card-group {
             flex-direction: row;
             justify-content: space-between;
 
-            &.cs-active {
+            &.active {
                 bottom: 0;
                 top: auto;
             }
         }
 
-        .cs-option2 {
+        .option2 {
             top: auto;
             bottom: 0;
         }
@@ -417,37 +417,37 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #pricing-603 {
-            .cs-topper {
+            .topper {
                 color: var(--bodyTextColorWhite);
             }
-            .cs-title,
-            .cs-text, .cs-item-text {
+            .title,
+            .text, .item-text {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-text, .cs-item-text {
+            .text, .item-text {
                 opacity: 0.8;
             }
 
-            .cs-plan {
+            .plan {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-item {
+            .item {
                 background-color: var(--medium);
             }
 
-            .cs-price-box {
+            .price-box {
                 background-color: var(--accent);
             }
 
-            .cs-item-p,
-            .cs-included,
-            .cs-li {
+            .item-p,
+            .included,
+            .li {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-icon {
+            .icon {
                 /* makes icon white (if it wasnt black to start) */
                 filter: grayscale(1) brightness(1000%);
             }

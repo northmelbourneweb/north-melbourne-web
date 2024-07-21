@@ -11,7 +11,7 @@
     position: relative;
     z-index: 1;
   }
-  #content-page-713 .cs-container {
+  #content-page-713 .container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -22,7 +22,7 @@
     gap: clamp(3rem, 6vw, 4rem);
     position: relative;
   }
-  #content-page-713 .cs-content {
+  #content-page-713 .content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
@@ -32,7 +32,7 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #content-page-713 .cs-content img {
+  #content-page-713 .content img {
     width: 100%;
     height: auto;
     margin: 1rem 0;
@@ -61,10 +61,10 @@
   #content-page-713 h6 {
     font-size: 1.25rem;
   }
-  #content-page-713 .cs-button-solid {
+  #content-page-713 .button-solid {
     margin-bottom: 2rem;
   }
-  #content-page-713 .cs-color {
+  #content-page-713 .color {
     color: var(--primary);
   }
   #content-page-713 p {
@@ -111,7 +111,7 @@
     top: 0.625rem;
     left: -0.75rem;
   }
-  #content-page-713 .cs-image-group {
+  #content-page-713 .image-group {
     /* scales the whole section down and ties the font size to the vw and stops at 70% of the vale of 1em, changes at desktop */
     font-size: min(1vw, 1em);
     /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
@@ -124,7 +124,7 @@
     /* flips it horizontally */
     transform: scaleX(-1);
   }
-  #content-page-713 .cs-picture {
+  #content-page-713 .picture {
     width: 33.875rem;
     height: 40.4375rem;
     border-radius: 2rem;
@@ -139,7 +139,7 @@
     top: 0;
     left: 0;
   }
-  #content-page-713 .cs-picture img {
+  #content-page-713 .picture img {
     width: 100%;
     height: 100%;
     /* makes it act like a background image */
@@ -150,7 +150,7 @@
     /* flips the image to its original orientation */
     transform: scaleX(-1);
   }
-  #content-page-713 .cs-flower {
+  #content-page-713 .flower {
     width: 22.625rem;
     height: auto;
     display: block;
@@ -160,7 +160,7 @@
     z-index: -1;
     transform: rotate(142deg);
   }
-  #content-page-713 .cs-sense {
+  #content-page-713 .sense {
     width: 5rem;
     height: auto;
     position: absolute;
@@ -168,20 +168,20 @@
     left: 0.625rem;
     transform: rotate(90deg);
   }
-  #content-page-713 .cs-background {
+  #content-page-713 .background {
     display: none;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #content-page-713 .cs-container {
+  #content-page-713 .container {
     flex-direction: row;
     align-items: flex-start;
   }
-  #content-page-713 .cs-image-group {
+  #content-page-713 .image-group {
     display: block;
   }
-  #content-page-713 .cs-background {
+  #content-page-713 .background {
     width: 20%;
     height: 100%;
     background-color: #f7f7f7;
@@ -191,7 +191,7 @@
     top: 0;
     z-index: -1;
   }
-  #content-page-713 .cs-background img {
+  #content-page-713 .background img {
     width: 100%;
     height: 100%;
     opacity: 0.2;
@@ -204,14 +204,14 @@
 }
 /* Large Desktop 1300px */
 @media only screen and (min-width: 81.25rem) {
-  #content-page-713 .cs-image-group {
+  #content-page-713 .image-group {
     /* position absolute so we can have it overflow the container as seen in the design. */
     font-size: inherit;
     position: absolute;
     top: 0rem;
     right: -6.25rem;
   }
-  #content-page-713 .cs-background {
+  #content-page-713 .background {
     width: 50%;
     /* with the left edge always positioned at the center line, we push left of the center line by 335px.  This ensures that this element will stay exactly in this position no matter how wide the screen gets */
     margin-left: 20.9375rem;
@@ -225,8 +225,8 @@
   body.dark-mode #content-page-713 {
     background-color: var(--dark);
   }
-  body.dark-mode #content-page-713 .cs-title,
-  body.dark-mode #content-page-713 .cs-text,
+  body.dark-mode #content-page-713 .title,
+  body.dark-mode #content-page-713 .text,
   body.dark-mode #content-page-713 h2,
   body.dark-mode #content-page-713 h3,
   body.dark-mode #content-page-713 h4,
@@ -236,7 +236,7 @@
   body.dark-mode #content-page-713 p {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #content-page-713 .cs-color,
+  body.dark-mode #content-page-713 .color,
   body.dark-mode #content-page-713 a {
     color: var(--primaryLight);
   }
@@ -244,21 +244,21 @@
   body.dark-mode #content-page-713 li {
     color: #ebebeb;
   }
-  body.dark-mode #content-page-713 .cs-picture {
+  body.dark-mode #content-page-713 .picture {
     border-color: var(--dark);
     background-color: var(--dark);
   }
-  body.dark-mode #content-page-713 .cs-flower {
+  body.dark-mode #content-page-713 .flower {
     filter: brightness(50%);
   }
-  body.dark-mode #content-page-713 .cs-sense {
+  body.dark-mode #content-page-713 .sense {
     filter: brightness(150%);
   }
-  body.dark-mode #content-page-713 .cs-background {
+  body.dark-mode #content-page-713 .background {
     background-color: var(--medium);
     filter: brightness(70%);
   }
-  body.dark-mode #content-page-713 .cs-background img {
+  body.dark-mode #content-page-713 .background img {
     opacity: 0.1;
   }
 }
