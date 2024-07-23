@@ -4,7 +4,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #contact-490 {
+    #contact {
         padding: var(--sectionPadding);
 
         .container {
@@ -97,7 +97,7 @@
             display: block;
         }
 
-        #form-490 {
+        #form {
             width: 100%;
             max-width: calc(650 / 16 * 1rem);
             /* 32px - 40px */
@@ -205,7 +205,7 @@
 
 /* Tablet - 700px */
 @media only screen and (min-width: 43rem) {
-    #contact-490 {
+    #contact {
         .container {
             max-width: calc(1280 / 16 * 1rem);
             flex-direction: row;
@@ -219,7 +219,7 @@
             flex: none;
         }
 
-        #form-490 {
+        #form {
             margin: 0;
         }
     }
@@ -228,7 +228,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 43.75rem) {
     body.dark-mode {
-        #contact-490 {
+        #contact {
             .title, .text, .link, .header, .label {
                 color: var(--bodyTextColorWhite);
             }
@@ -237,7 +237,7 @@
                 opacity: .8;
             }
 
-            #form-490 {
+            #form {
                 border-color: rgba(255, 255, 255, .3);
             }
 

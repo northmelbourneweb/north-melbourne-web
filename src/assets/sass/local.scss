@@ -4,7 +4,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #services-1628 {
+    #index-intro {
         padding: var(--sectionPadding);
         background-color: #f7f7f7;
         
@@ -164,7 +164,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #services-1628 {
+    #index-intro {
         .container {
             max-width: calc(1280 / 16 * 1rem);
         }
@@ -213,7 +213,7 @@
 
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
-    #services-1628 {
+    #index-intro {
         .item {
             grid-column: span 3;
         }
@@ -223,7 +223,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #services-1628 {
+        #index-intro {
             background-color: rgba(0, 0, 0, .2);
 
             .title, .text, .h3, .item-text {
@@ -243,7 +243,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #sbsr-579 {
+    #index-about {
         .container {
             width: 100%;
             max-width: calc(1280 / 16 * 1rem);
@@ -338,7 +338,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #sbsr-579 {
+    #index-about {
         padding: var(--sectionPadding);
 
         .container {
@@ -385,7 +385,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #sbsr-579 {
+        #index-about {
             .topper {
                 color: var(--bodyTextColorWhite);
             }
@@ -414,7 +414,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #services-964 {
+    #index-services {
         padding: var(--sectionPadding);
         background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/chevron-pattern-light1.svg");
         background-size: auto;
@@ -630,7 +630,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #services-964 {
+    #index-services {
         .container {
             max-width: calc(1280 / 16 * 1rem);
         }
@@ -647,7 +647,7 @@
 
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #services-964 {
+    #index-services {
         .item {
             grid-column: span 4;
         }
@@ -657,7 +657,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #services-964 {
+        #index-services {
             background: url("https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/chevron-pattern-light2.svg");
             background-size: auto;
             background-position: center;
@@ -687,7 +687,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #faq-708 {
+    #index-faq {
         position: relative;
         overflow: hidden;
 
@@ -869,7 +869,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #faq-708 {
+    #index-faq {
         /* moved seciton padding back to the section */
         padding: var(--sectionPadding);
 
@@ -895,7 +895,7 @@
 
 /* Desktop - 1600px */
 @media only screen and (min-width: 100rem) {
-    #faq-708 {
+    #index-faq {
         .graphic {
             display: block;
         }
@@ -905,7 +905,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #faq-708 {
+        #index-faq {
             .topper {
                 color: var(--primaryLight);
             }

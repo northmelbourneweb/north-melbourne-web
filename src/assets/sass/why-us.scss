@@ -28,7 +28,7 @@
         }
     }
 
-    #sbsr-1363 {
+    #about-hero {
         padding: var(--sectionPadding);
         position: relative;
         overflow: hidden;
@@ -314,7 +314,7 @@
 
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #sbsr-1363 {
+    #about-hero {
         .container {
             max-width: calc(1280 / 16 * 1rem);
             flex-direction: row;
@@ -338,7 +338,7 @@
 
 /* Large Desktop 1600px */
 @media only screen and (min-width: 100rem) {
-    #sbsr-1363 {
+    #about-hero {
         .bubbles {
             margin-right: calc(750 / 16 * 1rem);
             left: auto;
@@ -350,7 +350,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #sbsr-1363 {
+        #about-hero {
             .topper {
                 color: var(--primary);
             }
@@ -396,7 +396,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #stats-472 {
+    #about-stats {
         padding: var(--sectionPadding);
         background-color: #14142b;
         /* clips the glowing orbs from causing overflow issues when they overflow the container */
@@ -485,7 +485,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #stats-472 {
+    #about-stats {
         &:after {
             display: block;
             left: auto;
@@ -511,7 +511,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #RPsbs-576,
+    #about-info,
     #RPsbsr-576 {
         background-color: var(--primary);
 
@@ -618,7 +618,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #RPsbs-576,
+    #about-info,
     #RPsbsr-576 {
         /* we use margin here instead of padding because we want to create the space OUTSIDE the section.  The overflow on the section clips the boxes we made to make the slanted designs, so we need to push from the outside of the section with margin to create space between it and the next section.  If the section above this Stitch has a white background, add margin-top: 0. If it has a white section below it, add margin-bottom: 0. This will allow more proper spacing and not have too much empty space.  If both sections above and below this Stitch have white backgrounds, you can just remove this margin all together */
         margin: var(--sectionPadding);
@@ -684,7 +684,7 @@
 /* Dark Mode - 768px */
 @media only screen and (min-width: 48rem) {
     body.dark-mode {
-        #RPsbs-576,
+        #about-info,
         #RPsbsr-576 {
             .container {
                 &:before {
@@ -701,7 +701,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #services-596 {
+    #about-services {
         padding: var(--sectionPadding);
         overflow: hidden;
 
@@ -774,7 +774,7 @@
 
 /* In-between - 550px */
 @media only screen and (min-width: 34.375rem) {
-    #services-596 {
+    #about-services {
         .cs-card-group {
             flex-direction: row;
             flex-wrap: wrap;
@@ -791,7 +791,7 @@
 
 /* Desktop 1024px */
 @media only screen and (min-width: 64rem) {
-    #services-596 {
+    #about-services {
         .cs-item {
             width: 31%;
         }
@@ -801,7 +801,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #services-596 {
+        #about-services {
             .cs-content {
                 &:before {
                     /* makes it 40% darker */
@@ -840,7 +840,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #sbs-598 {
+    #about-intro {
         position: relative;
 
         .container {
@@ -937,7 +937,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #sbs-598 {
+    #about-intro {
         /* 90px - 150px */
         /* returned section padding to the section container, this Stitch has 1.5X padding top and bottom than the normal Stitch */
         padding: clamp(5.625rem, 9vw, 9.375rem) calc(16 / 16 * 1rem);
@@ -965,7 +965,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #sbs-598 {
+        #about-intro {
             .topper {
                 color: var(--bodyTextColorWhite);
             }
@@ -988,7 +988,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #steps-1712 {
+    #about-steps {
         overflow: hidden;
         position: relative;
         z-index: 1;
@@ -1088,7 +1088,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #steps-1712 {
+    #about-steps {
         padding: var(--sectionPadding);
 
         .container {
@@ -1134,7 +1134,7 @@
 
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #steps-1712 {
+    #about-steps {
         .wrapper {
             width: 50vw;
         }
@@ -1151,7 +1151,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #steps-1712 {
+        #about-steps {
             .title,
             .h3,
             .item-text {

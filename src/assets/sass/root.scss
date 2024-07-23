@@ -1443,7 +1443,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #cta-1071 {
+    #cta {
         padding: var(--sectionPadding);
         background-color: var(--primary);
         position: relative;
@@ -1622,7 +1622,7 @@
 
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #cta-1071 {
+    #cta {
         .content {
             text-align: left;
             flex-direction: row;
@@ -1643,7 +1643,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #footer-710 {
+    #footer {
         padding: var(--sectionPadding);
         padding-bottom: calc(50 / 16 * 1rem);
         background-color: var(--primary);
@@ -1925,7 +1925,7 @@
 
 /* inbetween - 600px */
 @media only screen and (min-width: 37.5rem) {
-    #footer-710 {
+    #footer {
         .top {
             justify-content: flex-end;
         }
@@ -1942,7 +1942,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #footer-710 {
+    #footer {
         .top {
             flex-wrap: nowrap;
         }
@@ -1960,7 +1960,7 @@
 
 /* Small Desktop 1024px */
 @media only screen and (min-width: 64rem) {
-    #footer-710 {
+    #footer {
         .middle {
             flex-direction: row;
             align-items: center;
@@ -1975,7 +1975,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #banner-712 {
+    #banner {
         /* 175px - 200px top */
         // TODO: Change top padding to match current navbar
         padding: clamp(calc((10.9375 + 4) * 1rem), 10vw, 12.5rem) calc(16 / 16 * 1rem)
@@ -2047,7 +2047,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #banner-712 {
+    #banner {
         .background {
             &:before {
                 opacity: 1;

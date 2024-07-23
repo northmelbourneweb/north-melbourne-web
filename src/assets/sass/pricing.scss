@@ -4,7 +4,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #pricing-603 {
+    #pricing-main {
         padding: var(--sectionPadding);
 
         .container {
@@ -395,7 +395,7 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #pricing-603 {
+    #pricing-main {
         .card-group {
             flex-direction: row;
             justify-content: space-between;
@@ -416,7 +416,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #pricing-603 {
+        #pricing-main {
             .topper {
                 color: var(--bodyTextColorWhite);
             }

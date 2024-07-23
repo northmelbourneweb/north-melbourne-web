@@ -25,13 +25,13 @@
       transform: translateY(0);
     }
   }
-  #sbsr-1363 {
+  #about-hero {
     padding: var(--sectionPadding);
     position: relative;
     overflow: hidden;
     z-index: 1;
   }
-  #sbsr-1363 .container {
+  #about-hero .container {
     width: 100%;
     /* changes to 1280px at desktop */
     max-width: 36.5rem;
@@ -42,7 +42,7 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #sbsr-1363 .content {
+  #about-hero .content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
@@ -52,20 +52,20 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #sbsr-1363 .topper {
+  #about-hero .topper {
     color: #767676;
   }
-  #sbsr-1363 .title {
+  #about-hero .title {
     /* 23 characters wide including spaces */
     max-width: 26ch;
   }
-  #sbsr-1363 .text {
+  #about-hero .text {
     margin-bottom: 1rem;
   }
-  #sbsr-1363 .text:last-of-type {
+  #about-hero .text:last-of-type {
     margin-bottom: 1.5rem;
   }
-  #sbsr-1363 .card-group {
+  #about-hero .card-group {
     width: 100%;
     max-width: 39.375rem;
     margin: 0 0 1.5rem 0;
@@ -75,7 +75,7 @@
     align-items: center;
     gap: clamp(1rem, 2vw, 1.25rem);
   }
-  #sbsr-1363 .item {
+  #about-hero .item {
     list-style: none;
     /* 16px - 24px */
     padding: clamp(1rem, 3vw, 1.5rem);
@@ -89,7 +89,7 @@
     align-items: flex-start;
     gap: 0.75rem;
   }
-  #sbsr-1363 .h3 {
+  #about-hero .h3 {
     font-size: 1.25rem;
     line-height: 1.2em;
     font-weight: 700;
@@ -100,18 +100,18 @@
     align-items: center;
     gap: 0.5rem;
   }
-  #sbsr-1363 .h3-icon {
+  #about-hero .h3-icon {
     width: 2rem;
     height: auto;
     display: block;
   }
-  #sbsr-1363 .item-text {
+  #about-hero .item-text {
     font-size: 0.875rem;
     line-height: 1.5em;
     margin: 0;
     color: var(--bodyTextColor);
   }
-  #sbsr-1363 .ul {
+  #about-hero .ul {
     width: 100%;
     margin: 0 0 1.5rem 0;
     padding: 0;
@@ -120,7 +120,7 @@
     align-items: flex-start;
     gap: 0.75rem;
   }
-  #sbsr-1363 .li {
+  #about-hero .li {
     font-size: var(--bodyFontSize);
     list-style: none;
     line-height: 1.5em;
@@ -132,14 +132,14 @@
     align-items: flex-start;
     gap: 0.5rem;
   }
-  #sbsr-1363 .icon {
+  #about-hero .icon {
     width: 1.5rem;
     height: auto;
     /* adds extra space between the icon and top of parent so it's more centered */
     margin-top: 1px;
     display: block;
   }
-  #sbsr-1363 .button-solid {
+  #about-hero .button-solid {
     font-size: 1rem;
     line-height: 3.5rem;
     text-decoration: none;
@@ -155,7 +155,7 @@
     z-index: 1;
     transition: color 0.3s;
   }
-  #sbsr-1363 .button-solid:before {
+  #about-hero .button-solid:before {
     content: "";
     position: absolute;
     display: block;
@@ -168,13 +168,13 @@
     z-index: -1;
     transition: width 0.3s;
   }
-  #sbsr-1363 .button-solid:hover {
+  #about-hero .button-solid:hover {
     color: var(--primary);
   }
-  #sbsr-1363 .button-solid:hover:before {
+  #about-hero .button-solid:hover:before {
     width: 100%;
   }
-  #sbsr-1363 .image-group {
+  #about-hero .image-group {
     width: 100%;
     max-width: 36.625rem;
     /* Changes to auto at desktop */
@@ -185,21 +185,21 @@
     overflow: hidden;
     position: relative;
   }
-  #sbsr-1363 .background {
+  #about-hero .background {
     width: 100%;
     height: 100%;
     /* makes it cover the parent dimensions */
     object-fit: cover;
     display: block;
   }
-  #sbsr-1363 .background img {
+  #about-hero .background img {
     width: 100%;
     height: 100%;
     /* makes it cover the parent like a backgorund image */
     object-fit: cover;
     display: block;
   }
-  #sbsr-1363 .box {
+  #about-hero .box {
     text-align: left;
     width: 100%;
     max-width: 19rem;
@@ -219,12 +219,12 @@
     /* 12px - 20px */
     bottom: clamp(0.75rem, 1.9vw, 1.5rem);
   }
-  #sbsr-1363 .box-icon {
+  #about-hero .box-icon {
     width: 3.75rem;
     height: auto;
     display: block;
   }
-  #sbsr-1363 .desc {
+  #about-hero .desc {
     font-size: 1.25rem;
     line-height: 1.2em;
     text-align: inherit;
@@ -233,7 +233,7 @@
     margin: 0;
     color: var(--bodyTextColorWhite);
   }
-  #sbsr-1363 .bubbles {
+  #about-hero .bubbles {
     font-size: min(2.5vw, 0.7em);
     width: 26.1875em;
     height: 26.6875em;
@@ -244,7 +244,7 @@
     bottom: -3.125em;
     z-index: -1;
   }
-  #sbsr-1363 .bubbles:before {
+  #about-hero .bubbles:before {
     /* white border bubble */
     content: "";
     width: 20.625em;
@@ -263,7 +263,7 @@
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
   }
-  #sbsr-1363 .bubbles:after {
+  #about-hero .bubbles:after {
     /* orange bubble */
     content: "";
     width: 16.25em;
@@ -285,18 +285,18 @@
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #sbsr-1363 .container {
+  #about-hero .container {
     max-width: 80rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: stretch;
   }
-  #sbsr-1363 .image-group {
+  #about-hero .image-group {
     height: auto;
     /* sends it to the right in the 2nd position */
     order: 2;
   }
-  #sbsr-1363 .bubbles {
+  #about-hero .bubbles {
     font-size: min(2.5vw, 1em);
     bottom: 0rem;
     right: -6.25rem;
@@ -304,7 +304,7 @@
 }
 /* Large Desktop 1600px */
 @media only screen and (min-width: 100rem) {
-  #sbsr-1363 .bubbles {
+  #about-hero .bubbles {
     margin-right: 46.875rem;
     left: auto;
     right: 50%;
@@ -312,31 +312,31 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #sbsr-1363 .topper {
+  body.dark-mode #about-hero .topper {
     color: var(--primary);
   }
-  body.dark-mode #sbsr-1363 .title,
-  body.dark-mode #sbsr-1363 .text,
-  body.dark-mode #sbsr-1363 .li,
-  body.dark-mode #sbsr-1363 .item-text {
+  body.dark-mode #about-hero .title,
+  body.dark-mode #about-hero .text,
+  body.dark-mode #about-hero .li,
+  body.dark-mode #about-hero .item-text {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #sbsr-1363 .text,
-  body.dark-mode #sbsr-1363 .li,
-  body.dark-mode #sbsr-1363 .item-text {
+  body.dark-mode #about-hero .text,
+  body.dark-mode #about-hero .li,
+  body.dark-mode #about-hero .item-text {
     opacity: 0.8;
   }
-  body.dark-mode #sbsr-1363 .item {
+  body.dark-mode #about-hero .item {
     background-color: rgba(0, 0, 0, 0.2);
     border-color: rgba(255, 255, 255, 0.2);
   }
-  body.dark-mode #sbsr-1363 .h3 {
+  body.dark-mode #about-hero .h3 {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #sbsr-1363 .icon {
+  body.dark-mode #about-hero .icon {
     filter: grayscale(1) brightness(1000%);
   }
-  body.dark-mode #sbsr-1363 .bubbles:before {
+  body.dark-mode #about-hero .bubbles:before {
     border-color: rgba(255, 255, 255, 0.2);
   }
 }
@@ -345,7 +345,7 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #stats-472 {
+  #about-stats {
     padding: var(--sectionPadding);
     background-color: #14142b;
     /* clips the glowing orbs from causing overflow issues when they overflow the container */
@@ -353,7 +353,7 @@
     position: relative;
     z-index: 1;
   }
-  #stats-472:before, #stats-472:after {
+  #about-stats:before, #about-stats:after {
     /* glowing orbs */
     content: "";
     width: 28.3125rem;
@@ -368,16 +368,16 @@
     left: -14.1875rem;
     z-index: -1;
   }
-  #stats-472:after {
+  #about-stats:after {
     display: none;
   }
-  #stats-472 .container {
+  #about-stats .container {
     width: 100%;
     /* changes to 1280px at tablet */
     max-width: 43.75rem;
     margin: auto;
   }
-  #stats-472 .card-group {
+  #about-stats .card-group {
     margin: 0;
     padding: 0;
     display: flex;
@@ -385,7 +385,7 @@
     justify-content: center;
     row-gap: 3.75rem;
   }
-  #stats-472 .item {
+  #about-stats .item {
     list-style: none;
     width: 47%;
     max-width: 15rem;
@@ -397,14 +397,14 @@
     flex-direction: column;
     align-items: center;
   }
-  #stats-472 .icon {
+  #about-stats .icon {
     /* 50px - 76px */
     width: clamp(3.125rem, 6vw, 4.75rem);
     height: auto;
     margin: 0 0 1.25rem;
     display: block;
   }
-  #stats-472 .number {
+  #about-stats .number {
     /* 31px - 61px */
     font-size: clamp(1.9375rem, 4.3vw, 3.8125rem);
     line-height: 1.2em;
@@ -413,7 +413,7 @@
     margin: 0 0 0.25rem 0;
     color: var(--bodyTextColorWhite);
   }
-  #stats-472 .desc {
+  #about-stats .desc {
     /* 16px - 20px */
     font-size: clamp(1rem, 2vw, 1.15rem);
     line-height: 1.5em;
@@ -424,16 +424,16 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #stats-472:after {
+  #about-stats:after {
     display: block;
     left: auto;
     top: 3.5625rem;
     right: -17.5625rem;
   }
-  #stats-472 .container {
+  #about-stats .container {
     max-width: 80rem;
   }
-  #stats-472 .card-group {
+  #about-stats .card-group {
     justify-content: space-between;
     flex-wrap: nowrap;
     gap: 1rem;
@@ -444,11 +444,11 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #RPsbs-576,
+  #about-info,
   #RPsbsr-576 {
     background-color: var(--primary);
   }
-  #RPsbs-576 .container,
+  #about-info .container,
   #RPsbsr-576 .container {
     width: 100%;
     max-width: 80rem;
@@ -459,7 +459,7 @@
     /* 48px - 64px */
     gap: clamp(3rem, 7vw, 4rem);
   }
-  #RPsbs-576 .content,
+  #about-info .content,
   #RPsbsr-576 .content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
@@ -475,23 +475,23 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #RPsbs-576 .topper,
-  #RPsbs-576 .title,
+  #about-info .topper,
+  #about-info .title,
   #RPsbsr-576 .topper,
   #RPsbsr-576 .title {
     color: var(--bodyTextColorWhite);
   }
-  #RPsbs-576 .text,
+  #about-info .text,
   #RPsbsr-576 .text {
     margin-bottom: 1rem;
     color: var(--bodyTextColorWhite);
     opacity: 0.8;
   }
-  #RPsbs-576 .text:last-of-type,
+  #about-info .text:last-of-type,
   #RPsbsr-576 .text:last-of-type {
     margin-bottom: 2rem;
   }
-  #RPsbs-576 .button-solid,
+  #about-info .button-solid,
   #RPsbsr-576 .button-solid {
     font-size: 1rem;
     /* 46px - 56px */
@@ -512,7 +512,7 @@
     box-sizing: border-box;
     transition: color 0.3s;
   }
-  #RPsbs-576 .button-solid:before,
+  #about-info .button-solid:before,
   #RPsbsr-576 .button-solid:before {
     content: "";
     position: absolute;
@@ -526,22 +526,22 @@
     border-radius: 0.25rem;
     transition: width 0.3s;
   }
-  #RPsbs-576 .button-solid:hover,
+  #about-info .button-solid:hover,
   #RPsbsr-576 .button-solid:hover {
     color: #fff;
   }
-  #RPsbs-576 .button-solid:hover:before,
+  #about-info .button-solid:hover:before,
   #RPsbsr-576 .button-solid:hover:before {
     width: 100%;
   }
-  #RPsbs-576 .picture,
+  #about-info .picture,
   #RPsbsr-576 .picture {
     display: block;
     position: relative;
     width: 100%;
     height: 18.75rem;
   }
-  #RPsbs-576 .picture img,
+  #about-info .picture img,
   #RPsbsr-576 .picture img {
     position: absolute;
     top: 0;
@@ -553,7 +553,7 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #RPsbs-576,
+  #about-info,
   #RPsbsr-576 {
     /* we use margin here instead of padding because we want to create the space OUTSIDE the section.  The overflow on the section clips the boxes we made to make the slanted designs, so we need to push from the outside of the section with margin to create space between it and the next section.  If the section above this Stitch has a white background, add margin-top: 0. If it has a white section below it, add margin-bottom: 0. This will allow more proper spacing and not have too much empty space.  If both sections above and below this Stitch have white backgrounds, you can just remove this margin all together */
     margin: var(--sectionPadding);
@@ -564,13 +564,13 @@
     /* clips the red box from overflowing the section */
     overflow: hidden;
   }
-  #RPsbs-576 .container,
+  #about-info .container,
   #RPsbsr-576 .container {
     flex-direction: row;
     position: relative;
     z-index: 1;
   }
-  #RPsbs-576 .container:before,
+  #about-info .container:before,
   #RPsbsr-576 .container:before {
     /* red box */
     content: "";
@@ -585,13 +585,13 @@
     left: 50%;
     z-index: -1;
   }
-  #RPsbs-576 .content,
+  #about-info .content,
   #RPsbsr-576 .content {
     width: 51%;
     /* reset the padding, add the section padding back to the section container */
     padding: 0;
   }
-  #RPsbs-576 .picture,
+  #about-info .picture,
   #RPsbsr-576 .picture {
     width: 47vw;
     max-width: 38.625rem;
@@ -600,7 +600,7 @@
     margin: clamp(1.5rem, 3vw, 2rem) 0 clamp(1.5rem, 3vw, 2rem) clamp(1.5rem, 3vw, 2rem);
     position: relative;
   }
-  #RPsbs-576 .picture:before,
+  #about-info .picture:before,
   #RPsbsr-576 .picture:before {
     /* yellow box */
     content: "";
@@ -617,7 +617,7 @@
 }
 /* Dark Mode - 768px */
 @media only screen and (min-width: 48rem) {
-  body.dark-mode #RPsbs-576 .container:before,
+  body.dark-mode #about-info .container:before,
   body.dark-mode #RPsbsr-576 .container:before {
     opacity: 0.5;
   }
@@ -627,11 +627,11 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #services-596 {
+  #about-services {
     padding: var(--sectionPadding);
     overflow: hidden;
   }
-  #services-596 .cs-container {
+  #about-services .cs-container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -640,7 +640,7 @@
     align-items: center;
     gap: 3rem;
   }
-  #services-596 .cs-content {
+  #about-services .cs-content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -649,7 +649,7 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #services-596 .cs-card-group {
+  #about-services .cs-card-group {
     width: 100%;
     margin: 0;
     /* 36px - 80px top & bottom */
@@ -665,7 +665,7 @@
     /* 32px - 64px */
     row-gap: clamp(2rem, 7vw, 4rem);
   }
-  #services-596 .cs-item {
+  #about-services .cs-item {
     text-align: left;
     list-style: none;
     width: 100%;
@@ -674,7 +674,7 @@
     align-items: flex-start;
     gap: 1rem;
   }
-  #services-596 .cs-h3 {
+  #about-services .cs-h3 {
     /* 20px - 25px */
     font-size: clamp(1.25rem, 3vw, 1.5625rem);
     line-height: 1.2em;
@@ -682,7 +682,7 @@
     margin: 0;
     color: var(--headerColor);
   }
-  #services-596 .cs-item-text {
+  #about-services .cs-item-text {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 3vw, 1rem);
     line-height: 1.5em;
@@ -693,44 +693,44 @@
 }
 /* In-between - 550px */
 @media only screen and (min-width: 34.375rem) {
-  #services-596 .cs-card-group {
+  #about-services .cs-card-group {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     /* 48px - 64px */
     row-gap: clamp(3rem, 6vw, 4rem);
   }
-  #services-596 .cs-item {
+  #about-services .cs-item {
     width: 47%;
   }
 }
 /* Desktop 1024px */
 @media only screen and (min-width: 64rem) {
-  #services-596 .cs-item {
+  #about-services .cs-item {
     width: 31%;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #services-596 .cs-content:before {
+  body.dark-mode #about-services .cs-content:before {
     /* makes it 40% darker */
     filter: brightness(60%);
   }
-  body.dark-mode #services-596 .cs-card-group {
+  body.dark-mode #about-services .cs-card-group {
     background-color: var(--medium);
   }
-  body.dark-mode #services-596 .cs-topper,
-  body.dark-mode #services-596 .cs-title,
-  body.dark-mode #services-596 .cs-text,
-  body.dark-mode #services-596 .cs-h3,
-  body.dark-mode #services-596 .cs-item-text {
+  body.dark-mode #about-services .cs-topper,
+  body.dark-mode #about-services .cs-title,
+  body.dark-mode #about-services .cs-text,
+  body.dark-mode #about-services .cs-h3,
+  body.dark-mode #about-services .cs-item-text {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #services-596 .cs-item-text,
-  body.dark-mode #services-596 .cs-text {
+  body.dark-mode #about-services .cs-item-text,
+  body.dark-mode #about-services .cs-text {
     opacity: 0.8;
   }
-  body.dark-mode #services-596 .cs-icon {
+  body.dark-mode #about-services .cs-icon {
     /* turns it white */
     filter: grayscale(1) brightness(1000%);
   }
@@ -740,10 +740,10 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #sbs-598 {
+  #about-intro {
     position: relative;
   }
-  #sbs-598 .container {
+  #about-intro .container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -753,7 +753,7 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #sbs-598 .content {
+  #about-intro .content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
@@ -767,13 +767,13 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: flex-start;
   }
-  #sbs-598 .text {
+  #about-intro .text {
     margin-bottom: 1rem;
   }
-  #sbs-598 .text:last-of-type {
+  #about-intro .text:last-of-type {
     margin-bottom: 2rem;
   }
-  #sbs-598 .button-solid {
+  #about-intro .button-solid {
     font-size: 1rem;
     /* 46px - 56px */
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -792,7 +792,7 @@
     /* prevents padding from adding to the width */
     box-sizing: border-box;
   }
-  #sbs-598 .button-solid:before {
+  #about-intro .button-solid:before {
     content: "";
     position: absolute;
     height: 100%;
@@ -805,17 +805,17 @@
     border-radius: 0.25rem;
     transition: width 0.3s;
   }
-  #sbs-598 .button-solid:hover:before {
+  #about-intro .button-solid:hover:before {
     width: 100%;
   }
-  #sbs-598 .background {
+  #about-intro .background {
     display: block;
     position: relative;
     width: 100%;
     height: 16rem;
     z-index: 1;
   }
-  #sbs-598 .background img {
+  #about-intro .background img {
     position: absolute;
     top: 0;
     left: 0;
@@ -826,16 +826,16 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #sbs-598 {
+  #about-intro {
     /* 90px - 150px */
     /* returned section padding to the section container, this Stitch has 1.5X padding top and bottom than the normal Stitch */
     padding: clamp(5.625rem, 9vw, 9.375rem) 1rem;
   }
-  #sbs-598 .container {
+  #about-intro .container {
     flex-direction: row;
     justify-content: flex-end;
   }
-  #sbs-598 .background {
+  #about-intro .background {
     width: 50%;
     height: auto;
     position: absolute;
@@ -843,21 +843,21 @@
     bottom: 0;
     right: 50%;
   }
-  #sbs-598 .content {
+  #about-intro .content {
     width: 45%;
     padding: 0;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #sbs-598 .topper {
+  body.dark-mode #about-intro .topper {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #sbs-598 .title,
-  body.dark-mode #sbs-598 .text {
+  body.dark-mode #about-intro .title,
+  body.dark-mode #about-intro .text {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #sbs-598 .text {
+  body.dark-mode #about-intro .text {
     opacity: 0.8;
   }
 }
@@ -866,18 +866,18 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #steps-1712 {
+  #about-steps {
     overflow: hidden;
     position: relative;
     z-index: 1;
   }
-  #steps-1712 .container {
+  #about-steps .container {
     max-width: 80rem;
     margin: auto;
     display: flex;
     flex-direction: column;
   }
-  #steps-1712 .wrapper {
+  #about-steps .wrapper {
     /* changes to 630px on tablet */
     max-width: 31.25rem;
     margin: auto;
@@ -887,7 +887,7 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #steps-1712 .content {
+  #about-steps .content {
     /* set text align to center if content needs to be centrally aligned */
     text-align: left;
     width: 100%;
@@ -896,10 +896,10 @@
     /* aligns content to the left, set to center to centrally align */
     align-items: flex-start;
   }
-  #steps-1712 .title {
+  #about-steps .title {
     margin: 0;
   }
-  #steps-1712 .card-group {
+  #about-steps .card-group {
     margin: 0;
     padding: 0;
     display: grid;
@@ -909,13 +909,13 @@
     gap: clamp(1.5rem, 3vw, 2rem);
     grid-auto-flow: row;
   }
-  #steps-1712 .item {
+  #about-steps .item {
     list-style: none;
     display: flex;
     align-items: flex-start;
     position: relative;
   }
-  #steps-1712 .number {
+  #about-steps .number {
     /* 80px - 100px */
     font-size: clamp(5rem, 9vw, 6.25rem);
     font-weight: 900;
@@ -926,14 +926,14 @@
     opacity: 0.12;
     display: block;
   }
-  #steps-1712 .h3 {
+  #about-steps .h3 {
     font-size: 1.5625rem;
     font-weight: 700;
     line-height: 1.2em;
     margin: 0 0 0.75rem 0;
     color: var(--headerColor);
   }
-  #steps-1712 .item-text {
+  #about-steps .item-text {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 2vw, 1rem);
     line-height: 1.5em;
@@ -941,12 +941,12 @@
     margin: 0;
     color: var(--bodyTextColor);
   }
-  #steps-1712 .background {
+  #about-steps .background {
     width: 100%;
     height: 22.5rem;
     display: block;
   }
-  #steps-1712 .background img {
+  #about-steps .background img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -954,34 +954,34 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #steps-1712 {
+  #about-steps {
     padding: var(--sectionPadding);
   }
-  #steps-1712 .container {
+  #about-steps .container {
     padding: 0;
     justify-content: flex-start;
   }
-  #steps-1712 .title {
+  #about-steps .title {
     margin: 0;
   }
-  #steps-1712 .wrapper {
+  #about-steps .wrapper {
     width: 65vw;
     max-width: 39.375rem;
     margin: 0;
     padding: 0;
   }
-  #steps-1712 .card-group {
+  #about-steps .card-group {
     /* 16px - 32px */
     gap: clamp(1rem, 3vw, 2rem);
   }
-  #steps-1712 .item {
+  #about-steps .item {
     flex-direction: row;
   }
-  #steps-1712 .picture {
+  #about-steps .picture {
     width: 11.25rem;
     height: 11.25rem;
   }
-  #steps-1712 .background {
+  #about-steps .background {
     width: 30%;
     height: auto;
     position: absolute;
@@ -992,10 +992,10 @@
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #steps-1712 .wrapper {
+  #about-steps .wrapper {
     width: 50vw;
   }
-  #steps-1712 .background {
+  #about-steps .background {
     width: 50vw;
     left: 50%;
     right: auto;
@@ -1004,12 +1004,12 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #steps-1712 .title,
-  body.dark-mode #steps-1712 .h3,
-  body.dark-mode #steps-1712 .item-text {
+  body.dark-mode #about-steps .title,
+  body.dark-mode #about-steps .h3,
+  body.dark-mode #about-steps .item-text {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #steps-1712 .item-text {
+  body.dark-mode #about-steps .item-text {
     opacity: 0.8;
   }
 }
