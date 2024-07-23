@@ -76,7 +76,7 @@
             text-align: inherit;
             max-width: calc(829 / 16 * 1rem);
             margin: 0 auto calc(16 / 16 * 1rem) 0;
-            color: #fff;
+            color: var(--headerColorWhite);
             position: relative;
         }
 
@@ -89,7 +89,7 @@
             /* 464px - 622px */
             max-width: clamp(29rem, 60vw, 38.785rem);
             margin: 0 0 calc(40 / 16 * 1rem) 0;
-            color: #fff;
+            color: var(--headerColorWhite);
         }
 
         .button-solid {
@@ -99,7 +99,7 @@
             text-decoration: none;
             font-weight: 700;
             margin: 0;
-            color: #fff;
+            color: var(--headerColorWhite);
             padding: 0 calc(24 / 16 * 1rem);
             background-color: var(--primary);
             display: inline-block;

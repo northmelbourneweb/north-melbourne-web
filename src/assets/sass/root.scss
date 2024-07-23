@@ -8,13 +8,17 @@
 @media only screen and (min-width: 0rem) {
     // Website colors
     :root {
-        --primary: #ffba19;
-        --primaryLight: #ffd675;
-        --secondary: #001f3f;
-        --secondaryLight: #001f3f;
+        --primary: #44195e;
+        --primaryLight: #8f759e;
+        --accent: #C52233;
+        --background: #F7F0F0;
+        --backgroundShade: ded8d8;
+
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
-        --bodyTextColorWhite: #fafbfc;
+
+        --headerColorWhite: #F0F0F0;
+        --bodyTextColorWhite: #F0F0F0;
 
         /* 13px - 16px */
         --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
@@ -424,7 +428,7 @@
         width: 100%;
         /* prevents padding from affecting height and width */
         box-sizing: border-box;
-        background-color: #fff;
+        background-color: var(--background);
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         position: fixed;
         z-index: 10000;
@@ -476,7 +480,7 @@
             /* prevents padding from affecting height and width */
             box-sizing: border-box;
             padding: calc(16/16 * 1rem) calc(24/16 * 1rem);
-            background-color: #f7f7f7;
+            background-color: var(--backgroundShade);
             display: flex;
             justify-content: space-between;
             align-items: center;
