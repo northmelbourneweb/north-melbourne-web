@@ -54,13 +54,13 @@
   }
   #hero .content {
     /* set text align to left if content needs to be left aligned */
-    text-align: center;
+    text-align: left;
     width: 100%;
     max-width: 39.375rem;
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
-    align-items: center;
+    align-items: left;
   }
   #hero .title {
     /* 39px - 61px */
