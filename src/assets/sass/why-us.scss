@@ -398,7 +398,7 @@
 @media only screen and (min-width: 0rem) {
     #about-stats {
         padding: var(--sectionPadding);
-        background-color: #14142b;
+        background-color: var(--primary);
         /* clips the glowing orbs from causing overflow issues when they overflow the container */
         overflow: hidden;
         position: relative;
@@ -705,7 +705,7 @@
         padding: var(--sectionPadding);
         overflow: hidden;
 
-        .cs-container {
+        .container {
             width: 100%;
             max-width: calc(1280 / 16 * 1rem);
             margin: auto;
@@ -715,7 +715,7 @@
             gap: calc(48 / 16 * 1rem);
         }
 
-        .cs-content {
+        .content {
             /* set text align to left if content needs to be left aligned */
             text-align: center;
             width: 100%;
@@ -725,7 +725,7 @@
             align-items: center;
         }
 
-        .cs-card-group {
+        .card-group {
             width: 100%;
             margin: 0;
             /* 36px - 80px top & bottom */
@@ -742,7 +742,7 @@
             row-gap: clamp(2rem, 7vw, 4rem);
         }
 
-        .cs-item {
+        .item {
             text-align: left;
             list-style: none;
             width: 100%;
@@ -752,7 +752,7 @@
             gap: calc(16 / 16 * 1rem);
         }
 
-        .cs-h3 {
+        .h3 {
             /* 20px - 25px */
             font-size: clamp(1.25rem, 3vw, 1.5625rem);
             line-height: 1.2em;
@@ -761,7 +761,7 @@
             color: var(--headerColor);
         }
 
-        .cs-item-text {
+        .item-text {
             /* 14px - 16px */
             font-size: clamp(0.875rem, 3vw, 1rem);
             line-height: 1.5em;
@@ -775,7 +775,7 @@
 /* In-between - 550px */
 @media only screen and (min-width: 34.375rem) {
     #about-services {
-        .cs-card-group {
+        .card-group {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -783,7 +783,7 @@
             row-gap: clamp(3rem, 6vw, 4rem);
         }
 
-        .cs-item {
+        .item {
             width: 47%;
         }
     }
@@ -792,7 +792,7 @@
 /* Desktop 1024px */
 @media only screen and (min-width: 64rem) {
     #about-services {
-        .cs-item {
+        .item {
             width: 31%;
         }
     }
@@ -802,30 +802,30 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #about-services {
-            .cs-content {
+            .content {
                 &:before {
                     /* makes it 40% darker */
                     filter: brightness(60%);
                 }
             }
-            .cs-card-group {
+            .card-group {
                 background-color: var(--medium);
             }
 
-            .cs-topper,
-            .cs-title,
-            .cs-text,
-            .cs-h3,
-            .cs-item-text {
+            .topper,
+            .title,
+            .text,
+            .h3,
+            .item-text {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-item-text,
-            .cs-text {
+            .item-text,
+            .text {
                 opacity: 0.8;
             }
 
-            .cs-icon {
+            .icon {
                 /* turns it white */
                 filter: grayscale(1) brightness(1000%);
             }
@@ -1018,7 +1018,8 @@
             display: flex;
             flex-direction: column;
             /* aligns content to the left, set to center to centrally align */
-            align-items: flex-start;
+            // align-items: flex-start;
+            align-items: center;
         }
 
         .title {

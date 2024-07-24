@@ -347,7 +347,7 @@
 @media only screen and (min-width: 0rem) {
   #about-stats {
     padding: var(--sectionPadding);
-    background-color: #14142b;
+    background-color: var(--primary);
     /* clips the glowing orbs from causing overflow issues when they overflow the container */
     overflow: hidden;
     position: relative;
@@ -631,7 +631,7 @@
     padding: var(--sectionPadding);
     overflow: hidden;
   }
-  #about-services .cs-container {
+  #about-services .container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -640,7 +640,7 @@
     align-items: center;
     gap: 3rem;
   }
-  #about-services .cs-content {
+  #about-services .content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -649,7 +649,7 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #about-services .cs-card-group {
+  #about-services .card-group {
     width: 100%;
     margin: 0;
     /* 36px - 80px top & bottom */
@@ -665,7 +665,7 @@
     /* 32px - 64px */
     row-gap: clamp(2rem, 7vw, 4rem);
   }
-  #about-services .cs-item {
+  #about-services .item {
     text-align: left;
     list-style: none;
     width: 100%;
@@ -674,7 +674,7 @@
     align-items: flex-start;
     gap: 1rem;
   }
-  #about-services .cs-h3 {
+  #about-services .h3 {
     /* 20px - 25px */
     font-size: clamp(1.25rem, 3vw, 1.5625rem);
     line-height: 1.2em;
@@ -682,7 +682,7 @@
     margin: 0;
     color: var(--headerColor);
   }
-  #about-services .cs-item-text {
+  #about-services .item-text {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 3vw, 1rem);
     line-height: 1.5em;
@@ -693,44 +693,44 @@
 }
 /* In-between - 550px */
 @media only screen and (min-width: 34.375rem) {
-  #about-services .cs-card-group {
+  #about-services .card-group {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     /* 48px - 64px */
     row-gap: clamp(3rem, 6vw, 4rem);
   }
-  #about-services .cs-item {
+  #about-services .item {
     width: 47%;
   }
 }
 /* Desktop 1024px */
 @media only screen and (min-width: 64rem) {
-  #about-services .cs-item {
+  #about-services .item {
     width: 31%;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #about-services .cs-content:before {
+  body.dark-mode #about-services .content:before {
     /* makes it 40% darker */
     filter: brightness(60%);
   }
-  body.dark-mode #about-services .cs-card-group {
+  body.dark-mode #about-services .card-group {
     background-color: var(--medium);
   }
-  body.dark-mode #about-services .cs-topper,
-  body.dark-mode #about-services .cs-title,
-  body.dark-mode #about-services .cs-text,
-  body.dark-mode #about-services .cs-h3,
-  body.dark-mode #about-services .cs-item-text {
+  body.dark-mode #about-services .topper,
+  body.dark-mode #about-services .title,
+  body.dark-mode #about-services .text,
+  body.dark-mode #about-services .h3,
+  body.dark-mode #about-services .item-text {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #about-services .cs-item-text,
-  body.dark-mode #about-services .cs-text {
+  body.dark-mode #about-services .item-text,
+  body.dark-mode #about-services .text {
     opacity: 0.8;
   }
-  body.dark-mode #about-services .cs-icon {
+  body.dark-mode #about-services .icon {
     /* turns it white */
     filter: grayscale(1) brightness(1000%);
   }
@@ -894,7 +894,7 @@
     display: flex;
     flex-direction: column;
     /* aligns content to the left, set to center to centrally align */
-    align-items: flex-start;
+    align-items: center;
   }
   #about-steps .title {
     margin: 0;

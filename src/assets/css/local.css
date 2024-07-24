@@ -5,7 +5,7 @@
 @media only screen and (min-width: 0rem) {
   #index-intro {
     padding: var(--sectionPadding);
-    background-color: #f7f7f7;
+    background-color: var(--background);
   }
   #index-intro .container {
     width: 100%;
@@ -186,11 +186,11 @@
   body.dark-mode #index-intro {
     background-color: rgba(0, 0, 0, 0.2);
   }
-  body.dark-mode #index-intro .title, body.dark-mode #index-intro .text, body.dark-mode #index-intro .h3, body.dark-mode #index-intro .item-text {
+  body.dark-mode #index-intro .title, body.dark-mode #index-intro .text, body.dark-mode #index-intro .h3, body.dark-mode #index-intro .item-text, body.dark-mode #index-intro .fake-link {
     color: var(--bodyTextColorWhite);
   }
   body.dark-mode #index-intro .text, body.dark-mode #index-intro .item-text {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 /*-- -------------------------- -->
@@ -237,7 +237,7 @@
     font-weight: 700;
     text-align: center;
     margin: 0;
-    color: #fff;
+    color: var(--headerColorWhite);
     min-width: 9.375rem;
     padding: 0 1.5rem;
     background-color: var(--primary);
@@ -330,7 +330,7 @@
     color: var(--bodyTextColorWhite);
   }
   body.dark-mode #index-about .text {
-    opacity: 0.8;
+    opacity: 0.9;
   }
   body.dark-mode #index-about .picture:before {
     background-color: var(--accent);
@@ -401,7 +401,7 @@
     /* 24px - 64px bottom */
     /* 24px - 40px left & right */
     padding: 0 clamp(1.5rem, 4vw, 2.5rem) clamp(1.5rem, 6vw, 4rem);
-    background-color: #f7f3ee;
+    background-color: var(--backgroundShade);
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
     grid-column: span 12;
@@ -449,7 +449,7 @@
   }
   #index-services .item-text {
     /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    font-size: clamp(0.975rem, 1.5vw, 1rem);
     line-height: 1.5em;
     max-width: 18.75rem;
     margin: 0 0 2rem 0;
@@ -468,7 +468,7 @@
     transition: color 0.3s;
   }
   #index-services .link:hover {
-    color: #fff;
+    color: var(--headerColorWhite);
   }
   #index-services .link:before {
     /* underline */
@@ -501,7 +501,7 @@
     height: 100%;
     width: 100%;
     background: #1a1a1a;
-    opacity: 0.84;
+    opacity: 0.94;
     top: 0;
     left: 0;
     z-index: 1;
@@ -562,8 +562,12 @@
   body.dark-mode #index-services .title,
   body.dark-mode #index-services .text,
   body.dark-mode #index-services .h3,
-  body.dark-mode #index-services .item-text {
+  body.dark-mode #index-services .item-text,
+  body.dark-mode #index-services .link {
     color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #index-services .link:hover {
+    color: var(--primaryLight);
   }
   body.dark-mode #index-services .text,
   body.dark-mode #index-services .item-text {
@@ -578,11 +582,11 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #index-faq {
+  #faq {
     position: relative;
     overflow: hidden;
   }
-  #index-faq .container {
+  #faq .container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -593,14 +597,14 @@
     /* 40px - 48px */
     gap: clamp(2.5rem, 5vw, 3rem);
   }
-  #index-faq .picture {
+  #faq .picture {
     display: block;
     position: relative;
     width: 100%;
     height: 16rem;
     z-index: 1;
   }
-  #index-faq .picture img {
+  #faq .picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -608,7 +612,7 @@
     width: 100%;
     object-fit: cover;
   }
-  #index-faq .content {
+  #faq .content {
     text-align: left;
     max-width: 33.8125rem;
     /* move section padding to the content so we can make the picture full width */
@@ -617,12 +621,12 @@
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
   }
-  #index-faq .title {
+  #faq .title {
     /* 20 characters wide including spaces */
     max-width: 20ch;
     margin: 0 0 1.5rem 0;
   }
-  #index-faq .faq-group {
+  #faq .faq-group {
     padding: 0;
     margin: 0;
     display: flex;
@@ -630,33 +634,33 @@
     align-items: center;
     flex-direction: column;
   }
-  #index-faq .faq-item {
+  #faq .faq-item {
     list-style: none;
     width: 100%;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid var(--background);
     transition: border-bottom 0.3s;
   }
-  #index-faq .faq-item.active {
+  #faq .faq-item.active {
     border-color: var(--primaryLight);
   }
-  #index-faq .faq-item.active .button {
+  #faq .faq-item.active .button {
     color: var(--primary);
   }
-  #index-faq .faq-item.active .button:before {
+  #faq .faq-item.active .button:before {
     background-color: var(--primaryLight);
     transform: rotate(315deg);
   }
-  #index-faq .faq-item.active .button:after {
+  #faq .faq-item.active .button:after {
     background-color: var(--primaryLight);
     transform: rotate(-315deg);
   }
-  #index-faq .faq-item.active .item-p {
+  #faq .faq-item.active .item-p {
     height: auto;
     /* 20px - 24px bottom */
     padding: 0 0 clamp(1rem, 2vw, 1.5rem) 0;
     opacity: 1;
   }
-  #index-faq .button {
+  #faq .button {
     /* 16px - 20px */
     font-size: clamp(1rem, 2vw, 1.25rem);
     line-height: 1.2em;
@@ -672,10 +676,10 @@
     position: relative;
     transition: background-color 0.3s, color 0.3s;
   }
-  #index-faq .button:hover {
+  #faq .button:hover {
     cursor: pointer;
   }
-  #index-faq .button:before {
+  #faq .button:before {
     /* left line */
     content: "";
     width: 0.5rem;
@@ -692,7 +696,7 @@
     transform-origin: left center;
     transition: transform 0.5s;
   }
-  #index-faq .button:after {
+  #faq .button:after {
     /* right line */
     content: "";
     width: 0.5rem;
@@ -709,13 +713,13 @@
     transform-origin: right center;
     transition: transform 0.5s;
   }
-  #index-faq .button-text {
+  #faq .button-text {
     width: 90%;
     display: block;
   }
-  #index-faq .item-p {
+  #faq .item-p {
     /* 14px - 16px */
-    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    font-size: clamp(0.975rem, 1.5vw, 1rem);
     line-height: 1.5em;
     width: 90%;
     max-width: 33.8125rem;
@@ -728,7 +732,7 @@
     overflow: hidden;
     transition: opacity 0.3s, padding-bottom 0.3s;
   }
-  #index-faq .graphic {
+  #faq .graphic {
     width: 22.5625rem;
     height: auto;
     opacity: 0.5;
@@ -740,57 +744,57 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #index-faq {
+  #faq {
     /* moved seciton padding back to the section */
     padding: var(--sectionPadding);
   }
-  #index-faq .container {
+  #faq .container {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
   }
-  #index-faq .picture {
+  #faq .picture {
     width: 50%;
     max-width: 40.625rem;
     /* 500px - 750px */
     height: clamp(31.25rem, 68vw, 46.875rem);
   }
-  #index-faq .content {
+  #faq .content {
     width: 55%;
     padding: 0;
   }
 }
 /* Desktop - 1600px */
 @media only screen and (min-width: 100rem) {
-  #index-faq .graphic {
+  #faq .graphic {
     display: block;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #index-faq .topper {
+  body.dark-mode #faq .topper {
     color: var(--primaryLight);
   }
-  body.dark-mode #index-faq .title,
-  body.dark-mode #index-faq .item-p {
+  body.dark-mode #faq .title,
+  body.dark-mode #faq .item-p {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #index-faq .faq-item {
+  body.dark-mode #faq .faq-item {
     border-color: rgba(255, 255, 255, 0.2);
   }
-  body.dark-mode #index-faq .faq-item.active {
+  body.dark-mode #faq .faq-item.active {
     border-color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #index-faq .faq-item.active .button {
+  body.dark-mode #faq .faq-item.active .button {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #index-faq .faq-item.active .button:before, body.dark-mode #index-faq .faq-item.active .button:after {
+  body.dark-mode #faq .faq-item.active .button:before, body.dark-mode #faq .faq-item.active .button:after {
     background-color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #index-faq .button {
+  body.dark-mode #faq .button {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #index-faq .button:before, body.dark-mode #index-faq .button:after {
+  body.dark-mode #faq .button:before, body.dark-mode #faq .button:after {
     background-color: var(--bodyTextColorWhite);
   }
 }

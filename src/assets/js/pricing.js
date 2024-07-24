@@ -1,5 +1,5 @@
-const toggle = document.querySelector("#pricing-603 .cs-toggle");
-        const cardGroup = Array.from(document.querySelectorAll('.cs-card-group'))
+const toggle = document.querySelector("#pricing-603 .toggle");
+        const cardGroup = Array.from(document.querySelectorAll('.card-group'))
 
         toggle.addEventListener('click', (e) => { 
             for (const item of cardGroup) {
