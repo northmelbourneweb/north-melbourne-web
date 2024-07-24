@@ -1,4 +1,4 @@
-const toggle = document.querySelector("#pricing-603 .toggle");
+const toggle = document.querySelector("#pricing-main .toggle");
         const cardGroup = Array.from(document.querySelectorAll('.card-group'))
 
         toggle.addEventListener('click', (e) => { 
