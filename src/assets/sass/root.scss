@@ -15,6 +15,7 @@
         --headerColor: #1a1a1a;
         --bodyTextColor: #4e4b66;
         --bodyTextColorWhite: #fafbfc;
+        --background: #fff;
         /* 13px - 16px */
         --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
         /* 31px - 49px */
@@ -66,7 +67,8 @@
         display: inline-block;
         background-color: var(--primary);
         width: auto;
-        padding: 0 calc(30 / 16 * 1rem);
+        padding: 0 calc(48 / 16 * 1rem);
+        border-radius: calc(30 / 16 * 1rem);
         text-decoration: none;
         text-transform: uppercase;
         font-size: calc(16 / 16 * 1rem);
@@ -74,7 +76,7 @@
         font-weight: bold;
 
         // Transition Properties
-        color: #000;
+        color: var(--bodyTextColorWhite);
         transition: color 0.3s;
         transition-delay: 0.1s;
         text-align: center;
@@ -486,6 +488,7 @@
             width: calc(24 / 16 * 1rem);
             height: auto;
             display: block;
+            opacity: 0.6;
         }
 
         .cs-social {
@@ -911,9 +914,11 @@
 	    	font-weight: 700;
 	        text-align: center;
             margin: 0;
-            color: #fff;
+            color: var(--bodyTextColorWhite);
             min-width: calc(150 / 16 * 1rem);
             padding: 0 calc(32 / 16 * 1rem);
+
+            border-radius: calc(30 / 16 * 1rem); 
             background-color: var(--primary);
             display: inline-block;
             position: relative;
@@ -1329,6 +1334,7 @@
             width: calc(24 / 16 * 1rem);
             height: auto;
             display: block;
+            opacity: 0.6;
         }
 
         .cs-form {

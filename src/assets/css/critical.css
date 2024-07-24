@@ -102,20 +102,11 @@
     color: #e8e8e8;
   }
   #hero-1351 .cs-button-solid {
-    font-size: 1rem;
-    line-height: 3.5rem;
-    text-decoration: none;
     font-weight: 700;
     overflow: hidden;
     margin: 0;
     color: #fff;
-    padding: 0 3rem;
-    border-radius: 1.875rem;
     background-color: var(--primary);
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    transition: color 0.3s;
   }
   #hero-1351 .cs-button-solid:before {
     content: "";

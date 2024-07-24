@@ -29,7 +29,7 @@
         }
 
         .cs-topper {
-            color: #767676;
+            color: var(--primary);
         }
 
         .cs-card-group {
@@ -163,7 +163,7 @@
             }
 
             .cs-text {
-                opacity: 0.8;
+                opacity: 0.9;
             }
 
             .cs-icon {
@@ -238,9 +238,9 @@
             align-items: center;
         }
 
-        .cs-topper {
-            color: #767676;
-        }
+        // .cs-topper {
+        //     color: #767676;
+        // }
 
         .cs-title {
             max-width: 25ch;
@@ -261,7 +261,7 @@
             max-width: 37ch;
             /* 16px - 24px */
             margin: 0 0 clamp(1rem, 1.6vw, 1.5rem);
-            color: var(--primary);
+            color: var(--primaryLight);
         }
 
         .cs-button-solid {
@@ -271,14 +271,7 @@
             font-weight: 700;
             overflow: hidden;
             margin: 0;
-            color: #fff;
             padding: 0 calc(48 / 16 * 1rem);
-            border-radius: calc(30 / 16 * 1rem);
-            background-color: var(--primary);
-            display: inline-block;
-            position: relative;
-            z-index: 1;
-            transition: color 0.3s;
 
             &:before {
                 content: "";
@@ -295,7 +288,7 @@
             }
 
             &:hover {
-                color: var(--primary);
+                // color: var(--primary);
                 &:before {
                     width: 100%;
                 }
@@ -458,7 +451,7 @@
             }
 
             .cs-text {
-                opacity: 0.8;
+                opacity: 0.9;
             }
 
             .cs-bubbles {
@@ -604,11 +597,11 @@
                 }
 
                 .cs-item-text {
-                    opacity: 0.8;
+                    opacity: 0.9;
                 }
 
                 .cs-h3-icon {
-                    filter: grayscale(1) brightness(1000%);
+                    filter: invert(1);
                 }
             }
         }
@@ -674,7 +667,7 @@
             }
 
             &:hover {
-                color: var(--primary);
+                // color: var(--primary);
                 &:before {
                     width: 100%;
                 }
@@ -880,7 +873,7 @@
 
             .cs-text,
             .cs-item-text {
-                opacity: 0.8;
+                opacity: 0.9;
             }
 
             .cs-item {
@@ -958,7 +951,7 @@
         }
 
         .cs-topper {
-            color: var(--secondary);
+            color: var(--primary);
         }
 
         .cs-image-group {
@@ -1196,7 +1189,7 @@
             }
 
             .cs-text {
-                opacity: 0.8;
+                opacity: 0.9;
             }
         }
     }
@@ -1298,7 +1291,7 @@
         .cs-quote {
             width: calc(91 / 16 * 1rem);
             height: auto;
-            opacity: 0.3;
+            opacity: 0.1;
             display: block;
             position: absolute;
             top: calc(-20 / 16 * 1rem);
@@ -1332,8 +1325,8 @@
             margin: 0;
             border-radius: 50%;
             box-sizing: border-box;
-            border: 2px solid var(--primary);
-            background-color: var(--primary);
+            border: 2px solid var(--primaryLight);
+            background-color: var(--primaryLight);
             display: block;
             /* sends it to the bottom in the 2nd position */
             order: 2;
@@ -1700,7 +1693,7 @@
             margin: 0;
             /* 24px - 32px */
             padding: calc(32 / 16 * 1rem) clamp(1.5rem, 3vw, 2rem);
-            background-color: #fff;
+            background-color: var(--background);
             border-radius: calc(16 / 16 * 1rem);
             /* prevents padding from affecting height and width */
             box-sizing: border-box;

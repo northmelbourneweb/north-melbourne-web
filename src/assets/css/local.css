@@ -26,7 +26,7 @@
     align-items: center;
   }
   #services-1129 .cs-topper {
-    color: #767676;
+    color: var(--primary);
   }
   #services-1129 .cs-card-group {
     margin: 0;
@@ -137,7 +137,7 @@
     color: var(--bodyTextColorWhite);
   }
   body.dark-mode #services-1129 .cs-text {
-    opacity: 0.8;
+    opacity: 0.9;
   }
   body.dark-mode #services-1129 .cs-icon {
     filter: grayscale(1) brightness(1000%);
@@ -201,9 +201,6 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #sbs-1357 .cs-topper {
-    color: #767676;
-  }
   #sbs-1357 .cs-title {
     max-width: 25ch;
   }
@@ -221,7 +218,7 @@
     max-width: 37ch;
     /* 16px - 24px */
     margin: 0 0 clamp(1rem, 1.6vw, 1.5rem);
-    color: var(--primary);
+    color: var(--primaryLight);
   }
   #sbs-1357 .cs-button-solid {
     font-size: 1rem;
@@ -230,14 +227,7 @@
     font-weight: 700;
     overflow: hidden;
     margin: 0;
-    color: #fff;
     padding: 0 3rem;
-    border-radius: 1.875rem;
-    background-color: var(--primary);
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    transition: color 0.3s;
   }
   #sbs-1357 .cs-button-solid:before {
     content: "";
@@ -251,9 +241,6 @@
     left: 0;
     z-index: -1;
     transition: width 0.3s;
-  }
-  #sbs-1357 .cs-button-solid:hover {
-    color: var(--primary);
   }
   #sbs-1357 .cs-button-solid:hover:before {
     width: 100%;
@@ -388,7 +375,7 @@
     color: var(--bodyTextColorWhite);
   }
   body.dark-mode #sbs-1357 .cs-text {
-    opacity: 0.8;
+    opacity: 0.9;
   }
   body.dark-mode #sbs-1357 .cs-bubbles:before {
     border-color: rgba(255, 255, 255, 0.3);
@@ -514,10 +501,10 @@
     color: var(--bodyTextColorWhite);
   }
   #why-choose-1371 .cs-item:hover .cs-item-text {
-    opacity: 0.8;
+    opacity: 0.9;
   }
   #why-choose-1371 .cs-item:hover .cs-h3-icon {
-    filter: grayscale(1) brightness(1000%);
+    filter: invert(1);
   }
   #why-choose-1371 .cs-h3 {
     font-size: 1.25rem;
@@ -572,9 +559,6 @@
     left: 0;
     z-index: -1;
     transition: width 0.3s;
-  }
-  #why-choose-1371 .cs-button-solid:hover {
-    color: var(--primary);
   }
   #why-choose-1371 .cs-button-solid:hover:before {
     width: 100%;
@@ -746,7 +730,7 @@
   }
   body.dark-mode #why-choose-1371 .cs-text,
   body.dark-mode #why-choose-1371 .cs-item-text {
-    opacity: 0.8;
+    opacity: 0.9;
   }
   body.dark-mode #why-choose-1371 .cs-item {
     background-color: rgba(0, 0, 0, 0.2);
@@ -813,7 +797,7 @@
     align-items: center;
   }
   #gallery-1374 .cs-topper {
-    color: var(--secondary);
+    color: var(--primary);
   }
   #gallery-1374 .cs-image-group {
     width: 100%;
@@ -1018,7 +1002,7 @@
     color: var(--bodyTextColorWhite);
   }
   body.dark-mode #gallery-1374 .cs-text {
-    opacity: 0.8;
+    opacity: 0.9;
   }
 }
 /*-- -------------------------- -->
@@ -1108,7 +1092,7 @@
   #reviews-1411 .cs-quote {
     width: 5.6875rem;
     height: auto;
-    opacity: 0.3;
+    opacity: 0.1;
     display: block;
     position: absolute;
     top: -1.25rem;
@@ -1139,8 +1123,8 @@
     margin: 0;
     border-radius: 50%;
     box-sizing: border-box;
-    border: 2px solid var(--primary);
-    background-color: var(--primary);
+    border: 2px solid var(--primaryLight);
+    background-color: var(--primaryLight);
     display: block;
     /* sends it to the bottom in the 2nd position */
     order: 2;
@@ -1460,7 +1444,7 @@
     margin: 0;
     /* 24px - 32px */
     padding: 2rem clamp(1.5rem, 3vw, 2rem);
-    background-color: #fff;
+    background-color: var(--background);
     border-radius: 1rem;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;

@@ -117,20 +117,11 @@
         }
 
         .cs-button-solid {
-            font-size: calc(16 / 16 * 1rem);
-            line-height: calc(56 / 16 * 1rem);
-            text-decoration: none;
             font-weight: 700;
             overflow: hidden;
             margin: 0;
             color: #fff;
-            padding: 0 calc(48 / 16 * 1rem);
-            border-radius: calc(30 / 16 * 1rem);
             background-color: var(--primary);
-            display: inline-block;
-            position: relative;
-            z-index: 1;
-            transition: color 0.3s;
 
             &:before {
                 content: "";
