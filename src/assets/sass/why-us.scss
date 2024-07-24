@@ -377,6 +377,10 @@
                 color: var(--bodyTextColorWhite);
             }
 
+            .h3-icon {
+                filter: invert(0.9);
+            }
+
             .icon {
                 filter: grayscale(1) brightness(1000%);
             }
@@ -398,7 +402,7 @@
 @media only screen and (min-width: 0rem) {
     #about-stats {
         padding: var(--sectionPadding);
-        background-color: var(--primary);
+        background-color: var(--dark);
         /* clips the glowing orbs from causing overflow issues when they overflow the container */
         overflow: hidden;
         position: relative;
@@ -511,8 +515,8 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #about-info,
-    #RPsbsr-576 {
+    #about-info
+     {
         background-color: var(--primary);
 
         .container {
@@ -618,8 +622,8 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #about-info,
-    #RPsbsr-576 {
+    #about-info
+     {
         /* we use margin here instead of padding because we want to create the space OUTSIDE the section.  The overflow on the section clips the boxes we made to make the slanted designs, so we need to push from the outside of the section with margin to create space between it and the next section.  If the section above this Stitch has a white background, add margin-top: 0. If it has a white section below it, add margin-bottom: 0. This will allow more proper spacing and not have too much empty space.  If both sections above and below this Stitch have white backgrounds, you can just remove this margin all together */
         margin: var(--sectionPadding);
         margin-left: 0;
@@ -684,8 +688,8 @@
 /* Dark Mode - 768px */
 @media only screen and (min-width: 48rem) {
     body.dark-mode {
-        #about-info,
-        #RPsbsr-576 {
+        #about-info
+         {
             .container {
                 &:before {
                     opacity: 0.5;
@@ -768,6 +772,10 @@
             font-weight: 400;
             margin: 0;
             color: var(--bodyTextColor);
+        }
+
+        .icon {
+            filter: invert(1);
         }
     }
 }
@@ -1161,6 +1169,10 @@
 
             .item-text {
                 opacity: 0.8;
+            }
+
+            .number {
+                color: var(--bodyTextColorWhite);
             }
         }
     }

@@ -333,6 +333,9 @@
   body.dark-mode #about-hero .h3 {
     color: var(--bodyTextColorWhite);
   }
+  body.dark-mode #about-hero .h3-icon {
+    filter: invert(0.9);
+  }
   body.dark-mode #about-hero .icon {
     filter: grayscale(1) brightness(1000%);
   }
@@ -347,7 +350,7 @@
 @media only screen and (min-width: 0rem) {
   #about-stats {
     padding: var(--sectionPadding);
-    background-color: var(--primary);
+    background-color: var(--dark);
     /* clips the glowing orbs from causing overflow issues when they overflow the container */
     overflow: hidden;
     position: relative;
@@ -444,12 +447,10 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #about-info,
-  #RPsbsr-576 {
+  #about-info {
     background-color: var(--primary);
   }
-  #about-info .container,
-  #RPsbsr-576 .container {
+  #about-info .container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -459,8 +460,7 @@
     /* 48px - 64px */
     gap: clamp(3rem, 7vw, 4rem);
   }
-  #about-info .content,
-  #RPsbsr-576 .content {
+  #about-info .content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
@@ -476,23 +476,18 @@
     align-items: flex-start;
   }
   #about-info .topper,
-  #about-info .title,
-  #RPsbsr-576 .topper,
-  #RPsbsr-576 .title {
+  #about-info .title {
     color: var(--bodyTextColorWhite);
   }
-  #about-info .text,
-  #RPsbsr-576 .text {
+  #about-info .text {
     margin-bottom: 1rem;
     color: var(--bodyTextColorWhite);
     opacity: 0.8;
   }
-  #about-info .text:last-of-type,
-  #RPsbsr-576 .text:last-of-type {
+  #about-info .text:last-of-type {
     margin-bottom: 2rem;
   }
-  #about-info .button-solid,
-  #RPsbsr-576 .button-solid {
+  #about-info .button-solid {
     font-size: 1rem;
     /* 46px - 56px */
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -512,8 +507,7 @@
     box-sizing: border-box;
     transition: color 0.3s;
   }
-  #about-info .button-solid:before,
-  #RPsbsr-576 .button-solid:before {
+  #about-info .button-solid:before {
     content: "";
     position: absolute;
     height: 100%;
@@ -526,23 +520,19 @@
     border-radius: 0.25rem;
     transition: width 0.3s;
   }
-  #about-info .button-solid:hover,
-  #RPsbsr-576 .button-solid:hover {
+  #about-info .button-solid:hover {
     color: #fff;
   }
-  #about-info .button-solid:hover:before,
-  #RPsbsr-576 .button-solid:hover:before {
+  #about-info .button-solid:hover:before {
     width: 100%;
   }
-  #about-info .picture,
-  #RPsbsr-576 .picture {
+  #about-info .picture {
     display: block;
     position: relative;
     width: 100%;
     height: 18.75rem;
   }
-  #about-info .picture img,
-  #RPsbsr-576 .picture img {
+  #about-info .picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -553,8 +543,7 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #about-info,
-  #RPsbsr-576 {
+  #about-info {
     /* we use margin here instead of padding because we want to create the space OUTSIDE the section.  The overflow on the section clips the boxes we made to make the slanted designs, so we need to push from the outside of the section with margin to create space between it and the next section.  If the section above this Stitch has a white background, add margin-top: 0. If it has a white section below it, add margin-bottom: 0. This will allow more proper spacing and not have too much empty space.  If both sections above and below this Stitch have white backgrounds, you can just remove this margin all together */
     margin: var(--sectionPadding);
     margin-left: 0;
@@ -564,14 +553,12 @@
     /* clips the red box from overflowing the section */
     overflow: hidden;
   }
-  #about-info .container,
-  #RPsbsr-576 .container {
+  #about-info .container {
     flex-direction: row;
     position: relative;
     z-index: 1;
   }
-  #about-info .container:before,
-  #RPsbsr-576 .container:before {
+  #about-info .container:before {
     /* red box */
     content: "";
     width: 100vw;
@@ -585,14 +572,12 @@
     left: 50%;
     z-index: -1;
   }
-  #about-info .content,
-  #RPsbsr-576 .content {
+  #about-info .content {
     width: 51%;
     /* reset the padding, add the section padding back to the section container */
     padding: 0;
   }
-  #about-info .picture,
-  #RPsbsr-576 .picture {
+  #about-info .picture {
     width: 47vw;
     max-width: 38.625rem;
     height: 33.5rem;
@@ -600,8 +585,7 @@
     margin: clamp(1.5rem, 3vw, 2rem) 0 clamp(1.5rem, 3vw, 2rem) clamp(1.5rem, 3vw, 2rem);
     position: relative;
   }
-  #about-info .picture:before,
-  #RPsbsr-576 .picture:before {
+  #about-info .picture:before {
     /* yellow box */
     content: "";
     width: 50%;
@@ -617,8 +601,7 @@
 }
 /* Dark Mode - 768px */
 @media only screen and (min-width: 48rem) {
-  body.dark-mode #about-info .container:before,
-  body.dark-mode #RPsbsr-576 .container:before {
+  body.dark-mode #about-info .container:before {
     opacity: 0.5;
   }
 }
@@ -689,6 +672,9 @@
     font-weight: 400;
     margin: 0;
     color: var(--bodyTextColor);
+  }
+  #about-services .icon {
+    filter: invert(1);
   }
 }
 /* In-between - 550px */
@@ -1011,6 +997,9 @@
   }
   body.dark-mode #about-steps .item-text {
     opacity: 0.8;
+  }
+  body.dark-mode #about-steps .number {
+    color: var(--bodyTextColorWhite);
   }
 }
 
