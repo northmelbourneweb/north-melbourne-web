@@ -1,4 +1,4 @@
-const faqItems = Array.from(document.querySelectorAll('.cs-faq-item'));
+const faqItems = Array.from(document.querySelectorAll('.faq-item'));
 for (const item of faqItems) {
     const onClick = () => {
     faqItems.forEach(faq => faq.classList.remove('active'));

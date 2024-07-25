@@ -28,9 +28,10 @@
         }
     }
 
-    #hero-1351 {
+    #hero {
         /* 250px - 500px - leaving extra space for the navigation */
-        padding: clamp(15.625rem, 35.95vw, 25rem) calc(16 / 16 * 1rem) 0;
+        // padding: clamp(15.625rem, 35.95vw, 25rem) calc(16 / 16 * 1rem) 0;
+        padding: clamp(16rem, 25vw, 18.75rem) calc(16 / 16 * 1rem) 0;
         /* 200px - 250px */
         padding-bottom: clamp(12.5rem, 16.5vw, 15.625rem);
         box-sizing: border-box;
@@ -60,7 +61,7 @@
         }
         
 
-        .cs-container {
+        .container {
             width: 100%;
             max-width: calc(1280 / 16 * 1rem);
             margin: auto;
@@ -70,7 +71,7 @@
             align-items: flex-start;
         }
 
-        .cs-content {
+        .content {
             /* set text align to left if content needs to be left aligned */
             text-align: left;
             width: 100%;
@@ -81,7 +82,7 @@
             align-items: flex-start;
         }
 
-        .cs-topper {
+        .topper {
             font-size: calc(20 / 16 * 1rem);
             line-height: 1.2em;
             text-transform: uppercase;
@@ -93,7 +94,7 @@
             display: block;
         }
 
-        .cs-title {
+        .title {
             /* 39px - 61px */
             font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
             font-weight: 700;
@@ -105,7 +106,7 @@
             position: relative;
         }
 
-        .cs-text {
+        .text {
             font-size: calc(20 / 16 * 1rem);
             line-height: 1.5em;
             text-align: inherit;
@@ -116,7 +117,7 @@
             color: #e8e8e8;
         }
 
-        .cs-button-solid {
+        .button-solid {
             font-weight: 700;
             overflow: hidden;
             margin: 0;
@@ -145,14 +146,14 @@
             }
         }
 
-        .cs-bubbles {
+        .bubbles {
             /* this scales the children inside of it down. They're all in ems so they pull from the parent font size for their value of em, in this case, the value of em is tied to the viewwidth size and stops growing when the font size is equal to 1em, which it pulls from the nearst parent with a declred font size (which is the html tag, and that tag is 16px by default) */
             font-size: min(2vw, 0.5em);
             position: absolute;
             z-index: -1;
         }
 
-        .cs-bubbles1 {
+        .bubbles1 {
             width: calc(680 / 16 * 1em);
             height: calc(724 / 16 * 1em);
             right: calc(-190 / 16 * 1rem);
@@ -200,7 +201,7 @@
             }
         }
 
-        .cs-bubbles2 {
+        .bubbles2 {
             width: calc(330 / 16 * 1rem);
             height: calc(476 / 16 * 1rem);
             /* changes to 160px at larger desktop */
@@ -249,7 +250,7 @@
             }
         }
 
-        .cs-background {
+        .background {
             width: 100%;
             height: 100%;
             display: block;
@@ -274,16 +275,16 @@
 
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-    #hero-1351 {
-        .cs-content {
+    #hero {
+        .content {
             width: 50%;
         }
 
-        .cs-bubbles {
+        .bubbles {
             font-size: 1em;
         }
 
-        .cs-bubbles1 {
+        .bubbles1 {
             /* changes to auto at large desktop */
             right: calc(-428 / 16 * 1rem);
         }
@@ -292,8 +293,8 @@
 
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
-    #hero-1351 {
-        .cs-bubbles1 {
+    #hero {
+        .bubbles1 {
             /* 200px - 450px */
             margin-left: clamp(12.5rem, 20vw, 28.125rem);
             top: calc(172 / 16 * 1rem);
@@ -305,8 +306,8 @@
 
 /* Large Desktop Parallax Effect - 1600px */
 @media only screen and (min-width: 100rem) {
-    #hero-1351 {
-        .cs-background {
+    #hero {
+        .background {
             background: url("https://images.pexels.com/photos/3626248/pexels-photo-3626248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
             background-size: cover;
             background-position: center;
@@ -321,8 +322,8 @@
 
 /* Larger Desktop - 1800px */
 @media only screen and (min-width: 112.5rem) {
-    #hero-1351 {
-        .cs-bubbles2 {
+    #hero {
+        .bubbles2 {
             margin-right: calc(800 / 16 * 1rem);
             right: 50%;
             left: auto;

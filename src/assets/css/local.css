@@ -3,10 +3,10 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #services-1129 {
+  #intro {
     padding: var(--sectionPadding);
   }
-  #services-1129 .cs-container {
+  #intro .container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -16,7 +16,7 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #services-1129 .cs-content {
+  #intro .content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -25,10 +25,10 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #services-1129 .cs-topper {
+  #intro .topper {
     color: var(--primary);
   }
-  #services-1129 .cs-card-group {
+  #intro .card-group {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -37,7 +37,7 @@
     /* 16px - 20px */
     gap: clamp(1rem, 2.3vw, 1.25rem);
   }
-  #services-1129 .cs-item {
+  #intro .item {
     width: 100%;
     text-align: center;
     list-style: none;
@@ -59,14 +59,14 @@
     z-index: 1;
     transition: box-shadow 0.3s, border-color 0.3s;
   }
-  #services-1129 .cs-item:hover {
+  #intro .item:hover {
     box-shadow: 0px 4px 120px 0px rgba(0, 0, 0, 0.12);
     border-color: transparent;
   }
-  #services-1129 .cs-item:hover .cs-h3 {
+  #intro .item:hover .h3 {
     color: var(--primary);
   }
-  #services-1129 .cs-image-group {
+  #intro .image-group {
     width: 6.25rem;
     height: auto;
     /* 20px - 24px */
@@ -78,7 +78,7 @@
     flex: none;
     position: relative;
   }
-  #services-1129 .cs-icon {
+  #intro .icon {
     width: 3rem;
     height: auto;
     position: absolute;
@@ -86,11 +86,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  #services-1129 .cs-graphic {
+  #intro .graphic {
     width: 100%;
     height: auto;
   }
-  #services-1129 .cs-h3 {
+  #intro .h3 {
     /* 20px - 25px */
     font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
     line-height: 1.2em;
@@ -100,7 +100,7 @@
     color: var(--headerColor);
     transition: color 0.3s;
   }
-  #services-1129 .cs-item-text {
+  #intro .item-text {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
@@ -112,7 +112,7 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #services-1129 .cs-item {
+  #intro .item {
     text-align: left;
     align-items: flex-start;
     grid-column: span 4;
@@ -120,29 +120,29 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #services-1129 .cs-item {
+  body.dark-mode #intro .item {
     background-color: var(--dark);
     border-color: rgba(255, 255, 255, 0.2);
   }
-  body.dark-mode #services-1129 .cs-item:hover .cs-h3 {
+  body.dark-mode #intro .item:hover .h3 {
     color: var(--secondary);
   }
-  body.dark-mode #services-1129 .cs-topper {
+  body.dark-mode #intro .topper {
     color: var(--secondary);
   }
-  body.dark-mode #services-1129 .cs-title,
-  body.dark-mode #services-1129 .cs-text,
-  body.dark-mode #services-1129 .cs-h3,
-  body.dark-mode #services-1129 .cs-item-text {
+  body.dark-mode #intro .title,
+  body.dark-mode #intro .text,
+  body.dark-mode #intro .h3,
+  body.dark-mode #intro .item-text {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #services-1129 .cs-text {
+  body.dark-mode #intro .text {
     opacity: 0.9;
   }
-  body.dark-mode #services-1129 .cs-icon {
+  body.dark-mode #intro .icon {
     filter: grayscale(1) brightness(1000%);
   }
-  body.dark-mode #services-1129 .cs-graphic {
+  body.dark-mode #intro .graphic {
     opacity: 0.2;
   }
 }
@@ -173,12 +173,12 @@
       transform: translateY(0);
     }
   }
-  #sbs-1357 {
+  #about {
     padding: var(--sectionPadding);
     position: relative;
     z-index: 1;
   }
-  #sbs-1357 .cs-container {
+  #about .container {
     width: 100%;
     /* changes to 1280px at tablet */
     max-width: 39.375rem;
@@ -191,7 +191,7 @@
     /* 16px - 20px */
     column-gap: clamp(1rem, 2.3vw, 1.25rem);
   }
-  #sbs-1357 .cs-content {
+  #about .content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -201,16 +201,16 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #sbs-1357 .cs-title {
+  #about .title {
     max-width: 25ch;
   }
-  #sbs-1357 .cs-text {
+  #about .text {
     margin-bottom: 1rem;
   }
-  #sbs-1357 .cs-text:last-of-type {
+  #about .text:last-of-type {
     margin-bottom: 2rem;
   }
-  #sbs-1357 .cs-h3 {
+  #about .h3 {
     /* 16px - 30px */
     font-size: clamp(1rem, 2.4vw, 1.25rem);
     line-height: 1.2em;
@@ -220,7 +220,7 @@
     margin: 0 0 clamp(1rem, 1.6vw, 1.5rem);
     color: var(--primaryLight);
   }
-  #sbs-1357 .cs-button-solid {
+  #about .button-solid {
     font-size: 1rem;
     line-height: 3.5rem;
     text-decoration: none;
@@ -229,7 +229,7 @@
     margin: 0;
     padding: 0 3rem;
   }
-  #sbs-1357 .cs-button-solid:before {
+  #about .button-solid:before {
     content: "";
     position: absolute;
     display: block;
@@ -242,10 +242,10 @@
     z-index: -1;
     transition: width 0.3s;
   }
-  #sbs-1357 .cs-button-solid:hover:before {
+  #about .button-solid:hover:before {
     width: 100%;
   }
-  #sbs-1357 .cs-bubbles {
+  #about .bubbles {
     width: 33.375rem;
     height: 34rem;
     position: absolute;
@@ -255,7 +255,7 @@
     bottom: -15rem;
     z-index: -1;
   }
-  #sbs-1357 .cs-bubbles:before {
+  #about .bubbles:before {
     /* white border bubble */
     content: "";
     width: 26.25rem;
@@ -274,7 +274,7 @@
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
   }
-  #sbs-1357 .cs-bubbles:after {
+  #about .bubbles:after {
     /* orange bubble */
     content: "";
     width: 20.6875rem;
@@ -293,7 +293,7 @@
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
   }
-  #sbs-1357 .cs-picture {
+  #about .picture {
     width: 100%;
     height: 20.5rem;
     border-radius: 3rem;
@@ -302,7 +302,7 @@
     display: block;
     position: relative;
   }
-  #sbs-1357 .cs-picture img {
+  #about .picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -314,51 +314,51 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #sbs-1357 .cs-container {
+  #about .container {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
   }
-  #sbs-1357 .cs-content {
+  #about .content {
     width: 85%;
     order: -1;
   }
-  #sbs-1357 .cs-picture {
+  #about .picture {
     width: 50%;
     max-width: 19.0625rem;
   }
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #sbs-1357 .cs-container {
+  #about .container {
     max-width: 80rem;
     flex-wrap: nowrap;
   }
-  #sbs-1357 .cs-content {
+  #about .content {
     /* 80px - 140px */
     padding: clamp(5rem, 10vw, 8.75rem) 0;
     order: initial;
   }
-  #sbs-1357 .cs-bubbles {
+  #about .bubbles {
     /* reset at large deskop */
     left: -12.0625rem;
     bottom: -8.125rem;
   }
-  #sbs-1357 .cs-picture {
+  #about .picture {
     width: 37%;
     /* 230px - 340px */
     height: clamp(14.375rem, 24vw, 21.25rem);
   }
-  #sbs-1357 .cs-picture1 {
+  #about .picture1 {
     align-self: flex-start;
   }
-  #sbs-1357 .cs-picture2 {
+  #about .picture2 {
     align-self: flex-end;
   }
 }
 /* Large Desktop 1600px */
 @media only screen and (min-width: 100rem) {
-  #sbs-1357 .cs-bubbles {
+  #about .bubbles {
     margin-right: 31.25rem;
     left: auto;
     right: 50%;
@@ -367,17 +367,17 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #sbs-1357 .cs-topper {
+  body.dark-mode #about .topper {
     color: var(--primary);
   }
-  body.dark-mode #sbs-1357 .cs-title,
-  body.dark-mode #sbs-1357 .cs-text {
+  body.dark-mode #about .title,
+  body.dark-mode #about .text {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #sbs-1357 .cs-text {
+  body.dark-mode #about .text {
     opacity: 0.9;
   }
-  body.dark-mode #sbs-1357 .cs-bubbles:before {
+  body.dark-mode #about .bubbles:before {
     border-color: rgba(255, 255, 255, 0.3);
   }
 }
@@ -408,12 +408,12 @@
       transform: translateY(0);
     }
   }
-  #why-choose-1371 {
+  #services {
     padding: var(--sectionPadding);
     position: relative;
     z-index: 1;
   }
-  #why-choose-1371 .cs-container {
+  #services .container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -423,7 +423,7 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #why-choose-1371 .cs-content {
+  #services .content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -432,26 +432,26 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #why-choose-1371 .cs-title {
+  #services .title {
     max-width: 23ch;
   }
-  #why-choose-1371 .cs-text {
-    max-width: 38.75rem;
+  #services .text {
+    max-width: 40.625rem;
     margin-bottom: 1rem;
   }
-  #why-choose-1371 .cs-text:last-of-type {
+  #services .text:last-of-type {
     margin-bottom: 0;
   }
-  #why-choose-1371 .cs-text strong {
+  #services .text strong {
     color: var(--headerColor);
   }
-  #why-choose-1371 .cs-item-picture {
+  #services .item-picture {
     list-style: none;
     width: 100%;
     grid-column: span 12;
     position: relative;
   }
-  #why-choose-1371 .cs-picture {
+  #services .picture {
     width: 100%;
     height: 26.125rem;
     border-radius: 1.5rem;
@@ -460,7 +460,7 @@
     position: relative;
     z-index: 1;
   }
-  #why-choose-1371 .cs-picture img {
+  #services .picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -468,7 +468,7 @@
     top: 0;
     left: 0;
   }
-  #why-choose-1371 .cs-card-group {
+  #services .card-group {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -477,7 +477,7 @@
     align-items: stretch6;
     gap: clamp(1rem, 2vw, 1.25rem);
   }
-  #why-choose-1371 .cs-item {
+  #services .item {
     list-style: none;
     /* 16px - 24px */
     padding: clamp(1rem, 3vw, 1.5rem);
@@ -493,20 +493,20 @@
     gap: 0.75rem;
     transition: background-color 0.3s;
   }
-  #why-choose-1371 .cs-item:hover {
+  #services .item:hover {
     background-color: var(--primary);
   }
-  #why-choose-1371 .cs-item:hover .cs-h3,
-  #why-choose-1371 .cs-item:hover .cs-item-text {
+  #services .item:hover .h3,
+  #services .item:hover .item-text {
     color: var(--bodyTextColorWhite);
   }
-  #why-choose-1371 .cs-item:hover .cs-item-text {
+  #services .item:hover .item-text {
     opacity: 0.9;
   }
-  #why-choose-1371 .cs-item:hover .cs-h3-icon {
+  #services .item:hover .h3-icon {
     filter: invert(1);
   }
-  #why-choose-1371 .cs-h3 {
+  #services .h3 {
     font-size: 1.25rem;
     line-height: 1.2em;
     font-weight: 700;
@@ -518,20 +518,20 @@
     gap: 0.5rem;
     transition: color 0.3s;
   }
-  #why-choose-1371 .cs-h3-icon {
+  #services .h3-icon {
     width: 1.5rem;
     height: auto;
     margin-top: 2px;
     display: block;
   }
-  #why-choose-1371 .cs-item-text {
+  #services .item-text {
     font-size: 0.875rem;
     line-height: 1.5em;
     margin: 0;
     color: var(--bodyTextColor);
     transition: color 0.3s, opacity 0.3s;
   }
-  #why-choose-1371 .cs-button-solid {
+  #services .button-solid {
     font-size: 1rem;
     line-height: 3.5rem;
     text-decoration: none;
@@ -547,7 +547,7 @@
     z-index: 1;
     transition: color 0.3s;
   }
-  #why-choose-1371 .cs-button-solid:before {
+  #services .button-solid:before {
     content: "";
     position: absolute;
     display: block;
@@ -560,10 +560,10 @@
     z-index: -1;
     transition: width 0.3s;
   }
-  #why-choose-1371 .cs-button-solid:hover:before {
+  #services .button-solid:hover:before {
     width: 100%;
   }
-  #why-choose-1371 .cs-bubbles1 {
+  #services .bubbles1 {
     width: 26.1875rem;
     height: 26.0625rem;
     position: absolute;
@@ -571,7 +571,7 @@
     top: -15rem;
     z-index: -1;
   }
-  #why-choose-1371 .cs-bubbles1:before {
+  #services .bubbles1:before {
     /* white border bubble */
     content: "";
     width: 20.625rem;
@@ -590,7 +590,7 @@
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
   }
-  #why-choose-1371 .cs-bubbles1:after {
+  #services .bubbles1:after {
     /* orange bubble */
     content: "";
     width: 16.25rem;
@@ -609,7 +609,7 @@
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
   }
-  #why-choose-1371 .cs-bubbles2 {
+  #services .bubbles2 {
     width: 26.1875rem;
     height: 26.6875rem;
     display: block;
@@ -619,7 +619,7 @@
     bottom: -8.75rem;
     z-index: -1;
   }
-  #why-choose-1371 .cs-bubbles2:before {
+  #services .bubbles2:before {
     /* white border bubble */
     content: "";
     width: 20.625rem;
@@ -638,7 +638,7 @@
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
   }
-  #why-choose-1371 .cs-bubbles2:after {
+  #services .bubbles2:after {
     /* orange bubble */
     content: "";
     width: 16.25rem;
@@ -660,59 +660,59 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #why-choose-1371 .cs-item {
+  #services .item {
     grid-column: span 4;
   }
 }
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #why-choose-1371 .cs-item-picture {
+  #services .item-picture {
     grid-column: 4/span 6;
     grid-row: 1/span 3;
   }
-  #why-choose-1371 .cs-picture {
+  #services .picture {
     height: 100%;
   }
-  #why-choose-1371 .cs-item {
+  #services .item {
     grid-column: span 2;
   }
-  #why-choose-1371 .cs-item:nth-of-type(1) {
+  #services .item:nth-of-type(1) {
     grid-column: 1/span 3;
     grid-row: 1/span 1;
   }
-  #why-choose-1371 .cs-item:nth-of-type(2) {
+  #services .item:nth-of-type(2) {
     grid-column: 1/span 3;
     grid-row: 2/span 1;
   }
-  #why-choose-1371 .cs-item:nth-of-type(3) {
+  #services .item:nth-of-type(3) {
     grid-column: 1/span 3;
     grid-row: 3/span 1;
   }
-  #why-choose-1371 .cs-item:nth-of-type(5) {
+  #services .item:nth-of-type(5) {
     grid-column: 10/span 3;
     grid-row: 1/span 1;
   }
-  #why-choose-1371 .cs-item:nth-of-type(6) {
+  #services .item:nth-of-type(6) {
     grid-column: 10/span 3;
     grid-row: 2/span 1;
   }
-  #why-choose-1371 .cs-item:nth-of-type(7) {
+  #services .item:nth-of-type(7) {
     grid-column: 10/span 3;
     grid-row: 3/span 1;
   }
-  #why-choose-1371 .cs-bubbles1 {
+  #services .bubbles1 {
     left: -8.125rem;
     top: -9.375rem;
   }
 }
 /* Large Desktop 1600px */
 @media only screen and (min-width: 100rem) {
-  #why-choose-1371 .cs-bubbles1 {
+  #services .bubbles1 {
     margin-right: 40.625rem;
     left: auto;
     right: 50%;
   }
-  #why-choose-1371 .cs-bubbles2 {
+  #services .bubbles2 {
     margin-left: 37.5rem;
     left: 50%;
     right: auto;
@@ -720,26 +720,26 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #why-choose-1371 .cs-title,
-  body.dark-mode #why-choose-1371 .cs-text,
-  body.dark-mode #why-choose-1371 .cs-item-text {
+  body.dark-mode #services .title,
+  body.dark-mode #services .text,
+  body.dark-mode #services .item-text {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #why-choose-1371 .cs-text strong {
+  body.dark-mode #services .text strong {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #why-choose-1371 .cs-text,
-  body.dark-mode #why-choose-1371 .cs-item-text {
+  body.dark-mode #services .text,
+  body.dark-mode #services .item-text {
     opacity: 0.9;
   }
-  body.dark-mode #why-choose-1371 .cs-item {
+  body.dark-mode #services .item {
     background-color: rgba(0, 0, 0, 0.2);
     border-color: rgba(255, 255, 255, 0.2);
   }
-  body.dark-mode #why-choose-1371 .cs-item:hover {
+  body.dark-mode #services .item:hover {
     background-color: var(--primary);
   }
-  body.dark-mode #why-choose-1371 .cs-h3 {
+  body.dark-mode #services .h3 {
     color: var(--bodyTextColorWhite);
   }
 }
@@ -770,14 +770,14 @@
       transform: translateY(0);
     }
   }
-  #gallery-1374 {
+  #portfolio {
     padding: var(--sectionPadding);
     position: relative;
     z-index: 1;
     /* Prevents overflow from the image going off screen */
     overflow: hidden;
   }
-  #gallery-1374 .cs-container {
+  #portfolio .container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -787,7 +787,7 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #gallery-1374 .cs-content {
+  #portfolio .content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -796,10 +796,10 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #gallery-1374 .cs-topper {
+  #portfolio .topper {
     color: var(--primary);
   }
-  #gallery-1374 .cs-image-group {
+  #portfolio .image-group {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -809,34 +809,34 @@
     /* 16px - 60px */
     gap: clamp(1rem, 4.3vw, 3.75rem);
   }
-  #gallery-1374 .cs-link {
+  #portfolio .link {
     text-decoration: none;
     height: 100%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
   }
-  #gallery-1374 .cs-item {
+  #portfolio .item {
     list-style: none;
     width: 100%;
     height: 100%;
     margin: 0;
     grid-column: span 12;
   }
-  #gallery-1374 .cs-item:hover .cs-h3,
-  #gallery-1374 .cs-item:hover .cs-desc {
+  #portfolio .item:hover .h3,
+  #portfolio .item:hover .desc {
     color: #fff;
   }
-  #gallery-1374 .cs-item:hover .cs-item-text {
+  #portfolio .item:hover .item-text {
     background-color: var(--primary);
   }
-  #gallery-1374 .cs-item:hover .cs-icon-wrapper {
+  #portfolio .item:hover .icon-wrapper {
     border-color: #fff;
   }
-  #gallery-1374 .cs-item:hover .cs-icon {
+  #portfolio .item:hover .icon {
     filter: brightness(1000%) grayscale(1);
   }
-  #gallery-1374 .cs-picture {
+  #portfolio .picture {
     width: 100%;
     /* 344px - 420px */
     height: clamp(21.5rem, 30vw, 26.25rem);
@@ -846,7 +846,7 @@
     position: relative;
     overflow: hidden;
   }
-  #gallery-1374 .cs-picture img {
+  #portfolio .picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -854,7 +854,7 @@
     top: 0;
     left: 0;
   }
-  #gallery-1374 .cs-item-text {
+  #portfolio .item-text {
     /* 16px - 20px top & bottom, 16px - 40px left & right */
     padding: clamp(1rem, 2vw, 1.25rem) clamp(1rem, 2.8vw, 2.5rem);
     background-color: #f7f7f7;
@@ -867,12 +867,12 @@
     gap: 1rem;
     transition: background-color 0.3s;
   }
-  #gallery-1374 .cs-flex {
+  #portfolio .flex {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
   }
-  #gallery-1374 .cs-h3 {
+  #portfolio .h3 {
     /* 20px - 25px */
     font-size: clamp(1.25rem, 1.8vw, 1.5625rem);
     line-height: 1.2em;
@@ -881,14 +881,14 @@
     color: #1a1a1a;
     transition: color 0.3s;
   }
-  #gallery-1374 .cs-desc {
+  #portfolio .desc {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.2vw, 1rem);
     line-height: 1.5em;
     color: #1a1a1a;
     transition: color 0.3s;
   }
-  #gallery-1374 .cs-icon-wrapper {
+  #portfolio .icon-wrapper {
     width: 3rem;
     height: 3rem;
     border: 1px solid #bababa;
@@ -900,12 +900,12 @@
     flex-shrink: 0;
     transition: border-color 0.3s;
   }
-  #gallery-1374 .cs-icon {
+  #portfolio .icon {
     width: auto;
     height: 0.75rem;
     transition: filter 0.3s;
   }
-  #gallery-1374 .cs-button-solid {
+  #portfolio .button-solid {
     font-size: 1rem;
     font-weight: 700;
     /* 46px - 56px */
@@ -925,7 +925,7 @@
     position: relative;
     z-index: 1;
   }
-  #gallery-1374 .cs-button-solid:before {
+  #portfolio .button-solid:before {
     content: "";
     width: 0%;
     height: 100%;
@@ -938,10 +938,10 @@
     z-index: -1;
     transition: width 0.3s;
   }
-  #gallery-1374 .cs-button-solid:hover:before {
+  #portfolio .button-solid:hover:before {
     width: 100%;
   }
-  #gallery-1374 .cs-bubbles {
+  #portfolio .bubbles {
     width: 25.9375rem;
     height: 34.125rem;
     position: absolute;
@@ -949,7 +949,7 @@
     bottom: -2.875rem;
     z-index: -1;
   }
-  #gallery-1374 .cs-bubbles:before {
+  #portfolio .bubbles:before {
     /* white border bubble */
     content: "";
     width: 21.3125rem;
@@ -968,7 +968,7 @@
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
   }
-  #gallery-1374 .cs-bubbles:after {
+  #portfolio .bubbles:after {
     /* orange bubble */
     content: "";
     width: 21.3125rem;
@@ -990,18 +990,18 @@
 }
 /* In Between - 600px */
 @media only screen and (min-width: 37.5rem) {
-  #gallery-1374 .cs-item {
+  #portfolio .item {
     grid-column: span 6;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #gallery-1374 .cs-title,
-  body.dark-mode #gallery-1374 .cs-text,
-  body.dark-mode #gallery-1374 .cs-h3 {
+  body.dark-mode #portfolio .title,
+  body.dark-mode #portfolio .text,
+  body.dark-mode #portfolio .h3 {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #gallery-1374 .cs-text {
+  body.dark-mode #portfolio .text {
     opacity: 0.9;
   }
 }
@@ -1032,11 +1032,11 @@
       transform: translateY(0);
     }
   }
-  #cs-wrapper-1411 {
+  #wrapper {
     display: flex;
     flex-direction: column;
   }
-  #reviews-1411 {
+  #reviews {
     /* centers the button */
     text-align: center;
     padding: var(--sectionPadding);
@@ -1046,7 +1046,7 @@
     position: relative;
     z-index: 1;
   }
-  #reviews-1411 .cs-container {
+  #reviews .container {
     width: 100%;
     /* changes to 1024px at desktop */
     max-width: 36.5rem;
@@ -1057,7 +1057,7 @@
     /* 40px - 64px */
     gap: clamp(2.5rem, 5vw, 4rem);
   }
-  #reviews-1411 .cs-content {
+  #reviews .content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -1066,18 +1066,18 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #reviews-1411 .cs-title {
+  #reviews .title {
     max-width: 20ch;
     margin: 0;
   }
-  #reviews-1411 .cs-flex {
+  #reviews .flex {
     display: flex;
     flex-direction: column;
     align-items: center;
     /* 28px - 60px */
     gap: clamp(1.75rem, 5vw, 3.75rem);
   }
-  #reviews-1411 .cs-item {
+  #reviews .item {
     list-style: none;
     text-align: center;
     padding: 0;
@@ -1089,7 +1089,7 @@
     position: relative;
     z-index: 1;
   }
-  #reviews-1411 .cs-quote {
+  #reviews .quote {
     width: 5.6875rem;
     height: auto;
     opacity: 0.1;
@@ -1100,7 +1100,7 @@
     transform: translateX(-50%);
     z-index: -1;
   }
-  #reviews-1411 .cs-item-text {
+  #reviews .item-text {
     /* 16px - 20px */
     font-size: clamp(1rem, 2.6vw, 1.25rem);
     line-height: 1.5em;
@@ -1108,7 +1108,7 @@
     margin-bottom: 1.5rem;
     color: var(--bodyTextColor);
   }
-  #reviews-1411 .cs-flex-group {
+  #reviews .flex-group {
     /* in case one card has more text than the other, this pushes up against the review text so the name and title are always at the bottom. Only works if parent is a flexbox */
     margin-top: auto;
     display: flex;
@@ -1117,7 +1117,7 @@
     /* 8px - 24px */
     gap: clamp(0.8rem, 1.5vw, 1rem);
   }
-  #reviews-1411 .cs-picture {
+  #reviews .picture {
     width: 10rem;
     height: 10rem;
     margin: 0;
@@ -1132,7 +1132,7 @@
     overflow: hidden;
     position: relative;
   }
-  #reviews-1411 .cs-picture img {
+  #reviews .picture img {
     position: absolute;
     top: 0;
     left: 0;
@@ -1141,7 +1141,7 @@
     /* makes the image behave like a background image */
     object-fit: cover;
   }
-  #reviews-1411 .cs-name {
+  #reviews .name {
     font-size: 1.5625rem;
     line-height: 1.2em;
     font-weight: 700;
@@ -1149,7 +1149,7 @@
     color: var(--headerColor);
     display: block;
   }
-  #reviews-1411 .cs-job {
+  #reviews .job {
     font-size: 1rem;
     line-height: 1.5em;
     font-weight: 400;
@@ -1157,7 +1157,7 @@
     color: var(--bodyTextColor);
     display: block;
   }
-  #reviews-1411 .cs-bubbles {
+  #reviews .bubbles {
     font-size: min(2.5vw, 0.7em);
     width: 35.125em;
     height: 35.125em;
@@ -1169,7 +1169,7 @@
     bottom: -3.125em;
     z-index: -1;
   }
-  #reviews-1411 .cs-bubbles:before {
+  #reviews .bubbles:before {
     /* white border bubble */
     content: "";
     width: 26.25em;
@@ -1188,7 +1188,7 @@
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
   }
-  #reviews-1411 .cs-bubbles:after {
+  #reviews .bubbles:after {
     /* orange bubble */
     content: "";
     width: 20.6875em;
@@ -1210,44 +1210,44 @@
 }
 /* Desktop - 1204px */
 @media only screen and (min-width: 64rem) {
-  #cs-wrapper-1411 {
+  #wrapper {
     flex-direction: row;
   }
-  #reviews-1411 {
+  #reviews {
     width: 50%;
     /* 40px - 80px */
     padding-left: clamp(2.5rem, 5vw, 5rem);
     padding-right: clamp(2.5rem, 5vw, 5rem);
   }
-  #reviews-1411 .cs-content {
+  #reviews .content {
     text-align: left;
     align-items: flex-start;
   }
-  #reviews-1411 .cs-flex,
-  #reviews-1411 .cs-item {
+  #reviews .flex,
+  #reviews .item {
     text-align: left;
     align-items: flex-start;
   }
-  #reviews-1411 .cs-quote {
+  #reviews .quote {
     left: 0;
     transform: none;
   }
 }
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
-  #reviews-1411 .cs-container {
+  #reviews .container {
     margin-right: 0;
   }
-  #reviews-1411 .cs-flex {
+  #reviews .flex {
     flex-direction: row;
   }
-  #reviews-1411 .cs-picture {
+  #reviews .picture {
     /* sends it to the left in the 1st position */
     order: -1;
     /* prevents flexbox from squishing it */
     flex: none;
   }
-  #reviews-1411 .cs-bubbles {
+  #reviews .bubbles {
     display: block;
     margin-right: 15.625rem;
     left: auto;
@@ -1256,21 +1256,21 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #reviews-1411 {
+  body.dark-mode #reviews {
     background-color: rgba(0, 0, 0, 0.2);
   }
-  body.dark-mode #reviews-1411 .cs-title {
+  body.dark-mode #reviews .title {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #reviews-1411 .cs-item-text,
-  body.dark-mode #reviews-1411 .cs-name {
+  body.dark-mode #reviews .item-text,
+  body.dark-mode #reviews .name {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #reviews-1411 .cs-job {
+  body.dark-mode #reviews .job {
     color: var(--bodyTextColorWhite);
     opacity: 0.7;
   }
-  body.dark-mode #reviews-1411 .cs-bubbles:before {
+  body.dark-mode #reviews .bubbles:before {
     border-color: rgba(255, 255, 255, 0.2);
   }
 }
@@ -1279,12 +1279,12 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #faq-1411 {
+  #faq {
     padding: var(--sectionPadding);
     position: relative;
     z-index: 1;
   }
-  #faq-1411 .cs-container {
+  #faq .container {
     width: 100%;
     /* changes to 1280px at desktop */
     max-width: 36.5rem;
@@ -1296,10 +1296,10 @@
     /* 40px - 48px */
     gap: clamp(2.5rem, 5vw, 3rem);
   }
-  #faq-1411 .cs-content {
+  #faq .content {
     text-align: left;
   }
-  #faq-1411 .cs-topper {
+  #faq .topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
@@ -1310,7 +1310,7 @@
     margin-bottom: 0.25rem;
     display: block;
   }
-  #faq-1411 .cs-title {
+  #faq .title {
     font-size: var(--headerFontSize);
     font-weight: 900;
     line-height: 1.2em;
@@ -1320,11 +1320,11 @@
     color: var(--headerColor);
     position: relative;
   }
-  #faq-1411 .cs-title {
+  #faq .title {
     margin: 0 0 1.5rem 0;
     color: var(--bodyTextColorWhite);
   }
-  #faq-1411 .cs-faq-group {
+  #faq .faq-group {
     padding: 0;
     margin: 0;
     display: flex;
@@ -1332,33 +1332,33 @@
     align-items: center;
     flex-direction: column;
   }
-  #faq-1411 .cs-faq-item {
+  #faq .faq-item {
     list-style: none;
     width: 100%;
     border-bottom: 1px solid #e8e8e8;
     transition: border-bottom 0.3s;
   }
-  #faq-1411 .cs-faq-item.active {
+  #faq .faq-item.active {
     border-color: var(--primary);
   }
-  #faq-1411 .cs-faq-item.active .cs-button {
+  #faq .faq-item.active .button {
     color: var(--primary);
   }
-  #faq-1411 .cs-faq-item.active .cs-button:before {
+  #faq .faq-item.active .button:before {
     background-color: var(--primary);
     transform: rotate(315deg);
   }
-  #faq-1411 .cs-faq-item.active .cs-button:after {
+  #faq .faq-item.active .button:after {
     background-color: var(--primary);
     transform: rotate(-315deg);
   }
-  #faq-1411 .cs-faq-item.active .cs-item-p {
+  #faq .faq-item.active .item-p {
     height: auto;
     /* 20px - 24px bottom */
     padding: 0 0 clamp(1.25rem, 1.3vw, 1.5rem);
     opacity: 1;
   }
-  #faq-1411 .cs-button {
+  #faq .button {
     font-size: 1.25rem;
     line-height: 1.2em;
     text-align: left;
@@ -1373,10 +1373,10 @@
     position: relative;
     transition: background-color 0.3s, color 0.3s;
   }
-  #faq-1411 .cs-button:hover {
+  #faq .button:hover {
     cursor: pointer;
   }
-  #faq-1411 .cs-button:before {
+  #faq .button:before {
     /* left line */
     content: "";
     width: 0.5rem;
@@ -1393,7 +1393,7 @@
     transform-origin: left center;
     transition: transform 0.5s;
   }
-  #faq-1411 .cs-button:after {
+  #faq .button:after {
     /* right line */
     content: "";
     width: 0.5rem;
@@ -1410,11 +1410,11 @@
     transform-origin: right center;
     transition: transform 0.5s;
   }
-  #faq-1411 .cs-button-text {
+  #faq .button-text {
     width: 80%;
     display: block;
   }
-  #faq-1411 .cs-item-p {
+  #faq .item-p {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
@@ -1428,7 +1428,7 @@
     overflow: hidden;
     transition: opacity 0.3s, padding-bottom 0.3s;
   }
-  #faq-1411 .cs-card-group {
+  #faq .card-group {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -1437,7 +1437,7 @@
     /* 8px - 20px */
     gap: clamp(0.5rem, 2vw, 1.25rem);
   }
-  #faq-1411 .cs-item {
+  #faq .item {
     width: 100%;
     text-align: center;
     list-style: none;
@@ -1458,14 +1458,14 @@
     z-index: 1;
     transition: box-shadow 0.3s, border-color 0.3s;
   }
-  #faq-1411 .cs-item:hover {
+  #faq .item:hover {
     box-shadow: 0px 4px 120px 0px rgba(0, 0, 0, 0.12);
     border-color: transparent;
   }
-  #faq-1411 .cs-item:hover .cs-h3 {
+  #faq .item:hover .h3 {
     color: var(--primary);
   }
-  #faq-1411 .cs-image-group {
+  #faq .image-group {
     /* 80px - 100px */
     width: clamp(5rem, 6vw, 6.25rem);
     height: auto;
@@ -1478,7 +1478,7 @@
     flex: none;
     position: relative;
   }
-  #faq-1411 .cs-icon {
+  #faq .icon {
     /* 38px - 48px */
     width: clamp(2.375rem, 3vw, 3rem);
     height: auto;
@@ -1487,11 +1487,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  #faq-1411 .cs-graphic {
+  #faq .graphic {
     width: 100%;
     height: auto;
   }
-  #faq-1411 .cs-number {
+  #faq .number {
     /* 25px - 49px */
     font-size: clamp(1.5625rem, 3.3vw, 3.0625rem);
     line-height: 1.2em;
@@ -1501,14 +1501,14 @@
     color: var(--headerColor);
     transition: color 0.3s;
   }
-  #faq-1411 .cs-desc {
+  #faq .desc {
     font-size: 1rem;
     line-height: 1.5em;
     text-align: inherit;
     margin: 0;
     color: var(--bodyTextColor);
   }
-  #faq-1411 .cs-background {
+  #faq .background {
     width: 100%;
     height: 100%;
     display: block;
@@ -1517,7 +1517,7 @@
     left: 0;
     z-index: -1;
   }
-  #faq-1411 .cs-background img {
+  #faq .background img {
     position: absolute;
     top: 0;
     left: 0;
@@ -1529,13 +1529,13 @@
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #faq-1411 {
+  #faq {
     width: 50%;
     /* 40px - 80px */
     padding-left: clamp(2.5rem, 5vw, 5rem);
     padding-right: clamp(2.5rem, 5vw, 5rem);
   }
-  #faq-1411 .cs-container {
+  #faq .container {
     max-width: 80rem;
     margin-left: 0;
     flex-direction: row;
@@ -1543,12 +1543,12 @@
     align-items: flex-start;
     gap: 3.25rem;
   }
-  #faq-1411 .cs-content {
+  #faq .content {
     max-width: 35rem;
   }
-  #faq-1411 .cs-card-group {
+  #faq .card-group {
     max-width: 39.375rem;
-    /* pushes up the same amount the cs-items are being translated up to maintain the proper spacing */
+    /* pushes up the same amount the items are being translated up to maintain the proper spacing */
     margin-top: 3.75rem;
     align-items: stretch;
     /* sends it to the left in the 1st */
@@ -1557,22 +1557,22 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #faq-1411 {
+  body.dark-mode #faq {
     background-color: var(--medium) rgba(0, 0, 0, 0.2);
   }
-  body.dark-mode #faq-1411 .cs-title,
-  body.dark-mode #faq-1411 .cs-item-p,
-  body.dark-mode #faq-1411 .cs-number,
-  body.dark-mode #faq-1411 .cs-desc {
+  body.dark-mode #faq .title,
+  body.dark-mode #faq .item-p,
+  body.dark-mode #faq .number,
+  body.dark-mode #faq .desc {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #faq-1411 .cs-graphic {
+  body.dark-mode #faq .graphic {
     opacity: 0.2;
   }
-  body.dark-mode #faq-1411 .cs-button {
+  body.dark-mode #faq .button {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #faq-1411 .cs-button:before, body.dark-mode #faq-1411 .cs-button:after {
+  body.dark-mode #faq .button:before, body.dark-mode #faq .button:after {
     background-color: var(--bodyTextColorWhite);
   }
 }
@@ -1581,7 +1581,7 @@
 <--- -------------------------- -*/
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-  #pricing-1262 {
+  #pricing {
     padding: var(--sectionPadding);
     /* clips svg graphic from overflowing the section */
     overflow: hidden;
@@ -1590,7 +1590,7 @@
     transform-style: preserve-3d;
     background-color: var(--backgroundShade);
   }
-  #pricing-1262 .cs-container {
+  #pricing .container {
     width: 100%;
     /* changes to 1280px at desktop */
     max-width: 34.375rem;
@@ -1603,7 +1603,7 @@
     position: relative;
     perspective: 1100px;
   }
-  #pricing-1262 .cs-content {
+  #pricing .content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -1614,13 +1614,13 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #pricing-1262 .cs-text {
+  #pricing .text {
     margin-bottom: 1rem;
   }
-  #pricing-1262 .cs-text:last-of-type {
+  #pricing .text:last-of-type {
     margin-bottom: 2rem;
   }
-  #pricing-1262 .cs-button-solid {
+  #pricing .button-solid {
     font-size: 1rem;
     /* 46px - 56px */
     line-height: clamp(2.875em, 5.5vw, 3.5em);
@@ -1640,7 +1640,7 @@
     /* prevents padding from adding to the width */
     box-sizing: border-box;
   }
-  #pricing-1262 .cs-button-solid:before {
+  #pricing .button-solid:before {
     content: "";
     position: absolute;
     height: 100%;
@@ -1652,10 +1652,10 @@
     z-index: -1;
     transition: width 0.3s;
   }
-  #pricing-1262 .cs-button-solid:hover:before {
+  #pricing .button-solid:hover:before {
     width: 100%;
   }
-  #pricing-1262 .cs-toggle-group {
+  #pricing .toggle-group {
     width: 100%;
     max-width: 25.875rem;
     margin: 0;
@@ -1668,7 +1668,7 @@
     justify-content: center;
     align-items: center;
   }
-  #pricing-1262 .cs-plan {
+  #pricing .plan {
     font-size: 1rem;
     font-weight: 700;
     line-height: 1.5em;
@@ -1676,10 +1676,10 @@
     padding: 0;
     color: var(--headerColor);
   }
-  #pricing-1262 .cs-plan:hover {
+  #pricing .plan:hover {
     cursor: pointer;
   }
-  #pricing-1262 .cs-toggle {
+  #pricing .toggle {
     width: 3.25rem;
     height: 2rem;
     border-radius: 2.5rem;
@@ -1689,16 +1689,16 @@
     /* prevent flexbox from squishing it */
     flex: none;
   }
-  #pricing-1262 .cs-toggle:hover {
+  #pricing .toggle:hover {
     cursor: pointer;
   }
-  #pricing-1262 .cs-toggle.active:before {
+  #pricing .toggle.active:before {
     opacity: 1;
   }
-  #pricing-1262 .cs-toggle.active .cs-toggle-switch {
+  #pricing .toggle.active .toggle-switch {
     left: 1.4375rem;
   }
-  #pricing-1262 .cs-toggle:before {
+  #pricing .toggle:before {
     /* top right box */
     content: "";
     width: 100%;
@@ -1712,7 +1712,7 @@
     border-radius: 2.5rem;
     transition: opacity 0.3s;
   }
-  #pricing-1262 .cs-toggle-switch {
+  #pricing .toggle-switch {
     width: 1.625rem;
     height: 1.625rem;
     display: block;
@@ -1725,31 +1725,31 @@
     transition: left 0.3s;
     background: #fff;
   }
-  #pricing-1262 .cs-ul-wrapper {
+  #pricing .ul-wrapper {
     position: relative;
     z-index: 10;
     perspective: 1200px;
   }
-  #pricing-1262 .cs-ul-wrapper.cs-active .cs-option1 {
+  #pricing .ul-wrapper.active .option1 {
     transform: rotateY(180deg);
   }
-  #pricing-1262 .cs-ul-wrapper.cs-active .cs-option2 {
+  #pricing .ul-wrapper.active .option2 {
     transform: rotateY(360deg);
   }
-  #pricing-1262 .cs-option2 {
+  #pricing .option2 {
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     transform: rotateY(180deg);
   }
-  #pricing-1262 .cs-option2 .cs-item {
+  #pricing .option2 .item {
     border-radius: 0 1.5rem 0 0;
   }
-  #pricing-1262 .cs-option2 .cs-item:nth-of-type(2) {
+  #pricing .option2 .item:nth-of-type(2) {
     border-radius: 0 0 0 1.5rem;
   }
-  #pricing-1262 .cs-card-group {
+  #pricing .card-group {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -1764,7 +1764,7 @@
     backface-visibility: hidden;
     transition: transform 0.8s;
   }
-  #pricing-1262 .cs-item {
+  #pricing .item {
     text-align: left;
     list-style: none;
     width: 100%;
@@ -1781,44 +1781,44 @@
     z-index: 1;
     min-height: 400px;
   }
-  #pricing-1262 .cs-item:nth-of-type(2) {
+  #pricing .item:nth-of-type(2) {
     border-radius: 0 0 1.5rem 0;
   }
-  #pricing-1262 .cs-item.cs-popular {
+  #pricing .item.popular {
     background-color: #14142b;
     border: none;
   }
-  #pricing-1262 .cs-item.cs-popular .cs-popular-tag {
+  #pricing .item.popular .popular-tag {
     display: inline-flex;
   }
-  #pricing-1262 .cs-item.cs-popular .cs-package,
-  #pricing-1262 .cs-item.cs-popular .cs-price,
-  #pricing-1262 .cs-item.cs-popular .cs-duration,
-  #pricing-1262 .cs-item.cs-popular .cs-item-text,
-  #pricing-1262 .cs-item.cs-popular .cs-li {
+  #pricing .item.popular .package,
+  #pricing .item.popular .price,
+  #pricing .item.popular .duration,
+  #pricing .item.popular .item-text,
+  #pricing .item.popular .li {
     color: var(--bodyTextColorWhite);
   }
-  #pricing-1262 .cs-item.cs-popular .cs-item-text,
-  #pricing-1262 .cs-item.cs-popular .cs-li {
+  #pricing .item.popular .item-text,
+  #pricing .item.popular .li {
     opacity: 0.8;
   }
-  #pricing-1262 .cs-item.cs-popular .cs-icon {
+  #pricing .item.popular .icon {
     filter: none;
     opacity: 1;
   }
-  #pricing-1262 .cs-item.cs-popular .cs-button-transparent {
+  #pricing .item.popular .button-transparent {
     background-color: var(--primary);
     color: var(--bodyTextColorWhite);
     border: none;
     transition: color 0.3s;
   }
-  #pricing-1262 .cs-item.cs-popular .cs-button-transparent:before {
+  #pricing .item.popular .button-transparent:before {
     background-color: #fff;
   }
-  #pricing-1262 .cs-item.cs-popular .cs-button-transparent:hover {
+  #pricing .item.popular .button-transparent:hover {
     color: var(--primary);
   }
-  #pricing-1262 .cs-popular-tag {
+  #pricing .popular-tag {
     font-size: 0.875rem;
     line-height: 1.2em;
     text-align: center;
@@ -1833,12 +1833,12 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    /* same as cs-item padding top */
+    /* same as item padding top */
     top: 1.5rem;
     right: 1.5rem;
     z-index: 1;
   }
-  #pricing-1262 .cs-popular-tag:before {
+  #pricing .popular-tag:before {
     /* background color overlay */
     content: "";
     width: 100%;
@@ -1851,7 +1851,7 @@
     left: 0;
     z-index: -1;
   }
-  #pricing-1262 .cs-picture {
+  #pricing .picture {
     width: 4.75rem;
     height: 4.75rem;
     margin-bottom: 1.5rem;
@@ -1862,7 +1862,7 @@
     align-items: center;
     position: relative;
   }
-  #pricing-1262 .cs-picture:before {
+  #pricing .picture:before {
     /* background color */
     content: "";
     width: 100%;
@@ -1874,7 +1874,7 @@
     top: 0;
     left: 0;
   }
-  #pricing-1262 .cs-package {
+  #pricing .package {
     font-size: 1.25rem;
     line-height: 1.2em;
     text-align: inherit;
@@ -1883,7 +1883,7 @@
     color: var(--headerColor);
     display: block;
   }
-  #pricing-1262 .cs-price {
+  #pricing .price {
     font-size: 2.4375rem;
     line-height: 1.2em;
     text-align: inherit;
@@ -1895,14 +1895,14 @@
     align-items: center;
     gap: 0.5rem;
   }
-  #pricing-1262 .cs-duration {
+  #pricing .duration {
     font-size: 0.875rem;
     line-height: 1.5em;
     font-weight: 400;
     margin: 0;
     color: var(--headerColor);
   }
-  #pricing-1262 .cs-item-text {
+  #pricing .item-text {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     line-height: 1.5em;
@@ -1910,7 +1910,7 @@
     margin: 0 0 2rem;
     color: var(--bodyTextColor);
   }
-  #pricing-1262 .cs-ul {
+  #pricing .ul {
     margin: 0 0 2rem;
     padding: 0;
     display: flex;
@@ -1919,7 +1919,7 @@
     align-items: flex-start;
     gap: 0.5rem;
   }
-  #pricing-1262 .cs-li {
+  #pricing .li {
     /* 14px - 16px */
     font-size: clamp(0.875rem, 1.5vw, 1rem);
     list-style: none;
@@ -1934,23 +1934,23 @@
     align-items: flex-start;
     gap: 0.5rem;
   }
-  #pricing-1262 .cs-li.cs-disabled {
+  #pricing .li.disabled {
     opacity: 0.5;
   }
-  #pricing-1262 .cs-li.cs-disabled .cs-icon {
+  #pricing .li.disabled .icon {
     filter: grayscale(1) brightness(300%);
   }
-  #pricing-1262 .cs-icon {
+  #pricing .icon {
     width: 1.5rem;
     height: auto;
     filter: grayscale(1);
     opacity: 0.5;
     display: block;
   }
-  #pricing-1262 .button-solid {
+  #pricing .button-solid {
     width: 100%;
   }
-  #pricing-1262 .cs-button-transparent {
+  #pricing .button-transparent {
     font-size: 1rem;
     /* 46px - 56px */
     line-height: clamp(2.875rem, 5.5vw, 3.5rem);
@@ -1971,7 +1971,7 @@
     box-sizing: border-box;
     transition: color 0.3s, border-color 0.3s, background-color 0.3s;
   }
-  #pricing-1262 .cs-button-transparent:before {
+  #pricing .button-transparent:before {
     content: "";
     position: absolute;
     height: 100%;
@@ -1984,15 +1984,15 @@
     border-radius: 0.25rem;
     transition: width 0.3s;
   }
-  #pricing-1262 .cs-button-transparent:hover {
+  #pricing .button-transparent:hover {
     color: #fff;
     border-color: #000;
     background-color: #000;
   }
-  #pricing-1262 .cs-button-transparent:hover:before {
+  #pricing .button-transparent:hover:before {
     width: 100%;
   }
-  #pricing-1262 .cs-waves-wrapper {
+  #pricing .waves-wrapper {
     width: 100vw;
     height: 65%;
     display: block;
@@ -2002,7 +2002,7 @@
     z-index: -10;
     transform: translateX(-50%);
   }
-  #pricing-1262 .cs-waves-wrapper img {
+  #pricing .waves-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -2013,31 +2013,31 @@
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
-  #pricing-1262 .cs-container {
+  #pricing .container {
     max-width: 80rem;
     /* remove the position so the svg waves wrapper can be positioned relative to the section container for tablet so it hugs the right edge of the screen. We set it back to relative at 1024px so it can then be positioned relative to the container again so it hugs the right edge of the container with the pricing cards */
     position: initial;
   }
-  #pricing-1262 .cs-card-group {
+  #pricing .card-group {
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
     flex-wrap: nowrap;
   }
-  #pricing-1262 .cs-option2 .cs-item {
+  #pricing .option2 .item {
     border-radius: 1.5rem 0 0 1.5rem;
   }
-  #pricing-1262 .cs-option2 .cs-item:nth-of-type(2) {
+  #pricing .option2 .item:nth-of-type(2) {
     border-radius: 0 1.5rem 1.5rem 0;
   }
-  #pricing-1262 .cs-item {
+  #pricing .item {
     width: 50%;
     border-radius: 1.5rem 0 0 1.5rem;
   }
-  #pricing-1262 .cs-item:nth-of-type(2) {
+  #pricing .item:nth-of-type(2) {
     border-radius: 0 1.5rem 1.5rem 0;
   }
-  #pricing-1262 .cs-waves-wrapper {
+  #pricing .waves-wrapper {
     /* changes to 740px at large desktop */
     width: 55vw;
     height: 100%;
@@ -2050,12 +2050,12 @@
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-  #pricing-1262 .cs-container {
+  #pricing .container {
     max-width: 80rem;
     position: relative;
     z-index: 1;
   }
-  #pricing-1262 .cs-waves-wrapper {
+  #pricing .waves-wrapper {
     height: 140%;
     top: 50%;
     transform: translateY(-50%);
@@ -2063,21 +2063,21 @@
 }
 /* Large Desktop - 1300px */
 @media only screen and (min-width: 81.25rem) {
-  #pricing-1262 .cs-container {
+  #pricing .container {
     flex-direction: row;
     justify-content: space-between;
     gap: 1.25rem;
   }
-  #pricing-1262 .cs-ul-wrapper {
+  #pricing .ul-wrapper {
     width: 62%;
     max-width: 46.25rem;
     flex: none;
   }
-  #pricing-1262 .cs-waves-wrapper {
+  #pricing .waves-wrapper {
     max-width: 46.25rem;
     width: 100%;
   }
-  #pricing-1262 .cs-content {
+  #pricing .content {
     /* set text align to left if content needs to be left aligned */
     text-align: left;
     width: 100%;
@@ -2091,69 +2091,69 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #pricing-1262 .cs-title,
-  body.dark-mode #pricing-1262 .cs-text,
-  body.dark-mode #pricing-1262 .cs-package,
-  body.dark-mode #pricing-1262 .cs-li,
-  body.dark-mode #pricing-1262 .cs-item-text,
-  body.dark-mode #pricing-1262 .cs-price,
-  body.dark-mode #pricing-1262 .cs-duration {
+  body.dark-mode #pricing .title,
+  body.dark-mode #pricing .text,
+  body.dark-mode #pricing .package,
+  body.dark-mode #pricing .li,
+  body.dark-mode #pricing .item-text,
+  body.dark-mode #pricing .price,
+  body.dark-mode #pricing .duration {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #pricing-1262 .cs-text,
-  body.dark-mode #pricing-1262 .cs-item-text,
-  body.dark-mode #pricing-1262 .cs-li {
+  body.dark-mode #pricing .text,
+  body.dark-mode #pricing .item-text,
+  body.dark-mode #pricing .li {
     opacity: 0.8;
   }
-  body.dark-mode #pricing-1262 .cs-item {
+  body.dark-mode #pricing .item {
     background-color: var(--dark);
     border-color: rgba(255, 255, 255, 0.2);
   }
-  body.dark-mode #pricing-1262 .cs-item.cs-popular {
+  body.dark-mode #pricing .item.popular {
     background-color: var(--primary);
   }
-  body.dark-mode #pricing-1262 .cs-item.cs-popular .cs-picture:before {
+  body.dark-mode #pricing .item.popular .picture:before {
     background-color: #fff;
   }
-  body.dark-mode #pricing-1262 .cs-item.cs-popular .cs-picture .cs-picture-icon {
+  body.dark-mode #pricing .item.popular .picture .picture-icon {
     filter: grayscale(1) brightness(1000%);
   }
-  body.dark-mode #pricing-1262 .cs-item.cs-popular .cs-popular-tag {
+  body.dark-mode #pricing .item.popular .popular-tag {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #pricing-1262 .cs-item.cs-popular .cs-popular-tag:before {
+  body.dark-mode #pricing .item.popular .popular-tag:before {
     background-color: #14142b;
     opacity: 1;
   }
-  body.dark-mode #pricing-1262 .cs-item.cs-popular .cs-package,
-  body.dark-mode #pricing-1262 .cs-item.cs-popular .cs-li,
-  body.dark-mode #pricing-1262 .cs-item.cs-popular .cs-item-text,
-  body.dark-mode #pricing-1262 .cs-item.cs-popular .cs-price,
-  body.dark-mode #pricing-1262 .cs-item.cs-popular .cs-duration {
+  body.dark-mode #pricing .item.popular .package,
+  body.dark-mode #pricing .item.popular .li,
+  body.dark-mode #pricing .item.popular .item-text,
+  body.dark-mode #pricing .item.popular .price,
+  body.dark-mode #pricing .item.popular .duration {
     color: var(--headerColor);
   }
-  body.dark-mode #pricing-1262 .cs-item.cs-popular .cs-icon {
+  body.dark-mode #pricing .item.popular .icon {
     filter: grayscale(1) brightness(1000%);
     opacity: 1;
   }
-  body.dark-mode #pricing-1262 .cs-item.cs-popular .cs-button-transparent {
+  body.dark-mode #pricing .item.popular .button-transparent {
     color: var(--primary);
     background-color: #fff;
   }
-  body.dark-mode #pricing-1262 .cs-item.cs-popular .cs-button-transparent:before {
+  body.dark-mode #pricing .item.popular .button-transparent:before {
     background-color: #1a1a1a;
   }
-  body.dark-mode #pricing-1262 .cs-icon {
+  body.dark-mode #pricing .icon {
     filter: none;
     opacity: 1;
   }
-  body.dark-mode #pricing-1262 .cs-button-solid {
+  body.dark-mode #pricing .button-solid {
     transition: color 0.3s;
   }
-  body.dark-mode #pricing-1262 .cs-button-solid:hover {
+  body.dark-mode #pricing .button-solid:hover {
     color: var(--primary);
   }
-  body.dark-mode #pricing-1262 .cs-button-solid:before {
+  body.dark-mode #pricing .button-solid:before {
     background-color: #fff;
   }
 }
