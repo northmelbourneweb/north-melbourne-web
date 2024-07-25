@@ -681,7 +681,8 @@
 
             .logo {
                 /* makes it white */
-                filter: grayscale(1) brightness(1000%);
+                // filter: grayscale(1) brightness(1000%);
+                filter: invert(1);
             }
 
             .toggle {
@@ -698,7 +699,8 @@
 
             .phone-icon {
                 /* turns it white */
-                filter: grayscale(1) brightness(1000%);
+                // filter: grayscale(1) brightness(1000%);
+                filter: invert(1);
             }
 
             .line {
@@ -970,7 +972,8 @@
 
             .logo {
                 /* turns it white */
-                filter: grayscale(1) brightness(1000%);
+                // filter: grayscale(1) brightness(1000%);
+                filter: invert(1);
             }
 
             .li-link, .phone {
@@ -978,7 +981,8 @@
             }
 
             .phone-icon {
-                filter: grayscale(1) brightness(10005);
+                // filter: grayscale(1) brightness(10005);
+                filter: invert(1);
             }
 
             .li-link {
@@ -1525,7 +1529,8 @@
 
             .icon {
                 /* makes it white */
-                filter: grayscale(1) brightness(1000%);
+                // filter: grayscale(1) brightness(1000%);
+                filter: invert(1);
             }
 
             .form {

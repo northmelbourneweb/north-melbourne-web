@@ -569,7 +569,7 @@
   }
   body.dark-mode #navigation .logo {
     /* makes it white */
-    filter: grayscale(1) brightness(1000%);
+    filter: invert(1);
   }
   body.dark-mode #navigation .toggle {
     background-color: var(--secondary);
@@ -582,7 +582,7 @@
   }
   body.dark-mode #navigation .phone-icon {
     /* turns it white */
-    filter: grayscale(1) brightness(1000%);
+    filter: invert(1);
   }
   body.dark-mode #navigation .line {
     background-color: #fff;
@@ -812,13 +812,13 @@
   }
   body.dark-mode #navigation .logo {
     /* turns it white */
-    filter: grayscale(1) brightness(1000%);
+    filter: invert(1);
   }
   body.dark-mode #navigation .li-link, body.dark-mode #navigation .phone {
     color: var(--bodyTextColorWhite);
   }
   body.dark-mode #navigation .phone-icon {
-    filter: grayscale(1) brightness(10005);
+    filter: invert(1);
   }
   body.dark-mode #navigation .li-link.active {
     color: var(--secondary);
@@ -1292,7 +1292,7 @@
   }
   body.dark-mode #contact .icon {
     /* makes it white */
-    filter: grayscale(1) brightness(1000%);
+    filter: invert(1);
   }
   body.dark-mode #contact .form {
     background-color: var(--medium);

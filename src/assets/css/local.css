@@ -125,10 +125,13 @@
     border-color: rgba(255, 255, 255, 0.2);
   }
   body.dark-mode #intro .item:hover .h3 {
-    color: var(--secondary);
+    color: var(--bodyTextColorWhite);
   }
   body.dark-mode #intro .topper {
-    color: var(--secondary);
+    color: var(--primary);
+  }
+  body.dark-mode #intro .icon {
+    filter: invert(1);
   }
   body.dark-mode #intro .title,
   body.dark-mode #intro .text,
@@ -138,9 +141,6 @@
   }
   body.dark-mode #intro .text {
     opacity: 0.9;
-  }
-  body.dark-mode #intro .icon {
-    filter: grayscale(1) brightness(1000%);
   }
   body.dark-mode #intro .graphic {
     opacity: 0.2;
@@ -739,6 +739,9 @@
   body.dark-mode #services .item:hover {
     background-color: var(--primary);
   }
+  body.dark-mode #services .h3-icon {
+    filter: invert(1);
+  }
   body.dark-mode #services .h3 {
     color: var(--bodyTextColorWhite);
   }
@@ -997,8 +1000,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #portfolio .title,
-  body.dark-mode #portfolio .text,
-  body.dark-mode #portfolio .h3 {
+  body.dark-mode #portfolio .text {
     color: var(--bodyTextColorWhite);
   }
   body.dark-mode #portfolio .text {
@@ -1662,7 +1664,7 @@
     padding: 0.75rem;
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
-    background-color: #f1f1f4;
+    background-color: #f0f0f3;
     border-radius: 0.5rem;
     display: flex;
     justify-content: center;
@@ -2091,13 +2093,12 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #pricing {
+    background-color: var(--dark);
+  }
   body.dark-mode #pricing .title,
   body.dark-mode #pricing .text,
-  body.dark-mode #pricing .package,
-  body.dark-mode #pricing .li,
-  body.dark-mode #pricing .item-text,
-  body.dark-mode #pricing .price,
-  body.dark-mode #pricing .duration {
+  body.dark-mode #pricing .plan {
     color: var(--bodyTextColorWhite);
   }
   body.dark-mode #pricing .text,
@@ -2105,43 +2106,8 @@
   body.dark-mode #pricing .li {
     opacity: 0.8;
   }
-  body.dark-mode #pricing .item {
-    background-color: var(--dark);
-    border-color: rgba(255, 255, 255, 0.2);
-  }
-  body.dark-mode #pricing .item.popular {
-    background-color: var(--primary);
-  }
-  body.dark-mode #pricing .item.popular .picture:before {
-    background-color: #fff;
-  }
-  body.dark-mode #pricing .item.popular .picture .picture-icon {
-    filter: grayscale(1) brightness(1000%);
-  }
-  body.dark-mode #pricing .item.popular .popular-tag {
-    color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #pricing .item.popular .popular-tag:before {
-    background-color: #14142b;
-    opacity: 1;
-  }
-  body.dark-mode #pricing .item.popular .package,
-  body.dark-mode #pricing .item.popular .li,
-  body.dark-mode #pricing .item.popular .item-text,
-  body.dark-mode #pricing .item.popular .price,
-  body.dark-mode #pricing .item.popular .duration {
-    color: var(--headerColor);
-  }
-  body.dark-mode #pricing .item.popular .icon {
-    filter: grayscale(1) brightness(1000%);
-    opacity: 1;
-  }
-  body.dark-mode #pricing .item.popular .button-transparent {
-    color: var(--primary);
-    background-color: #fff;
-  }
-  body.dark-mode #pricing .item.popular .button-transparent:before {
-    background-color: #1a1a1a;
+  body.dark-mode #pricing .toggle-group {
+    background-color: var(--medium);
   }
   body.dark-mode #pricing .icon {
     filter: none;
