@@ -13,6 +13,7 @@
     --bodyTextColor: #4e4b66;
     --bodyTextColorWhite: #fafbfc;
     --background: #fff;
+    --backgroundShade: #f7f7f7;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -303,7 +304,7 @@
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     /* 12px - 24px */
-    border-radius: clamp(0.75rem, 2vw, 1.5rem);
+    border-radius: 4rem;
     position: fixed;
     top: 2rem;
     left: 50%;
@@ -612,7 +613,7 @@
     background-color: #fff;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     /* 12px - 24px */
-    border-radius: clamp(0.75rem, 2vw, 1.5rem);
+    border-radius: 4rem;
     display: flex;
     align-items: center;
     position: fixed;
@@ -626,7 +627,7 @@
     width: 100%;
     max-width: 90rem;
     margin: auto;
-    padding: 0 1.5rem;
+    padding: 0 3rem;
     /* prevents padding from affecting height and width */
     box-sizing: border-box;
     display: flex;
