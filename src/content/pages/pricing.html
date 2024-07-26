@@ -1,0 +1,83 @@
+---
+title: "Pricing | North Melbourne Web"
+description: "Discover customized web design and development pricing at North Melbourne Web. Tailored solutions for every business with clear, transparent pricing. Explore our packages to find the perfect fit for your brand and get started on your digital journey today!"
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "pricing/"
+eleventyNavigation:
+  key: Contact Us
+  order: 600
+  hideOnDesktop: true
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/pricing.css" />
+{% endblock %} {% block body %}
+
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
+
+<div id="banner-1519">
+    <div class="cs-container">
+        <span class="cs-int-title">About Us</span>
+        <div class="cs-breadcrumbs">
+            <a href="" class="cs-link">Home</a>
+            <a href="" class="cs-link cs-active">About</a>
+        </div>
+    </div>
+    <!--Background Image-->
+    <picture class="cs-background">
+        <!--Mobile Image-->
+        <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/kids-playing2.jpg">
+        <!--Tablet and above Image-->
+        <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/kids-playing2.jpg">
+        <img decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/kids-playing2.jpg" alt="people laughing" width="1280" height="568" aria-hidden="true">
+    </picture>
+    <svg class="cs-mask" xmlns="http://www.w3.org/2000/svg" width="1920" height="136" viewBox="0 0 1920 136" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1920 136V0C1803.21 45.3334 1445.52 136 951 136C456.485 136 111.116 45.3334 0 0V136H951H1920Z" fill="var(--maskBG)"/>
+    </svg>
+</div>
+
+<!-- ============================================ -->
+<!--                    Table                     -->
+<!-- ============================================ -->
+
+<section id="table-1669">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Pricing</span>
+            <h2 class="cs-title">Bookkeeping and Accounting Services Pricing</h2>
+            <p class="cs-text">
+                The below packages are only example packages. All packages are tailored to meet the needs of each business and are custom-priced.
+            </p>
+        </div>
+        <table class="cs-table">
+            <thead>
+                <tr class="cs-color">
+                    <th class="cs-th">Bookkeeping & Accounting Services</th>
+                    {% for plan in plans %}
+                        <th class="cs-th">{{ plan.name }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for service in allServices %}
+                    <tr class="cs-tr">
+                        <td class="cs-td">{{ service.name }}</td>
+                        {% for check in service.plans %}
+                            <td class="cs-td">
+                                {% if check == 'check' %}
+                                <img class="cs-icon" src="/assets/svgs/pricing-check.svg" alt="icon" width="16" height="16" loading="lazy" decoding="async" aria-hidden="true">
+                                {% else %}
+                                    {{ check }}
+                                {% endif %}
+                            </td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</section>
+{% endblock %}
+
