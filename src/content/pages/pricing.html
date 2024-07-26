@@ -46,22 +46,46 @@ eleventyNavigation:
     <div class="cs-container">
         <div class="cs-content">
             <span class="cs-topper">Pricing</span>
-            <h2 class="cs-title">Bookkeeping and Accounting Services Pricing</h2>
+            <h2 class="cs-title">Full Service Website Packages</h2>
             <p class="cs-text">
-                The below packages are only example packages. All packages are tailored to meet the needs of each business and are custom-priced.
+                A website, and the resources of an entire IT department, included into one easy-to-digest fee. Prices include all taxes. Monthly contract comes with a 6-month minimum term, but you can cancel at any time after.
             </p>
         </div>
         <table class="cs-table">
             <thead>
                 <tr class="cs-color">
-                    <th class="cs-th">Bookkeeping & Accounting Services</th>
-                    {% for plan in plans %}
+                    <th class="cs-th">Monthly</th>
+                    {% for plan in mPlans %}
                         <th class="cs-th">{{ plan.name }}</th>
                     {% endfor %}
                 </tr>
             </thead>
             <tbody>
-                {% for service in allServices %}
+                {% for service in mServices %}
+                    <tr class="cs-tr">
+                        <td class="cs-td">{{ service.name }}</td>
+                        {% for check in service.plans %}
+                            <td class="cs-td">
+                                {% if check == 'check' %}
+                                <img class="cs-icon" src="/assets/svgs/pricing-check.svg" alt="icon" width="16" height="16" loading="lazy" decoding="async" aria-hidden="true">
+                                {% else %}
+                                    {{ check }}
+                                {% endif %}
+                            </td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+            <thead>
+                <tr class="cs-color">
+                    <th class="cs-th">Lumpsum</th>
+                    {% for plan in lPlans %}
+                        <th class="cs-th">{{ plan.name }}</th>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for service in lServices %}
                     <tr class="cs-tr">
                         <td class="cs-td">{{ service.name }}</td>
                         {% for check in service.plans %}

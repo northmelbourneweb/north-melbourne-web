@@ -1,7 +1,7 @@
 module.exports = {
-    allServices: [
+    mServices: [
       {
-        name: "Number of pages",
+        name: "Number of Pages",
         plans: [5, 9]
       },
       {
@@ -13,33 +13,119 @@ module.exports = {
         plans: ["check", "check"]
       },
       {
-        name: "",
+        name: "Unlimited Stock Images (As Needed)",
         plans: ["check", "check"]
       },
       {
-        name: "",
+        name: "Unlimited Edits",
         plans: ["check", "check"]
       },
       {
-        name: "",
+        name: "Hosting and SSL Certificate",
         plans: ["check", "check"]
       },
       {
-        name: "",
+        name: "Domain",
+        plans: ["Up to A$20/yr", "Up to A$35/yr"]
+      },
+      {
+        name: "24/7 Support",
         plans: ["check", "check"]
       },
       {
-        name: "Profit and Loss Analysis",
-        plans: ["Available", "Available"]
+        name: "Contact Form Integration",
+        plans: ["check", "check"]
       },
       {
-        name: "Spend Management",
-        plans: ["Available", "Available"]
-      }
-      // Add more service items here
+        name: "Dark Mode",
+        plans: ["check", "check"]
+      },
+      {
+        name: "Google Business Profile Setup and Maps Listing",
+        plans: ["check", "check"]
+      },
+      {
+        name: "Website Redesign Every",
+        plans: ["3 years", "2 years"]
+      },
+      {
+        name: "Content Management System",
+        plans: ["", "check"]
+      },
+      {
+        name: "20% Discount on all Add-ons",
+        plans: ["", "check"]
+      },
     ],
-    plans: [
+    lServices: [
+        {
+          name: "Number of Pages",
+          plans: [5, 9, 10]
+        },
+        {
+            name: "E-Commerce Capability",
+            plans: ["", "", "check"]
+          },
+        {
+          name: "Mobile-First, Responsive Design",
+          plans: ["check", "check", "check"]
+        },
+        {
+          name: "Custom Coded Development, From Scratch",
+          plans: ["check", "check", "check"]
+        },
+        {
+          name: "Unlimited Stock Images (As Needed)",
+          plans: ["check", "check", "check"]
+        },
+        {
+          name: "Unlimited Edits",
+          plans: ["", "", ""]
+        },
+        {
+          name: "Hosting and SSL Certificate",
+          plans: ["", "", ""]
+        },
+        {
+          name: "Domain",
+          plans: ["", "", ""]
+        },
+        {
+          name: "24/7 Support",
+          plans: ["", "", ""]
+        },
+        {
+          name: "Contact Form Integration",
+          plans: ["check", "check". "check"]
+        },
+        {
+          name: "Dark Mode",
+          plans: ["check", "check", "check"]
+        },
+        {
+          name: "Google Business Profile Setup and Maps Listing",
+          plans: ["check", "check", "check"]
+        },
+        // {
+        //   name: "Website Redesign Every",
+        //   plans: ["3 years", "2 years", "2 years"]
+        // },
+        {
+          name: "Content Management System",
+          plans: ["", "check", "check"]
+        },
+        {
+          name: "20% Discount on all Add-ons",
+          plans: ["", "check", "check"]
+        },
+      ],
+    mPlans: [
       { name: "Business (A$99/month)" },
       { name: "Business Plus (A$179/month)" },
     ]
+    lPlans: [
+        { name: "Business (A$2000)" },
+        { name: "Business Plus (A$3000)" },
+        { name: "E-Commerce (A$5000)" },
+      ]
 };
