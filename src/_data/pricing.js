@@ -37,6 +37,10 @@ module.exports = {
         plans: ["check", "check"]
       },
       {
+        name: "Google Analytics Integration",
+        plans: ["check", "check"]
+      },
+      {
         name: "Contact Form Integration",
         plans: ["check", "check"]
       },
@@ -96,6 +100,10 @@ module.exports = {
       },
       {
         name: "Logo to SVG Conversion",
+        plans: ["check", "check", "check"]
+      },
+      {
+        name: "Google Analytics Integration",
         plans: ["check", "check", "check"]
       },
       // {

@@ -849,12 +849,16 @@
 
         .cs-content {
             /* set text align to left if content needs to be left aligned */
-            text-align: left;
+            text-align: center;
             width: 100%;
             display: flex;
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
-            align-items: flex-start;
+            align-items: center;
+        }
+
+        .cs-text {
+            max-width: calc(620 / 16 * 1rem);
         }
     
         .cs-table {
@@ -937,12 +941,12 @@
     body.dark-mode {
         #pricing-table {
             .cs-th {
-                background-color: var(--medium);
+                background-color: var(--accent);
                 color: var(--bodyTextColorWhite);
             }
 
             .cs-th:first-child, .cs-td:first-child {
-                background-color: var(--medium);
+                background-color: var(--accent);
                 border-color: rgba(255, 255, 255, .4);
                 color: var(--bodyTextColorWhite);
             }
@@ -955,7 +959,7 @@
                 .cs-th {
                     &:first-child {
                         color: #fff;
-                        background-color: var(--secondary);
+                        background-color: var(--primary);
                     }
                 }
             }

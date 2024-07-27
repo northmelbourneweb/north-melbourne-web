@@ -692,12 +692,15 @@
   }
   #pricing-table .cs-content {
     /* set text align to left if content needs to be left aligned */
-    text-align: left;
+    text-align: center;
     width: 100%;
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
+    align-items: center;
+  }
+  #pricing-table .cs-text {
+    max-width: 38.75rem;
   }
   #pricing-table .cs-table {
     width: 100%;
@@ -748,11 +751,11 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #pricing-table .cs-th {
-    background-color: var(--medium);
+    background-color: var(--accent);
     color: var(--bodyTextColorWhite);
   }
   body.dark-mode #pricing-table .cs-th:first-child, body.dark-mode #pricing-table .cs-td:first-child {
-    background-color: var(--medium);
+    background-color: var(--accent);
     border-color: rgba(255, 255, 255, 0.4);
     color: var(--bodyTextColorWhite);
   }
@@ -761,7 +764,7 @@
   }
   body.dark-mode #pricing-table .cs-color .cs-th:first-child {
     color: #fff;
-    background-color: var(--secondary);
+    background-color: var(--primary);
   }
   body.dark-mode #pricing-table .cs-tr {
     color: var(--bodyTextColorWhite);
