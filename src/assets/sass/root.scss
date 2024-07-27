@@ -17,6 +17,7 @@
         --bodyTextColorWhite: #fafbfc;
         --background: #fff;
         --backgroundShade: #f7f7f7;
+        --border: #ddd;
         /* 13px - 16px */
         --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
         /* 31px - 49px */
@@ -402,6 +403,7 @@
 
             .ul-wrapper {
                 opacity: 1;
+                background-color: var(--background);
                 transform: scaleY(1);
             }
 
@@ -448,8 +450,8 @@
             width: calc(56 / 16 * 1rem);
             height: calc(56 / 16 * 1rem);
             margin: 0 0 0 auto;
-            border-radius: calc(4 / 16 * 1rem);
-            background-color: #1A1A1A;
+            border-radius: calc(8 / 16 * 1rem);
+            background-color: var(--secondary);
             border: none;
             display: flex;
             justify-content: center;
@@ -562,7 +564,7 @@
             height: 100vh;
             padding-bottom: calc(48 / 16 * 1rem);
             opacity: 0;
-            overflow: hidden;
+            // overflow: hidden;
             position: absolute;
             top: 100%;
             left: 0;
@@ -578,7 +580,7 @@
             width: 100%;
             height: auto;
             max-height: 65vh;
-            overflow: scroll;
+            // overflow: scroll;
             display: flex;
             justify-content: flex-start;
             flex-direction: column;
@@ -694,7 +696,7 @@
             }
 
             .ul-wrapper {
-                background-color: transparent;
+                background-color: var(--dark);
             }
 
             .phone-icon {
@@ -906,9 +908,9 @@
                 color: var(--primary);
             }
 
-            &.active {
-                color: var(--primary);
-            }
+            // &.active {
+            //     color: var(--primary);
+            // }
         }
 
         .button-solid {
@@ -986,11 +988,11 @@
             }
 
             .li-link {
-                &.active {
-                    color: var(--secondary);
-                }
+                // &.active {
+                //     color: var(--primary);
+                // }
                 &:hover {
-                    color: var(--secondary);
+                    color: var(--primary);
                 }
             }
         }
