@@ -17,33 +17,33 @@
         --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
     }
 
-    #contact {
+    #cs-contact {
         padding: var(--sectionPadding);
         font-family: "Roboto", "Arial", sans-serif;
 
-        .container {
+        .cs-container {
             margin: auto;
             /* changes to 1280px at desktop */
             max-width: calc(800 / 16 * 1rem);
             width: 100%;
         }
 
-        .content {
+        .cs-content {
             width: 100%;
         }
 
-        .topper {
+        .cs-topper {
             /* 8px - 12px */
             margin-bottom: clamp(0.5rem, 1.4vw, 0.75rem);
             text-align: left;
         }
 
-        .title {
+        .cs-title {
             max-width: calc(800 / 16 * 1rem);
             text-align: left;
         }
 
-        .text {
+        .cs-text {
             margin: 0 auto 0 0;
             /* 40px - 48px */
             margin-bottom: clamp(2.5rem, 6.3vw, 3rem);
@@ -52,7 +52,7 @@
             text-align: left;
         }
 
-        #form {
+        #cs-form {
             margin-bottom: calc(40 / 16 * 1rem);
             label {
                 display: flex;
@@ -67,7 +67,7 @@
                 color: var(--headerColor);
             }
 
-            .label-message {
+            .cs-label-message {
                 /* 32px - 48px */
                 margin-bottom: clamp(2rem, 6.3vw, 3rem);
             }
@@ -96,13 +96,13 @@
                 font-family: inherit;
             }
 
-            .button-solid {
+            .cs-button-solid {
                 border: none;
                 width: 100%;
             }
         }
 
-        .right-section {
+        .cs-right-section {
             position: relative;
             display: flex;
             flex-direction: column;
@@ -117,7 +117,7 @@
             padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.25rem, 3vw, 2.5rem);
         }
 
-        .header {
+        .cs-header {
             display: block;
             margin-bottom: calc(8 / 16 * 1rem);
             /* 16px - 20px */
@@ -127,7 +127,7 @@
             color: var(--bodyTextColorWhite);
         }
 
-        .link {
+        .cs-link {
             position: relative;
             display: block;
             margin-bottom: calc(20 / 16 * 1rem);
@@ -163,12 +163,12 @@
             }
         }
 
-        .block {
+        .cs-block {
             /* sends second address line to the bottom on its own line */
             display: block;
         }
 
-        .bg-picture {
+        .cs-bg-picture {
             z-index: -1;
             position: absolute;
             top: 0;
@@ -206,8 +206,8 @@
 
 /* Tablet - 700px */
 @media only screen and (min-width: 43.75em) {
-    #contact {
-        #form {
+    #cs-contact {
+        #cs-form {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -217,7 +217,7 @@
                 width: 48%;
             }
 
-            .label-message {
+            .cs-label-message {
                 width: 100%;
             }
         }
@@ -226,8 +226,8 @@
 
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
-    #contact {
-        .container {
+    #cs-contact {
+        .cs-container {
             display: flex;
             justify-content: flex-end;
             align-items: flex-start;
@@ -235,14 +235,14 @@
             gap: calc(80 / 16 * 1rem);
         }
 
-        #form {
+        #cs-form {
             max-width: calc(630 / 16 * 1rem);
             label {
                 width: 100%;
             }
         }
 
-        .right-section {
+        .cs-right-section {
             /* changes to 578px at 1300px wide */
             height: calc(686 / 16 * 1rem);
             max-width: calc(542 / 16 * 1rem);
@@ -251,13 +251,13 @@
             flex: none;
 
             &:hover {
-                .bg-picture {
+                .cs-bg-picture {
                     transform: scale(1.1);
                 }
             }
         }
 
-        .block {
+        .cs-block {
             /* goes back to inline so it stays "in line" with the rest of the text */
             display: inline-block;
         }
@@ -266,20 +266,20 @@
 
 /* Small Desktop - 1300px */
 @media only screen and (min-width: 81.25em) {
-    #contact {
-        #form {
+    #cs-contact {
+        #cs-form {
             column-gap: calc(0 / 16 * 1rem);
             label {
                 max-width: calc(305 / 16 * 1rem);
                 width: 48%;
             }
 
-            .label-message {
+            .cs-label-message {
                 max-width: 100%;
             }
         }
 
-        .right-section {
+        .cs-right-section {
             height: calc(578 / 16 * 1rem);
         }
     }
@@ -288,13 +288,13 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
-        #contact {
-            .text,
-            .title {
+        #cs-contact {
+            .cs-text,
+            .cs-title {
                 color: var(--bodyTextColorWhite);
             }
 
-            #form {
+            #cs-form {
                 label,
                 input,
                 textarea {
@@ -308,7 +308,7 @@
                 }
             }
 
-            .bg-picture {
+            .cs-bg-picture {
                 background-color: #000;
 
                 img {
