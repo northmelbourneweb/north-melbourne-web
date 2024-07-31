@@ -1,0 +1,777 @@
+/*-- -------------------------- -->
+<---          Banner            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #banner-559 {
+    padding: var(--sectionPadding);
+    /* 137px - 212px */
+    padding-top: clamp(8.5625rem, 25vw, 13.25rem);
+    /* clips the line from causing overflow issues for going off screen */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #banner-559 .cs-container {
+    text-align: center;
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  #banner-559 .cs-int-topper {
+    font-size: var(--topperFontSize);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    margin: 0;
+    padding: 0 0 0 1.25rem;
+    color: var(--bodyTextColorWhite);
+    display: block;
+    position: relative;
+  }
+  #banner-559 .cs-int-topper:before {
+    /* yellow line */
+    content: "";
+    width: 50vw;
+    height: 2px;
+    background: var(--bodyTextColorWhite);
+    opacity: 1;
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+  }
+  #banner-559 .cs-int-title {
+    /* 39px - 61px */
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    margin: 0;
+    color: var(--bodyTextColorWhite);
+    position: relative;
+  }
+  #banner-559 .cs-breadcrumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #banner-559 .cs-link {
+    /* 16px - 20px */
+    font-size: clamp(1rem, 1.5vw, 1.25rem);
+    line-height: 1.2em;
+    text-decoration: none;
+    color: var(--bodyTextColorWhite);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #banner-559 .cs-link:last-of-type {
+    /* remove the chevron on the last list item */
+  }
+  #banner-559 .cs-link:last-of-type::after {
+    display: none;
+  }
+  #banner-559 .cs-link:after {
+    /* chevron - added as pseudo to make adding and removing them easier */
+    content: "";
+    width: 1.875rem;
+    height: 0.125rem;
+    /* 12px - 24px */
+    margin: 0 clamp(0.75rem, 2vw, 1.5rem);
+    background-color: #fff;
+  }
+  #banner-559 .cs-link.cs-active {
+    color: var(--bodyTextColorWhite);
+  }
+  #banner-559 .cs-background {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #banner-559 .cs-background:before {
+    /* background color overlay */
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: var(--dark);
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  #banner-559 .cs-background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* Makes img tag act as a background image */
+    object-fit: cover;
+  }
+}
+/*-- -------------------------- -->
+<---          Pricing           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #pricing {
+    padding: var(--sectionPadding);
+    /* clips svg graphic from overflowing the section */
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transform-style: preserve-3d;
+    background-color: var(--backgroundShade);
+  }
+  #pricing .container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px, changes to 20px at large desktop */
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+    perspective: 1100px;
+  }
+  #pricing .content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    max-width: 40.1875rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #pricing .text {
+    margin-bottom: 1rem;
+  }
+  #pricing .text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #pricing .button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    overflow: hidden;
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #pricing .button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #pricing .button-solid:hover:before {
+    width: 100%;
+  }
+  #pricing .toggle-group {
+    width: 100%;
+    max-width: 25.875rem;
+    margin: 0;
+    padding: 0.75rem;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    background-color: #f0f0f3;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #pricing .plan {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5em;
+    margin: 0;
+    padding: 0;
+    color: var(--headerColor);
+  }
+  #pricing .plan:hover {
+    cursor: pointer;
+  }
+  #pricing .toggle {
+    width: 3.25rem;
+    height: 2rem;
+    border-radius: 2.5rem;
+    background-color: var(--primaryLight);
+    margin: 0 1.5rem;
+    position: relative;
+    /* prevent flexbox from squishing it */
+    flex: none;
+  }
+  #pricing .toggle:hover {
+    cursor: pointer;
+  }
+  #pricing .toggle.active:before {
+    opacity: 1;
+  }
+  #pricing .toggle.active .toggle-switch {
+    left: 1.4375rem;
+  }
+  #pricing .toggle:before {
+    /* top right box */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    opacity: 0;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    border-radius: 2.5rem;
+    transition: opacity 0.3s;
+  }
+  #pricing .toggle-switch {
+    width: 1.625rem;
+    height: 1.625rem;
+    display: block;
+    border-radius: 50%;
+    filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.06)) drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.15));
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0.1875rem;
+    transition: left 0.3s;
+    background: #fff;
+  }
+  #pricing .ul-wrapper {
+    position: relative;
+    z-index: 10;
+    perspective: 1200px;
+  }
+  #pricing .ul-wrapper.active .option1 {
+    transform: rotateY(180deg);
+  }
+  #pricing .ul-wrapper.active .option2 {
+    transform: rotateY(360deg);
+  }
+  #pricing .option2 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+  }
+  #pricing .option2 .item {
+    border-radius: 0 1.5rem 0 0;
+  }
+  #pricing .option2 .item:nth-of-type(2) {
+    border-radius: 0 0 0 1.5rem;
+  }
+  #pricing .card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* prevents flexbox from squishing it */
+    flex: none;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+    transition: transform 0.8s;
+  }
+  #pricing .item {
+    text-align: left;
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 1.5rem 1.5rem;
+    background-color: #fff;
+    border: 1px solid #dad9e3;
+    border-radius: 1.5rem 0 0 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    z-index: 1;
+    min-height: 400px;
+  }
+  #pricing .item:nth-of-type(2) {
+    border-radius: 0 0 1.5rem 0;
+  }
+  #pricing .item.popular {
+    background-color: #14142b;
+    border: none;
+  }
+  #pricing .item.popular .popular-tag {
+    display: inline-flex;
+  }
+  #pricing .item.popular .package,
+  #pricing .item.popular .price,
+  #pricing .item.popular .duration,
+  #pricing .item.popular .item-text,
+  #pricing .item.popular .li {
+    color: var(--bodyTextColorWhite);
+  }
+  #pricing .item.popular .item-text,
+  #pricing .item.popular .li {
+    opacity: 0.8;
+  }
+  #pricing .item.popular .icon {
+    filter: none;
+    opacity: 1;
+  }
+  #pricing .item.popular .button-transparent {
+    background-color: var(--primary);
+    color: var(--bodyTextColorWhite);
+    border: none;
+    transition: color 0.3s;
+  }
+  #pricing .item.popular .button-transparent:before {
+    background-color: #fff;
+  }
+  #pricing .item.popular .button-transparent:hover {
+    color: var(--primary);
+  }
+  #pricing .popular-tag {
+    font-size: 0.875rem;
+    line-height: 1.2em;
+    text-align: center;
+    width: auto;
+    margin: 0;
+    padding: 0.25rem 0.75rem;
+    box-sizing: border-box;
+    color: #ff9b7d;
+    overflow: hidden;
+    border-radius: 0.25rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* same as item padding top */
+    top: 1.5rem;
+    right: 1.5rem;
+    z-index: 1;
+  }
+  #pricing .popular-tag:before {
+    /* background color overlay */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    opacity: 0.16;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #pricing .picture {
+    width: 4.75rem;
+    height: 4.75rem;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #pricing .picture:before {
+    /* background color */
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    opacity: 0.2;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+  }
+  #pricing .package {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    text-align: inherit;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: var(--headerColor);
+    display: block;
+  }
+  #pricing .price {
+    font-size: 2.4375rem;
+    line-height: 1.2em;
+    text-align: inherit;
+    font-weight: 900;
+    margin: 0 0 0.75rem;
+    color: var(--headerColor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  #pricing .duration {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    font-weight: 400;
+    margin: 0;
+    color: var(--headerColor);
+  }
+  #pricing .item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    text-align: inherit;
+    margin: 0 0 2rem;
+    color: var(--bodyTextColor);
+  }
+  #pricing .ul {
+    margin: 0 0 2rem;
+    padding: 0;
+    display: flex;
+    margin-top: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  #pricing .li {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    list-style: none;
+    line-height: 1.5em;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    color: var(--bodyTextColor);
+    display: flex;
+    justify-content: flex-start;
+    /* push everything to the top so if the li goes to two lines the icon stays at the top */
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  #pricing .li.disabled {
+    opacity: 0.5;
+  }
+  #pricing .li.disabled .icon {
+    filter: grayscale(1) brightness(300%);
+  }
+  #pricing .icon {
+    width: 1.5rem;
+    height: auto;
+    filter: grayscale(1);
+    opacity: 0.5;
+    display: block;
+  }
+  #pricing .button-solid {
+    width: 100%;
+  }
+  #pricing .button-transparent {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: var(--primary);
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    border-radius: 0.25rem;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+  }
+  #pricing .button-transparent:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #pricing .button-transparent:hover {
+    color: #fff;
+    border-color: #000;
+    background-color: #000;
+  }
+  #pricing .button-transparent:hover:before {
+    width: 100%;
+  }
+  #pricing .waves-wrapper {
+    width: 100vw;
+    height: 65%;
+    display: block;
+    position: absolute;
+    bottom: -6.25rem;
+    left: 50%;
+    z-index: -10;
+    transform: translateX(-50%);
+  }
+  #pricing .waves-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #pricing .container {
+    max-width: 80rem;
+    /* remove the position so the svg waves wrapper can be positioned relative to the section container for tablet so it hugs the right edge of the screen. We set it back to relative at 1024px so it can then be positioned relative to the container again so it hugs the right edge of the container with the pricing cards */
+    position: initial;
+  }
+  #pricing .card-group {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+  }
+  #pricing .option2 .item {
+    border-radius: 1.5rem 0 0 1.5rem;
+  }
+  #pricing .option2 .item:nth-of-type(2) {
+    border-radius: 0 1.5rem 1.5rem 0;
+  }
+  #pricing .item {
+    width: 50%;
+    border-radius: 1.5rem 0 0 1.5rem;
+  }
+  #pricing .item:nth-of-type(2) {
+    border-radius: 0 1.5rem 1.5rem 0;
+  }
+  #pricing .waves-wrapper {
+    /* changes to 740px at large desktop */
+    width: 55vw;
+    height: 100%;
+    left: auto;
+    right: 0;
+    bottom: auto;
+    top: 0;
+    transform: none;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #pricing .container {
+    max-width: 80rem;
+    position: relative;
+    z-index: 1;
+  }
+  #pricing .waves-wrapper {
+    height: 140%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+/* Large Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #pricing .container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.25rem;
+  }
+  #pricing .ul-wrapper {
+    width: 62%;
+    max-width: 46.25rem;
+    flex: none;
+  }
+  #pricing .waves-wrapper {
+    max-width: 46.25rem;
+    width: 100%;
+  }
+  #pricing .content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 40.1875rem;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #pricing {
+    background-color: var(--dark);
+  }
+  body.dark-mode #pricing .title,
+  body.dark-mode #pricing .text,
+  body.dark-mode #pricing .plan {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #pricing .text,
+  body.dark-mode #pricing .item-text,
+  body.dark-mode #pricing .li {
+    opacity: 0.8;
+  }
+  body.dark-mode #pricing .toggle-group {
+    background-color: var(--medium);
+  }
+  body.dark-mode #pricing .icon {
+    filter: none;
+    opacity: 1;
+  }
+  body.dark-mode #pricing .button-solid {
+    transition: color 0.3s;
+  }
+  body.dark-mode #pricing .button-solid:hover {
+    color: var(--primary);
+  }
+  body.dark-mode #pricing .button-solid:before {
+    background-color: #fff;
+  }
+}
+/*-- -------------------------- -->
+<---           Table            -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #pricing-table {
+    padding: var(--sectionPadding);
+  }
+  #pricing-table .cs-title {
+    margin-bottom: 1rem;
+  }
+  #pricing-table .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #pricing-table .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #pricing-table .cs-text {
+    max-width: 38.75rem;
+  }
+  #pricing-table .cs-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  #pricing-table .cs-th {
+    padding: 0.75rem 1rem;
+    box-sizing: border-box;
+  }
+  #pricing-table .cs-td {
+    padding: 0.5rem 1rem;
+    box-sizing: border-box;
+  }
+  #pricing-table .cs-th, #pricing-table .cs-td {
+    border: 1px solid var(--border);
+    text-align: center;
+  }
+  #pricing-table .cs-color .cs-th:first-child {
+    color: var(--bodyTextColorWhite);
+    background-color: var(--primary);
+  }
+  #pricing-table .cs-th:first-child, #pricing-table .cs-td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 100; /* Make sure it sits above the other cells */
+    background-color: var(--backgroundShade);
+    border: 1px solid var(--border);
+    text-align: left;
+  }
+  #pricing-table .cs-th {
+    background-color: var(--backgroundShade);
+  }
+  #pricing-table .cs-tr {
+    color: var(--bodyTextColor);
+  }
+  #pricing-table .cs-icon {
+    height: 1rem;
+    width: auto;
+  }
+}
+/* Tablet - 600px */
+@media screen and (max-width: 37.5rem) {
+  #pricing-table .cs-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #pricing-table .cs-th {
+    background-color: var(--accent);
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #pricing-table .cs-th:first-child, body.dark-mode #pricing-table .cs-td:first-child {
+    background-color: var(--accent);
+    border-color: rgba(255, 255, 255, 0.4);
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #pricing-table .cs-th, body.dark-mode #pricing-table .cs-td {
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  body.dark-mode #pricing-table .cs-color .cs-th:first-child {
+    color: #fff;
+    background-color: var(--primary);
+  }
+  body.dark-mode #pricing-table .cs-tr {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #pricing-table .cs-icon {
+    filter: grayscale(1) brightness(1000%);
+  }
+}
+
+/*# sourceMappingURL=pricing.css.map */
