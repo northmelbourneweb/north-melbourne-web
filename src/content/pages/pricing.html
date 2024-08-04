@@ -9,37 +9,39 @@ eleventyNavigation:
   hideOnDesktop: true
 ---
 
-{% extends "layouts/base.html" %} {% block head %}
-<link rel="stylesheet" href="/assets/css/pricing.css" />
-<script defer src="/assets/js/pricing.js"></script>
-{% endblock %} {% block body %}
+{% extends "layouts/base.html" %}
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/pricing.css"/>
+    <script defer src="/assets/js/pricing.js"></script>
+{% endblock %}
+{% block body %}
 
-<!-- ============================================ -->
-<!--                   Banner                     -->
-<!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
 
-<div id="banner-559">
-  <div class="cs-container">
-    {# <span class="cs-int-topper">Building Communities</span> #}
-    <span class="cs-int-title">Pricing</span>
-    <div class="cs-breadcrumbs">
-      <a href="/" class="cs-link">Home</a>
-      <a href="/pricing" class="cs-link cs-active">Pricing</a>
-    </div>
-  </div>
-  <!--Background Image-->
-  <picture class="cs-background">
-    <!--Mobile Image-->
-    <source
+    <div id="banner-559">
+        <div class="container">
+            {# <span class="int-topper">Building Communities</span> #}
+            <span class="int-title">Pricing</span>
+            <div class="breadcrumbs">
+                <a href="/" class="link">Home</a>
+                <a href="/pricing" class="link active">Pricing</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="background">
+            <!--Mobile Image-->
+            <source
       media="(max-width: 600px)"
       srcset="/assets/images/banner/pricing-banner-m.jpg"
-    />
-    <!--Tablet and above Image-->
-    <source
+/>
+            <!--Tablet and above Image-->
+            <source
       media="(min-width: 601px)"
       srcset="/assets/images/banner/pricing-banner.jpg"
-    />
-    <img
+/>
+            <img
       loading="lazy"
       decoding="async"
       src="/assets/images/banner/pricing-banner.jpg"
@@ -47,45 +49,45 @@ eleventyNavigation:
       width="1280"
       height="568"
       aria-hidden="true"
-    />
-  </picture>
-</div>
+/>
+        </picture>
+    </div>
 
-{% include 'components/front/pricing.html' %}
+    {% include 'components/front/pricing.html' %}
 
-<!-- ============================================ -->
-<!--                    Table                     -->
-<!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                    Table                     -->
+    <!-- ============================================ -->
 
-<section id="pricing-table">
-  <div class="cs-container">
-    <div class="cs-content">
-      {# <span class="cs-topper">Pricing</span> #}
-      <h2 class="cs-title">Full Service Website Packages</h2>
-      <p class="cs-text">
+    <section id="pricing-table">
+        <div class="container">
+            <div class="content">
+                {# <span class="topper">Pricing</span> #}
+                <h2 class="title">Full Service Website Packages</h2>
+                <p class="text">
         A website, and the resources of an entire IT department, included into
         one easy-to-digest fee. Prices include all taxes. Monthly contract comes
         with a 12-month minimum term, but you can cancel at any time after.
       </p>
-    </div>
-    <table class="cs-table">
-      <thead>
-        <tr class="cs-color">
-          <th class="cs-th">Monthly</th>
-          {% for plan in pricing.mPlans %}
-          <th class="cs-th">{{ plan.name }}</th>
-          {% endfor %}
-        </tr>
-      </thead>
-      <tbody>
-        {% for service in pricing.mServices %}
-        <tr class="cs-tr">
-          <td class="cs-td">{{ service.name }}</td>
-          {% for check in service.plans %}
-          <td class="cs-td">
-            {% if check == 'check' %}
-            <img
-              class="cs-icon"
+            </div>
+            <table class="table">
+                <thead>
+                    <tr class="color">
+                        <th class="th">Monthly</th>
+                        {% for plan in pricing.mPlans %}
+                            <th class="th">{{ plan.name }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for service in pricing.mServices %}
+                        <tr class="tr">
+                            <td class="td">{{ service.name }}</td>
+                            {% for check in service.plans %}
+                                <td class="td">
+                                    {% if check == 'check' %}
+                                        <img
+              class="icon"
               src="/assets/svgs/pricing-check.svg"
               alt="icon"
               width="16"
@@ -93,30 +95,32 @@ eleventyNavigation:
               loading="lazy"
               decoding="async"
               aria-hidden="true"
-            />
-            {% else %} {{ check }} {% endif %}
-          </td>
-          {% endfor %}
-        </tr>
-        {% endfor %}
-      </tbody>
-      <thead>
-        <tr class="cs-color">
-          <th class="cs-th">Lumpsum</th>
-          {% for plan in pricing.lPlans %}
-          <th class="cs-th">{{ plan.name }}</th>
-          {% endfor %}
-        </tr>
-      </thead>
-      <tbody>
-        {% for service in pricing.lServices %}
-        <tr class="cs-tr">
-          <td class="cs-td">{{ service.name }}</td>
-          {% for check in service.plans %}
-          <td class="cs-td">
-            {% if check == 'check' %}
-            <img
-              class="cs-icon"
+/>
+                                    {% else %}
+                                        {{ check }}
+                                    {% endif %}
+                                </td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+                <thead>
+                    <tr class="color">
+                        <th class="th">Lumpsum</th>
+                        {% for plan in pricing.lPlans %}
+                            <th class="th">{{ plan.name }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for service in pricing.lServices %}
+                        <tr class="tr">
+                            <td class="td">{{ service.name }}</td>
+                            {% for check in service.plans %}
+                                <td class="td">
+                                    {% if check == 'check' %}
+                                        <img
+              class="icon"
               src="/assets/svgs/pricing-check.svg"
               alt="icon"
               width="16"
@@ -124,14 +128,16 @@ eleventyNavigation:
               loading="lazy"
               decoding="async"
               aria-hidden="true"
-            />
-            {% else %} {{ check }} {% endif %}
-          </td>
-          {% endfor %}
-        </tr>
-        {% endfor %}
-      </tbody>
-    </table>
-  </div>
-</section>
+/>
+                                    {% else %}
+                                        {{ check }}
+                                    {% endif %}
+                                </td>
+                            {% endfor %}
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </section>
 {% endblock %}

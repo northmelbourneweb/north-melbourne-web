@@ -22,33 +22,33 @@
 
 ## Table of Contents
 
--   <a href="#overview">Overview</a>
--   <a href="#prerequisites">Prerequisites</a>
-    -   <a href="#must-knows">Must Knows</a>
-    -   <a href="#good-to-knows">Good-to-knows</a>
--   <a href="#quick-start-guide">Quick Start Guide</a>
--   <a href="#explanation-of-file-structure">Explanation of File Structure</a>
-    -   <a href="#root-files">Root Files</a>
-        -   <a href="#eleventyjs">.eleventy.js</a>
-        -   <a href="#netlifytoml">netlify.toml</a>
-        -   <a href="#packagejson-and-package-lockjson">package.json and package-lock.json</a>
-    -   <a href="#nodemodules">node_modules/</a>
-    -   <a href="#public">public/</a>
-    -   <a href="#src">src/</a>
-        -   <a href="#_data">\_data/</a>
-        -   <a href="#_includes">\_includes</a>
-            -   <a href="#nav-auto">Navigations \- Rendering Automatically</a>
-            -   <a href="#nav-manual">Navigations \- Rendering Manually</a>
-    -   <a href="#admin">admin/</a>
-    -   <a href="#assets">assets/</a>
-    -   <a href="#config">config/</a>
-    -   <a href="#content">content/</a>
-    -   <a href="#root-src-files">Root src/ Files</a>
-        -   <a href="#redirects">\_redirects</a>
-        -   <a href="#indexhtml">index.html</a>
-        -   <a href="#robotshtml">robots.html</a>
-        -   <a href="#sitemaphtml">sitemap.html</a>
--   <a href="#deployment">Deployment</a>
+- <a href="#overview">Overview</a>
+- <a href="#prerequisites">Prerequisites</a>
+  - <a href="#must-knows">Must Knows</a>
+  - <a href="#good-to-knows">Good-to-knows</a>
+- <a href="#quick-start-guide">Quick Start Guide</a>
+- <a href="#explanation-of-file-structure">Explanation of File Structure</a>
+  - <a href="#root-files">Root Files</a>
+    - <a href="#eleventyjs">.eleventy.js</a>
+    - <a href="#netlifytoml">netlify.toml</a>
+    - <a href="#packagejson-and-package-lockjson">package.json and package-lock.json</a>
+  - <a href="#nodemodules">node_modules/</a>
+  - <a href="#public">public/</a>
+  - <a href="#src">src/</a>
+    - <a href="#_data">\_data/</a>
+    - <a href="#_includes">\_includes</a>
+      - <a href="#nav-auto">Navigations \- Rendering Automatically</a>
+      - <a href="#nav-manual">Navigations \- Rendering Manually</a>
+  - <a href="#admin">admin/</a>
+  - <a href="#assets">assets/</a>
+  - <a href="#config">config/</a>
+  - <a href="#content">content/</a>
+  - <a href="#root-src-files">Root src/ Files</a>
+    - <a href="#redirects">\_redirects</a>
+    - <a href="#indexhtml">index.html</a>
+    - <a href="#robotshtml">robots.html</a>
+    - <a href="#sitemaphtml">sitemap.html</a>
+- <a href="#deployment">Deployment</a>
 
 <a name="overview"></a>
 
@@ -68,10 +68,10 @@ An example website is also provided, with easy substitution of website sections 
 
 _Knowledge requirements before using the kit_
 
--   HTML/CSS
--   Beginner-level JS
--   Familiarity with working in a NodeJS-powered project (handling dependencies with npm, source vs built files, etc)
--   Familiarity with templating languages (this kit uses Nunjucks)
+- HTML/CSS
+- Beginner-level JS
+- Familiarity with working in a NodeJS-powered project (handling dependencies with npm, source vs built files, etc)
+- Familiarity with templating languages (this kit uses Nunjucks)
 
 <a name="good-to-knows"></a>
 
@@ -79,14 +79,14 @@ _Knowledge requirements before using the kit_
 
 _Not required for light-medium kit usage, but helpful if you want to customise the kit beyond base functionality_
 
--   Nunjucks ([Docs found here](https://mozilla.github.io/nunjucks/))
-    -   If you've never used Nunjucks before, [this excellent article by Hyunbin](https://hyunbinseo.medium.com/nunjucks-settings-for-vs-code-a0da0dc66b95) explains how to set up VSCode to best support Nunjucks, including formatting, syntax highlighting and Emmet.
--   Eleventy ([Docs found here](https://www.11ty.dev/docs/)). Key topics include:
-    -   [The Data Cascade](https://www.11ty.dev/docs/data-cascade/)
-    -   [Layouts](https://www.11ty.dev/docs/layouts/)
-    -   [Permalinks](https://www.11ty.dev/docs/permalinks/)
-    -   [Passthroughs](https://www.11ty.dev/docs/copy/)
--   Decap CMS ([Docs found here](https://decapcms.org/docs/intro/))
+- Nunjucks ([Docs found here](https://mozilla.github.io/nunjucks/))
+  - If you've never used Nunjucks before, [this excellent article by Hyunbin](https://hyunbinseo.medium.com/nunjucks-settings-for-vs-code-a0da0dc66b95) explains how to set up VSCode to best support Nunjucks, including formatting, syntax highlighting and Emmet.
+- Eleventy ([Docs found here](https://www.11ty.dev/docs/)). Key topics include:
+  - [The Data Cascade](https://www.11ty.dev/docs/data-cascade/)
+  - [Layouts](https://www.11ty.dev/docs/layouts/)
+  - [Permalinks](https://www.11ty.dev/docs/permalinks/)
+  - [Passthroughs](https://www.11ty.dev/docs/copy/)
+- Decap CMS ([Docs found here](https://decapcms.org/docs/intro/))
 
 <a name="quick-start-guide"></a>
 
@@ -152,14 +152,14 @@ The heart of the kit, the `.eleventy.js` file configures the Eleventy static sit
 
 The `.eleventy.js` file is well-documented, with all necessary extra documentation provided for extra reading if desired. A full list of functionalities added via `.eleventy.js` is given below:
 
--   Sets up CSS and JS as template languages, allowing modification at build time by Eleventy. JS is bundled and minified by esbuild.
--   Adds the following plugins:
-    -   [Eleventy Navigation](https://github.com/11ty/eleventy-navigation) - Allows the option to define navigation data within the template front matter.
-    -   [Eleventy Sitemap](https://www.npmjs.com/package/@quasibit/eleventy-plugin-sitemap) - Automatically generates a sitemap from all files in `./src/content`.
-    -   [Eleventy Minification](https://github.com/benjaminrancourt/eleventy-plugin-files-minifier) - Minifies HTML and CSS (only run in production - when `npm run build` is executed).
--   Passes through all assets (in `./src/assets`) without modification by Eleventy.
--   Adds date formatting filters and a year shortcode.
--   Sets some basic server options.
+- Sets up CSS and JS as template languages, allowing modification at build time by Eleventy. JS is bundled and minified by esbuild.
+- Adds the following plugins:
+  - [Eleventy Navigation](https://github.com/11ty/eleventy-navigation) - Allows the option to define navigation data within the template front matter.
+  - [Eleventy Sitemap](https://www.npmjs.com/package/@quasibit/eleventy-plugin-sitemap) - Automatically generates a sitemap from all files in `./src/content`.
+  - [Eleventy Minification](https://github.com/benjaminrancourt/eleventy-plugin-files-minifier) - Minifies HTML and CSS (only run in production - when `npm run build` is executed).
+- Passes through all assets (in `./src/assets`) without modification by Eleventy.
+- Adds date formatting filters and a year shortcode.
+- Sets some basic server options.
 
 <a name="netlifytoml"></a>
 
@@ -223,9 +223,9 @@ Layouts define the wider page structure. The main one used in this kit is `base.
 
 ##### Navigations - Rendering Automatically
 
-One thing you may notice in the `\_includes/header.html` file is the vast amount of Nunjucks code in the `cs-ul-wrapper` element. This is code that makes use of the `eleventyNavigation` object and keys in the frontmatter of all pages that are, by default, added to the kit. This is part of the Eleventy Navigation plugin, which allows us to create scalable navigation menus without having to constantly add new list items and dropdowns to the header whenever a new page is made. If you make a new page using the `\_template.txt` file in `content/pages`, you will be guided to add this information into the front matter, where the navigation will be remade with the new page data automatically.
+One thing you may notice in the `\_includes/header.html` file is the vast amount of Nunjucks code in the `ul-wrapper` element. This is code that makes use of the `eleventyNavigation` object and keys in the frontmatter of all pages that are, by default, added to the kit. This is part of the Eleventy Navigation plugin, which allows us to create scalable navigation menus without having to constantly add new list items and dropdowns to the header whenever a new page is made. If you make a new page using the `\_template.txt` file in `content/pages`, you will be guided to add this information into the front matter, where the navigation will be remade with the new page data automatically.
 
-If you wish to use this kit, and benefit from this way of doing navigations but want to swap out the navigation for another one in the CodeStitch template library, you can copy the `cs-ul-wrapper` `<div>` element that's found in the kit and replace the `cs-ul-wrapper` in the new stitch. As the class system is the same with all Stitches, the auto-rendering functionality, including the application of active-style classes and dropdowns (if a "dropdown" Stitch is used) will remain the same.
+If you wish to use this kit, and benefit from this way of doing navigations but want to swap out the navigation for another one in the CodeStitch template library, you can copy the `ul-wrapper` `<div>` element that's found in the kit and replace the `ul-wrapper` in the new stitch. As the class system is the same with all Stitches, the auto-rendering functionality, including the application of active-style classes and dropdowns (if a "dropdown" Stitch is used) will remain the same.
 
 <a name="nav-manual"></a>
 
@@ -233,12 +233,12 @@ If you wish to use this kit, and benefit from this way of doing navigations but 
 
 Some developers may wish to continue with the "old school" way of rendering navigations and add the HTML for new navigation links to the header individually. This is fine to do too.
 
-One issue that you may run into, however, is the addition of the `cs-active` class to the page that the user is currently on. As the same navigation element is being rendered on all pages, manually adding the `cs-active` class to one of the navigation items will cause that item to be "activated" between all pages.
+One issue that you may run into, however, is the addition of the `active` class to the page that the user is currently on. As the same navigation element is being rendered on all pages, manually adding the `active` class to one of the navigation items will cause that item to be "activated" between all pages.
 
-To get around this, you will need to manually add some Nunjucks code to each of the navigation items to check the page the user is on and add `cs-active` if that particular page is being viewed. That code would look like this:
+To get around this, you will need to manually add some Nunjucks code to each of the navigation items to check the page the user is on and add `active` if that particular page is being viewed. That code would look like this:
 
 ```
-<a href="/contact" class="cs-li-link {% if page.url == '/contact/' %} cs-active {% endif %}">
+<a href="/contact" class="li-link {% if page.url == '/contact/' %} active {% endif %}">
     Contact
 </a>
 ```
@@ -246,7 +246,7 @@ To get around this, you will need to manually add some Nunjucks code to each of 
 Note the if-check in the `class` attribute of the anchor element. Here, we're checking if `page.url` (the page we're currently on) matches the permalink of the navigation item. Make sure both leading and trailing slashes are used. If this were for the home page, we'd just check for "/", like so:
 
 ```
-<a href="/" class="cs-li-link {% if page.url == '/' %} cs-active {% endif %}">
+<a href="/" class="li-link {% if page.url == '/' %} active {% endif %}">
     Home
 </a>
 ```
@@ -267,13 +267,13 @@ The CMS is configured through a `config.yml` file, as per the Decap documentatio
 
 All other non-content files are stored in `assets/`, which is set up in `.eleventy.js` to be passed through to `public/`. A brief overview of each of the folders within `assets/`, and any relevant notes, is provided below:
 
--   `css/` - SASS/LESS files from the `less/` or `sass/` directories are built into `css/`. From here, the CSS is processed as an Eleventy template, where we minify the code (production only), and pass it through to `public/`. **Do not** make CSS changes here - instead, use the SASS or LESS asset directory (depending on which kit you're using).
--   `favicons/` - Any favicon files can be stored here. We recommend using [this tool](https://realfavicongenerator.net/) to generate favicons for all devices.
--   `fonts/` - If you have any non-standard fonts you wish to locally host, you can put the files here. You can use [this tool](https://gwfh.mranftl.com/fonts) to download font files to be stored in `fonts/`, as well as generate the code to be put in your `root.scss` or `root.less` file.
--   `images/` - Any images can go here. No processing will occur.
--   `js/` - Put any JavaScript in this directory. It will be processed, bundled, and minified by esbuild.
--   `sass/` or `less/` - Depending on whether you're using the SASS or LESS version of the kit, you'll find your preprocessor files in one of these directories. Make your changes to styling here, not in `assets/css`
--   `svgs/` - A separate directory for SVGs. This makes it easier to bulk-compress SVGs separate from `images/` if you're using a tool like [compressor.io](https://compressor.io/).
+- `css/` - SASS/LESS files from the `less/` or `sass/` directories are built into `css/`. From here, the CSS is processed as an Eleventy template, where we minify the code (production only), and pass it through to `public/`. **Do not** make CSS changes here - instead, use the SASS or LESS asset directory (depending on which kit you're using).
+- `favicons/` - Any favicon files can be stored here. We recommend using [this tool](https://realfavicongenerator.net/) to generate favicons for all devices.
+- `fonts/` - If you have any non-standard fonts you wish to locally host, you can put the files here. You can use [this tool](https://gwfh.mranftl.com/fonts) to download font files to be stored in `fonts/`, as well as generate the code to be put in your `root.scss` or `root.less` file.
+- `images/` - Any images can go here. No processing will occur.
+- `js/` - Put any JavaScript in this directory. It will be processed, bundled, and minified by esbuild.
+- `sass/` or `less/` - Depending on whether you're using the SASS or LESS version of the kit, you'll find your preprocessor files in one of these directories. Make your changes to styling here, not in `assets/css`
+- `svgs/` - A separate directory for SVGs. This makes it easier to bulk-compress SVGs separate from `images/` if you're using a tool like [compressor.io](https://compressor.io/).
 
 <a name="config"></a>
 

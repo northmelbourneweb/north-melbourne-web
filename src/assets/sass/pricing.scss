@@ -13,7 +13,7 @@
         position: relative;
         z-index: 1;
 
-        .cs-container {
+        .container {
             text-align: center;
             width: 100%;
             max-width: calc(1280 / 16 * 1rem);
@@ -26,7 +26,7 @@
             gap: calc(16 / 16 * 1rem);
         }
 
-        .cs-int-topper {
+        .int-topper {
             font-size: var(--topperFontSize);
             text-transform: uppercase;
             font-weight: 700;
@@ -52,7 +52,7 @@
             }
         }
 
-        .cs-int-title {
+        .int-title {
             /* 39px - 61px */
             font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
             font-weight: 900;
@@ -63,13 +63,13 @@
             position: relative;
         }
 
-        .cs-breadcrumbs {
+        .breadcrumbs {
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
-        .cs-link {
+        .link {
             /* 16px - 20px */
             font-size: clamp(1rem, 1.5vw, 1.25rem);
             line-height: 1.2em;
@@ -97,12 +97,12 @@
                 background-color: #fff;
             }
 
-            &.cs-active {
+            &.active {
                 color: var(--bodyTextColorWhite);
             }
         }
 
-        .cs-background {
+        .background {
             width: 100%;
             height: 100%;
             display: block;
@@ -832,11 +832,11 @@
     #pricing-table {
         padding: var(--sectionPadding);
 
-        .cs-title {
+        .title {
             margin-bottom: 1rem;
         }
     
-        .cs-container {
+        .container {
             width: 100%;
             max-width: calc(1280 / 16 * 1rem);
             margin: auto;
@@ -847,7 +847,7 @@
             gap: clamp(3rem, 6vw, 4rem);
         }
 
-        .cs-content {
+        .content {
             /* set text align to left if content needs to be left aligned */
             text-align: center;
             width: 100%;
@@ -857,16 +857,16 @@
             align-items: center;
         }
 
-        .cs-text {
+        .text {
             max-width: calc(620 / 16 * 1rem);
         }
     
-        .cs-table {
+        .table {
             width: 100%;
             border-collapse: collapse;
         }
 
-        // .cs-table thead {
+        // .table thead {
         //     position: fixed;
         //     top: 0;
         //     z-index: 2;
@@ -874,27 +874,27 @@
         //     table-layout: fixed;
         // }
 
-        // .cs-table thead tr.hidden-header {
+        // .table thead tr.hidden-header {
         //     visibility: hidden;
         // }
 
-        .cs-th {
+        .th {
             padding: calc(12 / 16 * 1rem) calc(16 / 16 * 1rem);
             box-sizing: border-box;
         }
 
-        .cs-td {
+        .td {
             padding: calc(8 / 16 * 1rem) calc(16 / 16 * 1rem);
             box-sizing: border-box;
         }
       
-        .cs-th, .cs-td {
+        .th, .td {
             border: 1px solid var(--border);
             text-align: center;
         }
     
-        .cs-color {
-            .cs-th {
+        .color {
+            .th {
                 &:first-child {
                     color: var(--bodyTextColorWhite);
                     background-color: var(--primary);
@@ -902,7 +902,7 @@
             }
         }
     
-        .cs-th:first-child, .cs-td:first-child {
+        .th:first-child, .td:first-child {
             position: sticky;
             left: 0;
             z-index: 100; /* Make sure it sits above the other cells */
@@ -911,15 +911,15 @@
             text-align: left;
         }
       
-        .cs-th {
+        .th {
            background-color: var(--backgroundShade);
         }
 
-        .cs-tr {
+        .tr {
             color: var(--bodyTextColor);
         }
 
-        .cs-icon {
+        .icon {
             height: calc(16 / 16 * 1rem);
             width: auto;
         }
@@ -929,7 +929,7 @@
 /* Tablet - 600px */
 @media screen and (max-width: 37.5rem) {
     #pricing-table {
-        .cs-table {
+        .table {
             display: block;
             overflow-x: auto;
         }
@@ -940,23 +940,23 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #pricing-table {
-            .cs-th {
+            .th {
                 background-color: var(--accent);
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-th:first-child, .cs-td:first-child {
+            .th:first-child, .td:first-child {
                 background-color: var(--accent);
                 border-color: rgba(255, 255, 255, .4);
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-th, .cs-td {
+            .th, .td {
                 border-color: rgba(255, 3255, 255, .2);
             }
 
-            .cs-color {
-                .cs-th {
+            .color {
+                .th {
                     &:first-child {
                         color: #fff;
                         background-color: var(--primary);
@@ -964,11 +964,11 @@
                 }
             }
 
-            .cs-tr {
+            .tr {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-icon {
+            .icon {
                 filter: grayscale(1) brightness(1000%);
             }
         }

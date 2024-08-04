@@ -12,7 +12,7 @@
     position: relative;
     z-index: 1;
   }
-  #banner-559 .cs-container {
+  #banner-559 .container {
     text-align: center;
     width: 100%;
     max-width: 80rem;
@@ -24,7 +24,7 @@
     flex-direction: column;
     gap: 1rem;
   }
-  #banner-559 .cs-int-topper {
+  #banner-559 .int-topper {
     font-size: var(--topperFontSize);
     text-transform: uppercase;
     font-weight: 700;
@@ -35,7 +35,7 @@
     display: block;
     position: relative;
   }
-  #banner-559 .cs-int-topper:before {
+  #banner-559 .int-topper:before {
     /* yellow line */
     content: "";
     width: 50vw;
@@ -48,7 +48,7 @@
     right: 100%;
     transform: translateY(-50%);
   }
-  #banner-559 .cs-int-title {
+  #banner-559 .int-title {
     /* 39px - 61px */
     font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
     font-weight: 900;
@@ -58,12 +58,12 @@
     color: var(--bodyTextColorWhite);
     position: relative;
   }
-  #banner-559 .cs-breadcrumbs {
+  #banner-559 .breadcrumbs {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  #banner-559 .cs-link {
+  #banner-559 .link {
     /* 16px - 20px */
     font-size: clamp(1rem, 1.5vw, 1.25rem);
     line-height: 1.2em;
@@ -74,13 +74,13 @@
     justify-content: center;
     align-items: center;
   }
-  #banner-559 .cs-link:last-of-type {
+  #banner-559 .link:last-of-type {
     /* remove the chevron on the last list item */
   }
-  #banner-559 .cs-link:last-of-type::after {
+  #banner-559 .link:last-of-type::after {
     display: none;
   }
-  #banner-559 .cs-link:after {
+  #banner-559 .link:after {
     /* chevron - added as pseudo to make adding and removing them easier */
     content: "";
     width: 1.875rem;
@@ -89,10 +89,10 @@
     margin: 0 clamp(0.75rem, 2vw, 1.5rem);
     background-color: #fff;
   }
-  #banner-559 .cs-link.cs-active {
+  #banner-559 .link.active {
     color: var(--bodyTextColorWhite);
   }
-  #banner-559 .cs-background {
+  #banner-559 .background {
     width: 100%;
     height: 100%;
     display: block;
@@ -101,7 +101,7 @@
     left: 0;
     z-index: -1;
   }
-  #banner-559 .cs-background:before {
+  #banner-559 .background:before {
     /* background color overlay */
     content: "";
     position: absolute;
@@ -114,7 +114,7 @@
     left: 0;
     z-index: 1;
   }
-  #banner-559 .cs-background img {
+  #banner-559 .background img {
     position: absolute;
     top: 0;
     left: 0;
@@ -265,7 +265,8 @@
     height: 1.625rem;
     display: block;
     border-radius: 50%;
-    filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.06)) drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.06))
+      drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.15));
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -677,10 +678,10 @@
   #pricing-table {
     padding: var(--sectionPadding);
   }
-  #pricing-table .cs-title {
+  #pricing-table .title {
     margin-bottom: 1rem;
   }
-  #pricing-table .cs-container {
+  #pricing-table .container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -690,7 +691,7 @@
     /* 48px - 64px */
     gap: clamp(3rem, 6vw, 4rem);
   }
-  #pricing-table .cs-content {
+  #pricing-table .content {
     /* set text align to left if content needs to be left aligned */
     text-align: center;
     width: 100%;
@@ -699,30 +700,32 @@
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
   }
-  #pricing-table .cs-text {
+  #pricing-table .text {
     max-width: 38.75rem;
   }
-  #pricing-table .cs-table {
+  #pricing-table .table {
     width: 100%;
     border-collapse: collapse;
   }
-  #pricing-table .cs-th {
+  #pricing-table .th {
     padding: 0.75rem 1rem;
     box-sizing: border-box;
   }
-  #pricing-table .cs-td {
+  #pricing-table .td {
     padding: 0.5rem 1rem;
     box-sizing: border-box;
   }
-  #pricing-table .cs-th, #pricing-table .cs-td {
+  #pricing-table .th,
+  #pricing-table .td {
     border: 1px solid var(--border);
     text-align: center;
   }
-  #pricing-table .cs-color .cs-th:first-child {
+  #pricing-table .color .th:first-child {
     color: var(--bodyTextColorWhite);
     background-color: var(--primary);
   }
-  #pricing-table .cs-th:first-child, #pricing-table .cs-td:first-child {
+  #pricing-table .th:first-child,
+  #pricing-table .td:first-child {
     position: sticky;
     left: 0;
     z-index: 100; /* Make sure it sits above the other cells */
@@ -730,46 +733,48 @@
     border: 1px solid var(--border);
     text-align: left;
   }
-  #pricing-table .cs-th {
+  #pricing-table .th {
     background-color: var(--backgroundShade);
   }
-  #pricing-table .cs-tr {
+  #pricing-table .tr {
     color: var(--bodyTextColor);
   }
-  #pricing-table .cs-icon {
+  #pricing-table .icon {
     height: 1rem;
     width: auto;
   }
 }
 /* Tablet - 600px */
 @media screen and (max-width: 37.5rem) {
-  #pricing-table .cs-table {
+  #pricing-table .table {
     display: block;
     overflow-x: auto;
   }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #pricing-table .cs-th {
+  body.dark-mode #pricing-table .th {
     background-color: var(--accent);
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #pricing-table .cs-th:first-child, body.dark-mode #pricing-table .cs-td:first-child {
+  body.dark-mode #pricing-table .th:first-child,
+  body.dark-mode #pricing-table .td:first-child {
     background-color: var(--accent);
     border-color: rgba(255, 255, 255, 0.4);
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #pricing-table .cs-th, body.dark-mode #pricing-table .cs-td {
+  body.dark-mode #pricing-table .th,
+  body.dark-mode #pricing-table .td {
     border-color: rgba(255, 255, 255, 0.2);
   }
-  body.dark-mode #pricing-table .cs-color .cs-th:first-child {
+  body.dark-mode #pricing-table .color .th:first-child {
     color: #fff;
     background-color: var(--primary);
   }
-  body.dark-mode #pricing-table .cs-tr {
+  body.dark-mode #pricing-table .tr {
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #pricing-table .cs-icon {
+  body.dark-mode #pricing-table .icon {
     filter: grayscale(1) brightness(1000%);
   }
 }

@@ -19,7 +19,7 @@
         --backgroundShade: #f7f7f7;
         --border: #ddd;
         /* 13px - 16px */
-        --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+        --topperFontSize: clamp(0.5rem, 1.6vw, 0.8rem);
         /* 31px - 49px */
         --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
         --bodyFontSize: 1rem;
@@ -29,17 +29,51 @@
     }
 
     // Text styles - can be replaced using CodeStitch's "Content Flair" Stitches
+    /* you can copy and paste this into your global stylesheet to be used everywhere there's a topper in your site */
     .topper {
-        display: block;
-        margin-bottom: 0.25rem;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
-        font-size: var(--topperFontSize);
+        /* 16px - 20px */
+        font-size: clamp(1rem, 2vw, 1.25rem);
         line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: inherit;
+        letter-spacing: 0.1em;
         font-weight: 700;
         color: var(--primary);
-        text-align: inherit;
+        margin: 0 0 1rem 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.25rem;
+        position: relative;
     }
+    .topper:before {
+        /* decorative line */
+        content: "";
+        /* 16px - 32px */
+        width: clamp(1rem, 3vw, 2rem);
+        height: var(--topperFontSize);
+        background: linear-gradient(270deg, rgba(63, 90, 243, 0.4) 0%, transparent 100%);;
+        opacity: 1;
+        position: relative;
+        display: block;
+    }
+    .topper:after {
+        /* decorative line */
+        content: "";
+        /* 16px - 32px */
+        width: clamp(1rem, 3vw, 2rem);
+        height: var(--topperFontSize);
+        background: linear-gradient(90deg, rgba(63, 90, 243, 0.4) 0%, transparent 100%);;
+        opacity: 1;
+        position: relative;
+        display: block;
+    }
+    /* Dark Mode */
+    body.dark-mode .topper {
+        color: var(--bodyTextColorWhite);
+    }
+
+                                    
 
     .title {
         position: relative;
@@ -247,12 +281,12 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #dark-mode-toggle {
-            .cs-sun {
+            .sun {
                 transform: translate(-50%, -50%);
                 opacity: 1;
             }
 
-            .cs-moon {
+            .moon {
                 transform: translate(-50%, -150%);
                 opacity: 0;
             }
@@ -285,7 +319,7 @@
             pointer-events: none;
         }
 
-        .cs-moon {
+        .moon {
             z-index: 2;
             // Transition properties
             transition:
@@ -294,7 +328,7 @@
             fill: #fff;
         }
 
-        .cs-sun {
+        .sun {
             z-index: 1;
             // Transition property
             transform: translate(-50%, 100%);
@@ -335,12 +369,12 @@ html {
 /* Mobile - 1023px */
 @media only screen and (max-width: 63.9375rem) {
     body {
-        &.cs-open {
+        &.open {
             overflow: hidden;
         }
 
         &.scroll {
-            #cs-navigation {
+            #navigation {
                 &:before {
                     height: 100%;
                 }
@@ -348,7 +382,7 @@ html {
         }
     }
 
-    #cs-navigation {
+    #navigation {
         width: 100%;
         padding: calc(12 / 16 * 1rem) calc(16 / 16 * 1rem);
         /* prevents padding and border from affecting height and width */
@@ -391,7 +425,7 @@ html {
                 opacity 0.5s;
         }*
 
-        &.cs-active {
+        &.active {
             background-color: #1a1a1a;
 
             &:after {
@@ -399,25 +433,26 @@ html {
                 opacity: 1;
             }
 
-            .cs-ul-wrapper {
+            .ul-wrapper {
                 opacity: 1;
                 transform: scaleY(1);
             }
 
-            .cs-li {
+            .li {
                 transform: translateY(0);
                 opacity: 1;
             }
         }
 
-        .cs-container {
+        .container {
             width: 100%;
             display: flex;
             justify-content: flex-end;
             align-items: center;
         }
 
-        .cs-logo {
+        .logo {
+            filter: invert(1);
             width: auto;
             /* 56px - 80px */
             height: clamp(3.5rem, 5vw, 5rem);
@@ -436,7 +471,11 @@ html {
             }
         }
 
-        .cs-toggle {
+        .logo.scrolled {
+            filter: invert(0);
+        }
+
+        .toggle {
             width: calc(56 / 16 * 1rem);
             height: calc(56 / 16 * 1rem);
             margin: 0 0 0 auto;
@@ -448,37 +487,37 @@ html {
             position: relative;
             z-index: 1;
             transition: transform 0.6s;
-            &.cs-active {
+            &.active {
                 transform: rotate(180deg);
             }
         }
 
-        .cs-active {
-            .cs-line1 {
+        .active {
+            .line1 {
                 top: 50%;
                 transform: translate(-50%, -50%) rotate(225deg);
             }
 
-            .cs-line2 {
+            .line2 {
                 top: 50%;
                 transform-origin: center;
                 transform: translate(-50%, -50%) translateY(0) rotate(-225deg);
             }
 
-            .cs-line3 {
+            .line3 {
                 bottom: 100%;
                 opacity: 0;
             }
         }
 
-        .cs-box {
+        .box {
             /* 24px - 28px */
             width: clamp(1.5rem, 2vw, 1.75rem);
             height: calc(16 / 16 * 1rem);
             position: relative;
         }
 
-        .cs-line {
+        .line {
             width: 100%;
             height: 2px;
             border-radius: 2px;
@@ -488,7 +527,7 @@ html {
             transform: translateX(-50%);
         }
 
-        .cs-line1 {
+        .line1 {
             top: 0;
             transform-origin: center;
             transition:
@@ -501,7 +540,7 @@ html {
             animation-direction: normal;
         }
 
-        .cs-line2 {
+        .line2 {
             top: 50%;
             transform: translateX(-50%) translateY(-50%);
             transition:
@@ -514,14 +553,14 @@ html {
             animation-direction: normal;
         }
 
-        .cs-line3 {
+        .line3 {
             bottom: 0;
             transition:
                 bottom 0.3s,
                 opacity 0.3s;
         }
 
-        .cs-ul-wrapper {
+        .ul-wrapper {
             width: 100%;
             height: 100vh;
             padding-bottom: calc(48 / 16 * 1rem);
@@ -540,7 +579,7 @@ html {
                 opacity 0.3s;
         }
 
-        .cs-ul {
+        .ul {
             margin: 0;
             padding: calc(48 / 16 * 1rem) 0 0 0;
             width: 100%;
@@ -554,7 +593,7 @@ html {
             gap: calc(20 / 16 * 1rem);
         }
 
-        .cs-li {
+        .li {
             list-style: none;
             margin-right: 0;
             /* transition from these values */
@@ -593,7 +632,7 @@ html {
             }
         }
 
-        .cs-li-link {
+        .li-link {
             /* 16px - 24px */
             font-size: clamp(1rem, 3vw, 1.5rem);
             line-height: 1.2em;
@@ -618,7 +657,7 @@ html {
                 left: 0;
             }
 
-            &.cs-active {
+            &.active {
                 color: var(--primary);
                 &:before {
                     display: block;
@@ -626,7 +665,7 @@ html {
             }
         }
 
-        .cs-button-solid {
+        .button-solid {
             display: none;
         }
     }
@@ -635,23 +674,23 @@ html {
 /* Dark Mode */
 @media only screen and (max-width: 63.9375rem) {
     body.dark-mode {
-        #cs-navigation {
+        #navigation {
             background-color: var(--dark);
 
-            .cs-logo {
+            .logo {
                 /* makes it white */
                 filter: grayscale(1) brightness(1000%);
             }
 
-            .cs-line {
+            .line {
                 background-color: #fff;
             }
 
-            .cs-ul-wrapper {
+            .ul-wrapper {
                 background-color: var(--medium);
             }
 
-            .cs-li-link {
+            .li-link {
                 color: var(--bodyTextColorWhite);
             }
         }
@@ -666,14 +705,14 @@ html {
 @media only screen and (min-width: 64rem) {
     body.scroll {
         /* when the scroll class is on the body, run these styles */
-        #cs-navigation {
+        #navigation {
             &:before {
                 height: 100%;
             }
         }
     }
 
-    #cs-navigation {
+    #navigation {
         width: 100%;
         padding: 0 calc(16 / 16 * 1rem);
         /* prevents padding and border from affecting height and width */
@@ -698,9 +737,9 @@ html {
             transition: height 0.3s;
         }
 
-        .cs-container {
+        .container {
             width: 100%;
-            /* same height as the cs-ul-wrapper */
+            /* same height as the ul-wrapper */
             height: calc(101 / 16 * 1rem);
             max-width: calc(1280 / 16 * 1rem);
             margin: auto;
@@ -711,11 +750,11 @@ html {
             position: relative;
         }
 
-        .cs-toggle {
+        .toggle {
             display: none;
         }
 
-        .cs-logo {
+        .logo {
             filter: invert(1);
             width: auto;
             height: calc(60 / 16 * 1rem);
@@ -735,11 +774,11 @@ html {
             }
         }
 
-        .cs-logo.scrolled {
+        .logo.scrolled {
             filter: invert(0);
         }
 
-        .cs-ul-wrapper {
+        .ul-wrapper {
             /* absolutely positioned to be dead center */
             position: absolute;
             left: 50%;
@@ -747,7 +786,7 @@ html {
             transform: translate(-50%, -50%);
         }
 
-        .cs-ul {
+        .ul {
             width: 100%;
             margin: 0;
             padding: 0;
@@ -757,14 +796,14 @@ html {
             gap: calc(24 / 16 * 1rem);
         }
 
-        .cs-li {
+        .li {
             list-style: none;
             padding: calc(40 / 16 * 1rem) 0;
             /* prevent flexbox from squishing it */
             flex: none;
         }
 
-        .cs-li-link {
+        .li-link {
             /* 14px - 16px */
             font-size: clamp(0.875rem, 0.6vw, 1rem);
             line-height: 1.5em;
@@ -804,7 +843,7 @@ html {
                 }
             }
 
-            &.cs-active {
+            &.active {
                 &:before {
                     opacity: 1;
                     transform: translate(-50%, -50%) scale(1);
@@ -812,11 +851,11 @@ html {
             }
         }
 
-        .cs-li-link.scrolled {
+        .li-link.scrolled {
             color: var(--headerColor);
         }
 
-        .cs-button-solid {
+        .button-solid {
             font-size: calc(16 / 16 * 1rem);
             /* 46px - 56px */
             line-height: clamp(2.875em, 5.5vw, 3.5em);
