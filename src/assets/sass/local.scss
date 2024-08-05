@@ -90,6 +90,7 @@
 
         .icon {
             width: calc(48 / 16 * 1rem);
+            border-radius: calc(48 / 16 * 1rem);
             height: auto;
             position: absolute;
             top: 50%;
@@ -129,8 +130,8 @@
 @media only screen and (min-width: 48rem) {
     #intro {
         .item {
-            text-align: left;
-            align-items: flex-start;
+            // text-align: left;
+            // align-items: flex-start;
             grid-column: span 4;
         }
     }
@@ -1546,6 +1547,10 @@
             display: block;
         }
 
+        .topper::after, .topper::before {
+            background: transparent;
+        }
+
         .title {
             font-size: var(--headerFontSize);
             font-weight: 900;
@@ -2454,6 +2459,10 @@
             .text,
             .plan {
                 color: var(--bodyTextColorWhite);
+            }
+
+            .topper {
+                color: var(--primary);
             }
 
             .text,

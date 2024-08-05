@@ -31,9 +31,9 @@
     #hero {
         /* 250px - 500px - leaving extra space for the navigation */
         // padding: clamp(15.625rem, 35.95vw, 25rem) calc(16 / 16 * 1rem) 0;
-        padding: clamp(16rem, 25vw, 18.75rem) calc(16 / 16 * 1rem) 0;
+        padding: clamp(12rem, 15vw, 11.25rem) calc(16 / 16 * 1rem);
         /* 200px - 250px */
-        padding-bottom: clamp(12.5rem, 16.5vw, 15.625rem);
+        padding-bottom: clamp(13rem, 18vw, 20rem);
         box-sizing: border-box;
         overflow: hidden;
         position: relative;
@@ -92,6 +92,10 @@
             color: #e8e8e8;
             margin-bottom: calc(8 / 16 * 1rem);
             display: block;
+        }
+
+        .topper:before, .topper:after {
+            background: transparent;
         }
 
         .title {
@@ -308,7 +312,7 @@
 @media only screen and (min-width: 100rem) {
     #hero {
         .background {
-            background: url("https://images.pexels.com/photos/3626248/pexels-photo-3626248.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+            background: url("/assets/images/front/landing.jpg");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
