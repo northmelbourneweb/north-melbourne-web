@@ -29,7 +29,7 @@
     /* 250px - 500px - leaving extra space for the navigation */
     padding: clamp(12rem, 15vw, 11.25rem) 1rem;
     /* 200px - 250px */
-    padding-bottom: clamp(13rem, 18vw, 20rem);
+    padding-bottom: clamp(13rem, 15vw, 30rem);
     box-sizing: border-box;
     overflow: hidden;
     position: relative;
