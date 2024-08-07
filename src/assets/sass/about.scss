@@ -4,7 +4,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #banner-1401 {
+    #banner {
         padding: var(--sectionPadding);
         /* 190px - 268px */
         padding-top: clamp(11.875rem, 25vw, 16.75rem);
@@ -148,7 +148,7 @@
 
 /* Mobile - 360px */
 @media only screen and (min-width: 0rem) {
-    #banner-1401 {
+    #banner {
         .background {
             &:before {
                 width: 50%;
