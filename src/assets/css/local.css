@@ -217,7 +217,7 @@
     max-width: 37ch;
     /* 16px - 24px */
     margin: 0 0 clamp(1rem, 1.6vw, 1.5rem);
-    color: var(--primaryLight);
+    color: var(--primary);
   }
   #about .button-solid {
     font-size: 1rem;
@@ -366,9 +366,6 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
-  body.dark-mode #about .topper {
-    color: var(--primary);
-  }
   body.dark-mode #about .title,
   body.dark-mode #about .text {
     color: var(--bodyTextColorWhite);
@@ -777,7 +774,6 @@
     position: relative;
     z-index: 1;
     /* Prevents overflow from the image going off screen */
-    overflow: hidden;
   }
   #portfolio .container {
     width: 100%;
@@ -797,9 +793,6 @@
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
     align-items: center;
-  }
-  #portfolio .topper {
-    color: var(--primary);
   }
   #portfolio .image-group {
     width: 100%;
@@ -1307,7 +1300,7 @@
     text-align: inherit;
     letter-spacing: 0.1em;
     font-weight: 700;
-    color: var(--primary);
+    color: var(--primaryLight);
     margin-bottom: 0.25rem;
     display: block;
   }
@@ -1346,14 +1339,14 @@
     border-color: var(--primary);
   }
   #faq .faq-item.active .button {
-    color: var(--primary);
+    color: var(--primaryLight);
   }
   #faq .faq-item.active .button:before {
-    background-color: var(--primary);
+    background-color: var(--primaryLight);
     transform: rotate(315deg);
   }
   #faq .faq-item.active .button:after {
-    background-color: var(--primary);
+    background-color: var(--primaryLight);
     transform: rotate(-315deg);
   }
   #faq .faq-item.active .item-p {
@@ -2102,9 +2095,6 @@
   body.dark-mode #pricing .text,
   body.dark-mode #pricing .plan {
     color: var(--bodyTextColorWhite);
-  }
-  body.dark-mode #pricing .topper {
-    color: var(--primary);
   }
   body.dark-mode #pricing .text,
   body.dark-mode #pricing .item-text,

@@ -249,7 +249,7 @@ html {
     width: 100%;
     height: auto;
     max-height: 65vh;
-    overflow: scroll;
+    overflow: hidden;
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -505,6 +505,12 @@ html {
   }
   body.dark-mode #navigation .li-link.scrolled {
     color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #navigation .ul-wrapper {
+    background-color: var(--dark);
+  }
+  body.dark-mode #navigation .ul {
+    background-color: var(--dark);
   }
 }
 

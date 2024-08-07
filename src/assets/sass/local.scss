@@ -262,7 +262,7 @@
             max-width: 37ch;
             /* 16px - 24px */
             margin: 0 0 clamp(1rem, 1.6vw, 1.5rem);
-            color: var(--primaryLight);
+            color: var(--primary);
         }
 
         .button-solid {
@@ -442,10 +442,6 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #about {
-            .topper {
-                color: var(--primary);
-            }
-
             .title,
             .text {
                 color: var(--bodyTextColorWhite);
@@ -932,7 +928,7 @@
         position: relative;
         z-index: 1;
         /* Prevents overflow from the image going off screen */
-        overflow: hidden;
+        // overflow: hidden;
 
         .container {
             width: 100%;
@@ -953,10 +949,6 @@
             flex-direction: column;
             /* centers content horizontally, set to flex-start to left align */
             align-items: center;
-        }
-
-        .topper {
-            color: var(--primary);
         }
 
         .image-group {
@@ -1542,7 +1534,7 @@
             text-align: inherit;
             letter-spacing: 0.1em;
             font-weight: 700;
-            color: var(--primary);
+            color: var(--primaryLight);
             margin-bottom: calc(4 / 16 * 1rem);
             display: block;
         }
@@ -1585,13 +1577,13 @@
             &.active {
                 border-color: var(--primary);
                 .button {
-                    color: var(--primary);
+                    color: var(--primaryLight);
                     &:before {
-                        background-color: var(--primary);
+                        background-color: var(--primaryLight);
                         transform: rotate(315deg);
                     }
                     &:after {
-                        background-color: var(--primary);
+                        background-color: var(--primaryLight);
                         transform: rotate(-315deg);
                     }
                 }
@@ -2459,10 +2451,6 @@
             .text,
             .plan {
                 color: var(--bodyTextColorWhite);
-            }
-
-            .topper {
-                color: var(--primary);
             }
 
             .text,

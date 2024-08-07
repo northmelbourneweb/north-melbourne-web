@@ -35,6 +35,17 @@
     position: relative;
     z-index: 1;
   }
+  #hero .title {
+    /* 39px - 61px */
+    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+    font-weight: 700;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 20ch;
+    margin: 0 0 1rem 0;
+    color: #fff;
+    position: relative;
+  }
   #hero:before {
     /* Overlay */
     content: "";
@@ -82,17 +93,6 @@
   }
   #hero .topper:before, #hero .topper:after {
     background: transparent;
-  }
-  #hero .title {
-    /* 39px - 61px */
-    font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
-    font-weight: 700;
-    line-height: 1.2em;
-    text-align: inherit;
-    max-width: 20ch;
-    margin: 0 0 1rem 0;
-    color: #fff;
-    position: relative;
   }
   #hero .text {
     font-size: 1.25rem;

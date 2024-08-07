@@ -5,8 +5,8 @@
 /* CodeStitch Root and Helpers */
 @media only screen and (min-width: 0rem) {
   :root {
-    --primary: #527acc;
-    --primaryLight: #a9bde6;
+    --primary: #4a6eb8;
+    --primaryLight: #92a8d4;
     --secondary: #001f3f;
     --secondaryLight: #001f3f;
     --headerColor: #1a1a1a;
@@ -46,7 +46,7 @@
     /* 16px - 32px */
     width: clamp(1rem, 3vw, 2rem);
     height: var(--topperFontSize);
-    background: linear-gradient(270deg, rgba(63, 90, 243, 0.4) 0%, transparent 100%);
+    background: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, transparent 100%);
     opacity: 1;
     position: relative;
     display: block;
@@ -57,7 +57,7 @@
     /* 16px - 32px */
     width: clamp(1rem, 3vw, 2rem);
     height: var(--topperFontSize);
-    background: linear-gradient(90deg, rgba(63, 90, 243, 0.4) 0%, transparent 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.4) 0%, transparent 100%);
     opacity: 1;
     position: relative;
     display: block;
@@ -504,7 +504,7 @@
     font-size: 1rem;
     line-height: 1.5em;
     text-decoration: none;
-    color: #767676;
+    color: #575757;
     display: block;
     position: relative;
   }

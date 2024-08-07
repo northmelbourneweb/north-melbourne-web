@@ -312,7 +312,7 @@ html {
             width: 100%;
             height: auto;
             max-height: 65vh;
-            overflow: scroll;
+            overflow: hidden;
             display: flex;
             justify-content: flex-start;
             flex-direction: column;
@@ -610,6 +610,12 @@ html {
             }
             .li-link.scrolled {
                 color: var(--bodyTextColorWhite);
+            }
+            .ul-wrapper {
+                background-color: var(--dark);
+            }
+            .ul {
+                background-color: var(--dark);
             }
         }
     }

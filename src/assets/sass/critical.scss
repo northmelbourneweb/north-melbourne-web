@@ -39,6 +39,18 @@
         position: relative;
         z-index: 1;
 
+        .title {
+            /* 39px - 61px */
+            font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
+            font-weight: 700;
+            line-height: 1.2em;
+            text-align: inherit;
+            max-width: 20ch;
+            margin: 0 0 calc(16 / 16 * 1rem) 0;
+            color: #fff;
+            position: relative;
+        }
+
         &:before {
             /* Overlay */
             content: "";
@@ -96,18 +108,6 @@
 
         .topper:before, .topper:after {
             background: transparent;
-        }
-
-        .title {
-            /* 39px - 61px */
-            font-size: clamp(2.4375rem, 6.4vw, 3.8125rem);
-            font-weight: 700;
-            line-height: 1.2em;
-            text-align: inherit;
-            max-width: 20ch;
-            margin: 0 0 calc(16 / 16 * 1rem) 0;
-            color: #fff;
-            position: relative;
         }
 
         .text {
