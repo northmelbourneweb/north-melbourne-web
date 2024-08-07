@@ -44,16 +44,12 @@ eleventyNavigation:
             <!--Mobile Image-->
             <source
       media="(max-width: 600px)"
-      srcset="
-        /assets/images/banner/why-us-banner-m.jpg
-      "
+      srcset="/assets/images/banner/why-us-banner-m.jpg"
 />
             <!--Tablet and above Image-->
             <source
       media="(min-width: 601px)"
-      srcset="
-        /assets/images/banner/why-us-banner.jpg
-      "
+      srcset="/assets/images/banner/why-us-banner.jpg"
 />
             <img
       decoding="async"
@@ -67,9 +63,11 @@ eleventyNavigation:
     </div>
 
     {% include 'components/why-us/intro.html' %}
-    {% include 'components/why-us/why-us.html' %}
-    {% include 'components/why-us/services.html' %}
+    {% include
+'components/why-us/why-us.html' %}
+    {% include 'components/why-us/services.html'
+%}
     {# {% include 'components/why-us/about.html' %} #}
-    {% include 'components/why-us/steps.html' %}
-
+    {% include
+'components/why-us/steps.html' %}
 {% endblock %}
