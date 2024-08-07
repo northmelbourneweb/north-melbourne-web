@@ -10,7 +10,7 @@
         padding-top: clamp(11.875rem, 25vw, 16.75rem);
         padding-bottom: calc(100 / 16 * 1rem);
         /* clips the line from causing overflow issues for going off screen */
-        overflow: hidden;
+        // overflow: hidden;
         position: relative;
         z-index: 1;
 
@@ -212,7 +212,7 @@
         overflow: hidden;
         z-index: 1;
 
-        .cs-container {
+        .container {
             width: 100%;
             /* changes to 1280px at desktop */
             max-width: calc(584 / 16 * 1rem);
@@ -224,7 +224,7 @@
             gap: clamp(3rem, 6vw, 4rem);
         }
 
-        .cs-content {
+        .content {
             /* set text align to left if content needs to be left aligned */
             text-align: left;
             width: 100%;
@@ -235,34 +235,36 @@
             align-items: flex-start;
         }
 
-        .cs-topper {
+        .topper {
             color: #767676;
         }
 
-        .cs-title {
+        .title {
             /* 23 characters wide including spaces */
             max-width: 26ch;
         }
 
-        .cs-text {
+        .text {
             margin-bottom: calc(16 / 16 * 1rem);
             &:last-of-type {
                 margin-bottom: calc(24 / 16 * 1rem);
             }
         }
 
-        .cs-card-group {
+        .card-group {
             width: 100%;
             max-width: calc(630 / 16 * 1rem);
             margin: 0 0 calc(24 / 16 * 1rem) 0;
             padding: 0;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(15.265rem, 1fr));
-            align-items: center;
+            /* Make all rows have the same height */
+            grid-auto-rows: 1fr;
+            align-items: stretch;
             gap: clamp(1rem, 2vw, 1.25rem);
         }
 
-        .cs-item {
+        .item {
             list-style: none;
             /* 16px - 24px */
             padding: clamp(1rem, 3vw, 1.5rem);
@@ -277,7 +279,7 @@
             gap: calc(12 / 16 * 1rem);
         }
 
-        .cs-h3 {
+        .h3 {
             font-size: calc(20 / 16 * 1rem);
             line-height: 1.2em;
             font-weight: 700;
@@ -289,20 +291,20 @@
             gap: calc(8 / 16 * 1rem);
         }
 
-        .cs-h3-icon {
+        .h3-icon {
             width: calc(32 / 16 * 1rem);
             height: auto;
             display: block;
         }
 
-        .cs-item-text {
+        .item-text {
             font-size: calc(14 / 16 * 1rem);
             line-height: 1.5em;
             margin: 0;
             color: var(--bodyTextColor);
         }
 
-        .cs-ul {
+        .ul {
             width: 100%;
             margin: 0 0 calc(24 / 16 * 1rem) 0;
             padding: 0;
@@ -312,7 +314,7 @@
             gap: calc(12 / 16 * 1rem);
         }
 
-        .cs-li {
+        .li {
             font-size: var(--bodyFontSize);
             list-style: none;
             line-height: 1.5em;
@@ -325,7 +327,7 @@
             gap: calc(8 / 16 * 1rem);
         }
 
-        .cs-icon {
+        .icon {
             width: calc(24 / 16 * 1rem);
             height: auto;
             /* adds extra space between the icon and top of parent so it's more centered */
@@ -333,7 +335,7 @@
             display: block;
         }
 
-        .cs-button-solid {
+        .button-solid {
             font-size: calc(16 / 16 * 1rem);
             line-height: calc(56 / 16 * 1rem);
             text-decoration: none;
@@ -371,7 +373,7 @@
             }
         }
 
-        .cs-image-group {
+        .image-group {
             width: 100%;
             max-width: calc(586 / 16 * 1rem);
             /* Changes to auto at desktop */
@@ -383,7 +385,7 @@
             position: relative;
         }
 
-        .cs-background {
+        .background {
             width: 100%;
             height: 100%;
             /* makes it cover the parent dimensions */
@@ -399,7 +401,7 @@
             }
         }
 
-        .cs-box {
+        .box {
             text-align: left;
             width: 100%;
             max-width: calc(304 / 16 * 1rem);
@@ -420,13 +422,13 @@
             bottom: clamp(0.75rem, 1.9vw, 1.5rem);
         }
 
-        .cs-box-icon {
+        .box-icon {
             width: calc(60 / 16 * 1rem);
             height: auto;
             display: block;
         }
 
-        .cs-desc {
+        .desc {
             font-size: calc(20 / 16 * 1rem);
             line-height: 1.2em;
             text-align: inherit;
@@ -436,7 +438,7 @@
             color: var(--bodyTextColorWhite);
         }
 
-        .cs-bubbles {
+        .bubbles {
             font-size: min(2.5vw, 0.7em);
             width: calc(419 / 16 * 1em);
             height: calc(427 / 16 * 1em);
@@ -493,20 +495,20 @@
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #sbsr-1363 {
-        .cs-container {
+        .container {
             max-width: calc(1280 / 16 * 1rem);
             flex-direction: row;
             justify-content: space-between;
             align-items: stretch;
         }
 
-        .cs-image-group {
+        .image-group {
             height: auto;
             /* sends it to the right in the 2nd position */
             order: 2;
         }
 
-        .cs-bubbles {
+        .bubbles {
             font-size: min(2.5vw, 1em);
             bottom: calc(0 / 16 * 1rem);
             right: calc(-100 / 16 * 1rem);
@@ -517,7 +519,7 @@
 /* Large Desktop 1600px */
 @media only screen and (min-width: 100rem) {
     #sbsr-1363 {
-        .cs-bubbles {
+        .bubbles {
             margin-right: calc(750 / 16 * 1rem);
             left: auto;
             right: 50%;
@@ -529,37 +531,37 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #sbsr-1363 {
-            .cs-topper {
+            .topper {
                 color: var(--primary);
             }
 
-            .cs-title,
-            .cs-text,
-            .cs-li,
-            .cs-item-text {
+            .title,
+            .text,
+            .li,
+            .item-text {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-text,
-            .cs-li,
-            .cs-item-text {
+            .text,
+            .li,
+            .item-text {
                 opacity: 0.8;
             }
 
-            .cs-item {
+            .item {
                 background-color: rgba(0, 0, 0, 0.2);
                 border-color: rgba(255, 255, 255, 0.2);
             }
 
-            .cs-h3 {
+            .h3 {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-icon {
+            .icon {
                 filter: grayscale(1) brightness(1000%);
             }
 
-            .cs-bubbles {
+            .bubbles {
                 &:before {
                     border-color: rgba(255, 255, 255, 0.2);
                 }
@@ -577,7 +579,7 @@
     #stats-1643 {
         padding: var(--sectionPadding);
 
-        .cs-container {
+        .container {
             width: 100%;
             max-width: calc(1280 / 16 * 1rem);
             margin: auto;
@@ -588,7 +590,7 @@
             gap: clamp(3rem, 6vw, 4rem);
         }
 
-        .cs-content {
+        .content {
             /* set text align to right if content needs to be right aligned */
             text-align: left;
             width: 100%;
@@ -598,13 +600,13 @@
             align-items: flex-start;
         }
 
-        .cs-title {
+        .title {
             /* 28px - 64px */
             margin: 0 0 clamp(1.75rem, 7vw, 4rem) 0;
             max-width: 20ch;
         }
 
-        .cs-picture {
+        .picture {
             width: 100%;
             height: 95vw;
             max-height: calc(400 / 16 * 1rem);
@@ -615,6 +617,7 @@
             img {
                 width: 100%;
                 height: 100%;
+                border-radius: clamp(2rem, 4vw, 3rem);
                 object-fit: cover;
                 position: absolute;
                 top: 0;
@@ -622,7 +625,7 @@
             }
         }
 
-        .cs-quote {
+        .quote {
             width: calc(74 / 16 * 1rem);
             height: auto;
             position: relative;
@@ -632,18 +635,18 @@
 
         }
 
-        .cs-text {
+        .text {
             margin: 0 0 clamp(1.5rem, 3vw, 2rem) 0;
         }
 
-        .cs-stats-group {
+        .stats-group {
             width: 100%;
             display: flex;
             flex-direction: column;
             /* 28px - 40px */
         }
 
-        .cs-card-group {
+        .card-group {
             width: 100%;
             /* 550px - 630px */
             max-width: clamp(34.375rem, 50vw, 39.375rem);
@@ -654,7 +657,7 @@
             gap: calc(24 / 16 * 1rem);
         }
 
-        .cs-item {
+        .item {
             list-style: none;
             /* prevents padding from affecting height and width */
             box-sizing: border-box;
@@ -672,7 +675,7 @@
             gap: calc(10 / 16 * 1rem);
         }
 
-        .cs-item-number {
+        .item-number {
             font-size: calc(20 / 16 * 1rem);
             line-height: 1.2em;
             font-weight: 700;
@@ -684,7 +687,7 @@
             gap: calc(8 / 16 * 1rem);
         }
 
-        .cs-h3 {
+        .h3 {
             font-size: calc(20 / 16 * 1rem);
             line-height: 1.2em;
             font-weight: 700;
@@ -696,14 +699,14 @@
             gap: calc(8 / 16 * 1rem);
         }
 
-        .cs-item-text {
+        .item-text {
             font-size: calc(16 / 16 * 1rem);
             line-height: 1.5em;
             margin: 0;
             color: var(--bodyTextColor);
         }
 
-        .cs-stats {
+        .stats {
             width: 100%;
             max-width: calc(630 / 16 * 1rem);
             padding: 0;
@@ -713,7 +716,7 @@
             grid-template-columns: repeat(12, 1fr);
         }
 
-        .cs-stat {
+        .stat {
             text-align: center;
             list-style: none;
             margin: 0;
@@ -747,7 +750,7 @@
             padding: clamp(1.75rem, 3vw, 2.5rem) calc(8 / 16 * 1rem) 0;
         }
 
-        .cs-number {
+        .number {
             /* 31px - 39px */
             font-size: clamp(1.9375rem, 3vw, 2.4375rem);
             line-height: 1.2em;
@@ -758,7 +761,7 @@
             margin: 0 0 calc(4 / 16 * 1rem) 0;
         }
 
-        .cs-desc {
+        .desc {
             font-size: calc(16 / 16 * 1rem);
             line-height: 1.5em;
             font-weight: 400;
@@ -773,17 +776,17 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #stats-1643 {
-        .cs-container {
+        .container {
             flex-direction: row;
             justify-content: space-between;
             align-items: stretch;
         }
 
-        .cs-content {
+        .content {
             justify-content: stretch;
         }
 
-        .cs-picture {
+        .picture {
             height: 100%;
             max-height: 100%;
         }
@@ -794,17 +797,17 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #stats-1643 {
-            .cs-title,
-            .cs-text,
-            .cs-item-text,
-            .cs-h3,
-            .cs-number,
-            .cs-desc {
+            .title,
+            .text,
+            .item-text,
+            .h3,
+            .number,
+            .desc {
                 color: var(--bodyTextColorWhite);
             }
-            .cs-text,
-            .cs-item-text,
-            .cs-desc {
+            .text,
+            .item-text,
+            .desc {
                 opacity: .8;
             }
         }
@@ -873,7 +876,7 @@
             }
         }
 
-        .cs-container {
+        .container {
             width: 100%;
             /* changes to 1280px at desktop */
             max-width: calc(550 / 16 * 1rem);
@@ -886,7 +889,7 @@
             gap: clamp(3rem, 7vw, 3.5rem);
         }
 
-        .cs-content {
+        .content {
             /* set text align to left if content needs to be left aligned */
             text-align: left;
             width: 100%;
@@ -896,18 +899,18 @@
             align-items: flex-start;
         }
 
-        .cs-title {
+        .title {
             max-width: 20ch;
         }
 
-        .cs-text {
+        .text {
             margin-bottom: calc(16 / 16 * 1rem);
             &:last-of-type {
                 margin-bottom: calc(32 / 16 * 1rem);
             }
         }
 
-        .cs-picture {
+        .picture {
             width: 100%;
             height: calc(400 / 16 * 1rem);
             border-radius: calc(16 / 16 * 1rem);
@@ -928,7 +931,7 @@
             }
         }
 
-        .cs-card-group {
+        .card-group {
             width: 100%;
             margin: 0;
             padding: 0;
@@ -940,7 +943,7 @@
             gap: clamp(1rem, 2vw, 1.25rem);
         }
 
-        .cs-item {
+        .item {
             list-style: none;
             width: 100%;
             /* 24px - 32px */
@@ -955,7 +958,7 @@
             justify-content: center;
         }
 
-        .cs-icon-wrapper {
+        .icon-wrapper {
             width: calc(65 / 16 * 1rem);
             height: calc(80 / 16 * 1rem);
             margin-bottom: calc(24 / 16 * 1rem);
@@ -1002,7 +1005,7 @@
             }
         }
 
-        .cs-bubble {
+        .bubble {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -1048,14 +1051,14 @@
             }
         }
 
-        .cs-icon {
+        .icon {
             width: calc(48 / 16 * 1rem);
             height: auto;
             position: relative;
             z-index: 10;
         }
 
-        .cs-h3 {
+        .h3 {
             /* 20px - 25px */
             font-size: clamp(1.25rem, 2.5vw, 1.5625rem);
             line-height: 1.2em;
@@ -1066,7 +1069,7 @@
             color: var(--headerColor);
         }
 
-        .cs-item-text {
+        .item-text {
             /* 14px - 16px */
             font-size: clamp(0.875rem, 1.6vw, 1rem);
             line-height: 1.5em;
@@ -1080,17 +1083,17 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #why-choose-359 {
-        .cs-item {
+        .item {
             flex-direction: row;
             justify-content: flex-start;
         }
 
-        .cs-icon-wrapper {
+        .icon-wrapper {
             margin-right: calc(24 / 16 * 1rem);
         }
 
-        .cs-h3,
-        .cs-item-text {
+        .h3,
+        .item-text {
             text-align: left;
         }
     }
@@ -1099,22 +1102,22 @@
 /* Small Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #why-choose-359 {
-        .cs-container {
+        .container {
             max-width: calc(1280 / 16 * 1rem);
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
         }
 
-        .cs-content {
+        .content {
             max-width: calc(522 / 16 * 1rem);
         }
 
-        .cs-picture {
+        .picture {
             height: calc(280 / 16 * 1rem);
         }
 
-        .cs-card-group {
+        .card-group {
             width: 50%;
             max-width: calc(630 / 16 * 1rem);
             /* prevents flexbox from squishing it */
@@ -1127,32 +1130,32 @@
 @media only screen and (min-width: 0rem) {
     body.dark-mode {
         #why-choose-359 {
-            .cs-topper {
+            .topper {
                 color: var(--primaryLight);
             }
-            .cs-title,
-            .cs-text {
+            .title,
+            .text {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-icon-wrapper,
-            .cs-bubble {
+            .icon-wrapper,
+            .bubble {
                 &:before,
                 &:after {
                     background-color: var(--accent);
                 }
             }
 
-            .cs-icon {
+            .icon {
                 /* turns the icon white */
                 filter: grayscale(1) brightness(1000%);
             }
 
-            .cs-h3 {
+            .h3 {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-item-text {
+            .item-text {
                 color: var(--bodyTextColorWhite);
                 opacity: 0.8;
             }
@@ -1179,7 +1182,7 @@
         position: relative;
         z-index: 1;
 
-        .cs-container {
+        .container {
             width: 100%;
             max-width: calc(1280 / 16 * 1rem);
             margin: auto;
@@ -1188,7 +1191,7 @@
             align-items: center;
         }
 
-        .cs-content {
+        .content {
             /* set text align to left if content needs to be left aligned */
             text-align: left;
             width: 100%;
@@ -1204,7 +1207,7 @@
             align-items: flex-start;
         }
 
-        .cs-icon {
+        .icon {
             /* 60px - 96px */
             width: clamp(3.75rem, 7vw, 5rem);
             height: auto;
@@ -1212,7 +1215,7 @@
             margin: 0 0 clamp(1.75rem, 4vw, 2.5rem);
         }
 
-        .cs-review {
+        .review {
             font-size: calc(16 / 16 * 1rem);
             line-height: 1.5em;
             margin: 0 0 calc(28 / 16 * 1rem) 0;
@@ -1220,7 +1223,7 @@
             opacity: 0.8;
         }
 
-        .cs-name {
+        .name {
             /* 20px - 25px */
             font-size: clamp(1.25rem, 2vw, 1.5625rem);
             line-height: 1.2em;
@@ -1231,7 +1234,7 @@
             display: block;
         }
 
-        .cs-desc {
+        .desc {
             /* 14px - 16px */
             font-size: clamp(0.875rem, 1.5vw, 1rem);
             line-height: 1.5em;
@@ -1242,7 +1245,7 @@
             display: block;
         }
 
-        .cs-background {
+        .background {
             width: 100%;
             height: 100%;
             max-height: calc(300 / 16 * 1rem);
@@ -1260,7 +1263,7 @@
             }
         }
 
-        .cs-floater {
+        .floater {
             width: 100vw;
             max-width: calc(1110 / 16 * 1rem);
             height: auto;
@@ -1282,23 +1285,23 @@
         /* moved section padding back to the section */
         padding: var(--sectionPadding);
 
-        .cs-container {
+        .container {
             flex-direction: row;
             justify-content: flex-end;
         }
 
-        .cs-content {
+        .content {
             text-align: left;
             width: 45%;
             padding: 0;
             align-items: flex-start;
         }
 
-        .cs-floater {
+        .floater {
             bottom: calc(-60 / 16 * 1rem);
         }
 
-        .cs-background {
+        .background {
             height: auto;
             max-height: 100%;
             width: 50vw;
@@ -1319,7 +1322,7 @@
         align-items: center;
         justify-content: center;
 
-        .cs-background {
+        .background {
             width: 60vw;
         }
     }
@@ -1328,7 +1331,7 @@
 /* Large Desktop - 2000px */
 @media only screen and (min-width: 125rem) {
     #reviews-1335 {
-        .cs-floater {
+        .floater {
             margin-left: calc(-180 / 16 * 1rem);
             right: auto;
             left: 50%;
@@ -1342,11 +1345,11 @@
         #reviews-1335 {
             background-color: rgba(0, 0, 0, 0.6);
 
-            .cs-review {
+            .review {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-desc {
+            .desc {
                 color: var(--bodyTextColorWhite);
                 opacity: 0.8;
             }
@@ -1366,7 +1369,7 @@
         /* clips the waves and lines from cause overflow issues */
         overflow: hidden;
 
-        .cs-container {
+        .container {
             width: 100%;
             max-width: calc(1440/16 * 1rem);
             margin: auto;
@@ -1377,7 +1380,7 @@
             gap: clamp(3rem, 6vw, 4rem);
         }
 
-        .cs-content {
+        .content {
             /* set text align to left if content needs to be left aligned */
             text-align: center;
             width: 100%;
@@ -1387,22 +1390,22 @@
             align-items: center;
         }
 
-        .cs-topper {
+        .topper {
             color: #767676;
         }
 
-        .cs-title {
+        .title {
             max-width: 25ch;
             margin: 0;
         }
 
-        .cs-group1,
-        .cs-group2 {
-            /* the contents of this div are no longer its children. This div acts as if it doesn't exist and their content is now children of the next level parent, in this case, the cs-card-group. That way they can all be arranged together as children under 1 parent div instead of children in two different parent divs */
+        .group1,
+        .group2 {
+            /* the contents of this div are no longer its children. This div acts as if it doesn't exist and their content is now children of the next level parent, in this case, the card-group. That way they can all be arranged together as children under 1 parent div instead of children in two different parent divs */
             display: contents;
         }
 
-        .cs-card-group {
+        .card-group {
             width: 100%;
             margin: 0 auto;
             padding: 0;
@@ -1414,37 +1417,37 @@
             position: relative;
         }
 
-        /* setting the row groups to display: contents causes the child cs-items to "appear" as direct children of the parent .cs-card-group */
-        /* therefore, we can set the order of the .cs-items between rows, changing it between mobile and desktop */
-        .cs-group1 {
+        /* setting the row groups to display: contents causes the child items to "appear" as direct children of the parent .card-group */
+        /* therefore, we can set the order of the .items between rows, changing it between mobile and desktop */
+        .group1 {
             display: contents;
 
-            .cs-item:nth-of-type(1) {
+            .item:nth-of-type(1) {
                 order: 1;
             }
 
-            .cs-item:nth-of-type(2) {
+            .item:nth-of-type(2) {
                 order: 3;
             }
 
-            .cs-item:nth-of-type(3) {
+            .item:nth-of-type(3) {
                 order: 5;
             }
         }
 
-        .cs-group2 {
+        .group2 {
             display: contents;
 
-            .cs-item:nth-of-type(1) {
+            .item:nth-of-type(1) {
                 order: 2;
             }
 
-            .cs-item:nth-of-type(2) {
+            .item:nth-of-type(2) {
                 order: 4;
             }
         }
 
-        .cs-item {
+        .item {
             text-align: center;
             list-style: none;
             width: 100%;
@@ -1492,22 +1495,22 @@
                     transform: translateY(0);
                 }
 
-                .cs-icon {
+                .icon {
                     filter: grayscale(1) brightness(1000%);
                 }
 
-                .cs-h3,
-                .cs-item-text {
+                .h3,
+                .item-text {
                     color: var(--bodyTextColorWhite);
                 }
 
-                .cs-text {
+                .text {
                     opacity: 0.8;
                 }
             }
         }
 
-        .cs-picture {
+        .picture {
             width: calc(100/16 * 1rem);
             height: auto;
             margin: 0 0 calc(8/16 * 1rem) 0;
@@ -1519,12 +1522,12 @@
             flex: none;
         }
 
-        .cs-icon {
+        .icon {
             width: calc(32/16 * 1rem);
             height: auto;
         }
 
-        .cs-h3 {
+        .h3 {
             font-size: calc(20/16 * 1rem);
             font-weight: bold;
             line-height: 1.2em;
@@ -1535,7 +1538,7 @@
             transition: color 0.3s;
         }
 
-        .cs-item-text {
+        .item-text {
             font-size: calc(14/16 * 1rem);
             line-height: 1.5em;
             max-width: calc(450/16 * 1rem);
@@ -1545,7 +1548,7 @@
             transition: color 0.3s, opacity 0.3s;
         }
 
-        .cs-waves {
+        .waves {
             display: none;
         }
     }
@@ -1554,13 +1557,13 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
     #steps-1376 {
-        .cs-card-group {
+        .card-group {
             justify-content: center;
             align-items: center;
             gap: calc(40/16 * 1rem);
         }
 
-        .cs-group1 {
+        .group1 {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -1568,7 +1571,7 @@
             gap: calc(48/16 * 1rem);
         }
 
-        .cs-group2 {
+        .group2 {
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -1576,12 +1579,12 @@
             gap: calc(48/16 * 1rem);
         }
 
-        .cs-item {
+        .item {
             /* prevents flexbox from squishing it */
             flex: none;
         }
 
-        .cs-waves {
+        .waves {
             width: calc(71/16 * 1rem);
             height: auto;
             display: block;
@@ -1601,25 +1604,25 @@
 /* Desktop - 1024px */
 @media only screen and (min-width: 64rem) {
     #steps-1376 {
-        .cs-card-group {
+        .card-group {
             flex-direction: column;
         }
 
-        .cs-group1 {
+        .group1 {
             width: 100%;
             /* -8px to -30px, we put the clamp in a calc function to turn it into a negative number and pull down to cause the overlapping effect */
             margin-bottom: calc(clamp(.5rem, 2vw, 1.875rem)*-1);
             flex-direction: row;
         }
 
-        .cs-group2 {
+        .group2 {
             width: 100%;
             /* -8px to -30px */
             margin-top: calc(clamp(.5rem, 2vw, 1.875rem)*-1);
             flex-direction: row;
         }
 
-        .cs-waves {
+        .waves {
             width: 110vw;
             max-width: calc(1920/16 * 1rem);
             height: auto;
@@ -1658,7 +1661,7 @@
     body.dark-mode {
         #steps-1376 {
             background-color: rgba(0, 0, 0, 0.2);
-            .cs-item {
+            .item {
                 background-color: var(--medium);
                 border-color: rgba(255, 255, 255, 0.2);
 
@@ -1668,24 +1671,24 @@
                 }
             }
 
-            .cs-topper {
+            .topper {
                 color: var(--primary);
             }
 
-            .cs-title,
-            .cs-text,
-            .cs-h3,
-            .cs-item-text,
-            .cs-link {
+            .title,
+            .text,
+            .h3,
+            .item-text,
+            .link {
                 color: var(--bodyTextColorWhite);
             }
 
-            .cs-text,
-            .cs-item-text {
+            .text,
+            .item-text {
                 opacity: 0.8;
             }
 
-            .cs-waves {
+            .waves {
                 opacity: 0.1;
             }
         }

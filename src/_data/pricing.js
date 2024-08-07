@@ -24,10 +24,10 @@ module.exports = {
         name: "Hosting and SSL Certificate",
         plans: ["check", "check"]
       },
-      {
-        name: "Domain",
-        plans: ["Up to A$20/yr", "Up to A$35/yr"]
-      },
+      // {
+      //   name: "Domain",
+      //   plans: ["Up to A$20/yr", "Up to A$35/yr"]
+      // },
       {
         name: "24/7 Support",
         plans: ["check", "check"]
