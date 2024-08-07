@@ -1917,7 +1917,7 @@
             padding: 0 calc(24 / 16 * 1rem);
             background-color: var(--primary);
             overflow: hidden;
-            border-radius: calc(4 / 16 * 1rem);
+            border-radius: calc(30 / 16 * 1rem);
             display: inline-block;
             position: relative;
             z-index: 1;
@@ -1952,7 +1952,7 @@
             /* prevents padding and border from affecting height and width */
             box-sizing: border-box;
             background-color: #f0f0f3;
-            border-radius: calc(8 / 16 * 1rem);
+            border-radius: calc(16 / 16 * 1rem);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -2294,7 +2294,7 @@
             padding: 0 calc(24 / 16 * 1rem);
             background-color: transparent;
             border: 1px solid var(--primary);
-            border-radius: calc(4 / 16 * 1rem);
+            border-radius: calc(30 / 16 * 1rem);
             display: inline-block;
             position: relative;
             // align-self: flex-end;
@@ -2316,7 +2316,7 @@
                 top: 0;
                 left: 0;
                 z-index: -1;
-                border-radius: calc(4 / 16 * 1rem);
+                border-radius: calc(30 / 16 * 1rem);
                 transition: width 0.3s;
             }
 

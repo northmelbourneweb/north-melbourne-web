@@ -1637,7 +1637,7 @@
     padding: 0 1.5rem;
     background-color: var(--primary);
     overflow: hidden;
-    border-radius: 0.25rem;
+    border-radius: 1.875rem;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -1667,7 +1667,7 @@
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
     background-color: #f0f0f3;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1967,7 +1967,7 @@
     padding: 0 1.5rem;
     background-color: transparent;
     border: 1px solid var(--primary);
-    border-radius: 0.25rem;
+    border-radius: 1.875rem;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -1985,7 +1985,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    border-radius: 0.25rem;
+    border-radius: 1.875rem;
     transition: width 0.3s;
   }
   #pricing .button-transparent:hover {
