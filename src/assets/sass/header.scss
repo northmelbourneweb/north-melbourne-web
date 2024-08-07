@@ -611,12 +611,22 @@ html {
             .li-link.scrolled {
                 color: var(--bodyTextColorWhite);
             }
-            .ul-wrapper {
-                background-color: var(--dark);
-            }
-            .ul {
-                background-color: var(--dark);
-            }
         }
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 63.9375rem) {
+    body.dark-mode {
+        &.open.scroll {
+            #navigation {
+                    .ul-wrapper {
+                        background-color: var(--dark);
+                    }
+                    .ul {
+                        background-color: var(--dark);
+                    }
+                }
+            }
     }
 }
