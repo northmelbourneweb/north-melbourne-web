@@ -974,4 +974,289 @@
         }
     }
 }
-                                
+
+/*-- -------------------------- -->
+<---          Pricing           -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+    #addon-pricing {
+        padding: var(--sectionPadding);
+        background-color: var(--backgroundShade);
+
+        .container {
+            width: 100%;
+            max-width: calc(1280 / 16 * 1em);
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 48px - 64px */
+            gap: clamp(3rem, 6vw, 4rem);
+            position: relative;
+        }
+
+        .content {
+            /* set text align to left if content needs to be left aligned */
+            text-align: center;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            /* centers content horizontally, set to flex-start to left align */
+            align-items: center;
+        }
+
+        .card-group {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* 16px - 20px */
+            gap: clamp(1rem, 1.8vw, 1.25rem);
+            perspective: 700px;
+            transform-style: preserve-3d;
+        }
+
+        .item {
+            list-style: none;
+            width: 100%;
+            max-width: calc(500 / 16 * 1rem);
+            border-radius: calc(32 / 16 * 1rem);
+            margin: 0;
+            box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+            /* 20px - 40px top & bottom */
+            /* 16px - 32px left & right */
+            padding: clamp(1.25rem, 3vw, 2.5rem) clamp(1rem, 3vw, 2rem);
+            background-color: var(--background);
+            /* prevents padding and border from affecting height and width */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+
+            &.popular {
+                background-color: var(--primary);
+
+                .package {
+                    color: #f6e5db;
+                }
+
+                .price,
+                .desc,
+                .item-p,
+                .li {
+                    color: var(--bodyTextColorWhite);
+                }
+
+                .icon {
+                    /* if icon is not black, this turns it white */
+                    filter: grayscale(1) brightness(1000%);
+                }
+
+                .button-solid {
+                    background-color: #f6e5db;
+                    color: #1a1a1a;
+                    transition: color 0.3s;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .package {
+            /* 13px - 16px */
+            font-size: clamp(0.8125rem, 1.4vw, 1rem);
+            line-height: 1.2em;
+            text-align: left;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin: 0 0 calc(8 / 16 * 1rem) 0;
+            color: #767676;
+            display: block;
+        }
+
+        .price {
+            /* 31px - 49px */
+            font-size: var(--headerFontSize);
+            margin-bottom: calc(48 / 16 * 1rem);
+            line-height: 1.5em;
+            text-align: left;
+            font-weight: 900;
+            color: var(--headerColor);
+        }
+
+        .desc {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            line-height: 1.2em;
+            text-align: left;
+            margin: 0 0 calc(8 / 16 * 1rem) 0;
+            color: var(--bodyTextColor);
+            opacity: 0.8;
+        }
+
+        .item-p {
+            font-size: calc(16 / 16 * 1rem);
+            line-height: 1.5em;
+            text-align: left;
+            font-weight: 400;
+            margin: 0;
+            margin-bottom: calc(48 / 16 * 1rem);
+            color: var(--bodyTextColor);
+        }
+
+        .ul {
+            margin: calc(24 / 16 * 1rem) 0;
+            padding: calc(24 / 16 * 1rem) 0 0 0;
+            border-top: 1px solid #eff1f0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: calc(12 / 16 * 1rem);
+        }
+
+        .li {
+            /* 14px - 16px */
+            font-size: clamp(0.875rem, 1.5vw, 1rem);
+            list-style: none;
+            line-height: 1.2em;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            color: var(--bodyTextColor);
+            display: flex;
+            justify-content: space-between;
+            /* push everything to the top so if the li goes to two lines the icon stays at the top */
+            align-items: flex-start;
+            gap: calc(16 / 16 * 1rem);
+
+            &.disabled {
+                opacity: 0.5;
+            }
+        }
+
+        .icon {
+            width: calc(18 / 16 * 1rem);
+            height: auto;
+            display: block;
+        }
+
+        .button-solid {
+            font-size: calc(16 / 16 * 1rem);
+            /* 46px - 56px */
+            line-height: clamp(2.875em, 5.5vw, 3.5em);
+            text-decoration: none;
+            font-weight: 700;
+            text-align: center;
+            margin: 0;
+            color: #fff;
+            min-width: calc(150 / 16 * 1rem);
+            padding: 0 calc(24 / 16 * 1rem);
+            background-color: var(--primary);
+            // border-radius: calc(4 / 16 * 1rem);
+            display: inline-block;
+            position: relative;
+            z-index: 1;
+            /* prevents padding from adding to the width */
+            box-sizing: border-box;
+
+            &:before {
+                content: "";
+                position: absolute;
+                height: 100%;
+                width: 0%;
+                background: #000;
+                opacity: 1;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                border-radius: calc(4 / 16 * 1rem);
+                transition: width 0.3s;
+            }
+
+            &:hover {
+                &:before {
+                    width: 100%;
+                }
+            }
+        }
+
+        .price-button {
+            /* pushes up against the ul so if there's loess li's in the list, the button always pushes itself to the bottom */
+            margin-top: auto;
+            width: 100%;
+            // border-radius: 0;
+            // &:before {
+            //     border-radius: 0;
+            // }
+        }
+    }
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    #addon-pricing {
+        .card-group {
+            flex-direction: row;
+            justify-content: center;
+            align-items: stretch;
+        }
+
+        .option2 {
+            top: auto;
+            bottom: 0;
+        }
+    }
+}
+
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+    body.dark-mode {
+        #addon-pricing {
+            background-color: rgba(0, 0, 0, 0.2);
+            .topper {
+                color: var(--primaryLight);
+            }
+
+            .title,
+            .text,
+            .item-p,
+            .package,
+            .li,
+            .price,
+            .desc,
+            .plan {
+                color: var(--bodyTextColorWhite);
+            }
+
+            .text {
+                opacity: 0.8;
+            }
+
+            .item {
+                background-color: var(--medium);
+                &.popular {
+                    background-color: var(--primary);
+                }
+            }
+
+            .icon {
+                /* makes icon white (if it wasnt black to start) */
+                filter: grayscale(1) brightness(1000%);
+            }
+
+            .price-button {
+                background-color: var(--bodyTextColorWhite);
+                color: #1a1a1a;
+                transition: color 0.3s;
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

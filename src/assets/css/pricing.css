@@ -265,8 +265,7 @@
     height: 1.625rem;
     display: block;
     border-radius: 50%;
-    filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.06))
-      drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.15));
+    filter: drop-shadow(0px 3px 1px rgba(0, 0, 0, 0.06)) drop-shadow(0px 3px 8px rgba(0, 0, 0, 0.15));
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -715,8 +714,7 @@
     padding: 0.5rem 1rem;
     box-sizing: border-box;
   }
-  #pricing-table .th,
-  #pricing-table .td {
+  #pricing-table .th, #pricing-table .td {
     border: 1px solid var(--border);
     text-align: center;
   }
@@ -724,8 +722,7 @@
     color: var(--bodyTextColorWhite);
     background-color: var(--primary);
   }
-  #pricing-table .th:first-child,
-  #pricing-table .td:first-child {
+  #pricing-table .th:first-child, #pricing-table .td:first-child {
     position: sticky;
     left: 0;
     z-index: 100; /* Make sure it sits above the other cells */
@@ -757,14 +754,12 @@
     background-color: var(--accent);
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #pricing-table .th:first-child,
-  body.dark-mode #pricing-table .td:first-child {
+  body.dark-mode #pricing-table .th:first-child, body.dark-mode #pricing-table .td:first-child {
     background-color: var(--accent);
     border-color: rgba(255, 255, 255, 0.4);
     color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #pricing-table .th,
-  body.dark-mode #pricing-table .td {
+  body.dark-mode #pricing-table .th, body.dark-mode #pricing-table .td {
     border-color: rgba(255, 255, 255, 0.2);
   }
   body.dark-mode #pricing-table .color .th:first-child {
@@ -776,6 +771,250 @@
   }
   body.dark-mode #pricing-table .icon {
     filter: grayscale(1) brightness(1000%);
+  }
+}
+/*-- -------------------------- -->
+<---          Pricing           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #addon-pricing {
+    padding: var(--sectionPadding);
+    background-color: var(--backgroundShade);
+  }
+  #addon-pricing .container {
+    width: 100%;
+    max-width: 80em;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+    position: relative;
+  }
+  #addon-pricing .content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #addon-pricing .card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 16px - 20px */
+    gap: clamp(1rem, 1.8vw, 1.25rem);
+    perspective: 700px;
+    transform-style: preserve-3d;
+  }
+  #addon-pricing .item {
+    list-style: none;
+    width: 100%;
+    max-width: 31.25rem;
+    border-radius: 2rem;
+    margin: 0;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    /* 20px - 40px top & bottom */
+    /* 16px - 32px left & right */
+    padding: clamp(1.25rem, 3vw, 2.5rem) clamp(1rem, 3vw, 2rem);
+    background-color: var(--background);
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  #addon-pricing .item.popular {
+    background-color: var(--primary);
+  }
+  #addon-pricing .item.popular .package {
+    color: #f6e5db;
+  }
+  #addon-pricing .item.popular .price,
+  #addon-pricing .item.popular .desc,
+  #addon-pricing .item.popular .item-p,
+  #addon-pricing .item.popular .li {
+    color: var(--bodyTextColorWhite);
+  }
+  #addon-pricing .item.popular .icon {
+    /* if icon is not black, this turns it white */
+    filter: grayscale(1) brightness(1000%);
+  }
+  #addon-pricing .item.popular .button-solid {
+    background-color: #f6e5db;
+    color: #1a1a1a;
+    transition: color 0.3s;
+  }
+  #addon-pricing .item.popular .button-solid:hover {
+    color: #fff;
+  }
+  #addon-pricing .package {
+    /* 13px - 16px */
+    font-size: clamp(0.8125rem, 1.4vw, 1rem);
+    line-height: 1.2em;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 0.5rem 0;
+    color: #767676;
+    display: block;
+  }
+  #addon-pricing .price {
+    /* 31px - 49px */
+    font-size: var(--headerFontSize);
+    margin-bottom: 3rem;
+    line-height: 1.5em;
+    text-align: left;
+    font-weight: 900;
+    color: var(--headerColor);
+  }
+  #addon-pricing .desc {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.2em;
+    text-align: left;
+    margin: 0 0 0.5rem 0;
+    color: var(--bodyTextColor);
+    opacity: 0.8;
+  }
+  #addon-pricing .item-p {
+    font-size: 1rem;
+    line-height: 1.5em;
+    text-align: left;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 3rem;
+    color: var(--bodyTextColor);
+  }
+  #addon-pricing .ul {
+    margin: 1.5rem 0;
+    padding: 1.5rem 0 0 0;
+    border-top: 1px solid #eff1f0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+  #addon-pricing .li {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    list-style: none;
+    line-height: 1.2em;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: var(--bodyTextColor);
+    display: flex;
+    justify-content: space-between;
+    /* push everything to the top so if the li goes to two lines the icon stays at the top */
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  #addon-pricing .li.disabled {
+    opacity: 0.5;
+  }
+  #addon-pricing .icon {
+    width: 1.125rem;
+    height: auto;
+    display: block;
+  }
+  #addon-pricing .button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875em, 5.5vw, 3.5em);
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #addon-pricing .button-solid:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0.25rem;
+    transition: width 0.3s;
+  }
+  #addon-pricing .button-solid:hover:before {
+    width: 100%;
+  }
+  #addon-pricing .price-button {
+    /* pushes up against the ul so if there's loess li's in the list, the button always pushes itself to the bottom */
+    margin-top: auto;
+    width: 100%;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #addon-pricing .card-group {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+  #addon-pricing .option2 {
+    top: auto;
+    bottom: 0;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #addon-pricing {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  body.dark-mode #addon-pricing .topper {
+    color: var(--primaryLight);
+  }
+  body.dark-mode #addon-pricing .title,
+  body.dark-mode #addon-pricing .text,
+  body.dark-mode #addon-pricing .item-p,
+  body.dark-mode #addon-pricing .package,
+  body.dark-mode #addon-pricing .li,
+  body.dark-mode #addon-pricing .price,
+  body.dark-mode #addon-pricing .desc,
+  body.dark-mode #addon-pricing .plan {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #addon-pricing .text {
+    opacity: 0.8;
+  }
+  body.dark-mode #addon-pricing .item {
+    background-color: var(--medium);
+  }
+  body.dark-mode #addon-pricing .item.popular {
+    background-color: var(--primary);
+  }
+  body.dark-mode #addon-pricing .icon {
+    /* makes icon white (if it wasnt black to start) */
+    filter: grayscale(1) brightness(1000%);
+  }
+  body.dark-mode #addon-pricing .price-button {
+    background-color: var(--bodyTextColorWhite);
+    color: #1a1a1a;
+    transition: color 0.3s;
+  }
+  body.dark-mode #addon-pricing .price-button:hover {
+    color: #fff;
   }
 }
 
