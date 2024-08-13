@@ -8,16 +8,14 @@ eleventyNavigation:
   order: 800
 ---
 
-{% extends "layouts/base.html" %}
-{% block head %}
-    <link rel="stylesheet" href="/assets/css/copyright.css"/>
-{% endblock %}
-{% block body %}
-    <!-- ============================================ -->
-    <!--                 Content Page                 -->
-    <!-- ============================================ -->
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/copyright.css" />
+{% endblock %} {% block body %}
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
 
-    <!-- ============================================ 
+<!-- ============================================ 
     This Stitch is used for content heavy interior pages
     that have no design or layout.  Often times these are 
     content silos where you talk extensively about a topic
@@ -27,62 +25,77 @@ eleventyNavigation:
     about making the content accessible and easy to read.
 ================================================= -->
 
-    <!-- ============================================ -->
-    <!--                   Banner                     -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
-    <div id="banner">
-        <div class="container">
-            <span class="int-title">Copyright</span>
-            <div class="breadcrumbs">
-                <a href="/" class="link">Home</a>
-                <a href="" class="link active">Copyright</a>
-            </div>
-        </div>
-        <!--Background Image-->
-        <picture class="background">
-            <!--Mobile Image-->
-            <source
+<div id="banner">
+  <div class="container">
+    <span class="int-title">Copyright</span>
+    <div class="breadcrumbs">
+      <a href="/" class="link">Home</a>
+      <a href="" class="link active">Copyright</a>
+    </div>
+  </div>
+  <!--Background Image-->
+  <picture class="background">
+    <!--Mobile Image-->
+    <source
       media="(max-width: 600px)"
-      srcset="
-        /assets/images/banner/why-us-banner-m.jpg
-      "
-/>
-            <!--Tablet and above Image-->
-            <source
+      srcset="/assets/images/banner/why-us-banner-m.jpg"
+    />
+    <!--Tablet and above Image-->
+    <source
       media="(min-width: 601px)"
-      srcset="
-        /assets/images/banner/why-us-banner.jpg
-      "
-/>
-            <img
+      srcset="/assets/images/banner/why-us-banner.jpg"
+    />
+    <img
       decoding="async"
       src="/assets/images/banner/why-us-banner.jpg"
       alt="computer"
       width="1280"
       height="568"
       aria-hidden="true"
-/>
-        </picture>
-    </div>
+    />
+  </picture>
+</div>
 
-    <div id="copyright">
-        <div class="container">
-            <h1>Copyright Notice</h1>
-            <p>© 2024 North Melbourne Web. All rights reserved.</p>
+<div id="copyright">
+  <div class="container">
+    <h1>Copyright Notice</h1>
+    <p>© 2024 North Melbourne Web. All rights reserved.</p>
 
-            <h2>Ownership</h2>
-            <p>All content on this website, including text, images, graphics, and code, is the property of [Your Name/Your Company] and is protected by copyright laws.</p>
+    <h2>Ownership</h2>
+    <p>
+      All content on this website, including text, images, graphics, and code,
+      is the property of North Melbourne Web and is protected by copyright laws.
+    </p>
 
-            <h2>Usage Terms</h2>
-            <p>No part of this website may be reproduced, distributed, or transmitted in any form or by any means without the prior written permission of the copyright owner. For permissions, please contact us at <a href="mailto:design@northmelbourneweb.com">design@northmelbourneweb.com</a>.</p>
+    <h2>Usage Terms</h2>
+    <p>
+      No part of this website may be reproduced, distributed, or transmitted in
+      any form or by any means without the prior written permission of the
+      copyright owner. For permissions, please contact us at
+      <a href="mailto:design@northmelbourneweb.com"
+        >design@northmelbourneweb.com</a
+      >.
+    </p>
 
-            <h2>Legal Policies</h2>
-            <p>For more information, please see our <a href="/terms-of-service">Terms of Service</a> and <a href="/privacy-policy">Privacy Policy</a>.</p>
+    <h2>Legal Policies</h2>
+    <p>
+      For more information, please see our
+      <a href="/terms-of-service">Terms of Service</a> and
+      <a href="/privacy-policy">Privacy Policy</a>.
+    </p>
 
-            <h2>Trademarks</h2>
-            <p>Any trademarks, service marks, product names, or named features are assumed to be the property of their respective owners, and are used only for reference. There is no implied endorsement if one of these terms is used.</p>
-        </div>
-    </div>
+    <h2>Trademarks</h2>
+    <p>
+      Any trademarks, service marks, product names, or named features are
+      assumed to be the property of their respective owners, and are used only
+      for reference. There is no implied endorsement if one of these terms is
+      used.
+    </p>
+  </div>
+</div>
 
 {% endblock %}
