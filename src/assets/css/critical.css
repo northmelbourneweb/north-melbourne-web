@@ -68,17 +68,17 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
   #hero .content {
     /* set text align to left if content needs to be left aligned */
-    text-align: left;
+    text-align: center;
     width: 100%;
     max-width: 39.375rem;
     display: flex;
     flex-direction: column;
     /* centers content horizontally, set to flex-start to left align */
-    align-items: flex-start;
+    align-items: center;
   }
   #hero .topper {
     font-size: 1.25rem;
@@ -250,7 +250,8 @@
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #hero .content {
-    width: 50%;
+    width: 75%;
+    max-width: 56.25rem;
   }
   #hero .bubbles {
     font-size: 1em;
@@ -291,6 +292,130 @@
     left: auto;
     top: 13.125rem;
     bottom: auto;
+  }
+}
+/*-- -------------------------- -->
+<---         Services           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #h-services {
+    /* 40px - 100px */
+    padding: 0 1rem;
+    position: relative;
+    /* give a higher z index than the hero so it can sit on top */
+    z-index: 10;
+  }
+  #h-services .card-group {
+    width: 100%;
+    max-width: 29.0625rem;
+    margin: 0 auto 0;
+    /* negative margin pulls it up on top of the hero section */
+    /* -46px to -76px - we're calculating whatever clamp is and multiplying by -1
+    to make the value negative since clamp doesn't work with negative values */
+    margin-top: calc(clamp(5rem, 13vw, 4.75rem) * -1);
+    /* 40px - 60px top and bottom, 16px - 44px left & right */
+    padding: clamp(2.5rem, 4.7vw, 3.75rem) clamp(1rem, 5.3vw, 2.75rem);
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
+    border-radius: 2rem;
+    border-top: 8px solid var(--primary);
+    background-color: #fff;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+  }
+  #h-services .item {
+    list-style: none;
+    margin: 0 auto 2rem;
+    width: 100%;
+    max-width: 22.5rem;
+  }
+  #h-services .item:last-of-type {
+    margin-bottom: 0;
+  }
+  #h-services .icon {
+    /* 68px - 88px */
+    width: clamp(4.25rem, 8.8vw, 5.5rem);
+    /* 68px - 88px */
+    height: clamp(4.25rem, 8.8vw, 5.5rem);
+    margin: auto;
+    /* 20px - 24px */
+    margin-bottom: clamp(1.25rem, 5vw, 1.5rem);
+    background: var(--primary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #h-services .icon img {
+    /* 44px - 52px */
+    width: clamp(2.75rem, 5.8vw, 3.25rem);
+    height: auto;
+  }
+  #h-services .title {
+    font-size: 1.25rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto 0.5rem;
+    color: var(--headerColor);
+  }
+  #h-services .text {
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5em;
+    max-width: 22.5rem;
+    margin: 0 auto;
+    color: var(--bodyTextColor);
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #h-services .card-group {
+    max-width: 49rem;
+    /* -76px to -320px - we're calculating whatever clamp is and multiplying by -1
+       to make the value negative since clamp doesn't work with negative values */
+    margin-top: calc(clamp(4.75rem, 15vw, 10rem) * -1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 2.5rem;
+  }
+  #h-services .item {
+    width: 45%;
+    max-width: 19.625rem;
+  }
+  #h-services .item:last-of-type {
+    margin-bottom: 2rem;
+  }
+}
+/* Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+  #h-services .card-group {
+    max-width: 80rem;
+    flex-wrap: nowrap;
+  }
+  #h-services .item {
+    margin: 0;
+  }
+  #h-services .item:last-of-type {
+    margin-bottom: 0;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #h-services .card-group {
+    background: var(--darkAccent);
+    border-top: 8px solid var(--medium);
+  }
+  body.dark-mode #h-services .icon {
+    background: var(--darkTint);
+  }
+  body.dark-mode #h-services .title {
+    color: #fff;
+  }
+  body.dark-mode #h-services .text {
+    color: #fff;
   }
 }
 

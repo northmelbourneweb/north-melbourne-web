@@ -175,7 +175,7 @@
   #about {
     padding: var(--sectionPadding);
     position: relative;
-    z-index: 1;
+    z-index: 2;
   }
   #about .container {
     width: 100%;
@@ -716,6 +716,9 @@
 }
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
+  body.dark-mode #services {
+    background-color: var(--darkAccent);
+  }
   body.dark-mode #services .title,
   body.dark-mode #services .text,
   body.dark-mode #services .item-text {
