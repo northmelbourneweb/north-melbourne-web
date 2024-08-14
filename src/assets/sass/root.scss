@@ -105,6 +105,7 @@
         width: auto;
         padding: 0 calc(48 / 16 * 1rem);
         border-radius: calc(30 / 16 * 1rem);
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
         text-decoration: none;
         text-transform: uppercase;
         font-size: calc(16 / 16 * 1rem);
@@ -119,6 +120,7 @@
 
         &:hover {
             color: #fff;
+            box-shadow: none;
             &:before {
                 width: 100%;
             }

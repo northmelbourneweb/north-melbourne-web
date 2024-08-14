@@ -50,8 +50,9 @@
             /* 24px - 32px */
             padding: clamp(1.5rem, 3vw, 2rem);
             background-color: #fff;
-            border: 1px solid #e8e8e8;
+            // border: 1px solid #e8e8e8;
             border-radius: calc(16 / 16 * 1rem);
+            box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
             /* prevents padding and border from affecting height and width */
             box-sizing: border-box;
             grid-column: span 12;
@@ -63,12 +64,12 @@
             position: relative;
             z-index: 1;
             transition:
-                box-shadow 0.3s,
-                border-color 0.3s;
+                box-shadow 0.3s;
+                // border-color 0.3s;
 
             &:hover {
-                box-shadow: 0px 4px 120px 0px rgba(0, 0, 0, 0.12);
-                border-color: transparent;
+                box-shadow: none;
+                // border-color: transparent;
                 .h3 {
                     color: var(--primary);
                 }
@@ -575,9 +576,9 @@
             padding: clamp(1rem, 3vw, 1.5rem);
             /* prevents padding from affecting height and width */
             box-sizing: border-box;
-            background-color: #f7f7f7;
+            background-color: #fff;
+            box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
             border-radius: calc(16 / 16 * 1rem);
-            border: 1px solid #e8e8e8;
             display: flex;
             grid-column: span 12;
             flex-direction: column;
