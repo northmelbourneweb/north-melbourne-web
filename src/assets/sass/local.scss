@@ -1002,10 +1002,15 @@
         .picture {
             width: 100%;
             /* 344px - 420px */
-            height: clamp(21.5rem, 30vw, 26.25rem);
+            // height: clamp(21.5rem, 30vw, 26.25rem);
+            // margin: auto;
+            // border-radius: calc(24 / 16 * 1rem);
+            // display: block;
+            /* Maintain a 3:2 aspect ratio (344px / 516px) */
+            padding-top: calc(344 / 516 * 100%);
             margin: auto;
             border-radius: calc(24 / 16 * 1rem);
-            display: block;
+            // box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
             position: relative;
             overflow: hidden;
 
@@ -1024,6 +1029,7 @@
             padding: clamp(1rem, 2vw, 1.25rem) clamp(1rem, 2.8vw, 2.5rem);
             background-color: #f7f7f7;
             border-radius: calc(24 / 16 * 1rem);
+            box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -1060,7 +1066,8 @@
         .icon-wrapper {
             width: calc(48 / 16 * 1rem);
             height: calc(48 / 16 * 1rem);
-            border: 1px solid #bababa;
+            // border: 1px solid #bababa;
+            box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -1121,7 +1128,7 @@
             width: calc(415 / 16 * 1rem);
             height: calc(546 / 16 * 1rem);
             position: absolute;
-            right: calc(-164 / 16 * 1rem);
+            left: calc(-164 / 16 * 1rem);
             bottom: calc(-46 / 16 * 1rem);
             z-index: -1;
 
@@ -1947,6 +1954,7 @@
             box-sizing: border-box;
             background-color: #f0f0f3;
             border-radius: calc(16 / 16 * 1rem);
+            box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -2040,10 +2048,10 @@
             transform: rotateY(180deg);
 
             .item {
-                border-radius: 0 calc(24 / 16 * 1rem) 0 0;
+                border-radius: calc(24 / 16 * 1rem) calc(24 / 16 * 1rem) 0 0;
 
                 &:nth-of-type(2) {
-                    border-radius: 0 0 0 calc(24 / 16 * 1rem);
+                    border-radius: 0 0 calc(24 / 16 * 1rem) calc(24 / 16 * 1rem);
                 }
             }
         }
@@ -2054,6 +2062,7 @@
             padding: 0;
             background-color: #fff;
             border-radius: calc(24 / 16 * 1rem);
+            box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.15);
             display: flex;
             flex-wrap: wrap;
             align-items: center;
@@ -2072,7 +2081,7 @@
             padding: calc(24 / 16 * 1rem) calc(24 / 16 * 1rem);
             background-color: #fff;
             border: 1px solid #dad9e3;
-            border-radius: calc(24 / 16 * 1rem) 0 0 0;
+            border-radius: calc(24 / 16 * 1rem) calc(24 / 16 * 1rem) 0 0;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
@@ -2082,7 +2091,7 @@
             min-height: 400px;
 
             &:nth-of-type(2) {
-                border-radius: 0 0 calc(24 / 16 * 1rem) 0;
+                border-radius: 0 0 calc(24 / 16 * 1rem) calc(24 / 16 * 1rem);
             }
 
             &.popular {

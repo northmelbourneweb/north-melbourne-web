@@ -836,10 +836,10 @@
   #portfolio .picture {
     width: 100%;
     /* 344px - 420px */
-    height: clamp(21.5rem, 30vw, 26.25rem);
+    /* Maintain a 3:2 aspect ratio (344px / 516px) */
+    padding-top: 66.6666666667%;
     margin: auto;
     border-radius: 1.5rem;
-    display: block;
     position: relative;
     overflow: hidden;
   }
@@ -856,6 +856,7 @@
     padding: clamp(1rem, 2vw, 1.25rem) clamp(1rem, 2.8vw, 2.5rem);
     background-color: #f7f7f7;
     border-radius: 1.5rem;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -888,7 +889,7 @@
   #portfolio .icon-wrapper {
     width: 3rem;
     height: 3rem;
-    border: 1px solid #bababa;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.15);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -942,7 +943,7 @@
     width: 25.9375rem;
     height: 34.125rem;
     position: absolute;
-    right: -10.25rem;
+    left: -10.25rem;
     bottom: -2.875rem;
     z-index: -1;
   }
@@ -1663,6 +1664,7 @@
     box-sizing: border-box;
     background-color: #f0f0f3;
     border-radius: 1rem;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1743,10 +1745,10 @@
     transform: rotateY(180deg);
   }
   #pricing .option2 .item {
-    border-radius: 0 1.5rem 0 0;
+    border-radius: 1.5rem 1.5rem 0 0;
   }
   #pricing .option2 .item:nth-of-type(2) {
-    border-radius: 0 0 0 1.5rem;
+    border-radius: 0 0 1.5rem 1.5rem;
   }
   #pricing .card-group {
     width: 100%;
@@ -1754,6 +1756,7 @@
     padding: 0;
     background-color: #fff;
     border-radius: 1.5rem;
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.15);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -1771,7 +1774,7 @@
     padding: 1.5rem 1.5rem;
     background-color: #fff;
     border: 1px solid #dad9e3;
-    border-radius: 1.5rem 0 0 0;
+    border-radius: 1.5rem 1.5rem 0 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -1781,7 +1784,7 @@
     min-height: 400px;
   }
   #pricing .item:nth-of-type(2) {
-    border-radius: 0 0 1.5rem 0;
+    border-radius: 0 0 1.5rem 1.5rem;
   }
   #pricing .item.popular {
     background-color: #14142b;
