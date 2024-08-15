@@ -518,7 +518,7 @@
     height: 3.75rem;
     margin: 0;
     border-radius: 50%;
-    border: 1px solid #bababa;
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -542,6 +542,7 @@
     padding: clamp(1.5rem, 5.18vw, 3rem) clamp(1rem, 4vw, 3rem);
     /* prevents flexbox from affecting height and width */
     box-sizing: border-box;
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
     background-color: #fff;
     border-radius: 1rem;
     display: flex;

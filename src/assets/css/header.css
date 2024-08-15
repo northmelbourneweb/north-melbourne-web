@@ -326,6 +326,177 @@ html {
   }
 }
 /*-- -------------------------- -->
+<---     Navigation Dropdown    -->
+<--- -------------------------- -*/
+/* Mobile - 1023px */
+@media only screen and (max-width: 63.9375rem) {
+  #navigation .li {
+    text-align: center;
+    width: 100%;
+    display: block;
+  }
+  #navigation .dropdown {
+    position: relative;
+    color: var(--bodyTextColorWhite);
+  }
+  #navigation .dropdown.active .drop-ul {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+    margin: 0.75rem 0 0 0;
+    padding: 0.75rem 0;
+  }
+  #navigation .dropdown.active .drop-link {
+    opacity: 1;
+  }
+  #navigation .dropdown.active .drop-icon {
+    transform: translateY(-50%) rotate(180deg);
+  }
+  #navigation .dropdown .li-link {
+    position: relative;
+    transition: opacity 0.3s;
+  }
+  #navigation .drop-icon {
+    width: 0.9375rem;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    right: -1.25rem;
+    transform: translateY(-50%);
+    transition: transform 0.3s;
+  }
+  #navigation .drop-ul {
+    width: 100%;
+    height: 0;
+    margin: 0rem 0 0 0;
+    padding: 0;
+    background-color: var(--primary);
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    transition: padding 0.3s, margin 0.3s, height 0.3s, opacity 0.3s, visibility 0.3s;
+  }
+  #navigation .drop-li {
+    list-style: none;
+  }
+  #navigation .li-link.drop-link {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 2vw, 1.25rem);
+    color: #fff;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #navigation .dropdown {
+    position: relative;
+  }
+  #navigation .dropdown:hover {
+    cursor: pointer;
+  }
+  #navigation .dropdown:hover .drop-ul {
+    transform: scaleY(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  #navigation .dropdown:hover .drop-li {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  #navigation .drop-icon {
+    width: 0.9375rem;
+    height: auto;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s;
+  }
+  #navigation .drop-ul {
+    min-width: 12.5rem;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background);
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    border-bottom: 5px solid var(--primary);
+    /* if you have 8 or more links in your dropdown nav, uncomment the columns property to make the list into 2 even columns. Change it to 3 or 4 if you need extra columns. Then remove the transition delays on the drop-li so they don't have weird scattered animations */
+    position: absolute;
+    top: 99.5%;
+    z-index: -100;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s, visibility 0.3s, opacity 0.3s;
+  }
+  #navigation .drop-li {
+    list-style: none;
+    font-size: clamp(0.875rem, 0.6vw, 1rem);
+    text-decoration: none;
+    opacity: 0;
+    width: 100%;
+    height: auto;
+    color: var(--bodyTextColor);
+    display: block;
+    transform: translateY(-0.625rem);
+    transition: opacity 0.6s, transform 0.6s;
+  }
+  #navigation .drop-li:nth-of-type(1) {
+    transition-delay: 0.05s;
+  }
+  #navigation .drop-li:nth-of-type(2) {
+    transition-delay: 0.1s;
+  }
+  #navigation .drop-li:nth-of-type(3) {
+    transition-delay: 0.15s;
+  }
+  #navigation .drop-li:nth-of-type(4) {
+    transition-delay: 0.2s;
+  }
+  #navigation .drop-li:nth-of-type(5) {
+    transition-delay: 0.25s;
+  }
+  #navigation .drop-li:nth-of-type(6) {
+    transition-delay: 0.3s;
+  }
+  #navigation .drop-li:nth-of-type(7) {
+    transition-delay: 0.35s;
+  }
+  #navigation .drop-li:nth-of-type(8) {
+    transition-delay: 0.4s;
+  }
+  #navigation .drop-li:nth-of-type(9) {
+    transition-delay: 0.45s;
+  }
+  #navigation .li-link:hover .drop-icon {
+    filter: grayscale(1) brightness(1000%);
+  }
+  #navigation .li-link.drop-link {
+    white-space: nowrap;
+    width: 100%;
+    font-size: clamp(0.875rem, 0.6vw, 1rem);
+    line-height: 1.5em;
+    text-decoration: none;
+    padding: 0.75rem;
+    /* prevents padding and border from affecting height and width */
+    box-sizing: border-box;
+    color: var(--bodyTextColor);
+    display: block;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  #navigation .li-link.drop-link:hover {
+    background-color: var(--primary);
+    color: var(--bodyTextColorWhite);
+  }
+  #navigation .li-link.drop-link:before {
+    display: none;
+  }
+}
+/*-- -------------------------- -->
 <---     Desktop Navigation     -->
 <--- -------------------------- -*/
 /* Small Desktop - 1024px */
@@ -415,7 +586,7 @@ html {
   }
   #navigation .li {
     list-style: none;
-    padding: 2.5rem 0;
+    padding: 1.5625rem 0;
     /* prevent flexbox from squishing it */
     flex: none;
   }
@@ -504,6 +675,17 @@ html {
     filter: invert(1);
   }
   body.dark-mode #navigation .li-link.scrolled {
+    color: var(--bodyTextColorWhite);
+  }
+}
+@media only screen and (min-width: 64rem) {
+  body.dark-mode #navigation .drop-ul {
+    background-color: var(--dark);
+  }
+  body.dark-mode #navigation .drop-li {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #navigation .li-link.drop-link {
     color: var(--bodyTextColorWhite);
   }
 }
