@@ -6,4 +6,3 @@ for (const item of faqItems) {
 }
 item.addEventListener('click', onClick)
 }
-                                
