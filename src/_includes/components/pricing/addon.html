@@ -3,32 +3,33 @@
 <!-- ============================================ -->
 
 <section id="addon-pricing">
-    <div class="container">
-        <div class="content">
-            {# <span class="topper">Pricing</span> #}
-            <h2 class="title">Add Ons</h2>
-            <p class="text">
-                A range of additional services to go alongside, or separately from, our website packages. Not seeing something you need? Need SEO/Google Ads, or a more generous copywriting allowance? Chances are, we can help. Get in touch!
-            </p>
-        </div>
-        <ul class="card-group">
-            {% for addon in addons %}
-                <li class="item">
-                    <span class="package">{{ addon.package }}</span>
-                    <span class="price">{{ addon.price }}
-                        {% if addon.description %}
-                            <span class="desc">{{ addon.description }}</span>
-                        {% else %}
-                            <span class="desc">&nbsp;</span>
-                            <!-- Non-breaking space to maintain layout -->
-                        {% endif %}
-                    </span>
-                    <p class="item-p">
-                        {{ addon.text | replace('\n', '<br>') | safe }}
-                    </p>
-                    <a href="#contact" class="button-solid price-button">Get Started</a>
-                </li>
-            {% endfor %}
-        </ul>
+  <div class="container">
+    <div class="content">
+      {# <span class="topper">Pricing</span> #}
+      <h2 class="title">Add Ons</h2>
+      <p class="text">
+        A range of additional services to go alongside, or separately from, our
+        website packages. Not seeing something you need? Need SEO/Google Ads, or
+        a more generous copywriting allowance? Chances are, we can help. Get in
+        touch!
+      </p>
     </div>
+    <ul class="card-group">
+      {% for addon in addons %}
+      <li class="item">
+        <span class="package">{{ addon.package }}</span>
+        <span class="price"
+          >{{ addon.price }} {% if addon.description %}
+          <span class="desc">{{ addon.description }}</span>
+          {% else %}
+          <span class="desc">&nbsp;</span>
+          <!-- Non-breaking space to maintain layout -->
+          {% endif %}
+        </span>
+        <p class="item-p">{{ addon.text | replace('\n', '<br />') | safe }}</p>
+        <a href="#contact" class="button-solid price-button">Get Started</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>

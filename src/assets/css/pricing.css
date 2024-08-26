@@ -181,7 +181,7 @@
     padding: 0 1.5rem;
     background-color: var(--primary);
     overflow: hidden;
-    border-radius: 0.25rem;
+    border-radius: 1.875rem;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -211,7 +211,8 @@
     /* prevents padding and border from affecting height and width */
     box-sizing: border-box;
     background-color: #f0f0f3;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -292,10 +293,10 @@
     transform: rotateY(180deg);
   }
   #pricing .option2 .item {
-    border-radius: 0 1.5rem 0 0;
+    border-radius: 1.5rem 1.5rem 0 0;
   }
   #pricing .option2 .item:nth-of-type(2) {
-    border-radius: 0 0 0 1.5rem;
+    border-radius: 0 0 1.5rem 1.5rem;
   }
   #pricing .card-group {
     width: 100%;
@@ -303,6 +304,7 @@
     padding: 0;
     background-color: #fff;
     border-radius: 1.5rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -320,7 +322,7 @@
     padding: 1.5rem 1.5rem;
     background-color: #fff;
     border: 1px solid #dad9e3;
-    border-radius: 1.5rem 0 0 0;
+    border-radius: 1.5rem 1.5rem 0 0;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -330,7 +332,7 @@
     min-height: 400px;
   }
   #pricing .item:nth-of-type(2) {
-    border-radius: 0 0 1.5rem 0;
+    border-radius: 0 0 1.5rem 1.5rem;
   }
   #pricing .item.popular {
     background-color: #14142b;
@@ -511,7 +513,7 @@
     padding: 0 1.5rem;
     background-color: transparent;
     border: 1px solid var(--primary);
-    border-radius: 0.25rem;
+    border-radius: 1.875rem;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -529,7 +531,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    border-radius: 0.25rem;
+    border-radius: 1.875rem;
     transition: width 0.3s;
   }
   #pricing .button-transparent:hover {
@@ -780,7 +782,7 @@
 @media only screen and (min-width: 0rem) {
   #addon-pricing {
     padding: var(--sectionPadding);
-    background-color: var(--backgroundShade);
+    background-color: var(--background);
   }
   #addon-pricing .container {
     width: 100%;
@@ -810,7 +812,7 @@
     flex-direction: column;
     align-items: center;
     /* 16px - 20px */
-    gap: clamp(1rem, 1.8vw, 1.25rem);
+    gap: clamp(1rem, 2vw, 2.5rem);
     perspective: 700px;
     transform-style: preserve-3d;
   }
@@ -820,7 +822,7 @@
     max-width: 31.25rem;
     border-radius: 2rem;
     margin: 0;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     /* 20px - 40px top & bottom */
     /* 16px - 32px left & right */
     padding: clamp(1.25rem, 3vw, 2.5rem) clamp(1rem, 3vw, 2rem);
@@ -937,6 +939,7 @@
     min-width: 9.375rem;
     padding: 0 1.5rem;
     background-color: var(--primary);
+    border-radius: 1.875rem;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -953,7 +956,7 @@
     top: 0;
     left: 0;
     z-index: -1;
-    border-radius: 0.25rem;
+    border-radius: 1.875rem;
     transition: width 0.3s;
   }
   #addon-pricing .button-solid:hover:before {
@@ -963,14 +966,22 @@
     /* pushes up against the ul so if there's loess li's in the list, the button always pushes itself to the bottom */
     margin-top: auto;
     width: 100%;
+    box-shadow: none;
   }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48rem) {
   #addon-pricing .card-group {
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
+    display: flex; /* Ensure it's a flex container */
+    flex-direction: row; /* Arrange items in a row */
+    flex-wrap: wrap; /* Allow wrapping to new lines */
+    justify-content: center; /* Center items horizontally */
+    align-items: stretch; /* Stretch items to the container's height */
+  }
+  #addon-pricing .item {
+    /* Adjust the width of each card if needed */
+    flex: 1 1 29%; /* Flex-grow, flex-shrink, and flex-basis values */
+    margin: 10px; /* Optional: Add margin for spacing */
   }
   #addon-pricing .option2 {
     top: auto;
@@ -999,7 +1010,8 @@
     opacity: 0.8;
   }
   body.dark-mode #addon-pricing .item {
-    background-color: var(--medium);
+    background-color: var(--darkAccent);
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 0px 0px 2px, rgba(255, 255, 255, 0.3) 0px 4px 6px -1px, rgba(0, 0, 0, 0.6) 0px 1px 0px inset;
   }
   body.dark-mode #addon-pricing .item.popular {
     background-color: var(--primary);

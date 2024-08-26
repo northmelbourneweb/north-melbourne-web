@@ -270,9 +270,10 @@
             padding: clamp(1rem, 3vw, 1.5rem);
             /* prevents padding from affecting height and width */
             box-sizing: border-box;
-            background-color: #f7f7f7;
+            background-color: var(--background);
             border-radius: calc(16 / 16 * 1rem);
-            border: 1px solid #e8e8e8;
+            // border: 1px solid #e8e8e8;
+            box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -549,7 +550,7 @@
             }
 
             .item {
-                background-color: rgba(0, 0, 0, 0.2);
+                background-color: var(--darkAccent);
                 border-color: rgba(255, 255, 255, 0.2);
             }
 

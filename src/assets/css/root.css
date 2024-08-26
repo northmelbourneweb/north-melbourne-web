@@ -93,7 +93,7 @@
     width: auto;
     padding: 0 3rem;
     border-radius: 1.875rem;
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1rem;
@@ -518,7 +518,7 @@
     height: 3.75rem;
     margin: 0;
     border-radius: 50%;
-    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -542,7 +542,7 @@
     padding: clamp(1.5rem, 5.18vw, 3rem) clamp(1rem, 4vw, 3rem);
     /* prevents flexbox from affecting height and width */
     box-sizing: border-box;
-    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
     background-color: #fff;
     border-radius: 1rem;
     display: flex;
@@ -599,6 +599,7 @@
     text-decoration: none;
     font-weight: 700;
     overflow: hidden;
+    box-shadow: none;
     margin: 0;
     color: #fff;
     padding: 0 3rem;
@@ -689,6 +690,7 @@
   }
   body.dark-mode #contact .icon-wrapper {
     border-color: #fff;
+    background-color: var(--darkAccent);
   }
   body.dark-mode #contact .icon {
     /* makes it white */
@@ -866,7 +868,7 @@
 /* Dark Mode */
 @media only screen and (min-width: 0rem) {
   body.dark-mode #footer {
-    background-color: var(--dark);
+    background-color: var(--darkAccent);
   }
 }
 

@@ -3,18 +3,36 @@ module.exports = [
         package: "Extra Pages",
         price: "A$99",
         description: "Per Page",
-        text: "Limited by our website packages? 9 pages not enough for you?\n\nYou can add additional pages at a fixed, one-time cost to your pre-existing package!\n\nAdditional pages are subject to the same Green Pagespeed Guarantee and Unlimited Edits services that we offer."
+        text: "Need more than the standard 9 pages in our website packages? No problem!\n\nAdd additional pages to your existing package for a fixed, one-time fee. Each new page comes with our Green Pagespeed Guarantee and Unlimited Edits service, just like the rest of your site."
     },
     {
         package: "Hosting",
         price: "A$29",
         description: "Per Month",
-        text: "For clients who buy a website from us through a 'lump sum' plan, we offer to host the website for you at an additional fee. Monthly subscription packages already have this included.\n\nWe boast a lightning-fast service on a global content delivery network. What's more, we promise a 99.98% uptime, free SSL certificate and unlimited backups with every edit requested."
+        text: "If you've purchased a website through our 'lump sum' plan, we offer hosting at an additional cost. Monthly subscription plans already include this service.\n\nEnjoy lightning-fast performance on a global content delivery network, with 99.98% uptime, free SSL certification, and unlimited backups with every requested edit."
+    },
+    {
+        package: "Blog Capability",
+        price: "A$199",
+        description: "",
+        text: "Take your Standard website package to the next level with our Blog Capability add-on. This feature lets you easily share news, updates, and insights on your site, enhancing SEO and audience engagement. Setup is included; however, monthly blog posts are not. Ideal for businesses that want full control over their content."
     },
     {
         package: "Logos and Branding",
         price: "A$99",
         description: "",
-        text: "Budding businesses taking their first steps need an emblem to represent themselves both on and off the internet.\n\nOur designer will work to create your logo. When finished, you'll have a logo in both PNG and SVG format, the editable source file, 4 concepts and 6 revisions during the design process."
+        text: "Every business needs a memorable logo. Our designer will craft a custom emblem that represents your brand, both online and offline.\n\nYou’ll receive your logo in PNG and SVG formats, along with the editable source file. We provide 4 initial concepts and 6 revisions to ensure the final design meets your vision."
+    },
+    {
+        package: "Promotional Poster",
+        price: "A$79",
+        description: "Each",
+        text: "Promoting an event or special offer? Our Promotional Poster service delivers stunning, professional designs tailored to your brand’s style. Perfect for both online and print, each poster is designed to make your promotion stand out."
+    },
+    {
+        package: "Copywriting",
+        price: "A$149", 
+        description: "Per 500 words",
+        text: "Great content is key to success. Our expert copywriters craft engaging, SEO-optimized text that resonates with your audience and drives conversions. Whether you need website content, product descriptions, or marketing copy, we deliver high-quality writing that elevates your brand."
     },
 ];
