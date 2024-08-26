@@ -24,10 +24,10 @@ module.exports = [
         text: "Every business needs a memorable logo. Our designer will craft a custom emblem that represents your brand, both online and offline.\n\nYou’ll receive your logo in PNG and SVG formats, along with the editable source file. We provide 4 initial concepts and 6 revisions to ensure the final design meets your vision."
     },
     {
-        package: "Promotional Poster",
+        package: "Custom Illustration",
         price: "A$79",
-        description: "Each",
-        text: "Promoting an event or special offer? Our Promotional Poster service delivers stunning, professional designs tailored to your brand’s style. Perfect for both online and print, each poster is designed to make your promotion stand out."
+        description: "Per Illustration",
+        text: "Need a unique illustration for your project? Our Custom Illustration service provides eye-catching, professional designs tailored specifically to your needs. Whether it’s for a menu, promotional material, or any other use, each illustration is crafted to perfectly match your vision and make a lasting impression."
     },
     {
         package: "Copywriting",

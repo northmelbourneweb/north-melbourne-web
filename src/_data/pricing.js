@@ -53,6 +53,10 @@ module.exports = {
         plans: ["check", "check"]
       },
       {
+        name: "1 Custome Illustration Service",
+        plans: ["check", "check"]
+      },
+      {
         name: "Website Redesign Every",
         plans: ["3 years", "2 years"]
       },
