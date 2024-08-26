@@ -79,6 +79,8 @@
     {% block head %}{% endblock %}
 
     <title>{{ title }}</title>
+    {% include "components/footer.html" %} {% include
+    "components/gg-analytic.html" %}
   </head>
   <body>
     <!--Screen reader skip main nav-->
@@ -88,7 +90,5 @@
 
     {% include "components/header.html" %}
     <main id="main">{% block body %}{% endblock %}</main>
-    {% include "components/footer.html" %} {% include
-    "components/gg-analytic.html" %}
   </body>
 </html>
