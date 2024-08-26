@@ -1,6 +1,6 @@
 ---
 title: "Why Us? | North Melbourne Web"
-description: "Meta description for the page"
+description: "Find out why North Melbourne Web is the best choice for your small business. We create custom websites and offer great support to help your business grow online."
 preloadImg: "/assets/images/banner/why-us-banner.jpg"
 permalink: "why-us/"
 eleventyNavigation:
@@ -8,16 +8,14 @@ eleventyNavigation:
   order: 200
 ---
 
-{% extends "layouts/base.html" %}
-{% block head %}
-    <link rel="stylesheet" href="/assets/css/about.css"/>
-{% endblock %}
-{% block body %}
-    <!-- ============================================ -->
-    <!--                 Content Page                 -->
-    <!-- ============================================ -->
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/about.css" />
+{% endblock %} {% block body %}
+<!-- ============================================ -->
+<!--                 Content Page                 -->
+<!-- ============================================ -->
 
-    <!-- ============================================ 
+<!-- ============================================ 
     This Stitch is used for content heavy interior pages
     that have no design or layout.  Often times these are 
     content silos where you talk extensively about a topic
@@ -27,47 +25,42 @@ eleventyNavigation:
     about making the content accessible and easy to read.
 ================================================= -->
 
-    <!-- ============================================ -->
-    <!--                   Banner                     -->
-    <!-- ============================================ -->
+<!-- ============================================ -->
+<!--                   Banner                     -->
+<!-- ============================================ -->
 
-    <div id="banner">
-        <div class="container">
-            <span class="int-title">Why North Melbourne Web?</span>
-            <div class="breadcrumbs">
-                <a href="/" class="link">Home</a>
-                <a href="" class="link active">Why Us?</a>
-            </div>
-        </div>
-        <!--Background Image-->
-        <picture class="background">
-            <!--Mobile Image-->
-            <source
+<div id="banner">
+  <div class="container">
+    <span class="int-title">Why North Melbourne Web?</span>
+    <div class="breadcrumbs">
+      <a href="/" class="link">Home</a>
+      <a href="" class="link active">Why Us?</a>
+    </div>
+  </div>
+  <!--Background Image-->
+  <picture class="background">
+    <!--Mobile Image-->
+    <source
       media="(max-width: 600px)"
       srcset="/assets/images/banner/why-us-banner-m.jpg"
-/>
-            <!--Tablet and above Image-->
-            <source
+    />
+    <!--Tablet and above Image-->
+    <source
       media="(min-width: 601px)"
       srcset="/assets/images/banner/why-us-banner.jpg"
-/>
-            <img
+    />
+    <img
       decoding="async"
       src="/assets/images/banner/why-us-banner.jpg"
       alt="computer"
       width="1280"
       height="568"
       aria-hidden="true"
-/>
-        </picture>
-    </div>
+    />
+  </picture>
+</div>
 
-    {% include 'components/why-us/intro.html' %}
-    {% include
-'components/why-us/why-us.html' %}
-    {% include 'components/why-us/services.html'
-%}
-    {# {% include 'components/why-us/about.html' %} #}
-    {% include
-'components/why-us/steps.html' %}
-{% endblock %}
+{% include 'components/why-us/intro.html' %} {% include
+'components/why-us/why-us.html' %} {% include 'components/why-us/services.html'
+%} {# {% include 'components/why-us/about.html' %} #} {% include
+'components/why-us/steps.html' %} {% endblock %}
