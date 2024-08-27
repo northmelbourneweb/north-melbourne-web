@@ -3,6 +3,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="/assets/js/google-tag-manager.js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-SCQ54MPY1M");
+    </script>
     <!-- Standard meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -79,17 +90,6 @@
     {% block head %}{% endblock %}
 
     <title>{{ title }}</title>
-    <!-- Google tag (gtag.js) -->
-    <script async src="/assets/js/google-tag-manager.js"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "G-SCQ54MPY1M");
-    </script>
   </head>
   <body>
     <!--Screen reader skip main nav-->
@@ -99,5 +99,6 @@
 
     {% include "components/header.html" %}
     <main id="main">{% block body %}{% endblock %}</main>
+    {% include 'components/footer.html' %}
   </body>
 </html>
