@@ -15,27 +15,24 @@
     </div>
     <div class="row gy-4">
       {% for addon in addons %}
-        <div class="col-lg-4 col-md-6">
-          <div class="pricing-item">
-            <div class="pricing-head">
-              <h3 class="package-name">{{ addon.name }}</h3>
-              <h2 class="price">${{ addon.price }}
-                <span>/mo</span></h2>
-            </div>
-            <div class="pricing-body">
-              <ul>
-                {% for feature in addon.features %}
-                  <li>
-                    <i class="fa-solid fa-check"></i>
-                    {{ feature }}</li>
-                {% endfor %}
-              </ul>
-            </div>
-            <div class="pricing-footer">
-              <a href="#" class="rr-primary-btn">Add to Plan</a>
-            </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="pricing-item" style="width: 100%">
+          <div class="pricing-head">
+            <h3 class="package-name">{{ addon.name }}</h3>
+            <h2 class="price">${{ addon.price }} <span>/mo</span></h2>
+          </div>
+          <div class="pricing-body">
+            <ul>
+              {% for feature in addon.features %}
+              <li>{# <i class="fa-solid fa-check"></i> #} {{ feature }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="pricing-footer pt-30">
+            <a href="#" class="rr-primary-btn">Add to Plan</a>
           </div>
         </div>
+      </div>
       {% endfor %}
     </div>
   </div>

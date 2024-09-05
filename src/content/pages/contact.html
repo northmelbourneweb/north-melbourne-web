@@ -1,7 +1,7 @@
 ---
 title: "Contact | North Melbourne Web"
 description: "Meta description for the page"
-preloadImg: "/assets/images/cabinets2.jpg"
+preloadImg: "/assets/images/banner/pricing-banner.jpg"
 permalink: "contact/"
 eleventyNavigation:
   key: Contact Us
@@ -9,55 +9,52 @@ eleventyNavigation:
   hideOnDesktop: true
 ---
 
-{% extends "layouts/base.html" %}
-{% block head %}
-  <link rel="stylesheet" href="/assets/css/contact.css"/>
-{% endblock %}
-{% block body %}
-  <section
+{% extends "layouts/base.html" %} {% block head %}
+<link rel="stylesheet" href="/assets/css/contact.css" />
+{% endblock %} {% block body %}
+<section
   class="page-header"
-  data-background="/assets/images/bg-img/page-header-bg.jpg"
+  data-background="/assets/images/banner/pricing-banner.jpg"
 >
-    <div class="overlay"></div>
-    <div class="shapes">
-      <div class="shape shape-1">
-        <img src="/assets/images/shapes/page-header-shape-1.png" alt="shape"/>
-      </div>
-      <div class="shape shape-2">
-        <img src="/assets/images/shapes/page-header-shape-2.png" alt="shape"/>
-      </div>
-      <div class="shape shape-3">
-        <img src="/assets/images/shapes/page-header-shape-3.png" alt="shape"/>
-      </div>
+  <div class="overlay"></div>
+  <div class="shapes">
+    <div class="shape shape-1">
+      <img src="/assets/images/shapes/page-header-shape-1.png" alt="shape" />
     </div>
-    <div class="container">
-      <div class="page-header-content text-center">
-        <h1 class="title">Contact Us</h1>
-        <h4 class="sub-title">
-          <a class="home" href="/">Home </a>
-          <span></span
-        >
-          <a class="inner-page" href="contact.html"> Contact Us</a>
-        </h4>
-      </div>
+    <div class="shape shape-2">
+      <img src="/assets/images/shapes/page-header-shape-2.png" alt="shape" />
     </div>
-  </section>
-  <!-- ./ page-header -->
+    <div class="shape shape-3">
+      <img src="/assets/images/shapes/page-header-shape-3.png" alt="shape" />
+    </div>
+  </div>
+  <div class="container">
+    <div class="page-header-content text-center">
+      <h1 class="title">Contact Us</h1>
+      <h4 class="sub-title">
+        <a class="home" href="/">Home </a>
+        <span></span>
+        <a class="inner-page" href="contact.html"> Contact Us</a>
+      </h4>
+    </div>
+  </div>
+</section>
+<!-- ./ page-header -->
 
-  <section class="contact-section pt-130 pb-130">
-    <div class="container">
-      <div class="row gy-lg-0 gy-5">
-        <div class="col-lg-5 col-md-12">
-          <div class="contact-content">
-            <div class="section-heading">
-              <h4
+<section class="contact-section pt-130 pb-130">
+  <div class="container">
+    <div class="row gy-lg-0 gy-5">
+      <div class="col-lg-5 col-md-12">
+        <div class="contact-content">
+          <div class="section-heading">
+            <h4
               class="sub-heading after-none"
               data-text-animation="fade-in"
               data-duration="1.5"
             >
               Contact Us
             </h4>
-              <h2
+            <h2
               class="section-title"
               data-text-animation
               data-split="word"
@@ -65,110 +62,108 @@ eleventyNavigation:
             >
               Let’s working together
             </h2>
-              <p>
+            <p>
               Thank you for your interest in North Melbourne Web. We're excited
               to hear from you and discuss...
             </p>
-            </div>
-            <div class="contact-list">
-              <div class="list-item">
-                <div class="icon">
-                  <i class="fa-light fa-location-dot"></i>
-                </div>
-                <div class="content">
-                  <h4 class="title">Our Address</h4>
-                  <p>Kingsway Dr., Lalor 3075 <br/>Melbourne, Australia</p>
-                </div>
+          </div>
+          <div class="contact-list">
+            <div class="list-item">
+              <div class="icon">
+                <i class="fa-light fa-location-dot"></i>
               </div>
-              <div class="list-item">
-                <div class="icon">
-                  <i class="fa-light fa-phone"></i>
-                </div>
-                <div class="content">
-                  <h4 class="title">Phone Number</h4>
-                  <span>
-                    <a href="tel:+61486010043">+61 (0) 486 010 043</a>
-                  </span>
-                  <span
-                  >
-                    <a href="mailto:design@northmelbourneweb.com"
+              <div class="content">
+                <h4 class="title">Our Address</h4>
+                <p>Kingsway Dr., Lalor 3075 <br />Melbourne, Australia</p>
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="icon">
+                <i class="fa-light fa-phone"></i>
+              </div>
+              <div class="content">
+                <h4 class="title">Phone Number</h4>
+                <span>
+                  <a href="tel:+61486010043">+61 (0) 486 010 043</a>
+                </span>
+                <span>
+                  <a href="mailto:design@northmelbourneweb.com"
                     >design@northmelbourneweb.com</a
                   >
-                  </span
-                >
-                </div>
+                </span>
               </div>
-              <div class="list-item">
-                <div class="icon">
-                  <i class="fa-light fa-clock"></i>
-                </div>
-                <div class="content">
-                  <h4 class="title">Hours of Operation</h4>
-                  <span>Monday - Sunday: All Day</span>
-                  {# <span>Sunday & Saturday: 10:30 - 22:00</span> #}
-                </div>
+            </div>
+            <div class="list-item">
+              <div class="icon">
+                <i class="fa-light fa-clock"></i>
+              </div>
+              <div class="content">
+                <h4 class="title">Hours of Operation</h4>
+                <span>Monday - Sunday: All Day</span>
+                {# <span>Sunday & Saturday: 10:30 - 22:00</span> #}
               </div>
             </div>
           </div>
         </div>
-        <div class="col-lg-7">
-          <div class="blog-contact-form form-2">
-            <div class="request-form">
-              <form
+      </div>
+      <div class="col-lg-7">
+        <div class="blog-contact-form form-2">
+          <div class="request-form">
+            <form
               action="mail.php"
               method="post"
               id="ajax_contact"
               class="form-horizontal"
             >
-                <div class="form-group row">
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <input
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <div class="form-item">
+                    <input
                       type="text"
                       id="fullname"
                       name="fullname"
                       class="form-control"
                       placeholder="Your Name"
-/>
-                    </div>
+                    />
                   </div>
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <input
+                </div>
+                <div class="col-md-6">
+                  <div class="form-item">
+                    <input
                       type="text"
                       id="lastname"
                       name="lastname"
                       class="form-control"
                       placeholder="Last Name"
-/>
-                    </div>
+                    />
                   </div>
                 </div>
-                <div class="form-group row">
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <input
+              </div>
+              <div class="form-group row">
+                <div class="col-md-6">
+                  <div class="form-item">
+                    <input
                       type="text"
                       id="email"
                       name="email"
                       class="form-control"
                       placeholder="Email address*"
-/>
-                    </div>
+                    />
                   </div>
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <input
+                </div>
+                <div class="col-md-6">
+                  <div class="form-item">
+                    <input
                       type="text"
                       id="phone"
                       name="phone"
                       class="form-control"
                       placeholder="Phone number*"
-/>
-                    </div>
+                    />
                   </div>
                 </div>
-                {#
+              </div>
+              {#
               <div class="form-group row">
                 <div class="col-md-12">
                   <div class="form-item">
@@ -190,10 +185,10 @@ eleventyNavigation:
                 </div>
               </div>
               #}
-                <div class="form-group row">
-                  <div class="col-md-12">
-                    <div class="form-item message-item">
-                      <textarea
+              <div class="form-group row">
+                <div class="col-md-12">
+                  <div class="form-item message-item">
+                    <textarea
                       id="message"
                       name="message"
                       cols="30"
@@ -201,24 +196,24 @@ eleventyNavigation:
                       class="form-control address"
                       placeholder="Message"
                     ></textarea>
-                    </div>
                   </div>
                 </div>
-                <div class="submit-btn">
-                  <button id="submit" class="rr-primary-btn" type="submit">
+              </div>
+              <div class="submit-btn">
+                <button id="submit" class="rr-primary-btn" type="submit">
                   Submit Message
                 </button>
-                </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!-- ./ contact-section -->
+  </div>
+</section>
+<!-- ./ contact-section -->
 
-  {#
+{#
 <div class="map-wrapper pb-130">
   <div class="container">
     <iframe
@@ -232,5 +227,5 @@ eleventyNavigation:
   </div>
 </div>
 #}
-  <!-- ./ map-wrapper -->
+<!-- ./ map-wrapper -->
 {% endblock %}
