@@ -9,30 +9,45 @@ eleventyNavigation:
   order: 100
 ---
 
-{% extends "layouts/base.html" %} {% block head %}
+{% extends "layouts/base.html" %}
+{% block head %}
 
-<!-- Script for Netlify Identity -->
-<script
+  <!-- Script for Netlify Identity -->
+  <script
   defer
   src="https://identity.netlify.com/v1/netlify-identity-widget.js"
 ></script>
-<script defer>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", (user) => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
+  <script defer>
+    if (window.netlifyIdentity) {
+      window
+        .netlifyIdentity
+        .on("init", (user) => {
+          if (!user) {
+            window
+              .netlifyIdentity
+              .on("login", () => {
+                document.location.href = "/admin/";
+              });
+          }
         });
-      }
-    });
-  }
-</script>
-{% endblock %} {% block body %} {% include 'components/front/hero.html' %} {# {%
-include 'components/front/sponsor.html' %} #} {% include
-'components/front/about.html' %} {% include 'components/front/service.html' %}
-{% include 'components/front/process.html' %} {% include
-'components/running_text.html' %} {% include 'components/front/project.html' %}
-{# {% include 'components/front/counter.html' %} #} {% include
-'components/pricing/pricing.html' %} {% include
-'components/front/appointment.html' %} {% include 'components/front/blog.html'
-%} {% endblock %}
+    }
+  </script>
+{% endblock %}
+{% block body %}
+  {% include 'components/front/hero.html' %}
+  {# {%
+include 'components/front/sponsor.html' %} #}
+  {% include
+  'components/front/about.html' %}
+  {% include 'components/front/service.html' %}
+  {% include 'components/front/process.html' %}
+  {% include
+  'components/running_text.html' %}
+  {% include 'components/front/project.html' %}
+  {# {% include 'components/front/counter.html' %} #}
+  {% include
+  'components/pricing/pricing.html' %}
+  {% include
+  'components/front/appointment.html' %}
+  {% include 'components/blog.html' %}
+{% endblock %}
