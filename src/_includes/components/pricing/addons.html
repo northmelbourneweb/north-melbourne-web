@@ -1,0 +1,39 @@
+<section class="pricing-section-2 pt-130 pb-130">
+  <div class="container">
+    <div class="section-heading text-center">
+      <h4 class="sub-heading" data-text-animation="fade-in" data-duration="1.5">
+        Add-ons
+      </h4>
+      <h2
+        class="section-title"
+        data-text-animation
+        data-split="word"
+        data-duration="1"
+      >
+        Enhance Your Website
+      </h2>
+    </div>
+    <div class="row gy-4">
+      {% for addon in addons %}
+      <div class="col-lg-4 col-md-6">
+        <div class="pricing-box">
+          <div class="pricing-head">
+            <h3 class="package-name">{{ addon.name }}</h3>
+            <h2 class="price">${{ addon.price }}<span>/mo</span></h2>
+          </div>
+          <div class="pricing-body">
+            <ul>
+              {% for feature in addon.features %}
+              <li><i class="fa-solid fa-check"></i> {{ feature }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <a href="#" class="rr-primary-btn">Add to Plan</a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

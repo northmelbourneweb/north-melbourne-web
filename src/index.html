@@ -1,0 +1,38 @@
+---
+title: "Small Business Web Development | North Melbourne Web | Lalor VIC"
+description: "Meta description for the page"
+preloadImg: "/assets/images/landing.jpg"
+permalink: "/"
+tags: "sitemap" # Sitemap will use all pages in content/, due to content.json. As index.html is not included in content/ we need to manually add the sitemap tag to this page (only).
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+
+{% extends "layouts/base.html" %} {% block head %}
+
+<!-- Script for Netlify Identity -->
+<script
+  defer
+  src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+></script>
+<script defer>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", (user) => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+{% endblock %} {% block body %} {% include 'components/front/hero.html' %} {# {%
+include 'components/front/sponsor.html' %} #} {% include
+'components/front/about.html' %} {% include 'components/front/service.html' %}
+{% include 'components/front/process.html' %} {% include
+'components/running_text.html' %} {% include 'components/front/project.html' %}
+{# {% include 'components/front/counter.html' %} #} {% include
+'components/pricing/pricing.html' %} {% include
+'components/front/appointment.html' %} {% include 'components/front/blog.html'
+%} {% endblock %}

@@ -1,0 +1,16 @@
+---
+title: "About Us | North Melbourne Web"
+description: "Meta description for the page"
+preloadImg: "/assets/images/cabinets2.jpg"
+permalink: "about/"
+eleventyNavigation:
+  key: About Us
+  order: 200
+---
+
+{% extends "layouts/base.html" %} {% block body %} {% include
+'components/about/banner.html' %} {% include 'components/about/about-1.html' %}
+{% include 'components/about/process.html' %} {% include
+'components/running_text.html' %} {% include 'components/about/about-2.html' %}
+{# {% include 'components/about/team.html' %} {% include
+'components/about/testimonial.html' %} #} {% endblock %}
