@@ -8,8 +8,8 @@ module.exports = {
           "Custom-coded website with up to 5 pages",
           "Full analytics integration",
           "Essential on-page SEO with local focus",
-          "Free logo (re)design & SVG conversion",
-          "Integrated blog setup"
+          "Free logo SVG conversion",
+          // "Integrated blog setup"
         ]
       },
       {
@@ -19,9 +19,11 @@ module.exports = {
         features: [
           "All features in the Basic Plan",
           "Custom-coded website with up to 10 pages",
-          "Advanced SEO & local backlink strategy",
-          "CRM integration",
-          "1 custom blog post per month"
+          "Advanced SEO & local backlinking strategy",
+          "Free logo (re)design and SVG conversion",
+          "Email marketing integration",
+          "Integrated blog setup",
+          // "1 custom blog post per month"
         ]
       },
       {
@@ -33,14 +35,15 @@ module.exports = {
           "Fully custom-coded website with unlimited pages",
           "Extensive SEO & ongoing backlinking strategy",
           "CRM & email marketing integration",
-          "Premium blog content & monthly high-detail illustrations"
+          "Premium blog content & monthly high-detail illustrations",
+          "1 custom blog post per month"
         ]
       }
     ],
     oneOff: [
       {
         plan: "Standard Plan",
-        price: "$5488",
+        price: "$5499",
         description: "A custom website with up to 10 pages, local SEO, an integrated blog, a free logo redesign, and top-notch performance optimization.",
         features: [
             "Custom-coded website with up to 10 pages.",
@@ -51,7 +54,7 @@ module.exports = {
       },
       {
         plan: "E-Commerce Plan",
-        price: "$9828",
+        price: "$9499",
         description: "All the features of the Standard Plan plus full e-commerce functionality, including product catalog setup, payment gateway integration, and basic product SEO.",
         features: [
           "Includes all features of the Standard Plan.",
@@ -64,7 +67,7 @@ module.exports = {
       },
       {
         plan: "SaaS Plan",
-        price: "$12884",
+        price: "$12499",
         description: "The Standard Plan features plus user authentication, subscription management, advanced customizations, and API integrations for SaaS platforms.",
         features: [
             "Includes all features of the Standard Plan.",
