@@ -15,29 +15,32 @@
     </div>
     <div class="row gy-4">
       {% for addon in addons %}
-      <div class="col-lg-4 col-md-6">
-        <div class="pricing-item" style="width: 100%">
-          <div class="pricing-head">
-            <h3 class="package-name">{{ addon.name }}</h3>
-            <h2 class="price">
-              ${{ addon.price }} <span>{{ addon.unit}}</span>
-            </h2>
-          </div>
-          <div class="pricing-body">
-            <ul>
-              {% if addon.features.length == 1 %}
-              <p>{{ addon.features[0] | replace('\n', '<br />') | safe }}</p>
-              {% else %} {% for feature in addon.features %}
-              <li>{{ feature }}</li>
-              {% endfor %} {% endif %}
-            </ul>
-          </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="pricing-item" style="width: 100%">
+            <div class="pricing-head">
+              <h3 class="package-name">{{ addon.name }}</h3>
+              <h2 class="price">
+              ${{ addon.price }}
+                <span>{{ addon.unit}}</span>
+              </h2>
+            </div>
+            <div class="pricing-body">
+              <ul>
+                {% if addon.features.length == 1 %}
+                  <p>{{ addon.features[0] | replace('\n', '<br />') | safe }}</p>
+                {% else %}
+                  {% for feature in addon.features %}
+                    <li>{{ feature }}</li>
+                  {% endfor %}
+                {% endif %}
+              </ul>
+            </div>
 
-          <div class="pricing-footer pt-30">
-            <a href="/contact" class="rr-primary-btn">Contact Us</a>
+            <div class="pricing-footer pt-30">
+              <a href="#appointment" class="rr-primary-btn">Contact Us</a>
+            </div>
           </div>
         </div>
-      </div>
       {% endfor %}
     </div>
   </div>
