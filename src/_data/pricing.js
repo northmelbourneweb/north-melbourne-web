@@ -68,15 +68,10 @@ module.exports = {
       },
       {
         plan: "SaaS Plan",
-        price: "$12499",
-        description: "The Standard Plan features plus user authentication, subscription management, advanced customizations, and API integrations for SaaS platforms.",
+        price: "Contact Us",
+        description: "A complete SaaS solution with user authentication, subscription management, advanced customizations, and API integrations. Build with your choice of technology.",
         features: [
-            "Includes all features of the Standard Plan.",
-            "User authentication (logins, account management).",
-            "Subscription payment setup (Stripe, PayPal).",
-            "Basic membership portal or restricted content areas.",
-            "Advanced customizations (dashboards, user tiers).",
-            "API integrations (payment processing or other services)."
+            "Contact Us for more information"
         ]
       }
     ]
