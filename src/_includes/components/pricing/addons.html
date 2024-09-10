@@ -19,17 +19,22 @@
         <div class="pricing-item" style="width: 100%">
           <div class="pricing-head">
             <h3 class="package-name">{{ addon.name }}</h3>
-            <h2 class="price">${{ addon.price }} <span>/mo</span></h2>
+            <h2 class="price">
+              ${{ addon.price }} <span>{{ addon.unit}}</span>
+            </h2>
           </div>
           <div class="pricing-body">
             <ul>
-              {% for feature in addon.features %}
-              <li>{# <i class="fa-solid fa-check"></i> #} {{ feature }}</li>
-              {% endfor %}
+              {% if addon.features.length == 1 %}
+              <p>{{ addon.features[0] | replace('\n', '<br />') | safe }}</p>
+              {% else %} {% for feature in addon.features %}
+              <li>{{ feature }}</li>
+              {% endfor %} {% endif %}
             </ul>
           </div>
+
           <div class="pricing-footer pt-30">
-            <a href="#" class="rr-primary-btn">Add to Plan</a>
+            <a href="/contact" class="rr-primary-btn">Contact Us</a>
           </div>
         </div>
       </div>
