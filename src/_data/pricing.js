@@ -9,6 +9,7 @@ module.exports = {
           "Full analytics integration",
           "Essential on-page SEO with local focus",
           "Free logo SVG conversion",
+          "24/7 support"
           // "Integrated blog setup"
         ]
       },
