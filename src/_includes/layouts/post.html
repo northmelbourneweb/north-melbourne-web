@@ -60,11 +60,11 @@
           <div class="tags">
             <div class="tag-left">
               <ul class="tag-list">
-                {% for tag in tags %}
+                {% for tag in tags %} {% if forloop.counter > 3 %}
                 <li>
                   <a href="/blog/tag/{{ tag | slugify }}">{{ tag }}</a>
                 </li>
-                {% endfor %}
+                {% endif %} {% endfor %}
               </ul>
             </div>
             <div class="social-list-wrap">
