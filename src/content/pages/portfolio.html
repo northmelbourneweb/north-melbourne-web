@@ -1,0 +1,17 @@
+---
+title: "Portfolio | Custom Web Design for Melbourne Small Businesses"
+description: "Explore North Melbourne Web past works with small business in Australia"
+preloadImg: "/assets/images/banner/pricing-banner.jpg"
+permalink: "portfolio/"
+eleventyNavigation:
+  key: Portfolio
+  order: 200
+---
+
+{% extends "layouts/base.html" %} {% block body %} {% include
+'components/portfolio/banner.html' %} {% include 'components/front/project.html'
+%}
+<div class="pt-130"></div>
+{% include 'components/running_text.html' %} {% include
+'components/pricing/pricing.html' %} {% include
+'components/front/appointment.html' %} {% endblock %}
