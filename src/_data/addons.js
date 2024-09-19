@@ -24,6 +24,7 @@ module.exports = [
   },
   {
     name: "Logos & Branding",
+    from: true,
     price: 149,
     features: [
       "Get a custom logo representing your brand.\nIncludes PNG, SVG, and source files with 4 concepts and 6 revisions."

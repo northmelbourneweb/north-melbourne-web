@@ -6,11 +6,12 @@ module.exports = {
         description: "Perfect for small businesses looking to establish a professional online presence.",
         features: [
           "Custom-coded website with up to 5 pages",
-          "Full analytics integration",
           "Essential on-page SEO with local focus",
+          "Help setup Google Business Profile",
+          "Full analytics integration",
           "Free logo SVG conversion",
-          "24/7 support"
-          // "Integrated blog setup"
+          "24/7 on-call support",
+          "1 Additional feature (online booking etc.)"
         ]
       },
       {
@@ -20,8 +21,8 @@ module.exports = {
         features: [
           "All features in the Basic Plan",
           "Custom-coded website with up to 10 pages",
-          "Advanced SEO & local backlinking strategy",
-          "Free logo (re)design and SVG conversion",
+          "Advanced SEO & local backlinking",
+          "Free logo (re)design and/or SVG conversion",
           "Email marketing integration",
           "Integrated blog setup",
           // "1 custom blog post per month"
@@ -29,14 +30,14 @@ module.exports = {
       },
       {
         plan: "Premium Plan",
-        price: "$999",
+        price: "$1299",
         description: "Comprehensive package for businesses ready to dominate their market.",
         features: [
           "All features in the Professional Plan",
-          "Fully custom-coded website with unlimited pages",
+          "Fully custom-coded website with up to 30 pages",
           "Extensive SEO & ongoing backlinking strategy",
           "CRM & email marketing integration",
-          "Premium blog content & monthly high-detail illustrations",
+          "Monthly high-detail illustrations",
           "1 custom blog post per month"
         ]
       }
@@ -50,7 +51,7 @@ module.exports = {
             "Custom-coded website with up to 10 pages.",
             "Essential on-page SEO with a local focus.",
             "Integrated blog setup.",
-            "Free logo (re)design & SVG conversion."
+            "Free logo (re)design and/or SVG conversion."
         ]
       },
       {
@@ -69,7 +70,7 @@ module.exports = {
       {
         plan: "SaaS Plan",
         price: "Contact Us",
-        description: "A complete SaaS solution with user authentication, subscription management, advanced customizations, and API integrations. Build with your choice of technology.",
+        description: "A complete SaaS solution with user authentication, subscription management, advanced customizations, and API integrations. Build with Bubble.io.",
         features: [
             "Contact Us for more information"
         ]

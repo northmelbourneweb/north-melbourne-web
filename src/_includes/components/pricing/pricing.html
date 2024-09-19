@@ -4,7 +4,12 @@
       <h4 class="sub-heading" data-text-animation="fade-in" data-duration="1.5">
         Our Pricing Plans
       </h4>
-      <h2 class="section-title" data-text-animation data-split="word" data-duration="1">
+      <h2
+        class="section-title"
+        data-text-animation
+        data-split="word"
+        data-duration="1"
+      >
         Flexible Pricing for Every Business
       </h2>
     </div>
@@ -46,26 +51,28 @@
         >
           <div class="row gy-lg-0 gy-4 justify-content-center">
             {% for plan in pricing.monthly %}
-              <div class="col-lg-4 col-md-6">
-                <div class="pricing-item">
-                  <h4 class="plan">{{ plan.plan }}</h4>
-                  <h2 class="price">{{ plan.price }}
-                    <span>/mo</span></h2>
-                  <span>{{ plan.description }}</span>
-                  <div class="pricing-btn-wrap">
-                    <a href="/contact" class="rr-primary-btn pricing-btn">Get in Touch <i class="fa-sharp fa-regular fa-arrow-right"></i>
-                    </a>
-                    <a href="/pricing" class="rr-primary-btn pricing-btn">View Details <i class="fa-sharp fa-regular fa-arrow-right"></i>
-                    </a>
-                  </div>
-                  <h3 class="feature">Features:</h3>
-                  <p>
-                    {% for feature in plan.features %}
-                      &middot; {{ feature }}<br>
-                    {% endfor %}
-                  </p>
+            <div class="col-lg-4 col-md-6">
+              <div class="pricing-item">
+                <h4 class="plan">{{ plan.plan }}</h4>
+                <h2 class="price">{{ plan.price }} <span>/mo</span></h2>
+                <span>{{ plan.description }}</span>
+                <div class="pricing-btn-wrap">
+                  <a href="/contact" class="rr-primary-btn pricing-btn"
+                    >Get in Touch
+                    <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                  </a>
+                  <a href="/pricing" class="rr-primary-btn pricing-btn"
+                    >View Details
+                    <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                  </a>
                 </div>
+                <h3 class="feature">Features:</h3>
+                <p>
+                  {% for feature in plan.features %} &middot; {{ feature }}<br />
+                  {% endfor %}
+                </p>
               </div>
+            </div>
             {% endfor %}
           </div>
         </div>
@@ -77,26 +84,28 @@
         >
           <div class="row gy-lg-0 gy-4 justify-content-center">
             {% for plan in pricing.oneOff %}
-              <div class="col-lg-4 col-md-6">
-                <div class="pricing-item">
-                  <h4 class="plan">{{ plan.plan }}</h4>
-                  <h2 class="price">
-                    <span>From </span>{{ plan.price }}</h2>
-                  <span>{{ plan.description }}</span>
-                  <div class="pricing-btn-wrap">
-                    <a href="/contact" class="rr-primary-btn pricing-btn">Get in Touch <i class="fa-sharp fa-regular fa-arrow-right"></i>
-                    </a>
-                    <a href="/pricing" class="rr-primary-btn pricing-btn">View Details <i class="fa-sharp fa-regular fa-arrow-right"></i>
-                    </a>
-                  </div>
-                  <h3 class="feature">Features:</h3>
-                  <p>
-                    {% for feature in plan.features %}
-                      &middot; {{ feature }}<br>
-                    {% endfor %}
-                  </p>
+            <div class="col-lg-4 col-md-6">
+              <div class="pricing-item">
+                <h4 class="plan">{{ plan.plan }}</h4>
+                <h2 class="price">{# <span>From </span> #}{{ plan.price }}</h2>
+                <span>{{ plan.description }}</span>
+                <div class="pricing-btn-wrap">
+                  <a href="/contact" class="rr-primary-btn pricing-btn"
+                    >Get in Touch
+                    <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                  </a>
+                  <a href="/pricing" class="rr-primary-btn pricing-btn"
+                    >View Details
+                    <i class="fa-sharp fa-regular fa-arrow-right"></i>
+                  </a>
                 </div>
+                <h3 class="feature">Features:</h3>
+                <p>
+                  {% for feature in plan.features %} &middot; {{ feature }}<br />
+                  {% endfor %}
+                </p>
               </div>
+            </div>
             {% endfor %}
           </div>
         </div>

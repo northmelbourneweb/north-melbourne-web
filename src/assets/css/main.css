@@ -7544,7 +7544,7 @@ START: Project CSS
 }
 .project-box .project-thumb {
   height: 600px;
-  width: 100%;
+  width: fit-content;
 }
 @media only screen and (max-width: 992px) {
   .project-box .project-thumb {

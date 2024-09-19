@@ -219,7 +219,8 @@ START: Project CSS
     }
     .project-thumb{
         height: 600px;
-        width: 100%;
+        // width: 100%;
+        width: fit-content;
         @include breakpoint(md){
             height: 500px;
         }
